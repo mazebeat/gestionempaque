@@ -6,12 +6,10 @@ class EmpaqueController extends JoshController
 {
 	public function index()
 	{
-		// Is the user logged in?
-//		if (!Sentry::check()) {
-//			return View::make('admin.login2');
-//		}
-
-		// Show the page
-		return View::make('admin.empaques.index');
+		$locales = Local::lists('nom_local', 'id_local');
+		$empaques = Usuario::all();
+		return View::make('admin.empaques.index')->withEmpaques($empaques)->withLocales($locales);
 	}
+
+	public function search() {}
 }

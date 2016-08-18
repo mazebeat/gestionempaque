@@ -162,9 +162,5 @@ Route::group(array('prefix' => 'admin'), function () {
 });
 
 Route::get('test', function(){
-	dd(Region::find(4)->str_descripcion);
+	dd(Usuario::find('11.111.111-1')->first()->turnos);
 });
-
-
-
-Route::resource('faltas', 'FaltasController');

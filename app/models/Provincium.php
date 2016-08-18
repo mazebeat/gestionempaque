@@ -2,7 +2,7 @@
 
 use Jenssegers\Mongodb\Eloquent\SoftDeletingTrait as SoftDeletes;
 
-class Provincium extends Eloquent
+class Provincium extends Moloquent
 {
 	public static $rules = array(
 		'id_pr'           => 'required',

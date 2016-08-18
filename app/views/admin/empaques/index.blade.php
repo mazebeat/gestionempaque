@@ -39,22 +39,13 @@
                         <fieldset>
                             <div class="form-group">
                                 <label for="exampleInputEmail2">Local: </label>
-                                <select id="selectbasic" name="selectbasic" class="form-control">
-                                    <option value="-1"></option>
-                                    <option value="1">Local 1</option>
-                                    <option value="2">Local 2</option>
-                                    <option value="3">Local 3</option>
-                                    <option value="4">Local 4</option>
-                                </select>
+                                {{ Form::select('id_local', $locales, Input::old('id_local'), array('class' => 'form-control')) }}
                             </div>
-                            &nbsp;
                             <div class="form-group">
-                                <label for="exampleInputName2">RUN: </label>
-                                <input type="text" class="form-control" id="exampleInputName2" placeholder="">
+                                <label for="id_usuario">RUN: </label>
+                                <input type="text" name="id_usuario" class="form-control" id="id_usuario" placeholder="" value="{{ Input::old('id_usuario') }}">
                             </div>
-                            &nbsp;
                             <button type="submit" class="btn btn-info">Buscar</button>
-                            &nbsp;
                             <button type="submit" class="btn btn-default">Nuevo</button>
                         </fieldset>
                     </form>
@@ -88,22 +79,24 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($empaques as $empaque)
                             <tr>
-                                <td>11.111.111-1</td>
-                                <td>AAAAAAAA BBBBBBBBB</td>
-                                <td>CCCCCCCCCCC</td>
-                                <td>DDDDDDDDDDDDDD</td>
-                                <td>0 días</td>
-                                <td>[ 0 ][ 0 ][ 1 ]</td>
+                                <td>{{ $empaque->id_usuario }}</td>
+                                <td>{{ $empaque->nombre }}</td>
+                                <td>{{ $empaque->ape_paterno }}</td>
+                                <td>{{ $empaque->ape_materno }}</td>
+                                <td>{{ $empaque->lastTurn() }} días</td>
+                                <td>[{{ $empaque->faltas->falta_leve }}][{{ $empaque->faltas->falta_media }}][{{ $empaque->faltas->falta_grave }}]</td>
                                 <td>Empaque</td>
-                                <td>Activo</td>
+                                <td>{{ $empaque->state() }}</td>
                                 <td>
                                     <a href="#"><i class="livicon" data-name="info" data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA" title="view user"></i></a>
                                     <a href="#"><i class="livicon" data-name="edit" data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA" title="update user"></i></a>
                                     <a href="#" data-toggle="modal" data-target="#delete_confirm"><i class="livicon" data-name="user-remove" data-size="18" data-loop="true" data-c="#f56954"
-                                                                                                                                                 data-hc="#f56954" title="delete user"></i></a>                                   
+                                                                                                     data-hc="#f56954" title="delete user"></i></a>
                                 </td>
                             </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

@@ -16,4 +16,9 @@ class Falta extends Moloquent
 		'falta_grave'    => 'required',
 		'nombre_usuario' => 'required'
 	);
+
+	public function usuario()
+	{
+		return $this->belongsTo('Usuario');
+	}
 }
