@@ -46,7 +46,7 @@
                             <input type="text" name="id_usuario" class="form-control" id="id_usuario" placeholder="" value="{{ Input::old('id_usuario') }}">
                         </div>
                         <button type="submit" class="btn btn-info">Buscar</button>
-                        {{ link_to_route('admin.empaques.create', 'Nuevo', null, array('class' => 'btn btn-success')) }}
+                        {{ link_to_route('admin.empaques.create', 'Nuevo', null, array('class' => 'btn btn-success pull-right')) }}
                         {{ link_to_route('admin.empaques.index', 'Limpiar', null, array('class' => 'btn btn-link')) }}
                     </fieldset>
                     {{ Form::close() }}

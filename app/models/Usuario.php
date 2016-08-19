@@ -6,23 +6,23 @@ class Usuario extends Moloquent
 	use SoftDeletes;
 	public static $rules      = array(
 		'id_usuario'       => 'required',
-		'nombre'           => 'required',
-		'ape_paterno'      => 'required',
-		'ape_materno'      => 'required',
+		'nombre'           => 'required|alpha',
+		'ape_paterno'      => 'required|alpha',
+		'ape_materno'      => 'required|alpha',
 		'id_region'        => 'required',
 		'id_provincia'     => 'required',
 		'id_comuna'        => 'required',
-		'direccion'        => 'required',
+		'direccion'        => 'required|alpha_num',
 		'telefono'         => 'required',
-		'email'            => 'required',
-		'sexo'             => 'required',
-		'fecha_nacimiento' => 'required',
+		'email'            => 'required|email',
+		'sexo'             => '',
+		'fecha_nacimiento' => 'required|date',
 		'id_casa_estudio'  => 'required',
 		'id_perfil'        => 'required',
 		'id_local'         => 'required',
-		'bloqueado'        => 'required',
+		// 'bloqueado'        => '',
 		'nombre_usuario'   => 'required',
-		'fecha_hora'       => 'required'
+		'fecha_hora'       => ''
 	);
 	protected     $connection = 'mongodb';
 	protected     $collection = 'usuario';
@@ -33,23 +33,25 @@ class Usuario extends Moloquent
 	{
 		parent::boot();
 
-		static::creating(function($usuario)
-		{
+		static::creating(function ($usuario) {
 			// TODO: Insertar modelo Faltas despues de crear usuario
-			$f = new Falta();
-			$f->id_faltas = Falta::lastID();
-			$f->id_usuario = $usuario->id_usuario;
-			$f->falta_leve = 0;
-			$f->falta_media = 0;
-			$f->falta_grave = 0;
+			$f                 = new Falta();
+			$f->id_faltas      = Falta::lastID();
+			$f->id_usuario     = $usuario->id_usuario;
+			$f->falta_leve     = 0;
+			$f->falta_media    = 0;
+			$f->falta_grave    = 0;
 			$f->nombre_usuario = Auth::user()->nombre;
-			$f->fecha_hora = Carbon::now();
+			$f->fecha_hora     = Carbon::now();
 			$f->save();
 		});
 
-		static::updating(function($usuario)
-		{
+		static::updating(function ($usuario) {
 			$usuario->updated_at = Carbon::now();
+		});
+
+		static::deleting(function ($usuario) {
+			$usuario->faltas->delete();
 		});
 	}
 

@@ -7,6 +7,7 @@ class Falta extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'faltas';
 	protected $primaryKey = '_id';
+	 protected $dates = ['fecha_hora'];
 
 	public static $rules = array(
 		'id_falta'       => 'required',

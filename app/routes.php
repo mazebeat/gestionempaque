@@ -175,6 +175,3 @@ Route::get('test', function(){
 	$f->fecha_hora = Carbon::now();
 	$f->save();
 });
-
-
-Route::resource('empaques', 'EmpaquesController');

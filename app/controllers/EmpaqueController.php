@@ -24,6 +24,24 @@ class EmpaqueController extends JoshController
 		return View::make('admin.empaques.create');
 	}
 
+	public function store()
+	{
+		$input = Input::all();
+		$validation = Validator::make($input, Usuario::$rules);
+
+		if ($validation->passes())
+		{
+			$this->empaque->create($input);
+
+			return Redirect::route('admin.empaques.index');
+		}
+
+		return Redirect::route('admin.empaques.create')
+		               ->withInput()
+		               ->withErrors($validation)
+		               ->with('message', 'There were validation errors.');
+	}
+
 	public function search()
 	{
 		$empaques = null;
@@ -65,11 +83,10 @@ class EmpaqueController extends JoshController
 		return View::make('admin.empaques.edit', compact('empaque'));
 	}
 
-
 	public function update($id)
 	{
 		$input      = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, Empaques::$rules);
+		$validation = Validator::make($input, Usuario::$rules);
 
 		if ($validation->passes()) {
 			$empaque = $this->empaque->find($id);
@@ -83,6 +100,8 @@ class EmpaqueController extends JoshController
 		               ->withErrors($validation)
 		               ->with('message', 'There were validation errors.');
 	}
+
+
 
 	public function destroy($id)
 	{
