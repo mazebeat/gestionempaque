@@ -6,7 +6,7 @@ class Falta extends Moloquent
 
 	protected $connection = 'mongodb';
 	protected $collection = 'faltas';
-	// protected $dates      = ['deleted_at'];
+	protected $primaryKey = '_id';
 
 	public static $rules = array(
 		'id_falta'       => 'required',
@@ -19,6 +19,10 @@ class Falta extends Moloquent
 
 	public function usuario()
 	{
-		return $this->belongsTo('Usuario');
+		return $this->belongsTo('Usuario', 'id_usuario', 'id_usuario');
+	}
+
+	public static function lastID() {
+		return Falta::orderBy('created_at', 'DESC')->first()->id_faltas + 1;
 	}
 }

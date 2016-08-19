@@ -14,5 +14,6 @@ class Provincium extends Moloquent
 	use SoftDeletes;
 	protected $connection = 'mongodb';
 	protected $collection = 'region_cl';
+	protected $primaryKey = "_id";
 	protected $dates      = ['deleted_at'];
 }

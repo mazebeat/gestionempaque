@@ -6,5 +6,6 @@ class Norma extends Moloquent
 	use SoftDeletes;
 	protected $connection = 'mongodb';
 	protected $collection = 'norma';
+	protected $primaryKey = "_id";
 	protected $dates      = ['deleted_at','fecha_hora'];
 }

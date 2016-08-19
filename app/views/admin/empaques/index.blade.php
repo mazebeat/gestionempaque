@@ -35,20 +35,21 @@
                     </span>
                 </div>
                 <div class="panel-body">
-                    <form class="form-inline">
-                        <fieldset>
-                            <div class="form-group">
-                                <label for="exampleInputEmail2">Local: </label>
-                                {{ Form::select('id_local', $locales, Input::old('id_local'), array('class' => 'form-control')) }}
-                            </div>
-                            <div class="form-group">
-                                <label for="id_usuario">RUN: </label>
-                                <input type="text" name="id_usuario" class="form-control" id="id_usuario" placeholder="" value="{{ Input::old('id_usuario') }}">
-                            </div>
-                            <button type="submit" class="btn btn-info">Buscar</button>
-                            <button type="submit" class="btn btn-default">Nuevo</button>
-                        </fieldset>
-                    </form>
+                    {{ Form::open(['url' => 'admin/empaques/search', 'method' => 'POST', 'role' => 'form', 'class' => 'form-inline']) }}
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="id_local">Local: </label>
+                            {{ Form::chosen('id_local', $locales, Input::old('id_local'), array('class'=> 'form-control')) }}
+                        </div>
+                        <div class="form-group">
+                            <label for="id_usuario">RUN: </label>
+                            <input type="text" name="id_usuario" class="form-control" id="id_usuario" placeholder="" value="{{ Input::old('id_usuario') }}">
+                        </div>
+                        <button type="submit" class="btn btn-info">Buscar</button>
+                        {{ link_to_route('admin.empaques.create', 'Nuevo', null, array('class' => 'btn btn-success')) }}
+                        {{ link_to_route('admin.empaques.index', 'Limpiar', null, array('class' => 'btn btn-link')) }}
+                    </fieldset>
+                    {{ Form::close() }}
                 </div>
             </div>
         </div>
@@ -90,10 +91,13 @@
                                 <td>Empaque</td>
                                 <td>{{ $empaque->state() }}</td>
                                 <td>
-                                    <a href="#"><i class="livicon" data-name="info" data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA" title="view user"></i></a>
-                                    <a href="#"><i class="livicon" data-name="edit" data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA" title="update user"></i></a>
-                                    <a href="#" data-toggle="modal" data-target="#delete_confirm"><i class="livicon" data-name="user-remove" data-size="18" data-loop="true" data-c="#f56954"
-                                                                                                     data-hc="#f56954" title="delete user"></i></a>
+                                    <a href="#" class="btn btn-xs btn-link"><i class="livicon" data-name="info" data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA" title="view user"></i></a>
+                                    {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.empaques.destroy', $empaque->id))) }}
+                                    <button type="submit" class="btn btn-xs btn-link"><i class="livicon" data-name="user-remove" data-size="18" data-loop="true" data-c="#f56954" data-hc="#f56954" title="delete user"></i></button>
+                                    {{ Form::close() }}
+                                    <a href="{{ URL::route('admin.empaques.edit', array($empaque->id)) }}" class="btn btn-xs btn-link">
+                                        <i class="livicon" data-name="edit" data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA" title="Editar"></i>
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach

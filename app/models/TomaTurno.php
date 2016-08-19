@@ -7,7 +7,7 @@ class TomaTurno extends Moloquent
 	use SoftDeletes;
 	protected $connection = 'mongodb';
 	protected $collection = 'toma_turno';
-	protected $primaryKey = 'id_toma_turno';
+	protected $primaryKey = '_id';
 	protected $dates      = ['deleted_at'];
 
 	public function usuario()

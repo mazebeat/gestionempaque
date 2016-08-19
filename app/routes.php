@@ -77,7 +77,7 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('locales', 'LocalController@index');
 	Route::get('locales/{id}', 'LocalController@detalle');
 	Route::get('turnos', 'TurnoController@index2');
-	Route::get('empaques', 'EmpaqueController@index');
+
 	Route::get('perfilesmayores', function(){
 		return View::make('admin.perfilesmayores.index');
 	});
@@ -125,6 +125,9 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::resource('provincia', 'ProvinciaController');
 	Route::resource('regions', 'RegionsController');
 	Route::resource('repechajes', 'RepechajesController');
+	Route::resource('empaques', 'EmpaqueController');
+	Route::post('empaques/search', 'EmpaqueController@search');
+	Route::post('empaques/clear', 'EmpaqueController@index');
 	Route::resource('faltas', 'FaltasController');
 
 	# User Management
@@ -162,5 +165,16 @@ Route::group(array('prefix' => 'admin'), function () {
 });
 
 Route::get('test', function(){
-	dd(Usuario::find('11.111.111-1')->first()->turnos);
+	$f = new Falta();
+	$f->id_faltas = Falta::lastID();
+	$f->id_usuario = '33.333.333-3';
+	$f->falta_leve = 0;
+	$f->falta_media = 0;
+	$f->falta_grave = 0;
+	$f->nombre_usuario = 'SNT';
+	$f->fecha_hora = Carbon::now();
+	$f->save();
 });
+
+
+Route::resource('empaques', 'EmpaquesController');
