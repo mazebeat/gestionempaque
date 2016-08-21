@@ -2,12 +2,11 @@
 
 class Falta extends Moloquent
 {
-	protected $guarded = array();
 
 	protected $connection = 'mongodb';
 	protected $collection = 'faltas';
 	protected $primaryKey = '_id';
-	 protected $dates = ['fecha_hora'];
+	protected $dates = ['fecha_hora', 'created_at', 'updated_at', 'deleted_at'];
 
 	public static $rules = array(
 		'id_falta'       => 'required',

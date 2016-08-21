@@ -11,18 +11,21 @@
             <h2>Formulario de Registro</h2>
 
             <div class="row">
-                <div class="col-md-10 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     @if(Session::has('message'))
-                    <>{{ Session::get('message') }}</>
+                        <div class="alert alert-danger alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            Oh snap! {{ Session::get('message') }}.
+                        </div>
                     @endif
 
-                    {{--@if ($errors->any())--}}
-                        {{--<div class="alert alert-danger">--}}
-                            {{--<ul>--}}
-                                {{--{{ implode('', $errors->all('<li class="error">:message</li>')) }}--}}
-                            {{--</ul>--}}
-                        {{--</div>--}}
-                    {{--@endif--}}
+                    @if ($errors->any() && Config::get('app.debug'))
+                    <div class="alert alert-danger">
+                    <ul>
+                    {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                    </ul>
+                    </div>
+                    @endif
                 </div>
             </div>
 
@@ -30,7 +33,7 @@
             <form class="contact">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombres">
+                        <input type="text" class="form-control" placeholder="Nombres" name="nombre" value="{{ Input::old('nombre') }}">
                         <div class="error">{{ $errors->first('nombre') }}</div>
                     </div>
                 </div>
@@ -63,33 +66,37 @@
 
                 <div class="form-group">
                     <div class="col-sm-6">
-                        {{ Form::input('text','fecha_nacimiento', Input::old('fecha_nacimiento'), array('class' => 'form-control', 'onfocus' => "this.type='date';this.setAttribute('onfocus','');this.blur();this.focus();", 'placeholder' =>'Fecha Nacimiento')) }}
+                        {{ Form::input('date','fecha_nacimiento', Input::old('fecha_nacimiento'), array('class' => 'form-control', 'placeholder' =>'Fecha Nacimiento')) }}
+{{--                        {{ Form::input('text','fecha_nacimiento', Input::old('fecha_nacimiento'), array('class' => 'form-control', 'onfocus' => "this.type='date';this.setAttribute('onfocus','');this.blur();this.focus();", 'placeholder' =>'Fecha Nacimiento')) }}--}}
                         <div class="error">{{ $errors->first('fecha_nacimiento') }}</div>
                     </div>
 
                     <div class="col-sm-6">
                         <label class="">Sexo</label>
-                        <label class="radio-inline"><input type="radio" name="sexo">Femenino</label>
-                        <label class="radio-inline"><input type="radio" name="sexo">Masculino</label>
+                        <label class="radio-inline"><input type="radio" name="sexo" value="F">Femenino</label>
+                        <label class="radio-inline"><input type="radio" name="sexo" value="M">Masculino</label>
+                        <label class="radio-inline"><input type="radio" name="sexo" value="N">NN</label>
                         <div class="error">{{ $errors->first('sexo') }}</div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-6">
-                        <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+                        {{ Form::password('pass', array('class' => 'form-control', 'placeholder' => 'Contraseña')) }}
+                        {{--<input type="password" name="pass" class="form-control" placeholder="Contraseña">--}}
                         <div class="error">{{ $errors->first('pass') }}</div>
                     </div>
                     <div class="col-sm-6">
-                        <input type="password" name="pass_confirm" class="form-control" placeholder="Repetir Contraseña">
-                        <div class="error">{{ $errors->first('pass_confirm') }}</div>
+                        {{ Form::password('password_confirmation', array('class' => 'form-control', 'placeholder' => 'Repetir Contraseña')) }}
+                        <div class="error">{{ $errors->first('password_confirmation') }}</div>
                     </div>
                 </div>
 
                 <div class="col-sm-12">
                     <div class="form-group text-center">
                         <div class="checkbox">
-                            <label><input type="checkbox" name="accept_terms" value="accept">Acepto los terminos y condiciones.</label>
+                            <label><input type="checkbox" name="accept_terms" value="yes">Acepto los terminos y
+                                condiciones.</label>
                             <div class="error">{{ $errors->first('accept_terms') }}</div>
                         </div>
                     </div>

@@ -27,8 +27,7 @@ class EmpaqueController extends JoshController
     public function store()
     {
         $input = Input::all();
-//        dd($input);
-        $validation = Validator::make($input, Usuario::$rules);
+        $validation = Validator::make($input, Usuario::$rules, Usuario::$messages);
 
         if ($validation->passes()) {
 
@@ -38,7 +37,7 @@ class EmpaqueController extends JoshController
                     ->with('message', 'Debe aceptar los terminos para poder continuar.');
             }
 
-            if(Input::has('accept_terms') && Input::get('accept_terms') != 'accept') {
+            if(Input::has('accept_terms') && Input::get('accept_terms') != 'yes') {
                 return Redirect::to('registry')
                     ->withInput()
                     ->with('message', 'Aceptación de terminos de modo incorrecto.');

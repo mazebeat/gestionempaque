@@ -38,14 +38,14 @@
     }
 
     if ($username == '') {
-        $username = \Str::limit($user->nombre, 3) . \Str::limit($user->ape_paterno, 1);
+        $username = \Str::lower(\Str::limit($user->nombre, 3, '') . \Str::limit($user->ape_paterno, 1, ''));
     }
 
-    if (Usuario::where('nombre_usuario', $username)->count()) {
+    if ($count = Usuario::where('nombre_usuario', $username)->count()) {
         $username .= \Str::random($length = 1);
 
         return \Str::genUsername($user, $username);
     }
 
-    return $username;
+    return \Str::lower($username);
 });

@@ -5,24 +5,33 @@ class Usuario extends Moloquent
 {
     use SoftDeletes;
     public static $rules = array(
-        'id_usuario' => 'required',
+        'id_usuario' => 'required|unique:usuario,id_usuario',
         'nombre' => 'required|alpha_spaces',
         'ape_paterno' => 'required|alpha_spaces',
         'ape_materno' => 'required|alpha_spaces',
-        'id_region' => 'required',
-        'id_provincia' => 'required',
-        'id_comuna' => 'required',
-        'direccion' => 'required',
-        'telefono' => 'required',
+        'id_region' => '',
+        'id_provincia' => '',
+        'id_comuna' => '',
+        'direccion' => '',
+        'telefono' => '',
         'email' => 'required|email',
-        'sexo' => '',
-        'fecha_nacimiento' => 'required|date',
-        'id_casa_estudio' => 'required',
-        'id_perfil' => 'required',
-        'id_local' => 'required',
-        // 'bloqueado'        => '',
-        'nombre_usuario' => 'required',
-        'fecha_hora' => ''
+        'sexo' => 'in:N,M,F',
+        'fecha_nacimiento' => 'required|date|date_format:Y-m-d',
+        'id_casa_estudio' => '',
+        'id_perfil' => '',
+        'id_local' => '',
+        'bloqueado' => 'boolean',
+        'nombre_usuario' => 'unique:usuario,nombre_usuario',
+        'fecha_hora' => '',
+        'pass' => 'min:3',
+        'password_confirmation' => 'min:3|same:pass',
+        'accept_terms' => 'accepted'
+    );
+
+    public static $messages = array(
+        'id_usuario.required' => 'El campo RUN es obligatorio',
+        'id_usuario.unique' => 'RUN ya ha sido registrado.',
+        'accept_terms.accepted' => 'Debe aceptar los terminos y condiciones'
     );
 
     protected $fillable = array(
@@ -48,8 +57,7 @@ class Usuario extends Moloquent
     protected $connection = 'mongodb';
     protected $collection = 'usuario';
     protected $primaryKey = "_id";
-    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
-
+    protected $dates = ['fecha_hora', 'created_at', 'updated_at', 'deleted_at'];
 
     public static function boot()
     {
@@ -57,11 +65,12 @@ class Usuario extends Moloquent
 
         static::creating(function ($usuario) {
 
-            dd($usuario);
-            if(isset($usuario->nombre_usuario)) {
+            if (!isset($usuario->nombre_usuario)) {
                 $usuario->nombre_usuario = EmpaqueController::generateUsername($usuario);
             }
-
+            if (!isset($usuario->fecha_hora)) {
+                $usuario->fecha_hora = Carbon::now();
+            }
             $f = new Falta();
             $f->id_faltas = Falta::lastID();
             $f->id_usuario = $usuario->id_usuario;
@@ -70,9 +79,10 @@ class Usuario extends Moloquent
             $f->falta_grave = 0;
             // TODO: cambiar cuando esté listo el login
             // $f->nombre_usuario = Auth::user()->nombre;
-            $f->nombre_usuario = 'SNT';
+            $f->nombre_usuario = $usuario->nombre_usuario;
             $f->fecha_hora = Carbon::now();
             $f->save();
+//            $usuario()->faltas()->save($f);
         });
 
         static::updating(function ($usuario) {

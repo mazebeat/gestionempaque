@@ -13,7 +13,8 @@
     "jenssegers/mongodb": "~2.0",
     "jenssegers/mongodb-session": "^1.1",
     "jenssegers/mongodb-sentry": "^1.0",
-    "bankdev/generators": "dev-master"
+    "bankdev/generators": "dev-master",
+    "freshwork/chilean-bundle": "1.0"
   },
   "require-dev": {
     "doctrine/dbal": "2.5.*@dev"
