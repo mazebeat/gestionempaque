@@ -55,14 +55,14 @@
                             <tbody>
                             @foreach ($provincia as $provincium)
                                 <tr>
-                                    <td>{{{ Region::find($provincium->id_re)->str_descripcion }}}</td>
+                                    <td>{{{ Region::where($provincium->id_re)->first()->str_descripcion }}}</td>
                                     <td>{{{ $provincium->str_descripcion }}}</td>
                                     <td>{{{ $provincium->num_comunas }}}</td>
                                     <td>
                                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.provincia.destroy', $provincium->id))) }}
-                                        {{ Form::submit('Delete', array('class' => 'btn btn-xs btn-danger')) }}
+                                        {{ Form::submit('Eliminar', array('class' => 'btn btn-xs btn-danger')) }}
                                         {{ Form::close() }}
-                                        {{ link_to_route('admin.provincia.edit', 'Edit', array($provincium->id), array('class' => 'btn btn-xs btn-info')) }}
+                                        {{ link_to_route('admin.provincia.edit', 'Editar', array($provincium->id), array('class' => 'btn btn-xs btn-info')) }}
                                     </td>
                                 </tr>
                             @endforeach

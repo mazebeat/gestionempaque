@@ -13,7 +13,7 @@
 {{-- Page content --}}
 @section('content')
     <section class="content-header">
-        <h1>Provincias</h1>
+        <h1>Provincias {{ link_to_route('admin.provincia.index', 'Volver', null, array('class'=>'btn btn-xs btn-link')) }}</h1>
         <ol class="breadcrumb">
             <li>
                 <a href="#">
@@ -36,31 +36,29 @@
                 </div>
                 <div class="panel-body">
 
-                    <h1>Show Provincium</h1>
-
-                    <p>{{ link_to_route('admin.provincia.index', 'Return to All provincia', null, array('class'=>'btn btn-lg btn-primary')) }}</p>
+                    {{--<h1>Show Provincium</h1>--}}
 
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Id_pr</th>
-                            <th>Id_re</th>
-                            <th>Str_descripcion</th>
-                            <th>Num_comunas</th>
+                            {{--<th>Id_pr</th>--}}
+                            {{--<th>Id_re</th>--}}
+                            <th>Descripción</th>
+                            <th>Número comunas</th>
                         </tr>
                         </thead>
 
                         <tbody>
                         <tr>
-                            <td>{{{ $provincium->id_pr }}}</td>
-                            <td>{{{ $provincium->id_re }}}</td>
+{{--                            <td>{{{ $provincium->id_pr }}}</td>--}}
+{{--                            <td>{{{ $provincium->id_re }}}</td>--}}
                             <td>{{{ $provincium->str_descripcion }}}</td>
                             <td>{{{ $provincium->num_comunas }}}</td>
                             <td>
                                 {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.provincia.destroy', $provincium->id))) }}
-                                {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                                {{ Form::submit('Eliminar', array('class' => 'btn btn-xs btn-danger')) }}
                                 {{ Form::close() }}
-                                {{ link_to_route('admin.provincia.edit', 'Edit', array($provincium->id), array('class' => 'btn btn-info')) }}
+                                {{ link_to_route('admin.provincia.edit', 'Editar', array($provincium->id), array('class' => 'btn btn-xs btn-info')) }}
                             </td>
                         </tr>
                         </tbody>

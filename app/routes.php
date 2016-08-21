@@ -2,6 +2,7 @@
 
 //dd(Config::get('database'));
 date_default_timezone_set("Chile/Continental");
+ini_set('mongo.long_as_object', 1);
 
 /*
 |--------------------------------------------------------------------------

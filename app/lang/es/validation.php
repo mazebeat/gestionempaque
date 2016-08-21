@@ -76,6 +76,7 @@ return [
 	'timezone'             => 'El :attribute debe ser una zona válida.',
 	'unique'               => ':attribute ya ha sido registrado.',
 	'url'                  => 'El formato :attribute es inválido.',
+	"alpha_spaces"     => "The :attribute may only contain letters and spaces.",
 	/*
 	|--------------------------------------------------------------------------
 	| Custom Validation Language Lines
