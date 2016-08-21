@@ -1,6 +1,6 @@
 <?php
 
-class FaltasController extends BaseController {
+class FaltasController extends JoshController {
 
 	/**
 	 * Falta Repository

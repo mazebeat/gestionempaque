@@ -1,6 +1,6 @@
 <?php
 
-class AccesosController extends Controller
+class AccesosController extends JoshController
 {
 
 	/**
