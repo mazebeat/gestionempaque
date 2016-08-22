@@ -29,7 +29,8 @@
             <div class="col-lg-12">
                 <div class="panel panel-primary ">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><i class="livicon" data-name="users-add" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h4 class="panel-title"><i class="livicon" data-name="users-add" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             @lang('groups/title.create')
                         </h4>
                     </div>
@@ -45,7 +46,8 @@
                                 </label>
 
                                 <div class="col-sm-5">
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Group Name" value="{{{ Input::old('name') }}}">
+                                    <input type="text" id="name" name="name" class="form-control"
+                                           placeholder="Group Name" value="{{{ Input::old('name') }}}">
                                 </div>
                                 <div class="col-sm-4">
                                     {{ $errors->first('name', '

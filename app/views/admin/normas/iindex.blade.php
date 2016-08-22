@@ -31,7 +31,8 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h4 class="panel-title">Formulario</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>

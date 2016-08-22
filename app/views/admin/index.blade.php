@@ -4,11 +4,11 @@
 @section('title')
     Dashboard
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     {{--<link href="{{ asset('assets/vendors/fullcalendar/css/fullcalendar.css') }}" rel="stylesheet" type="text/css"/>--}}
     {{--<link href="{{ asset('assets/css/pages/calendar_custom.css') }}" rel="stylesheet" type="text/css"/>--}}
     {{--<link rel="stylesheet" media="all" href="{{ asset('assets/vendors/jvectormap/jquery-jvectormap.css') }}"/>--}}
@@ -24,7 +24,8 @@
         <h1>Bienvenido al Dashboard</h1>
         <ol class="breadcrumb">
             <li class="active">
-                <a href="#"> <i class="livicon" data-name="home" data-size="16" data-color="#333" data-hovercolor="#333"></i>
+                <a href="#"> <i class="livicon" data-name="home" data-size="16" data-color="#333"
+                                data-hovercolor="#333"></i>
                     Inicio
                 </a>
             </li>
@@ -43,7 +44,8 @@
 
                                     <div class="number" id="myTargetElement1"></div>
                                 </div>
-                                <i class="livicon  pull-right" data-name="eye-open" data-l="true" data-c="#fff" data-hc="#fff" data-s="70"></i>
+                                <i class="livicon  pull-right" data-name="eye-open" data-l="true" data-c="#fff"
+                                   data-hc="#fff" data-s="70"></i>
                             </div>
                             <div class="row">
                                 <div class="col-xs-6">
@@ -97,7 +99,8 @@
 
                                     <div class="number" id="myTargetElement3"></div>
                                 </div>
-                                <i class="livicon pull-right" data-name="thumbnails-small" data-l="true" data-c="#fff" data-hc="#fff" data-s="70"></i>
+                                <i class="livicon pull-right" data-name="thumbnails-small" data-l="true" data-c="#fff"
+                                   data-hc="#fff" data-s="70"></i>
                             </div>
                             <div class="row">
                                 <div class="col-xs-6">
@@ -124,7 +127,8 @@
 
                                     <div class="number" id="myTargetElement4"></div>
                                 </div>
-                                <i class="livicon pull-right" data-name="users" data-l="true" data-c="#fff" data-hc="#fff" data-s="70"></i>
+                                <i class="livicon pull-right" data-name="users" data-l="true" data-c="#fff"
+                                   data-hc="#fff" data-s="70"></i>
                             </div>
                             <div class="row">
                                 <div class="col-xs-6">
@@ -437,7 +441,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading border-light">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="mail" data-size="18" data-color="white" data-hc="white" data-l="true"></i>
+                            <i class="livicon" data-name="mail" data-size="18" data-color="white" data-hc="white"
+                               data-l="true"></i>
                             Email Rápido
                         </h4>
                     </div>
@@ -466,7 +471,8 @@
                             <div class="form-group">
                                 <div class='box-body'>
                                     <form>
-                                        <textarea class="textarea textarea_home" placeholder="Escribe aquí tú correo"></textarea>
+                                        <textarea class="textarea textarea_home"
+                                                  placeholder="Escribe aquí tú correo"></textarea>
                                     </form>
                                 </div>
                             </div>
@@ -527,11 +533,11 @@
             {{--</div>--}}
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!--  todolist-->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!--  todolist-->
     {{--    <script src="{{ asset('assets/js/todolist.js') }}"></script>--}}
     <!-- EASY PIE CHART JS -->
     {{--    <script src="{{ asset('assets/vendors/charts/easypiechart.min.js') }}"></script>--}}

@@ -4,14 +4,17 @@
 @section('title')
     Advanced Data Tables
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.colReorder.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.scroller.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.colReorder.min.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.scroller.min.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css">
     <!--end of page level css-->
 @stop
@@ -45,7 +48,8 @@
                 <div class="panel panel-primary filterable">
                     <div class="panel-heading clearfix  ">
                         <div class="panel-title pull-left">
-                            <div class="caption"><i class="livicon" data-name="camera-alt" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <div class="caption"><i class="livicon" data-name="camera-alt" data-size="16"
+                                                    data-loop="true" data-c="#fff" data-hc="white"></i>
                                 TableTools
                             </div>
 
@@ -457,7 +461,8 @@
                 <div class="panel panel-success filterable" style="overflow:auto;">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="responsive" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="responsive" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Re-order Columns
                         </h3>
                     </div>
@@ -674,7 +679,8 @@
                 <div class="panel panel-info filterable">
                     <div class="panel-heading clearfix">
                         <h3 class="panel-title pull-left">
-                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Add / Remove rows
                         </h3>
 
@@ -897,7 +903,8 @@
                 <div class="panel panel-warning filterable">
                     <div class="panel-heading clearfix">
                         <h3 class="panel-title pull-left">
-                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Scroller
                         </h3>
                     </div>
@@ -1367,11 +1374,11 @@
         </div>
         <!-- /.modal ends here -->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript" src="{{ asset('assets/vendors/datatables/jquery.dataTables.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/vendors/datatables/dataTables.tableTools.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/vendors/datatables/dataTables.colReorder.min.js') }}"></script>

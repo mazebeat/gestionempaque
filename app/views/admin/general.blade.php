@@ -8,7 +8,8 @@
 
 {{-- page level styles --}}
 @section('header_styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.1.0.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.1.0.css') }}"/>
     <link href="{{ asset('assets/css/pages/alertmessage.css') }}" rel="stylesheet"/>
 @stop
 
@@ -46,7 +47,8 @@
             <div class="col-md-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="help" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="help" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Basic Alerts
                         </h3>
                     <span class="pull-right clickable">
@@ -77,7 +79,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Dismissable alerts
                         </h3>
                     <span class="pull-right clickable">
@@ -110,7 +113,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Links in alerts
                         </h3>
                     <span class="pull-right clickable">
@@ -144,7 +148,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="notebook" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="notebook" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Notes
                         </h3>
                     <span class="pull-right clickable">
@@ -156,7 +161,8 @@
                             <h4>Alert Message Success</h4>
 
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.
                                 <strong>strong message</strong>
                                 .
                             </p>
@@ -165,7 +171,8 @@
                             <h4>Alert Message Default</h4>
 
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.
                                 <strong>strong message</strong>
                                 .
                             </p>
@@ -179,7 +186,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-two" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-two" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Themed Progressbars
                         </h3>
                     <span class="pull-right clickable">
@@ -188,19 +196,24 @@
                     </div>
                     <div class="panel-body c2">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuetransitiongoal="20"></div>
+                            <div class="progress-bar progress-bar-primary" role="progressbar"
+                                 aria-valuetransitiongoal="20"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuetransitiongoal="40"></div>
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuetransitiongoal="40"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuetransitiongoal="60"></div>
+                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuetransitiongoal="60"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuetransitiongoal="80"></div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar"
+                                 aria-valuetransitiongoal="80"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuetransitiongoal="100"></div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                 aria-valuetransitiongoal="100"></div>
                         </div>
                     </div>
                 </div>
@@ -209,7 +222,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-three" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-three" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Striped progressbars
                         </h3>
                     <span class="pull-right clickable">
@@ -221,16 +235,20 @@
                             <div class="progress-bar" role="progressbar" aria-valuetransitiongoal="20"></div>
                         </div>
                         <div class="progress progress-striped">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuetransitiongoal="40"></div>
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuetransitiongoal="40"></div>
                         </div>
                         <div class="progress progress-striped">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuetransitiongoal="60"></div>
+                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuetransitiongoal="60"></div>
                         </div>
                         <div class="progress progress-striped">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuetransitiongoal="80"></div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar"
+                                 aria-valuetransitiongoal="80"></div>
                         </div>
                         <div class="progress progress-striped">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuetransitiongoal="100"></div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                 aria-valuetransitiongoal="100"></div>
                         </div>
                     </div>
                 </div>
@@ -239,7 +257,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-five" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-five" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Vertical Progress bar
                         </h3>
                     <span class="pull-right clickable">
@@ -248,16 +267,20 @@
                     </div>
                     <div class="panel-body c1">
                         <div class="progress vertical bottom">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuetransitiongoal="40"></div>
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuetransitiongoal="40"></div>
                         </div>
                         <div class="progress vertical bottom">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuetransitiongoal="60"></div>
+                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuetransitiongoal="60"></div>
                         </div>
                         <div class="progress vertical bottom">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuetransitiongoal="80"></div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar"
+                                 aria-valuetransitiongoal="80"></div>
                         </div>
                         <div class="progress vertical bottom">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuetransitiongoal="100"></div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                 aria-valuetransitiongoal="100"></div>
                         </div>
                     </div>
                 </div>
@@ -266,7 +289,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="gears" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gears" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Vertical Striped Progress bar
                         </h3>
                     <span class="pull-right clickable">
@@ -278,16 +302,20 @@
                             <div class="progress-bar" role="progressbar" aria-valuetransitiongoal="20"></div>
                         </div>
                         <div class="progress progress-striped vertical bottom">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuetransitiongoal="40"></div>
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuetransitiongoal="40"></div>
                         </div>
                         <div class="progress progress-striped vertical bottom">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuetransitiongoal="60"></div>
+                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuetransitiongoal="60"></div>
                         </div>
                         <div class="progress progress-striped vertical bottom">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuetransitiongoal="80"></div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar"
+                                 aria-valuetransitiongoal="80"></div>
                         </div>
                         <div class="progress progress-striped vertical bottom">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuetransitiongoal="100"></div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                 aria-valuetransitiongoal="100"></div>
                         </div>
                     </div>
                 </div>
@@ -296,7 +324,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-one" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-one" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Animated progressbars
                         </h3>
                     <span class="pull-right clickable">
@@ -305,19 +334,24 @@
                     </div>
                     <div class="panel-body c2">
                         <div class="progress">
-                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="20"></div>
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar"
+                                 aria-valuetransitiongoal="20"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="40"></div>
+                            <div class="progress-bar progress-bar-info six-sec-ease-in-out" role="progressbar"
+                                 aria-valuetransitiongoal="40"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-success six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="60"></div>
+                            <div class="progress-bar progress-bar-success six-sec-ease-in-out" role="progressbar"
+                                 aria-valuetransitiongoal="60"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-warning six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="80"></div>
+                            <div class="progress-bar progress-bar-warning six-sec-ease-in-out" role="progressbar"
+                                 aria-valuetransitiongoal="80"></div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-danger six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="100"></div>
+                            <div class="progress-bar progress-bar-danger six-sec-ease-in-out" role="progressbar"
+                                 aria-valuetransitiongoal="100"></div>
                         </div>
                     </div>
                 </div>
@@ -326,7 +360,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-six" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-six" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Inverse Vertical Progress Bar
                         </h3>
                     <span class="pull-right clickable">
@@ -341,22 +376,26 @@
                         </div>
                         <div class="progress vertical">
                             <div class="progress progress-striped vertical wide active">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuetransitiongoal="40"></div>
+                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                     aria-valuetransitiongoal="40"></div>
                             </div>
                         </div>
                         <div class="progress vertical">
                             <div class="progress progress-striped vertical wide active">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuetransitiongoal="60"></div>
+                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                     aria-valuetransitiongoal="60"></div>
                             </div>
                         </div>
                         <div class="progress vertical">
                             <div class="progress progress-striped vertical wide active">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuetransitiongoal="80"></div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar"
+                                     aria-valuetransitiongoal="80"></div>
                             </div>
                         </div>
                         <div class="progress vertical">
                             <div class="progress progress-striped vertical wide active">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuetransitiongoal="100"></div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                     aria-valuetransitiongoal="100"></div>
                             </div>
                         </div>
                     </div>
@@ -368,7 +407,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="edit" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="edit" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Typography heading
                         </h3>
                     <span class="pull-right clickable">
@@ -393,7 +433,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="tasks" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="tasks" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Horizontal Description
                         </h3>
                     <span class="pull-right clickable">
@@ -414,7 +455,8 @@
                                 <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
                                 <dt>Answer</dt>
                                 <dd>
-                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus.
                                 </dd>
                             </dl>
                         </div>
@@ -427,7 +469,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="align-left" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="align-left" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Unstyled List
                         </h3>
                     <span class="pull-right clickable">
@@ -462,7 +505,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="align-center" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="align-center" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Unordered List
                         </h3>
                     <span class="pull-right clickable">
@@ -497,7 +541,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="align-right" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="align-right" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Ordered Lists
                         </h3>
                     <span class="pull-right clickable">
@@ -531,12 +576,13 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
-    <script type='text/javascript' src="{{ asset('assets/vendors/bootstrap-progressbar/bootstrap-progressbar.js') }}"></script>
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
+    <script type='text/javascript'
+            src="{{ asset('assets/vendors/bootstrap-progressbar/bootstrap-progressbar.js') }}"></script>
     <script type="text/javascript">
         $('.progress-bar').progressbar();
         $('.progress-bar').progressbar({

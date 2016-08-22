@@ -4,11 +4,11 @@
 @section('title')
     Drop Zone
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/vendors/dropzone-master/downloads/css/dropzone.css') }}" rel="stylesheet"/>
     <!--end of page level css-->
 @stop
@@ -39,7 +39,8 @@
                 <!-- First Basic Table strats here-->
                 <div class="panel panel-info" style="overflow:auto;">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="upload-alt" data-size="20" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="upload-alt" data-size="20"
+                                                   data-loop="true" data-c="#fff" data-hc="white"></i>
                             File Drop Zone
                         </h3>
                     </div>

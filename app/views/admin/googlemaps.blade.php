@@ -4,11 +4,11 @@
 @section('title')
     Google Maps
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/gmaps/examples.css') }}"/>
     <!--end of page level css-->
 @stop

@@ -4,13 +4,14 @@
 @section('title')
     User Profile
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
+{{-- page level styles --}}
+@section('header_styles')
 
-            <!--page level css -->
-    <link href="{{ asset('assets/vendors/jasny-bootstrap/css/jasny-bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+    <!--page level css -->
+    <link href="{{ asset('assets/vendors/jasny-bootstrap/css/jasny-bootstrap.css') }}" rel="stylesheet"
+          type="text/css"/>
     <link href="{{ asset('assets/vendors/x-editable/css/bootstrap-editable.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('assets/vendors/magnifier/css/imgmagnify.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('assets/vendors/iCheck/skins/all.css') }}" rel="stylesheet" type="text/css"/>
@@ -47,7 +48,8 @@
                             <div class="text-center">
                                 <div class="fileinput fileinput-new" data-provides="fileinput">
                                     <div class="fileinput-new thumbnail">
-                                        <img data-src="holder.js/366x218/#fff:#000" class="img-responsive" width="366px" height="218px"/>
+                                        <img data-src="holder.js/366x218/#fff:#000" class="img-responsive" width="366px"
+                                             height="218px"/>
                                     </div>
                                     <div class="fileinput-preview fileinput-exists thumbnail"></div>
                                     <div>
@@ -100,7 +102,8 @@
                                 <tr>
                                     <td>Status</td>
                                     <td>
-                                        <a href="#" id="status" data-type="select" data-pk="1" data-value="1" data-title="Status"></a>
+                                        <a href="#" id="status" data-type="select" data-pk="1" data-value="1"
+                                           data-title="Status"></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -127,25 +130,33 @@
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar7.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar7.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar5.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar5.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
 
@@ -153,75 +164,99 @@
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-xs-6">
-                                        <div class="mag img-responsive">
-                                            <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-xs-6">
-                                        <div class="mag img-responsive">
-                                            <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-xs-6">
-                                        <div class="mag img-responsive">
-                                            <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar7.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-xs-6">
-                                        <div class="mag img-responsive">
-                                            <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
 
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar1.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar7.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xs-6">
                                         <div class="mag img-responsive">
                                             <br/>
-                                            <img data-toggle="magnify" src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend" class="thumbnail img-responsive"/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="mag img-responsive">
+                                            <br/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar1.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="mag img-responsive">
+                                            <br/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="mag img-responsive">
+                                            <br/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="mag img-responsive">
+                                            <br/>
+                                            <img data-toggle="magnify"
+                                                 src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"
+                                                 class="thumbnail img-responsive"/>
                                         </div>
                                     </div>
                                 </div>
@@ -232,18 +267,21 @@
                         <ul class="nav nav-tabs ul-edit responsive">
                             <li class="active">
                                 <a href="#tab-activity" data-toggle="tab">
-                                    <i class="livicon" data-name="comments" data-size="16" data-c="#01BC8C" data-hc="#01BC8C" data-loop="true"></i> Activity
+                                    <i class="livicon" data-name="comments" data-size="16" data-c="#01BC8C"
+                                       data-hc="#01BC8C" data-loop="true"></i> Activity
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#tab-messages" data-toggle="tab">
-                                    <i class="livicon" data-name="mail" data-size="16" data-c="#01BC8C" data-hc="#01BC8C" data-loop="true"></i> Messages
+                                    <i class="livicon" data-name="mail" data-size="16" data-c="#01BC8C"
+                                       data-hc="#01BC8C" data-loop="true"></i> Messages
                                 </a>
                             </li>
                             <li>
                                 <a href="#tab-change-pwd" data-toggle="tab">
-                                    <i class="livicon" data-name="key" data-size="16" data-c="#01BC8C" data-hc="#01BC8C" data-loop="true"></i> Change Password
+                                    <i class="livicon" data-name="key" data-size="16" data-c="#01BC8C" data-hc="#01BC8C"
+                                       data-loop="true"></i> Change Password
                                 </a>
                             </li>
                         </ul>
@@ -252,7 +290,8 @@
                                 <div class="activity">
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Abbey</strong>
@@ -264,7 +303,9 @@
                                                 2 days ago at 1:30pm
                                             </small>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut
                                                 aliquip ex ea commodo consequat.
                                             </p>
                                         </div>
@@ -273,7 +314,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar1.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar1.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Clemens</strong>
@@ -285,7 +327,9 @@
 
                                             <div class="media blog-media">
                                                 <a class="pull-left" href="#">
-                                                    <img class="media-object thumbnail" src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"></a>
+                                                    <img class="media-object thumbnail"
+                                                         src="{{ asset('assets/img/authors/avatar2.jpg') }}"
+                                                         alt="friend"></a>
 
                                                 <div class="media-body col-md-8 col-lg-8 col-sm-8 col-xs-12">
                                                     <h4 class="media-title">
@@ -295,7 +339,10 @@
                                                     </h4>
 
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
                                                         consequat...
                                                         <a href="">Read more</a>
                                                     </p>
@@ -307,7 +354,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"></a>
+                                            <img class="media-object"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Lottie</strong>
@@ -324,7 +372,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Marlee</strong>
@@ -338,16 +387,22 @@
 
                                             <ul class="uploadphoto-list">
                                                 <li>
-                                                    <a href="{{ asset('assets/img/authors/avatar1.jpg') }}" data-rel="prettyPhoto">
-                                                        <img src="{{ asset('assets/img/authors/avatar2.jpg') }}" class="thumbnail img-responsive" alt="friend"></a>
+                                                    <a href="{{ asset('assets/img/authors/avatar1.jpg') }}"
+                                                       data-rel="prettyPhoto">
+                                                        <img src="{{ asset('assets/img/authors/avatar2.jpg') }}"
+                                                             class="thumbnail img-responsive" alt="friend"></a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{ asset('assets/img/authors/avatar4.jpg') }}" data-rel="prettyPhoto">
-                                                        <img src="{{ asset('assets/img/authors/avatar3.jpg') }}" class="thumbnail img-responsive" alt="friend"></a>
+                                                    <a href="{{ asset('assets/img/authors/avatar4.jpg') }}"
+                                                       data-rel="prettyPhoto">
+                                                        <img src="{{ asset('assets/img/authors/avatar3.jpg') }}"
+                                                             class="thumbnail img-responsive" alt="friend"></a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{ asset('assets/img/authors/avatar5.jpg') }}" data-rel="prettyPhoto">
-                                                        <img src="{{ asset('assets/img/authors/avatar.jpg') }}" class="thumbnail img-responsive" alt="friend"></a>
+                                                    <a href="{{ asset('assets/img/authors/avatar5.jpg') }}"
+                                                       data-rel="prettyPhoto">
+                                                        <img src="{{ asset('assets/img/authors/avatar.jpg') }}"
+                                                             class="thumbnail img-responsive" alt="friend"></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -356,7 +411,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar7.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar7.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Joseph</strong>
@@ -373,7 +429,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Lenny</strong>
@@ -389,7 +446,9 @@
                                             </h4>
 
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut
                                                 aliquip ex ea commodo consequat...
                                                 <a href="">Read more</a>
                                             </p>
@@ -399,7 +458,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Danielle</strong>
@@ -411,7 +471,9 @@
 
                                             <div class="media blog-media">
                                                 <a class="pull-left" href="#">
-                                                    <img class="media-object thumbnail" src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"></a>
+                                                    <img class="media-object thumbnail"
+                                                         src="{{ asset('assets/img/authors/avatar4.jpg') }}"
+                                                         alt="friend"></a>
 
                                                 <div class="media-body col-md-8 col-lg-8 col-sm-8 col-xs-12">
                                                     <h4 class="media-title">
@@ -421,7 +483,10 @@
                                                     </h4>
 
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
                                                         consequat...
                                                         <a href="">Read more</a>
                                                     </p>
@@ -433,7 +498,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Frida</strong>
@@ -443,15 +509,18 @@
                                                 December 2 at 12:30pm
                                             </small>
                                             <div class="mb20"></div>
-                                            <a href="{{ asset('assets/img/authors/avatar1.jpg') }}" data-rel="prettyPhoto" class="img-single">
-                                                <img src="{{ asset('assets/img/authors/avatar.jpg') }}" class="thumbnail img-responsive" alt="friend"></a>
+                                            <a href="{{ asset('assets/img/authors/avatar1.jpg') }}"
+                                               data-rel="prettyPhoto" class="img-single">
+                                                <img src="{{ asset('assets/img/authors/avatar.jpg') }}"
+                                                     class="thumbnail img-responsive" alt="friend"></a>
                                         </div>
                                     </div>
                                     <!-- media -->
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar2.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Jensen</strong>
@@ -468,7 +537,8 @@
 
                                     <div class="imgs-profile">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object img-circle" src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"></a>
+                                            <img class="media-object img-circle"
+                                                 src="{{ asset('assets/img/authors/avatar3.jpg') }}" alt="friend"></a>
 
                                         <div class="media-body">
                                             <strong>Krista</strong>
@@ -480,7 +550,9 @@
 
                                             <div class="media blog-media">
                                                 <a class="pull-left" href="#">
-                                                    <img class="media-object thumbnail" src="{{ asset('assets/img/authors/avatar4.jpg') }}" alt="friend"></a>
+                                                    <img class="media-object thumbnail"
+                                                         src="{{ asset('assets/img/authors/avatar4.jpg') }}"
+                                                         alt="friend"></a>
 
                                                 <div class="media-body col-md-8 col-lg-8 col-sm-8 col-xs-12">
                                                     <h4 class="media-title">
@@ -490,7 +562,10 @@
                                                     </h4>
 
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
                                                         consequat...
                                                         <a href="">Read more</a>
                                                     </p>
@@ -514,9 +589,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                        <i class="livicon" data-name="key"
+                                                                           data-size="16" data-loop="true" data-c="#000"
+                                                                           data-hc="#000"></i>
                                                                     </span>
-                                                            <input type="password" placeholder="Password" class="form-control"/>
+                                                            <input type="password" placeholder="Password"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -529,9 +607,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                        <i class="livicon" data-name="key"
+                                                                           data-size="16" data-loop="true" data-c="#000"
+                                                                           data-hc="#000"></i>
                                                                     </span>
-                                                            <input type="password" placeholder="Password" class="form-control"/>
+                                                            <input type="password" placeholder="Password"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -543,7 +624,8 @@
                                                     &nbsp;
                                                     <button type="button" class="btn btn-danger">Cancel</button>
                                                     &nbsp;
-                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -566,7 +648,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">John</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">John</a>
                                         </td>
                                         <td class="view-message ">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -594,7 +677,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Marin</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Marin</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -620,7 +704,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Jenny</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Jenny</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -646,7 +731,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Twiter</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Twiter</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -672,7 +758,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Grace</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Grace</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -698,7 +785,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Kimy</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Kimy</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -726,7 +814,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Tony</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Tony</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -754,7 +843,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Sandy</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Sandy</a>
                                         </td>
                                         <td class="view-message view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -780,7 +870,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Avin</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Avin</a>
                                         </td>
                                         <td class="view-message view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -806,7 +897,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">MJ</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">MJ</a>
                                         </td>
                                         <td class="view-message view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -832,7 +924,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Lofer</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Lofer</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -859,7 +952,9 @@
                                         <td class="hidden-xs">
                                                         <span class="view-message hidden-xs">
                                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Renny</a>
+                                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                                     class="img-circle img-responsive pull-left"
+                                                                     alt="Image">Renny</a>
                                                         </span>
                                         </td>
                                         <td class="view-message">
@@ -888,7 +983,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Benny</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Benny</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -917,7 +1013,9 @@
                                         <td class="hidden-xs">
                                                         <span class="view-message hidden-xs">
                                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Grace</a>
+                                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                                     class="img-circle img-responsive pull-left"
+                                                                     alt="Image">Grace</a>
                                                         </span>
                                         </td>
                                         <td class="view-message view-message">
@@ -944,7 +1042,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Mike</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Mike</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -970,7 +1069,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Clark</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Clark</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -996,7 +1096,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Robin</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">Robin</a>
                                         </td>
                                         <td class="view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">
@@ -1022,7 +1123,8 @@
                                         </td>
                                         <td class="view-message hidden-xs">
                                             <a href="{{ URL::to('admin/view_mail') }}">
-                                                <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">FB</a>
+                                                <img data-src="holder.js/25x25/#000:#fff"
+                                                     class="img-circle img-responsive pull-left" alt="Image">FB</a>
                                         </td>
                                         <td class="view-message view-message">
                                             <a href="{{ URL::to('admin/view_mail') }}">

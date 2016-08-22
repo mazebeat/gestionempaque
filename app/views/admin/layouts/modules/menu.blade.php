@@ -5,7 +5,7 @@
             <span class="title">Inicio</span>
         </a>
     </li>
-    <!--<li {{ (Request::is('admin/perfilesmayores') ? 'class="active"' : '') }}>
+<!--<li {{ (Request::is('admin/perfilesmayores') ? 'class="active"' : '') }}>
         <a href="{{ url('admin/perfilesmayores') }}">
             <i class="livicon" data-name="laptop" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
             <span class="title">Perfiles Mayores</span>
@@ -14,13 +14,15 @@
 
     <li {{ (Request::is('admin/empaques') ? 'class="active"' : '') }}>
         <a href="{{ url('admin/empaques') }}">
-            <i class="livicon" data-name="sitemap" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
+            <i class="livicon" data-name="sitemap" data-size="18" data-c="#418BCA" data-hc="#418BCA"
+               data-loop="true"></i>
             <span class="title">Empaques</span>
         </a>
     </li>
     <li {{ (Request::is('admin/reportes') ? 'class="active"' : '') }}>
         <a href="{{ url('admin/reportes') }}">
-            <i class="livicon" data-name="piechart" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
+            <i class="livicon" data-name="piechart" data-size="18" data-c="#418BCA" data-hc="#418BCA"
+               data-loop="true"></i>
             <span class="title">Reportes</span>
         </a>
     </li>
@@ -41,19 +43,22 @@
         <ul class="sub-menu">
             <li {{ (Request::is('admin/locales') ? 'class="active"' : '') }}>
                 <a href="{{ url('admin/locales') }}">
-                    <i class="livicon" data-name="location" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
+                    <i class="livicon" data-name="location" data-size="18" data-c="#418BCA" data-hc="#418BCA"
+                       data-loop="true"></i>
                     <span class="title">Local</span>
                 </a>
             </li>
             <li {{ (Request::is('admin/normas2') ? 'class="active"' : '') }}>
                 <a href="{{ url('admin/normas2') }}">
-                    <i class="livicon" data-name="page" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
+                    <i class="livicon" data-name="page" data-size="18" data-c="#418BCA" data-hc="#418BCA"
+                       data-loop="true"></i>
                     <span class="title">Normas</span>
                 </a>
             </li>
             <li {{ (Request::is('admin/turnos') ? 'class="active"' : '') }}>
                 <a href="{{ url('admin/turnos') }}">
-                    <i class="livicon" data-name="turn" data-size="18" data-c="#418BCA" data-hc="#418BCA" data-loop="true"></i>
+                    <i class="livicon" data-name="turn" data-size="18" data-c="#418BCA" data-hc="#418BCA"
+                       data-loop="true"></i>
                     <span class="title">Planilla</span>
                 </a>
             </li>
@@ -96,7 +101,7 @@
             <span class="fa arrow"></span>
         </a>
         <ul class="sub-menu">
-            <!--<li {{ ((Request::is('admin/users/*')) && !(Request::is('admin/users/create')) ? 'class="active" id="active"' : '') }}>
+        <!--<li {{ ((Request::is('admin/users/*')) && !(Request::is('admin/users/create')) ? 'class="active" id="active"' : '') }}>
                 {{--<a href="{{ URL::route('users.show', 1) }}">--}}
                 <a href="#">
                     <i class="fa fa-angle-double-right"></i>

@@ -4,11 +4,11 @@
 @section('title')
     View Mail
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css starts here-->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css starts here-->
     <link href="{{ asset('assets/css/pages/mail_box.css') }}" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop
@@ -91,16 +91,22 @@
                                 <div class="row no-padding">
                                     <div class="col-md-7 col-lg-9 col-xs-12">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-toolbar" data-toggle="tooltip" data-placement="top" title="Inbox">
+                                            <button type="button" class="btn btn-default btn-toolbar"
+                                                    data-toggle="tooltip" data-placement="top" title="Inbox">
                                                 <i class="livicon" data-n="message-in" data-c="#418bca" data-s="28"></i>
                                             </button>
-                                            <button type="button" class="btn btn-default btn-toolbar" data-toggle="tooltip" data-placement="top" title="Delete Message">
-                                                <i class="livicon" data-n="message-remove" data-c="#f56954" data-s="28"></i>
+                                            <button type="button" class="btn btn-default btn-toolbar"
+                                                    data-toggle="tooltip" data-placement="top" title="Delete Message">
+                                                <i class="livicon" data-n="message-remove" data-c="#f56954"
+                                                   data-s="28"></i>
                                             </button>
-                                            <button type="button" class="btn btn-default btn-toolbar" data-toggle="tooltip" data-placement="top" title="Flag">
-                                                <i class="livicon" data-n="message-flag" data-c="#00a65a" data-s="28"></i>
+                                            <button type="button" class="btn btn-default btn-toolbar"
+                                                    data-toggle="tooltip" data-placement="top" title="Flag">
+                                                <i class="livicon" data-n="message-flag" data-c="#00a65a"
+                                                   data-s="28"></i>
                                             </button>
-                                            <button type="button" class="btn btn-default  btn-toolbar" data-toggle="tooltip" data-placement="top" title="Reload">
+                                            <button type="button" class="btn btn-default  btn-toolbar"
+                                                    data-toggle="tooltip" data-placement="top" title="Reload">
                                                 <i class="livicon" data-n="refresh" data-s="28" data-c="#f39c12"></i>
                                             </button>
                                         </div>
@@ -130,7 +136,8 @@
                                 <div>
                                     <div class="col-md-2 col-lg-1 col-sm-2 col-xs-3">
                                         <a href="#">
-                                            <img data-src="holder.js/42x42/#000:#fff" class="img-responsive" alt="riot"/>
+                                            <img data-src="holder.js/42x42/#000:#fff" class="img-responsive"
+                                                 alt="riot"/>
                                         </a>
                                     </div>
                                     <div col-xs-11>
@@ -149,13 +156,21 @@
                                         <br>
 
                                         <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book. It has survived not only five
+                                            centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. It was popularised in the 1960s with the
+                                            release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem Ipsum.
                                         </p>
 
                                         <p>
-                                            Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                                            Remaining essentially unchanged. It was popularised in the 1960s with the
+                                            release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently with desktop publishing software like Aldus PageMaker
                                             including versions of Lorem Ipsum.
                                         </p>
                                     </div>
@@ -240,19 +255,22 @@
                                     <div class="nopadmar">
                                         <div class="col-xs-4 no-padding col-md-3 col-lg-2">
                                             <a href="reply" class="btn btn-sm btn-primary">
-                                                <span class="livicon" data-n="redo" data-s="12" data-c="white" data-hc="white"></span>
+                                                <span class="livicon" data-n="redo" data-s="12" data-c="white"
+                                                      data-hc="white"></span>
                                                 &nbsp;&nbsp;Reply
                                             </a>
                                         </div>
                                         <div class="col-xs-4 no-padding col-md-3 col-lg-2">
                                             <a href="forward" class="btn btn-sm btn-success">
-                                                <span class="livicon" data-n="upload" data-s="12" data-c="white" data-hc="white"></span>
+                                                <span class="livicon" data-n="upload" data-s="12" data-c="white"
+                                                      data-hc="white"></span>
                                                 &nbsp;&nbsp;Forward
                                             </a>
                                         </div>
                                         <div class="col-xs-4 col-md-3 col-lg-2">
                                             <a href="mail_box" class="btn btn-sm btn-warning">
-                                                <span class="livicon" data-n="trash" data-s="12" data-c="white" data-hc="white"></span>
+                                                <span class="livicon" data-n="trash" data-s="12" data-c="white"
+                                                      data-hc="white"></span>
                                                 &nbsp;&nbsp;Discard
                                             </a>
                                         </div>

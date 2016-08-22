@@ -30,7 +30,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h4 class="panel-title">...</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -49,7 +50,7 @@
 
                         <tbody>
                         <tr>
-{{--                            <td>{{{ $casaEstudio->id_ce }}}</td>--}}
+                            {{--                            <td>{{{ $casaEstudio->id_ce }}}</td>--}}
                             <td>{{{ $casaEstudio->str_descripcion }}}</td>
                             <td>
                                 {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.casaestudios.destroy', $casaEstudio->id))) }}

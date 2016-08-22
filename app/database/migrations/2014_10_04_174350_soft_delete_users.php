@@ -3,7 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class SoftDeleteUsers extends Migration {
+class SoftDeleteUsers extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -13,8 +14,7 @@ class SoftDeleteUsers extends Migration {
 	public function up()
 	{
 		// Update the users table
-		Schema::table('users', function(Blueprint $table)
-		{
+		Schema::table('users', function (Blueprint $table) {
 			//
 			$table->softDeletes();
 		});
@@ -28,10 +28,9 @@ class SoftDeleteUsers extends Migration {
 	public function down()
 	{
 		// Update the users table
-		Schema::table('users', function(Blueprint $table)
-		{
+		Schema::table('users', function (Blueprint $table) {
 			$table->dropColumn('deleted_at');
-			
+
 		});
 	}
 

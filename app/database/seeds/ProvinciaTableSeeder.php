@@ -1,15 +1,14 @@
 <?php
 
-class ProvinciaTableSeeder extends Seeder {
+class ProvinciaTableSeeder extends Seeder
+{
 
 	public function run()
 	{
 		// Uncomment the below to wipe the table clean before populating
 		// DB::table('provincia')->truncate();
 
-		$provincia = array(
-
-		);
+		$provincia = array();
 
 		// Uncomment the below to run the seeder
 		// DB::table('provincia')->insert($provincia);

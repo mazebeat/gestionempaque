@@ -4,19 +4,21 @@
 @section('title')
     Multiple File Upload
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/blueimp-gallery.min.css') }}"/>
     <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/jQuery-File-Upload/css/jquery.fileupload.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/jQuery-File-Upload/css/jquery.fileupload-ui.css') }}"/>
     <!-- CSS adjustments for browsers with JavaScript disabled -->
     <noscript>
-        <link rel="stylesheet" href="{{ asset('assets/vendors/jQuery-File-Upload/css/jquery.fileupload-noscript.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('assets/vendors/jQuery-File-Upload/css/jquery.fileupload-ui-noscript.css') }}"/>
+        <link rel="stylesheet"
+              href="{{ asset('assets/vendors/jQuery-File-Upload/css/jquery.fileupload-noscript.css') }}"/>
+        <link rel="stylesheet"
+              href="{{ asset('assets/vendors/jQuery-File-Upload/css/jquery.fileupload-ui-noscript.css') }}"/>
     </noscript>
     <!--end of page level css-->
 @stop
@@ -41,7 +43,8 @@
             <div class="col-lg-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><i class="livicon" data-name="clock" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h4 class="panel-title"><i class="livicon" data-name="clock" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Multiple File Uplaod
                         </h4>
                     </div>
@@ -49,11 +52,14 @@
                         <div class="row">
                             <blockquote>
                                 <p>
-                                    File Upload widget with multiple file selection, drag&amp;drop support, progress bars, validation and preview images, audio and video for jQuery.
+                                    File Upload widget with multiple file selection, drag&amp;drop support, progress
+                                    bars, validation and preview images, audio and video for jQuery.
                                     <br>
-                                    Supports cross-domain, chunked and resumable file uploads and client-side image resizing.
+                                    Supports cross-domain, chunked and resumable file uploads and client-side image
+                                    resizing.
                                     <br>
-                                    Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.
+                                    Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go
+                                    etc.) that supports standard HTML form file uploads.
                                 </p>
                             </blockquote>
                             <form id="fileupload" action="#" method="POST" enctype="multipart/form-data">
@@ -86,7 +92,8 @@
                                         <!-- The global progress state -->
                                         <div class="col-lg-5 fileupload-progress fade">
                                             <!-- The global progress bar -->
-                                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress progress-striped active" role="progressbar"
+                                                 aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar progress-bar-success" style="width:0%;"></div>
                                             </div>
                                             <!-- The extended global progress state -->
@@ -98,7 +105,8 @@
                                 <table role="presentation" class="table table-striped">
                                     <tbody class="files"></tbody>
                                 </table>
-                                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+                                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls"
+                                     data-filter=":even">
                                     <div class="slides"></div>
                                     <h3 class="title"></h3>
                                     <a class="prev">‹</a>
@@ -114,7 +122,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="gears" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gears" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Demo Notes
                         </h3>
                     </div>
@@ -137,7 +146,8 @@
                                 You can
                                 <strong>drag &amp; drop</strong>
                                 files from your desktop on this webpage (see
-                                <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser support</a>
+                                <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser
+                                    support</a>
                                 ).
                             </li>
                             <li>
@@ -160,11 +170,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script id="template-upload" type="text/x-tmpl">
     { %
         for (var i = 0, file; file = o.files[i]; i++) { %
@@ -198,6 +208,7 @@
                         <span>Cancel</span >
             < /button>{% } %}</td >
             < /tr>{% } %}
+
     </script>
     <!-- The template to display files available for download -->
     <script id="template-download" type="text/x-tmpl">
@@ -242,6 +253,7 @@
                         <span>Cancel</span >
                     < /button>{% } %}</td >
                     < /tr>{% } %}
+
 
     </script>
 

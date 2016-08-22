@@ -9,7 +9,8 @@
 {{-- page level styles --}}
 @section('header_styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/select2.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css"/>
 @stop
 
@@ -38,7 +39,8 @@
                 <!-- BEGIN EXAMPLE TABLE PORTLET-->
                 <div class="portlet box default">
                     <div class="portlet-title">
-                        <div class="caption"><i class="livicon" data-name="edit" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <div class="caption"><i class="livicon" data-name="edit" data-size="16" data-loop="true"
+                                                data-c="#fff" data-hc="white"></i>
                             Editable Table
                         </div>
                     </div>
@@ -69,27 +71,35 @@
                             </div>
                         </div>
                         <div id="sample_editable_1_wrapper" class="">
-                            <table class="table table-striped table-bordered table-hover dataTable no-footer" id="sample_editable_1" role="grid">
+                            <table class="table table-striped table-bordered table-hover dataTable no-footer"
+                                   id="sample_editable_1" role="grid">
                                 <thead>
                                 <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1">Username</th>
-                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+                                    <th class="sorting_asc" tabindex="0" aria-controls="sample_editable_1" rowspan="1"
+                                        colspan="1">Username
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1"
+                                        colspan="1" aria-label="
                                                  Full Name
                                             : activate to sort column ascending" style="width: 222px;">Full Name
                                     </th>
-                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1"
+                                        colspan="1" aria-label="
                                                  Points
                                             : activate to sort column ascending" style="width: 124px;">Points
                                     </th>
-                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1"
+                                        colspan="1" aria-label="
                                                  Notes
                                             : activate to sort column ascending" style="width: 152px;">Notes
                                     </th>
-                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1"
+                                        colspan="1" aria-label="
                                                  Edit
                                             : activate to sort column ascending" style="width: 88px;">Edit
                                     </th>
-                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+                                    <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1"
+                                        colspan="1" aria-label="
                                                  Delete
                                             : activate to sort column ascending" style="width: 125px;">Delete
                                     </th>

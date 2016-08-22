@@ -1,6 +1,7 @@
 <?php
 
-class ComunasController extends JoshController {
+class ComunasController extends JoshController
+{
 
 	/**
 	 * Comuna Repository
@@ -46,8 +47,7 @@ class ComunasController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Comuna::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->comuna->create($input);
 
 			return Redirect::route('admin.comunas.index');
@@ -62,7 +62,7 @@ class ComunasController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,7 +75,7 @@ class ComunasController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
@@ -83,8 +83,7 @@ class ComunasController extends JoshController {
 //		dd($id);
 		$comuna = $this->comuna->find($id);
 		dd($comuna);
-		if (is_null($comuna))
-		{
+		if (is_null($comuna)) {
 			return Redirect::route('admin.comunas.index');
 		}
 
@@ -94,7 +93,7 @@ class ComunasController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -102,8 +101,7 @@ class ComunasController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Comuna::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$comuna = $this->comuna->find($id);
 			$comuna->update($input);
 
@@ -119,7 +117,7 @@ class ComunasController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

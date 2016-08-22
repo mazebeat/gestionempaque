@@ -7,5 +7,5 @@ class HoraTurno extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'hora_turno';
 	protected $primaryKey = '_id';
-	protected $dates      = ['deleted_at'];
+	protected $dates = ['deleted_at'];
 }

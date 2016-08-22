@@ -7,5 +7,5 @@ class CasaEstudio extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'casa_estudio';
 	protected $primaryKey = "_id";
-	protected $dates      = ['deleted_at'];
+	protected $dates = ['deleted_at'];
 }

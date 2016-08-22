@@ -1,6 +1,7 @@
 <?php
 
-class RepechajesController extends JoshController {
+class RepechajesController extends JoshController
+{
 
 	/**
 	 * Repechaje Repository
@@ -46,8 +47,7 @@ class RepechajesController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Repechaje::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->repechaje->create($input);
 
 			return Redirect::route('admin.repechajes.index');
@@ -62,7 +62,7 @@ class RepechajesController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,15 +75,14 @@ class RepechajesController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$repechaje = $this->repechaje->find($id);
 
-		if (is_null($repechaje))
-		{
+		if (is_null($repechaje)) {
 			return Redirect::route('admin.repechajes.index');
 		}
 
@@ -93,7 +92,7 @@ class RepechajesController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -101,8 +100,7 @@ class RepechajesController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Repechaje::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$repechaje = $this->repechaje->find($id);
 			$repechaje->update($input);
 
@@ -118,7 +116,7 @@ class RepechajesController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

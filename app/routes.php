@@ -78,10 +78,10 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('locales/{id}', 'LocalController@detalle');
 	Route::get('turnos', 'TurnoController@index2');
 
-	Route::get('perfilesmayores', function(){
+	Route::get('perfilesmayores', function () {
 		return View::make('admin.perfilesmayores.index');
 	});
-	Route::get('reportes', function(){
+	Route::get('reportes', function () {
 		return View::make('admin.reportes.index');
 	});
 
@@ -101,7 +101,8 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::post('register2', array('as' => 'register2', 'uses' => 'AuthController@postRegister2'));
 
 	# Forgot Password Confirmation
-	Route::get('forgot-password/{passwordResetCode}', array('as' => 'forgot-password-confirm', 'uses' => 'AuthController@getForgotPasswordConfirm'));
+	Route::get('forgot-password/{passwordResetCode}',
+		array('as' => 'forgot-password-confirm', 'uses' => 'AuthController@getForgotPasswordConfirm'));
 	Route::post('forgot-password/{passwordResetCode}', 'AuthController@postForgotPasswordConfirm');
 
 	# Logout
@@ -138,7 +139,8 @@ Route::group(array('prefix' => 'admin'), function () {
 		Route::get('{userId}/edit', array('as' => 'users.update', 'uses' => 'UsersController@getEdit'));
 		Route::post('{userId}/edit', 'UsersController@postEdit');
 		Route::get('{userId}/delete', array('as' => 'delete/user', 'uses' => 'UsersController@getDelete'));
-		Route::get('{userId}/confirm-delete', array('as' => 'confirm-delete/user', 'uses' => 'UsersController@getModalDelete'));
+		Route::get('{userId}/confirm-delete',
+			array('as' => 'confirm-delete/user', 'uses' => 'UsersController@getModalDelete'));
 		Route::get('{userId}/restore', array('as' => 'restore/user', 'uses' => 'UsersController@getRestore'));
 		Route::get('{userId}', array('as' => 'users.show', 'uses' => 'UsersController@show'));
 	});
@@ -152,7 +154,8 @@ Route::group(array('prefix' => 'admin'), function () {
 		Route::get('{groupId}/edit', array('as' => 'update/group', 'uses' => 'GroupsController@getEdit'));
 		Route::post('{groupId}/edit', 'GroupsController@postEdit');
 		Route::get('{groupId}/delete', array('as' => 'delete/group', 'uses' => 'GroupsController@getDelete'));
-		Route::get('{groupId}/confirm-delete', array('as' => 'confirm-delete/group', 'uses' => 'GroupsController@getModalDelete'));
+		Route::get('{groupId}/confirm-delete',
+			array('as' => 'confirm-delete/group', 'uses' => 'GroupsController@getModalDelete'));
 		Route::get('{groupId}/restore', array('as' => 'restore/group', 'uses' => 'GroupsController@getRestore'));
 		Route::get('any_user', 'UsersController@getUserAccess');
 		Route::get('admin_only', 'UsersController@getAdminOnlyAccess');
@@ -164,7 +167,7 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('{name?}', 'JoshController@showView');
 });
 
-Route::get('test', function(){
+Route::get('test', function () {
 	$f = new Falta();
 	$f->id_faltas = Falta::lastID();
 	$f->id_usuario = '33.333.333-3';

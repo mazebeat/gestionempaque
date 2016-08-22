@@ -4,11 +4,11 @@
 @section('title')
     Add User
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/wizard/jquery-steps/css/wizard.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/wizard/jquery-steps/css/jquery.steps.css') }}">
     <link href="{{ asset('assets/vendors/jasny-bootstrap/css/jasny-bootstrap.css') }}" rel="stylesheet"/>
@@ -35,7 +35,8 @@
             <div class="col-md-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="users" data-size="16" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="users" data-size="16" data-c="#fff"
+                                                   data-hc="#fff" data-loop="true"></i>
                             Add New User
                         </h3>
                     <span class="pull-right clickable">
@@ -60,7 +61,8 @@
                             <div class="col-md-12">
 
                                 <!-- BEGIN FORM WIZARD WITH VALIDATION -->
-                                <form class="form-wizard form-horizontal" action="{{ route('create/user') }}" method="POST" id="wizard" enctype="multipart/form-data">
+                                <form class="form-wizard form-horizontal" action="{{ route('create/user') }}"
+                                      method="POST" id="wizard" enctype="multipart/form-data">
                                     <!-- CSRF Token -->
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
 
@@ -73,7 +75,9 @@
                                             <label for="first_name" class="col-sm-2 control-label">First Name *</label>
 
                                             <div class="col-sm-10">
-                                                <input id="first_name" name="first_name" type="text" placeholder="First Name" class="form-control required" value="{{{ Input::old('first_name') }}}"/>
+                                                <input id="first_name" name="first_name" type="text"
+                                                       placeholder="First Name" class="form-control required"
+                                                       value="{{{ Input::old('first_name') }}}"/>
                                             </div>
                                         </div>
 
@@ -81,7 +85,9 @@
                                             <label for="last_name" class="col-sm-2 control-label">Last Name *</label>
 
                                             <div class="col-sm-10">
-                                                <input id="last_name" name="last_name" type="text" placeholder="Last Name" class="form-control required" value="{{{ Input::old('last_name') }}}"/>
+                                                <input id="last_name" name="last_name" type="text"
+                                                       placeholder="Last Name" class="form-control required"
+                                                       value="{{{ Input::old('last_name') }}}"/>
                                             </div>
                                         </div>
 
@@ -89,7 +95,9 @@
                                             <label for="email" class="col-sm-2 control-label">Email *</label>
 
                                             <div class="col-sm-10">
-                                                <input id="email" name="email" placeholder="E-Mail" type="text" class="form-control required email" value="{{{ Input::old('email') }}}"/>
+                                                <input id="email" name="email" placeholder="E-Mail" type="text"
+                                                       class="form-control required email"
+                                                       value="{{{ Input::old('email') }}}"/>
                                             </div>
                                         </div>
 
@@ -97,15 +105,20 @@
                                             <label for="password" class="col-sm-2 control-label">Password *</label>
 
                                             <div class="col-sm-10">
-                                                <input id="password" name="password" type="password" placeholder="Password" class="form-control required" value="{{{ Input::old('password') }}}"/>
+                                                <input id="password" name="password" type="password"
+                                                       placeholder="Password" class="form-control required"
+                                                       value="{{{ Input::old('password') }}}"/>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="password_confirm" class="col-sm-2 control-label">Confirm Password *</label>
+                                            <label for="password_confirm" class="col-sm-2 control-label">Confirm
+                                                Password *</label>
 
                                             <div class="col-sm-10">
-                                                <input id="password_confirm" name="password_confirm" type="password" placeholder="Confirm Password " class="form-control required" value="{{{ Input::old('password_confirm') }}}"/>
+                                                <input id="password_confirm" name="password_confirm" type="password"
+                                                       placeholder="Confirm Password " class="form-control required"
+                                                       value="{{{ Input::old('password_confirm') }}}"/>
                                             </div>
                                         </div>
 
@@ -123,7 +136,9 @@
                                             <label for="dob" class="col-sm-2 control-label">Date of Birth</label>
 
                                             <div class="col-sm-10">
-                                                <input id="dob" name="dob" type="text" class="form-control" data-mask="9999-99-99" value="{{{ Input::old('dob') }}}" placeholder="yyyy-mm-dd"/>
+                                                <input id="dob" name="dob" type="text" class="form-control"
+                                                       data-mask="9999-99-99" value="{{{ Input::old('dob') }}}"
+                                                       placeholder="yyyy-mm-dd"/>
                                             </div>
                                         </div>
 
@@ -132,17 +147,20 @@
 
                                             <div class="col-sm-10">
                                                 <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                    <div class="fileinput-new thumbnail" style="width: 200px; height: 200px;">
+                                                    <div class="fileinput-new thumbnail"
+                                                         style="width: 200px; height: 200px;">
                                                         <img src="http://placehold.it/200x200" alt="profile pic">
                                                     </div>
-                                                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 200px;"></div>
+                                                    <div class="fileinput-preview fileinput-exists thumbnail"
+                                                         style="max-width: 200px; max-height: 200px;"></div>
                                                     <div>
                                                     <span class="btn btn-default btn-file">
                                                         <span class="fileinput-new">Select image</span>
                                                         <span class="fileinput-exists">Change</span>
                                                         <input id="pic" name="pic" type="file" class="form-control"/>
                                                     </span>
-                                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                        <a href="#" class="btn btn-default fileinput-exists"
+                                                           data-dismiss="fileinput">Remove</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -155,7 +173,8 @@
                                             </label>
 
                                             <div class="col-sm-10">
-                                                <textarea name="bio" id="bio" class="form-control" rows="4">{{{ Input::old('bio') }}}</textarea>
+                                                <textarea name="bio" id="bio" class="form-control" rows="4">{{{ Input::old('bio') }}
+                                                    }</textarea>
                                             </div>
                                         </div>
 
@@ -171,9 +190,18 @@
                                             <div class="col-sm-10">
                                                 <select class="form-control" title="Select Gender..." name="gender">
                                                     <option value="">Select</option>
-                                                    <option value="male" @if(Input::old('gender') === 'male') selected="selected" @endif >MALE</option>
-                                                    <option value="female" @if(Input::old('gender') === 'female') selected="selected" @endif >FEMALE</option>
-                                                    <option value="other" @if(Input::old('gender') === 'other') selected="selected" @endif >OTHER</option>
+                                                    <option value="male"
+                                                            @if(Input::old('gender') === 'male') selected="selected" @endif >
+                                                        MALE
+                                                    </option>
+                                                    <option value="female"
+                                                            @if(Input::old('gender') === 'female') selected="selected" @endif >
+                                                        FEMALE
+                                                    </option>
+                                                    <option value="other"
+                                                            @if(Input::old('gender') === 'other') selected="selected" @endif >
+                                                        OTHER
+                                                    </option>
 
                                                 </select>
                                             </div>
@@ -266,7 +294,8 @@
                                                     <option value="GF">French Guiana</option>
                                                     <option value="PF">French Polynesia</option>
                                                     <option value="TF">French Southern Territories</option>
-                                                    <option value="FQ">French Southern and Antarctic Territories</option>
+                                                    <option value="FQ">French Southern and Antarctic Territories
+                                                    </option>
                                                     <option value="GA">Gabon</option>
                                                     <option value="GM">Gambia</option>
                                                     <option value="GE">Georgia</option>
@@ -367,7 +396,8 @@
                                                     <option value="PZ">Panama Canal Zone</option>
                                                     <option value="PG">Papua New Guinea</option>
                                                     <option value="PY">Paraguay</option>
-                                                    <option value="YD">People&#039;s Democratic Republic of Yemen</option>
+                                                    <option value="YD">People&#039;s Democratic Republic of Yemen
+                                                    </option>
                                                     <option value="PE">Peru</option>
                                                     <option value="PH">Philippines</option>
                                                     <option value="PN">Pitcairn Islands</option>
@@ -400,7 +430,8 @@
                                                     <option value="SB">Solomon Islands</option>
                                                     <option value="SO">Somalia</option>
                                                     <option value="ZA">South Africa</option>
-                                                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                                    <option value="GS">South Georgia and the South Sandwich Islands
+                                                    </option>
                                                     <option value="KR">South Korea</option>
                                                     <option value="ES">Spain</option>
                                                     <option value="LK">Sri Lanka</option>
@@ -411,7 +442,8 @@
                                                     <option value="SE">Sweden</option>
                                                     <option value="CH">Switzerland</option>
                                                     <option value="SY">Syria</option>
-                                                    <option value="ST">S&atilde;o Tom&eacute; and Pr&iacute;ncipe</option>
+                                                    <option value="ST">S&atilde;o Tom&eacute; and Pr&iacute;ncipe
+                                                    </option>
                                                     <option value="TW">Taiwan</option>
                                                     <option value="TJ">Tajikistan</option>
                                                     <option value="TZ">Tanzania</option>
@@ -458,7 +490,8 @@
                                             <label for="state" class="col-sm-2 control-label">State</label>
 
                                             <div class="col-sm-10">
-                                                <input id="state" name="state" type="text" class="form-control" value="{{{ Input::old('state') }}}"/>
+                                                <input id="state" name="state" type="text" class="form-control"
+                                                       value="{{{ Input::old('state') }}}"/>
                                             </div>
                                         </div>
 
@@ -466,7 +499,8 @@
                                             <label for="city" class="col-sm-2 control-label">City</label>
 
                                             <div class="col-sm-10">
-                                                <input id="city" name="city" type="text" class="form-control" value="{{{ Input::old('city') }}}"/>
+                                                <input id="city" name="city" type="text" class="form-control"
+                                                       value="{{{ Input::old('city') }}}"/>
                                             </div>
                                         </div>
 
@@ -474,7 +508,8 @@
                                             <label for="address" class="col-sm-2 control-label">Address</label>
 
                                             <div class="col-sm-10">
-                                                <input id="address" name="address" type="text" class="form-control" value="{{{ Input::old('address') }}}"/>
+                                                <input id="address" name="address" type="text" class="form-control"
+                                                       value="{{{ Input::old('address') }}}"/>
                                             </div>
                                         </div>
 
@@ -482,7 +517,8 @@
                                             <label for="postal" class="col-sm-2 control-label">Postal/zip</label>
 
                                             <div class="col-sm-10">
-                                                <input id="postal" name="postal" type="text" class="form-control" value="{{{ Input::old('postal') }}}"/>
+                                                <input id="postal" name="postal" type="text" class="form-control"
+                                                       value="{{{ Input::old('postal') }}}"/>
                                             </div>
                                         </div>
 
@@ -494,16 +530,19 @@
 
                                     <section>
 
-                                        <p class="text-danger"><strong>Be careful with group selection, if you give admin access.. they can access admin section</strong></p>
+                                        <p class="text-danger"><strong>Be careful with group selection, if you give
+                                                admin access.. they can access admin section</strong></p>
 
                                         <div class="form-group">
                                             <label for="group" class="col-sm-2 control-label">Group *</label>
 
                                             <div class="col-sm-10">
-                                                <select class="form-control " title="Select group..." name="group" id="group">
+                                                <select class="form-control " title="Select group..." name="group"
+                                                        id="group">
                                                     <option value="">Select</option>
                                                     @foreach($groups as $group)
-                                                        <option value="{{ $group->id }}" @if($group->id == Input::old('group')) selected="selected" @endif >{{ $group->name}}</option>
+                                                        <option value="{{ $group->id }}"
+                                                                @if($group->id == Input::old('group')) selected="selected" @endif >{{ $group->name}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
@@ -513,7 +552,9 @@
                                             <label for="activate" class="col-sm-2 control-label"> Activate User</label>
 
                                             <div class="col-sm-10">
-                                                <input id="activate" name="activate" type="checkbox" class="pos-rel p-l-30" value="1" @if(Input::old('activate')) checked="checked" @endif >
+                                                <input id="activate" name="activate" type="checkbox"
+                                                       class="pos-rel p-l-30" value="1"
+                                                       @if(Input::old('activate')) checked="checked" @endif >
                                             </div>
                                             <span>If user is not activated, mail will be sent to user with activation link</span>
                                         </div>
@@ -536,7 +577,8 @@
 
 {{-- page level scripts --}}
 @section('footer_scripts')
-    <script type="text/javascript" src="{{ asset('assets/vendors/wizard/jquery-steps/js/jquery.validate.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/wizard/jquery-steps/js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/wizard/jquery-steps/js/jquery.steps.js') }}"></script>
     <script src="{{ asset('assets/vendors/jasny-bootstrap/js/jasny-bootstrap.js') }}"></script>
     <script src="{{ asset('assets/js/pages/add_user.js') }}"></script>

@@ -17,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/custom.css') }}">
     <!--end of global css-->
     <!--page level css starts-->
-    @yield('style')
-    <!--end of page level css-->
+@yield('style')
+<!--end of page level css-->
 </head>
 
 <body>
@@ -27,23 +27,23 @@
     <!-- Icon Section Start -->
     <div class="icon-section">
         <div class="container">
-{{--            @include('frontend.layouts.modules.socialicons')--}}
+            {{--            @include('frontend.layouts.modules.socialicons')--}}
             @include('frontend.layouts.modules.navbar')
         </div>
     </div>
     <!-- //Icon Section End -->
 
     <!-- Nav bar Start -->
-    {{--<section id="mainnavbar">--}}
-        {{--@include('frontend.layouts.modules.navbar')--}}
-    {{--</section>--}}
-    <!-- Nav bar End -->
+{{--<section id="mainnavbar">--}}
+{{--@include('frontend.layouts.modules.navbar')--}}
+{{--</section>--}}
+<!-- Nav bar End -->
 </header>
 <!-- //Header End -->
 
 <!--Carousel Start -->
 <section id="carousel">
-{{--    @include('frontend.layouts.modules.carousel')--}}
+    {{--    @include('frontend.layouts.modules.carousel')--}}
 </section>
 <!-- //Carousel End -->
 
@@ -64,7 +64,8 @@
     </div>
 </div>
 <!-- Copy right Section End -->
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top" data-toggle="tooltip" data-placement="left">
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top"
+   data-toggle="tooltip" data-placement="left">
     <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
 </a>
 <!--global js starts-->

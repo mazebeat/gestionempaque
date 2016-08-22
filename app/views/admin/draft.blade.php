@@ -4,11 +4,11 @@
 @section('title')
     Draft
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/css/pages/mail_box.css') }}" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop
@@ -335,11 +335,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js-->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js-->
     <script type="text/javascript">
         $('#slimscrollside').slimscroll({
             height: '700px',

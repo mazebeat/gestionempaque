@@ -27,7 +27,9 @@
                                 <div class="col-xs-12 calendar-day">
                                     <div class="text-center vertical">
                                         <span>{{ $turn }}</span></br>
-                                        <button type="button" class="btn btn-block btn-primary taketurn" data-id="{{ $turn }}" data-total="{{ $i }}" data-left="{{ $i }}" data-take="false">
+                                        <button type="button" class="btn btn-block btn-primary taketurn"
+                                                data-id="{{ $turn }}" data-total="{{ $i }}" data-left="{{ $i }}"
+                                                data-take="false">
                                             Tomar
                                             <small class="count">()</small>
 

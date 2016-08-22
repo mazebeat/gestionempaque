@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateEmpaquesTable extends Migration {
+class CreateEmpaquesTable extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -12,7 +13,7 @@ class CreateEmpaquesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('empaques', function(Blueprint $table) {
+		Schema::create('empaques', function (Blueprint $table) {
 			$table->increments('id');
 			$table->string('id_usuario')->unique();
 			$table->string('nombre');
@@ -31,7 +32,8 @@ class CreateEmpaquesTable extends Migration {
 			$table->integer('id_local');
 			$table->boolean('bloqueado');
 			$table->string('nombre_usuario');
-			$table->date;('fecha_hora');
+			$table->date;
+			('fecha_hora');
 			$table->timestamps();
 		});
 	}

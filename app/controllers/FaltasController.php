@@ -1,6 +1,7 @@
 <?php
 
-class FaltasController extends JoshController {
+class FaltasController extends JoshController
+{
 
 	/**
 	 * Falta Repository
@@ -46,8 +47,7 @@ class FaltasController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Falta::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->falta->create($input);
 
 			return Redirect::route('admin.faltas.index');
@@ -62,7 +62,7 @@ class FaltasController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,15 +75,14 @@ class FaltasController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$falta = $this->falta->find($id);
 
-		if (is_null($falta))
-		{
+		if (is_null($falta)) {
 			return Redirect::route('admin.faltas.index');
 		}
 
@@ -93,7 +92,7 @@ class FaltasController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -101,8 +100,7 @@ class FaltasController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Falta::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$falta = $this->falta->find($id);
 			$falta->update($input);
 
@@ -118,7 +116,7 @@ class FaltasController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

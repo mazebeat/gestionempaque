@@ -4,12 +4,13 @@
 @section('title')
     Forward Mail
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
-    <link href="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/src/bootstrap-wysihtml5.css') }}" rel="stylesheet" type="text/css"/>
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
+    <link href="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/src/bootstrap-wysihtml5.css') }}" rel="stylesheet"
+          type="text/css"/>
     <link href="{{ asset('assets/css/pages/mail_box.css') }}" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop
@@ -94,11 +95,13 @@
                             <td colspan="4">
                                 <div class="compose row">
                                     <label class="col-xs-2 hidden-xs" for="to">To:</label>
-                                    <input type="text" class="col-xs-9" id="to" placeholder="Email Id" tabindex="1" required>
+                                    <input type="text" class="col-xs-9" id="to" placeholder="Email Id" tabindex="1"
+                                           required>
 
                                     <div class="clear"></div>
                                     <label class="col-xs-2 hidden-xs" for="to">Subject:</label>
-                                    <input type="text" class="col-xs-9" id="to" tabindex="1" value="Fwd: New server for datacenter needed ">
+                                    <input type="text" class="col-xs-9" id="to" tabindex="1"
+                                           value="Fwd: New server for datacenter needed ">
 
                                     <div class="clear"></div>
                                     <a href="#" id="ccb">Cc</a>
@@ -115,7 +118,8 @@
                                     <div class='box-body pad'>
                                         <form>
                                             <p>
-                                                <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                                <textarea class="textarea" placeholder="Place some text here"
+                                                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                             </p>
 
                                             <p>
@@ -184,8 +188,10 @@
         });
     </script>
     <!-- begining of page level js-->
-    <script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/core-b3.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/core-b3.js') }}"></script>
     <script type="text/javascript">
         $(function () {
             // Replace the <textarea id="editor1"> with a CKEditor

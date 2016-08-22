@@ -13,7 +13,8 @@
 {{-- Page content --}}
 @section('content')
     <section class="content-header">
-        <h1>Provincias {{ link_to_route('admin.provincia.index', 'Volver', null, array('class'=>'btn btn-xs btn-link')) }}</h1>
+        <h1>
+            Provincias {{ link_to_route('admin.provincia.index', 'Volver', null, array('class'=>'btn btn-xs btn-link')) }}</h1>
         <ol class="breadcrumb">
             <li>
                 <a href="#">
@@ -30,7 +31,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h4 class="panel-title">Busqueda</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -53,17 +55,17 @@
                     {{ Form::model($provincium, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('admin.provincia.update', $provincium->id))) }}
 
                     {{--<div class="form-group">--}}
-{{--                        {{ Form::label('id_pr', 'Id_pr:', array('class'=>'col-md-2 control-label')) }}--}}
-                        {{--<div class="col-sm-10">--}}
-                            {{ Form::input('hidden', 'id_pr', Input::old('id_pr')) }}
-                        {{--</div>--}}
+                    {{--                        {{ Form::label('id_pr', 'Id_pr:', array('class'=>'col-md-2 control-label')) }}--}}
+                    {{--<div class="col-sm-10">--}}
+                    {{ Form::input('hidden', 'id_pr', Input::old('id_pr')) }}
+                    {{--</div>--}}
                     {{--</div>--}}
 
                     {{--<div class="form-group">--}}
-{{--                        {{ Form::label('id_re', 'Id_re:', array('class'=>'col-md-2 control-label')) }}--}}
-                        {{--<div class="col-sm-10">--}}
-                            {{ Form::input('hidden', 'id_re', Input::old('id_re')) }}
-                        {{--</div>--}}
+                    {{--                        {{ Form::label('id_re', 'Id_re:', array('class'=>'col-md-2 control-label')) }}--}}
+                    {{--<div class="col-sm-10">--}}
+                    {{ Form::input('hidden', 'id_re', Input::old('id_re')) }}
+                    {{--</div>--}}
                     {{--</div>--}}
 
                     <div class="form-group">

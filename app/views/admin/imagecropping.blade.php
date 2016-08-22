@@ -4,11 +4,11 @@
 @section('title')
     Image Cropping
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/imgcrop/css/demos.css') }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/imgcrop/css/basic.css') }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/imgcrop/css/jquery.Jcrop.css') }}" type="text/css"/>
@@ -40,7 +40,8 @@
             <div class="col-lg-12">
                 <div class="panel panel-primary tabtop">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><i class="livicon" data-name="crop" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h4 class="panel-title"><i class="livicon" data-name="crop" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Gallery
                         </h4>
                     </div>
@@ -77,13 +78,16 @@
                                     <div class="tab-pane active" id="tab_1" style="padding:10px;">
                                         <div class="col-md-8">
                                             <h4>Hey Just Crop it.</h4>
-                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive" id="target1" alt="[Jcrop Example]"/>
+                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}"
+                                                 class="img-responsive" id="target1" alt="[Jcrop Example]"/>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="description">
-                                                <p><b>This example demonstrates the default behavior of Image Cropping.</b>
+                                                <p><b>This example demonstrates the default behavior of Image
+                                                        Cropping.</b>
                                                     <br/>
-                                                    There is no event handlers have been attached, it only performs just cropping behavior.
+                                                    There is no event handlers have been attached, it only performs just
+                                                    cropping behavior.
                                                 </p>
                                             </div>
                                         </div>
@@ -91,11 +95,13 @@
                                     <!-- /.tab-pane 1 -->
                                     <div class="tab-pane" id="tab_2" style="padding:10px;">
                                         <div class="col-md-8">
-                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive" id="target2" alt="[Jcrop Example]"/>
+                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}"
+                                                 class="img-responsive" id="target2" alt="[Jcrop Example]"/>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="description">Cropped Image Details</div>
-                                            <form id="coords" class="coords" onsubmit="return false;" action="http://example.com/post.php">
+                                            <form id="coords" class="coords" onsubmit="return false;"
+                                                  action="http://example.com/post.php">
                                                 <div class="inline-labels">
                                                     <label>
                                                         X1
@@ -127,17 +133,20 @@
                                         <div class="description">
                                             <p><b>This example demonstrates the default behavior of Image Cropping.</b>
                                                 <br/>
-                                                There is no event handlers have been attached, it only performs just cropping behavior.
+                                                There is no event handlers have been attached, it only performs just
+                                                cropping behavior.
                                             </p>
                                         </div>
                                     </div>
                                     <!-- /.tab-pane 2 -->
                                     <div class="tab-pane" id="tab_3" style="padding:10px;">
-                                        <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive" id="target3" alt="[Jcrop Example]"/>
+                                        <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive"
+                                             id="target3" alt="[Jcrop Example]"/>
 
                                         <div id="preview-pane">
                                             <div class="preview-container">
-                                                <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="jcrop-preview" alt="Preview"/>
+                                                <img src="{{ asset('assets/img/cropping-image.jpg') }}"
+                                                     class="jcrop-preview" alt="Preview"/>
                                             </div>
                                         </div>
                                     </div>
@@ -145,7 +154,8 @@
                                     <div class="tab-pane" id="tab_4" style="padding:10px;">
                                         <div class="row">
                                             <div class="col-md-8">
-                                                <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive" id="target4" alt="[Jcrop Example]"/>
+                                                <img src="{{ asset('assets/img/cropping-image.jpg') }}"
+                                                     class="img-responsive" id="target4" alt="[Jcrop Example]"/>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="span3" id="interface" style="width:220px;">
@@ -164,7 +174,9 @@
                                     <!-- /.tab-pane 4-->
                                     <div class="tab-pane" id="tab_5" style="padding:10px;">
                                         <div class="col-md-7">
-                                            <img src="{{ asset('assets/img/cropping-image2.png') }}" width="500%" height="600%" class="img-responsive" id="target5" alt="[Jcrop Example]"/>
+                                            <img src="{{ asset('assets/img/cropping-image2.png') }}" width="500%"
+                                                 height="600%" class="img-responsive" id="target5"
+                                                 alt="[Jcrop Example]"/>
                                         </div>
                                         <div class="col-md-5">
                                             <div style="margin: .8em 0 .5em;">
@@ -174,9 +186,13 @@
                                                 <button id="release" class="btn btn-mini">Release</button>
                                                 <button id="disable" class="btn btn-mini">Disable</button>
                                             </span>
-                                                <button id="enable" class="btn btn-mini" style="display:none;">Re-Enable</button>
+                                                <button id="enable" class="btn btn-mini" style="display:none;">
+                                                    Re-Enable
+                                                </button>
                                                 <button id="unhook" class="btn btn-mini">Destroy!</button>
-                                                <button id="rehook" class="btn btn-mini" style="display:none;">Attach Jcrop</button>
+                                                <button id="rehook" class="btn btn-mini" style="display:none;">Attach
+                                                    Jcrop
+                                                </button>
                                             </div>
                                             <fieldset class="optdual requiresjcrop">
                                                 <legend>Option Toggles</legend>
@@ -208,16 +224,23 @@
                                     <!-- /.tab-pane 5-->
                                     <div class="tab-pane" id="tab_6" style="padding:10px;">
                                         <div class="col-md-8">
-                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive" id="target6" alt="[Jcrop Example]"/>
+                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}"
+                                                 class="img-responsive" id="target6" alt="[Jcrop Example]"/>
                                         </div>
                                         <div class="col-md-4">
                                             <div style="margin-top:1em;">
                                                 <fieldset>
                                                     <legend>Manipulate classes</legend>
                                                     <div class="btn-group" id="buttonbar">
-                                                        <button id="radio1" data-setclass="jcrop-light" class="btn active">jcrop-light</button>
-                                                        <button id="radio2" data-setclass="jcrop-dark" class="btn">jcrop-dark</button>
-                                                        <button id="radio3" data-setclass="jcrop-normal" class="btn">normal</button>
+                                                        <button id="radio1" data-setclass="jcrop-light"
+                                                                class="btn active">jcrop-light
+                                                        </button>
+                                                        <button id="radio2" data-setclass="jcrop-dark" class="btn">
+                                                            jcrop-dark
+                                                        </button>
+                                                        <button id="radio3" data-setclass="jcrop-normal" class="btn">
+                                                            normal
+                                                        </button>
                                                     </div>
                                                 </fieldset>
                                             </div>
@@ -227,7 +250,8 @@
                                     <div class="tab-pane" id="tab_7" style="padding:10px; line-height:35px;">
                                         <p id="target7">
                                             <b style="display:block; padding: .5em 1em;">
-                                                This is an example to crop a non-image item. You are now cropping just a paragraph tag.
+                                                This is an example to crop a non-image item. You are now cropping just a
+                                                paragraph tag.
                                                 Crop this paragraph just like cropping a normal image.
                                             </b>
                                         </p>
@@ -235,10 +259,12 @@
                                     <!-- /.tab-pane 7-->
                                     <div class="tab-pane" id="tab_8" style="padding:10px;">
                                         <div class="col-md-8">
-                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}" class="img-responsive" id="cropbox"/>
+                                            <img src="{{ asset('assets/img/cropping-image.jpg') }}"
+                                                 class="img-responsive" id="cropbox"/>
                                         </div>
                                         <div class="col-md-4">
-                                            <form action="{{ URL::to('admin/crop_demo') }}" method="post" onsubmit="return checkCoords();">
+                                            <form action="{{ URL::to('admin/crop_demo') }}" method="post"
+                                                  onsubmit="return checkCoords();">
                                                 <!-- CSRF Token -->
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
 
@@ -246,7 +272,8 @@
                                                 <input type="hidden" id="y" name="y"/>
                                                 <input type="hidden" id="we" name="w"/>
                                                 <input type="hidden" id="he" name="h"/>
-                                                <input type="submit" value="Crop Image" class="btn btn-large btn-inverse btn-primary"/>
+                                                <input type="submit" value="Crop Image"
+                                                       class="btn btn-large btn-inverse btn-primary"/>
                                             </form>
                                         </div>
                                     </div>

@@ -20,20 +20,22 @@
                     <h3 class="panel-title text-center">Inicio de Sesión</h3>
                 </div>
                 <div class="panel-body">
-                    {{ Form::open(array('url' => 'frontend',  'method' => 'POST', 'autocomplete' => 'on', 'role' => 'form')) }}
-                    {{--<form action="{{ route('calendarsignin') }}" autocomplete="on" method="post" role="form">--}}
-                            <!-- CSRF Token -->
+                {{ Form::open(array('url' => 'frontend',  'method' => 'POST', 'autocomplete' => 'on', 'role' => 'form')) }}
+                {{--<form action="{{ route('calendarsignin') }}" autocomplete="on" method="post" role="form">--}}
+                <!-- CSRF Token -->
                     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
 
                     <div class="form-group {{ $errors->first('email', 'has-error') }}">
-                        <input class="form-control" placeholder="{{ Lang::get('auth/form.email') }}" name="email" type="text"/>
+                        <input class="form-control" placeholder="{{ Lang::get('auth/form.email') }}" name="email"
+                               type="text"/>
 
                         <div class="col-sm-12">
                             {{ $errors->first('email', '<span class="help-block">:message</span>') }}
                         </div>
                     </div>
                     <div class="form-group {{ $errors->first('password', 'has-error') }}">
-                        <input class="form-control" placeholder="{{ Lang::get('auth/form.password') }}" name="password" type="password"/>
+                        <input class="form-control" placeholder="{{ Lang::get('auth/form.password') }}" name="password"
+                               type="password"/>
 
                         <div class="col-sm-12">
                             {{ $errors->first('password', '<span class="help-block">:message</span>') }}
@@ -43,10 +45,12 @@
                         <a href="#" class=" pull-right">Recuperar Contraseña</a>
 
                         <div class="checkbox">
-                            <label><input name="remember-me" type="checkbox" value="Remember Me">{{ Lang::get('button.rememberme') }}</label>
+                            <label><input name="remember-me" type="checkbox"
+                                          value="Remember Me">{{ Lang::get('button.rememberme') }}</label>
                         </div>
                     </div>
-                    <input type="submit" value="{{ Lang::get('button.submit') }}" class="btn btn-primary btn-block btn-lg"/>
+                    <input type="submit" value="{{ Lang::get('button.submit') }}"
+                           class="btn btn-primary btn-block btn-lg"/>
                     {{--</form>--}}
                     {{ Form::close() }}
                 </div>

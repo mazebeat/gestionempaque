@@ -1,6 +1,7 @@
 <?php
 
-class PerfilsController extends JoshController {
+class PerfilsController extends JoshController
+{
 
 	/**
 	 * Perfil Repository
@@ -46,8 +47,7 @@ class PerfilsController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Perfil::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->perfil->create($input);
 
 			return Redirect::route('admin.perfils.index');
@@ -62,7 +62,7 @@ class PerfilsController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,15 +75,14 @@ class PerfilsController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$perfil = $this->perfil->find($id);
 
-		if (is_null($perfil))
-		{
+		if (is_null($perfil)) {
 			return Redirect::route('admin.perfils.index');
 		}
 
@@ -93,7 +92,7 @@ class PerfilsController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -101,8 +100,7 @@ class PerfilsController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Perfil::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$perfil = $this->perfil->find($id);
 			$perfil->update($input);
 
@@ -118,7 +116,7 @@ class PerfilsController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

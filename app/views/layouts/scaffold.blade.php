@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <style>
-        body { padding-top: 20px; }
+        body {
+            padding-top: 20px;
+        }
     </style>
 </head>
 

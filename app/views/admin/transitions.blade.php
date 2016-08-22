@@ -4,11 +4,11 @@
 @section('title')
     Transitions
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}"/>
     <link href="{{ asset('assets/css/pages/transitions.css') }}" rel="stylesheet"/>
     <!--end of page level css-->
@@ -41,7 +41,8 @@
                 <!--md starts-->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="stopwatch" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="stopwatch" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Attention Seekers
                         </h3>
                     <span class="pull-right clickable">
@@ -77,7 +78,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="shield" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="shield" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bouncing Entrances
                         </h3>
                     <span class="pull-right clickable">
@@ -110,7 +112,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="quote-left" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="quote-left" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bouncing Exits
                         </h3>
                     <span class="pull-right clickable">
@@ -143,7 +146,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="qrcode" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="qrcode" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Fading Entrances
                         </h3>
                     <span class="pull-right clickable">
@@ -180,7 +184,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="shuffle" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="shuffle" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Fading Exits
                         </h3>
                     <span class="pull-right clickable">
@@ -217,7 +222,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="sitemap" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="sitemap" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Flippers
                         </h3>
                     <span class="pull-right clickable">
@@ -254,7 +260,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="tag" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="tag" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Lightspeed
                         </h3>
                     <span class="pull-right clickable">
@@ -284,7 +291,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="umbrella" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="umbrella" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Rotating Entrances
                         </h3>
                     <span class="pull-right clickable">
@@ -317,7 +325,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="warning" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="warning" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Rotate Exits
                         </h3>
                     <span class="pull-right clickable">
@@ -350,7 +359,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="lab" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="lab" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Sliders
                         </h3>
                     <span class="pull-right clickable">
@@ -366,7 +376,8 @@
                         </div>
                         <div class="wrap">
                             <p>
-                                <select id="s10" class=" js--animations form-control" onchange="testAnim(this.value,10);">
+                                <select id="s10" class=" js--animations form-control"
+                                        onchange="testAnim(this.value,10);">
                                     <optgroup label="Sliders">
                                         <option value="slideInDown">slideInDown</option>
                                         <option value="slideInLeft">slideInLeft</option>
@@ -384,7 +395,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="gear" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gear" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Specials
                         </h3>
                     <span class="pull-right clickable">
@@ -400,7 +412,8 @@
                         </div>
                         <div class="wrap">
                             <p>
-                                <select id="s11" class=" js--animations form-control" onchange="testAnim(this.value,11);">
+                                <select id="s11" class=" js--animations form-control"
+                                        onchange="testAnim(this.value,11);">
                                     <optgroup label="Specials">
                                         <option value="hinge">hinge</option>
                                         <option value="rollIn">rollIn</option>
@@ -417,11 +430,11 @@
         <!--row ends-->
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!--panel js-->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!--panel js-->
     <script>
         function testAnim(x, str) {
             $('#animationSandbox' + str).removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {

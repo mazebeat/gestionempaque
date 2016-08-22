@@ -2,7 +2,8 @@
 
 use App\Models\User;
 
-class AdminSeeder extends Seeder {
+class AdminSeeder extends Seeder
+{
 
 	public function run()
 	{
@@ -29,7 +30,7 @@ class AdminSeeder extends Seeder {
 		));
 
 		// Assign user permissions
-		$adminUser  = Sentry::getUserProvider()->findByLogin('admin@admin.com');
+		$adminUser = Sentry::getUserProvider()->findByLogin('admin@admin.com');
 		$adminGroup = Sentry::getGroupProvider()->findByName('Admin');
 		$adminUser->addGroup($adminGroup);
 	}

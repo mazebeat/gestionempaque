@@ -4,11 +4,11 @@
 @section('title')
     Responsive Data Tables
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css"/>
     <!-- end of page level css-->
 @stop
@@ -38,7 +38,8 @@
                 <!-- BEGIN SAMPLE TABLE PORTLET-->
                 <div class="portlet box primary">
                     <div class="portlet-title">
-                        <div class="caption"><i class="livicon" data-name="responsive" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <div class="caption"><i class="livicon" data-name="responsive" data-size="16" data-loop="true"
+                                                data-c="#fff" data-hc="white"></i>
                             Responsive Flip Scroll Tables
                         </div>
                     </div>
@@ -188,7 +189,8 @@
                 <div class="portlet box default">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="pencil" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="pencil" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Basic Responsive Table
                         </div>
                     </div>
@@ -244,7 +246,8 @@
                 <div class="portlet box warning">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="magic-alt" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="magic-alt" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bordered Responsive Table
                         </div>
                     </div>
@@ -300,7 +303,8 @@
                 <div class="portlet box info">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Responsive Table
                         </div>
                     </div>
@@ -356,7 +360,8 @@
                 <div class="portlet box danger">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Horizontal Scrollable
                         </div>
                     </div>

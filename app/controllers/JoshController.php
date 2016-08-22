@@ -3,13 +3,13 @@
 class JoshController extends BaseController
 {
 	public static $days = array(
-		'Lunes' => 'Lunes',
-		'Martes' => 'Martes',
+		'Lunes'     => 'Lunes',
+		'Martes'    => 'Martes',
 		'Miercoles' => 'Miercoles',
-		'Jueves' => 'Jueves',
-		'Viernes' => 'Viernes',
-		'Sabado' => 'Sabado',
-		'Domingo' => 'Domingo',
+		'Jueves'    => 'Jueves',
+		'Viernes'   => 'Viernes',
+		'Sabado'    => 'Sabado',
+		'Domingo'   => 'Domingo',
 	);
 
 	public static $turns = array(
@@ -27,7 +27,7 @@ class JoshController extends BaseController
 	public function crop_demo()
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$targ_w       = $targ_h = 150;
+			$targ_w = $targ_h = 150;
 			$jpeg_quality = 99;
 
 			$src = base_path() . '/public/assets/img/cropping-image.jpg';
@@ -36,7 +36,8 @@ class JoshController extends BaseController
 
 			$dst_r = ImageCreateTrueColor($targ_w, $targ_h);
 
-			imagecopyresampled($dst_r, $img_r, 0, 0, intval($_POST['x']), intval($_POST['y']), $targ_w, $targ_h, intval($_POST['w']), intval($_POST['h']));
+			imagecopyresampled($dst_r, $img_r, 0, 0, intval($_POST['x']), intval($_POST['y']), $targ_w, $targ_h,
+				intval($_POST['w']), intval($_POST['h']));
 
 			header('Content-type: image/jpeg');
 			imagejpeg($dst_r, null, $jpeg_quality);

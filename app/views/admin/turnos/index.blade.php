@@ -31,7 +31,8 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h4 class="panel-title">Formulario</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -43,7 +44,8 @@
                                 <label class="col-md-4 control-label" for="name">Nombre</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" name="name" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="name" name="name" placeholder="..." class="form-control input-md"
+                                           required="" type="text">
 
                                 </div>
                             </div>
@@ -63,7 +65,8 @@
                                 <label class="col-md-4 control-label" for="hora_inicio_turno">Hora Inicio Turno</label>
 
                                 <div class="col-md-6">
-                                    <input id="hora_inicio_turno" name="hora_inicio_turno" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="hora_inicio_turno" name="hora_inicio_turno" placeholder="..."
+                                           class="form-control input-md" required="" type="text">
                                 </div>
                             </div>
 
@@ -72,7 +75,8 @@
                                 <label class="col-md-4 control-label" for="hora_fin_turno">Hora Fin Turno</label>
 
                                 <div class="col-md-6">
-                                    <input id="hora_fin_turno" name="hora_fin_turno" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="hora_fin_turno" name="hora_fin_turno" placeholder="..."
+                                           class="form-control input-md" required="" type="text">
                                 </div>
                             </div>
 
@@ -105,7 +109,8 @@
             <div class="panel panel-warning">
                 <div class="panel-heading">
                     <h4 class="panel-title">Registrados</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>

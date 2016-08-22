@@ -4,11 +4,11 @@
 @section('title')
     Blank Page
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/buttons.css') }}"/>
     <!--end of page level css-->
 @stop
@@ -38,7 +38,8 @@
             <div class="col-md-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Basic Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -46,17 +47,28 @@
                     </span>
                     </div>
                     <div class="panel-body">
-                        <button type="button" class="btn btn-responsive button-alignment btn-Primary" style="margin-bottom:7px;" data-toggle="button">Button 1</button>
-                        <button type="button" class="btn btn-responsive button-alignment btn-success" style="margin-bottom:7px;" data-toggle="button">Button 2</button>
-                        <button type="button" class="btn btn-responsive button-alignment btn-info" style="margin-bottom:7px;" data-toggle="button">Button 3</button>
-                        <button type="button" class="btn btn-responsive button-alignment btn-warning" style="margin-bottom:7px;" data-toggle="button">Button 4</button>
-                        <button type="button" class="btn btn-responsive button-alignment btn-danger" style="margin-bottom:7px;" data-toggle="button">Button 5</button>
+                        <button type="button" class="btn btn-responsive button-alignment btn-Primary"
+                                style="margin-bottom:7px;" data-toggle="button">Button 1
+                        </button>
+                        <button type="button" class="btn btn-responsive button-alignment btn-success"
+                                style="margin-bottom:7px;" data-toggle="button">Button 2
+                        </button>
+                        <button type="button" class="btn btn-responsive button-alignment btn-info"
+                                style="margin-bottom:7px;" data-toggle="button">Button 3
+                        </button>
+                        <button type="button" class="btn btn-responsive button-alignment btn-warning"
+                                style="margin-bottom:7px;" data-toggle="button">Button 4
+                        </button>
+                        <button type="button" class="btn btn-responsive button-alignment btn-danger"
+                                style="margin-bottom:7px;" data-toggle="button">Button 5
+                        </button>
                     </div>
                 </div>
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Custom buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -85,7 +97,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="eye-open" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="eye-open" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Button Size
                         </h3>
                     <span class="pull-right clickable">
@@ -131,7 +144,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             WELLS
                         </h3>
                     <span class="pull-right clickable">
@@ -151,7 +165,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="notebook" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="notebook" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Breadcrumbs
                         </h3>
                     <span class="pull-right clickable">
@@ -202,7 +217,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <i class="livicon" data-name="legal" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <i class="livicon" data-name="legal" data-size="16" data-loop="true" data-c="#fff"
+                           data-hc="white"></i>
                         Panels
                     </h3>
                 <span class="pull-right clickable">
@@ -215,8 +231,12 @@
                             <h3 class="panel-title">Panel primary</h3>
                         </div>
                         <div class="panel-body">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. AtLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At Lorem ipsum dolor
+                            sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. AtLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua.
                         </div>
                     </div>
@@ -259,7 +279,8 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <i class="livicon" data-name="piggybank" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <i class="livicon" data-name="piggybank" data-size="16" data-loop="true" data-c="#fff"
+                           data-hc="white"></i>
                         Panel with Tab
                     </h3>
                 <span class="pull-right clickable">
@@ -288,19 +309,36 @@
                                 <div class="panel-body">
                                     <div class="tab-content" id="slim1">
                                         <div class="tab-pane text-justify active" id="tab1">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At Lorem ipsum dolor sit amet, consetetur
-                                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. AtLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. AtLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                                            erat, sed diam voluptua. AtLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At Lorem ipsum dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. AtLorem ipsum dolor sit amet,
+                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. AtLorem
+                                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam
+                                            erat, sed diam voluptua. AtLorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                            aliquyam erat, sed diam voluptua. At
                                         </div>
                                         <div class="tab-pane text-justify" id="tab2">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                            dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                                            Lorem ipsum dolor sit amet.
                                         </div>
                                         <div class="tab-pane" id="tab3">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                            dolor sit amet.
                                         </div>
                                     </div>
                                 </div>
@@ -312,7 +350,8 @@
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <i class="livicon" data-name="sandglass" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <i class="livicon" data-name="sandglass" data-size="16" data-loop="true" data-c="#fff"
+                           data-hc="white"></i>
                         Icon picker
                     </h3>
                 <span class="pull-right clickable">
@@ -323,7 +362,8 @@
                     <div id="wraper1">
                         <div class="row">
                             <form method="post">
-                                <input type="text" name="someName" class="icon-picker" placeholder="Click on icon and then search........ "/>
+                                <input type="text" name="someName" class="icon-picker"
+                                       placeholder="Click on icon and then search........ "/>
                             </form>
                         </div>
                     </div>
@@ -332,7 +372,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <i class="livicon" data-name="trophy" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <i class="livicon" data-name="trophy" data-size="16" data-loop="true" data-c="#fff"
+                           data-hc="white"></i>
                         Poll
                     </h3>
                 <span class="pull-right clickable">
@@ -390,9 +431,9 @@
             </div>
         </div>
     </section>
-    @stop
-    @section('footer_scripts')
-            <!--icon picker-->
+@stop
+@section('footer_scripts')
+    <!--icon picker-->
     <script type="text/javascript">
         // add this function to initialize
         $(function () {

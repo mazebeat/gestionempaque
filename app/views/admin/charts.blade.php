@@ -4,11 +4,11 @@
 @section('title')
     Charts
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/pages/flot.css') }}"/>
     <!--end of page level css-->
 @stop
@@ -21,7 +21,8 @@
         <h1>Flot Charts</h1>
         <ol class="breadcrumb">
             <li>
-                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="14" data-loop="true"></i>
+                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="14"
+                                                       data-loop="true"></i>
                     Home
                 </a>
             </li>
@@ -40,7 +41,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="barchart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Stacked Bar Charts
                         </h3>
                     <span class="pull-right">
@@ -59,7 +61,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Bar Charts
                         </h3>
                     <span class="pull-right">
@@ -82,7 +85,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Spline Chart
                         </h3>
                     <span class="pull-right">
@@ -101,7 +105,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Line Chart
                         </h3>
                     <span class="pull-right">
@@ -123,7 +128,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Area Chart
                         </h3>
                     <span class="pull-right">
@@ -140,7 +146,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Spline Area Chart
                         </h3>
                     <span class="pull-right">
@@ -161,7 +168,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="linechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Real Time Chart
                         </h3>
                     <span class="pull-right">
@@ -180,15 +188,25 @@
 @stop
 
 @section('footer_scripts')
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.min.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.stack.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.crosshair.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.time.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.selection.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.symbol.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.resize.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.categories.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.spline.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.tooltip.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.min.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.stack.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.crosshair.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.time.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.selection.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.symbol.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.resize.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.categories.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.spline.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.tooltip.js') }}"></script>
     <script language="javascript" type="text/javascript" src="{{ asset('assets/js/pages/customcharts.js') }}"></script>
 @stop

@@ -8,8 +8,8 @@
             Administrador
         @show
     </title>
-    {{--<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>--}}
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+{{--<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>--}}
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -18,15 +18,16 @@
     <!-- global css -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
     <!-- font Awesome -->
-    <link href="{{ asset('assets/vendors/font-awesome-4.2.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/vendors/font-awesome-4.2.0/css/font-awesome.min.css') }}" rel="stylesheet"
+          type="text/css"/>
     <link href="{{ asset('assets/css/styles/black.css') }}" rel="stylesheet" type="text/css" id="colorscheme"/>
     <link rel="stylesheet" href="{{ asset('assets/css/panel.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/metisMenu.css') }}"/>
 
     <!-- end of global css -->
     <!--page level css-->
-    @yield('header_styles')
-            <!--end of page level css-->
+@yield('header_styles')
+<!--end of page level css-->
 </head>
 
 <body class="skin-josh">
@@ -180,7 +181,8 @@
                 {{--</li>--}}
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img data-src="holder.js/35x35/#fff:#000" width="35" class="img-circle img-responsive pull-left" height="35" alt="riot">
+                        <img data-src="holder.js/35x35/#fff:#000" width="35" class="img-circle img-responsive pull-left"
+                             height="35" alt="riot">
 
                         <div class="riot">
                             <div>
@@ -195,7 +197,8 @@
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header bg-light-blue">
-                            <img data-src="holder.js/90x90/#fff:#000" class="img-responsive img-circle" alt="User Image">
+                            <img data-src="holder.js/90x90/#fff:#000" class="img-responsive img-circle"
+                                 alt="User Image">
                             {{--                                <p class="topprofiletext">{{ Sentry::getUser()->first_name }} {{ Sentry::getUser()->last_name }}</p>--}}
                             <p class="topprofiletext">Demo</p>
                         </li>
@@ -243,44 +246,49 @@
                     <ul class="sidebar_threeicons">
                         <li>
                             <a href="{{ URL::to('admin/form_builder') }}">
-                                <i class="livicon" data-name="hammer" title="Form Builder 1" data-loop="true" data-color="#42aaca" data-hc="#42aaca" data-s="25"></i>
+                                <i class="livicon" data-name="hammer" title="Form Builder 1" data-loop="true"
+                                   data-color="#42aaca" data-hc="#42aaca" data-s="25"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{ URL::to('admin/form_builder2') }}">
-                                <i class="livicon" data-name="list-ul" title="Form Builder 2" data-loop="true" data-color="#e9573f" data-hc="#e9573f" data-s="25"></i>
+                                <i class="livicon" data-name="list-ul" title="Form Builder 2" data-loop="true"
+                                   data-color="#e9573f" data-hc="#e9573f" data-s="25"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{ URL::to('admin/buttonbuilder') }}">
-                                <i class="livicon" data-name="vector-square" title="Button Builder" data-loop="true" data-color="#f6bb42" data-hc="#f6bb42" data-s="25"></i>
+                                <i class="livicon" data-name="vector-square" title="Button Builder" data-loop="true"
+                                   data-color="#f6bb42" data-hc="#f6bb42" data-s="25"></i>
                             </a>
                         </li>
                         <li>
                             <a href="{{ URL::to('admin/gridmanager') }}">
-                                <i class="livicon" data-name="new-window" title="Form Builder 1" data-loop="true" data-color="#37bc9b" data-hc="#37bc9b" data-s="25"></i>
+                                <i class="livicon" data-name="new-window" title="Form Builder 1" data-loop="true"
+                                   data-color="#37bc9b" data-hc="#37bc9b" data-s="25"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
                 <!-- BEGIN SIDEBAR MENU -->
-                @include('admin.layouts.modules.menu')
-                        <!-- END SIDEBAR MENU -->
+            @include('admin.layouts.modules.menu')
+            <!-- END SIDEBAR MENU -->
             </div>
         </section>
     </aside>
     <aside class="right-side">
 
         <!-- Notifications -->
-        @include('notifications')
+    @include('notifications')
 
-                <!-- Content -->
+    <!-- Content -->
         @yield('content')
     </aside>
     <!-- right-side -->
 </div>
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top" data-toggle="tooltip" data-placement="left">
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top"
+   data-toggle="tooltip" data-placement="left">
     <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
 </a>
 <!-- global js -->
@@ -298,6 +306,6 @@
 <!-- end of global js -->
 <!-- begin page level js -->
 @yield('footer_scripts')
-        <!-- end page level js -->
+<!-- end page level js -->
 </body>
 </html>

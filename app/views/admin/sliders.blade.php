@@ -4,11 +4,11 @@
 @section('title')
     Sliders
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/ion.rangeSlider/css/ion.rangeSlider.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/slider/slider.css') }}"/>
@@ -41,7 +41,8 @@
             <div class="col-md-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="download" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="download" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Ion Range Sliders
                         </h3>
                     <span class="pull-right clickable">
@@ -119,7 +120,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="globe" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="globe" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bootstrap Sliders
                         </h3>
                     <span class="pull-right clickable">
@@ -135,14 +137,19 @@
                                         <label class="col-md-2 control-label">Basic Slider</label>
 
                                         <div class="col-md-10">
-                                            <input id="ex1" data-slider-id='ex1Slider' type="text" class="slider form-control" data-slider-handle="square" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                            <input id="ex1" data-slider-id='ex1Slider' type="text"
+                                                   class="slider form-control" data-slider-handle="square"
+                                                   data-slider-min="0" data-slider-max="20" data-slider-step="1"
+                                                   data-slider-value="14"/>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-2 control-label">Money Range</label>
 
                                         <div class="col-md-10"><b>€ 10</b>
-                                            <input id="ex2" type="text" data-slider-id='ex2' class="slider form-control" data-slider-handle="square" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5"
+                                            <input id="ex2" type="text" data-slider-id='ex2' class="slider form-control"
+                                                   data-slider-handle="square" value="" data-slider-min="10"
+                                                   data-slider-max="1000" data-slider-step="5"
                                                    data-slider-value="[250,450]"/> <b>€ 1000</b>
                                         </div>
                                     </div>
@@ -153,19 +160,28 @@
                                             <div class="well">
                                                 <p>
                                                     <b>R</b>
-                                                    <input type="text" class="slider form-control" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" id="R" data-slider-tooltip="hide"
+                                                    <input type="text" class="slider form-control" value=""
+                                                           data-slider-min="0" data-slider-max="255"
+                                                           data-slider-step="1" data-slider-value="128"
+                                                           data-slider-id="RC" id="R" data-slider-tooltip="hide"
                                                            data-slider-handle="square"/>
                                                 </p>
 
                                                 <p>
                                                     <b>G</b>
-                                                    <input type="text" class="slider form-control" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="GC" id="G" data-slider-tooltip="hide"
+                                                    <input type="text" class="slider form-control" value=""
+                                                           data-slider-min="0" data-slider-max="255"
+                                                           data-slider-step="1" data-slider-value="128"
+                                                           data-slider-id="GC" id="G" data-slider-tooltip="hide"
                                                            data-slider-handle="round"/>
                                                 </p>
 
                                                 <p>
                                                     <b>B</b>
-                                                    <input type="text" class="slider form-control" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="BC" id="B" data-slider-tooltip="hide"
+                                                    <input type="text" class="slider form-control" value=""
+                                                           data-slider-min="0" data-slider-max="255"
+                                                           data-slider-step="1" data-slider-value="128"
+                                                           data-slider-id="BC" id="B" data-slider-tooltip="hide"
                                                            data-slider-handle="triangle"/>
                                                 </p>
 
@@ -178,22 +194,33 @@
                                             <label class="col-md-2 control-label">Vertical Slider</label>
 
                                             <div class="col-md-10">
-                                                <input id="ex4" type="text" class="slider form-control" data-slider-id='ex4' data-slider-handle="square" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="-3"
+                                                <input id="ex4" type="text" class="slider form-control"
+                                                       data-slider-id='ex4' data-slider-handle="square"
+                                                       data-slider-min="-5" data-slider-max="20" data-slider-step="1"
+                                                       data-slider-value="-3"
                                                        data-slider-orientation="vertical"/>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">Destroy</label>
 
                                                 <div class="col-md-10">
-                                                    <input id="ex5" type="text" class="slider form-control" data-slider-id='ex5' data-slider-handle="square" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="0"/>
-                                                    <button id="destroyEx5Slider" class='btn btn-danger'>Click to Destroy</button>
+                                                    <input id="ex5" type="text" class="slider form-control"
+                                                           data-slider-id='ex5' data-slider-handle="square"
+                                                           data-slider-min="-5" data-slider-max="20"
+                                                           data-slider-step="1" data-slider-value="0"/>
+                                                    <button id="destroyEx5Slider" class='btn btn-danger'>Click to
+                                                        Destroy
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">Current Range</label>
 
                                                 <div class="col-md-10">
-                                                    <input id="ex6" type="text" class="slider form-control" data-slider-id='ex6' data-slider-min="-5" data-slider-handle="square" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+                                                    <input id="ex6" type="text" class="slider form-control"
+                                                           data-slider-id='ex6' data-slider-min="-5"
+                                                           data-slider-handle="square" data-slider-max="20"
+                                                           data-slider-step="1" data-slider-value="3"/>
                                                 <span id="ex6CurrentSliderValLabel">
                                                     Current Slider Value:
                                                     <span id="ex6SliderVal">3</span>
@@ -204,7 +231,10 @@
                                                 <label class="col-md-2 control-label">Enable Slider</label>
 
                                                 <div class="col-md-10">
-                                                    <input id="ex7" type="text" class="slider form-control" data-slider-id='ex7' data-slider-min="0" data-slider-handle="square" data-slider-max="20" data-slider-step="1" data-slider-value="5"
+                                                    <input id="ex7" type="text" class="slider form-control"
+                                                           data-slider-id='ex7' data-slider-min="0"
+                                                           data-slider-handle="square" data-slider-max="20"
+                                                           data-slider-step="1" data-slider-value="5"
                                                            data-slider-enabled="false"/>
                                                     <input id="ex7-enabled" type="checkbox"/>
                                                     Enabled
@@ -214,14 +244,18 @@
                                                 <label class="col-md-2 control-label">Tooltip Slider</label>
 
                                                 <div class="col-md-10">
-                                                    <input id="ex8" class="slider form-control" data-slider-id='ex8' type="text" data-slider-min="0" data-slider-handle="square" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                                    <input id="ex8" class="slider form-control" data-slider-id='ex8'
+                                                           type="text" data-slider-min="0" data-slider-handle="square"
+                                                           data-slider-max="20" data-slider-step="1"
+                                                           data-slider-value="14"/>
                                                 </div>
                                             </div>
                                             <div class="form-group last">
                                                 <label class="col-md-2 control-label">Precision Slider</label>
 
                                                 <div class="col-md-10">
-                                                    <input id="ex9" class="slider form-control" data-slider-id='ex9' data-slider-handle="square" type="text"/>
+                                                    <input id="ex9" class="slider form-control" data-slider-id='ex9'
+                                                           data-slider-handle="square" type="text"/>
                                                 </div>
                                             </div>
                                         </div>

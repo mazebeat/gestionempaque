@@ -4,11 +4,11 @@
 @section('title')
     JS Charts
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/jscharts.css') }}"/>
     <!--end of page level css-->
 @stop
@@ -20,7 +20,8 @@
         <h1>Charts</h1>
         <ol class="breadcrumb">
             <li>
-                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="16" data-color="#000"></i>
+                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="16"
+                                                       data-color="#000"></i>
                     Home
                 </a>
             </li>
@@ -36,7 +37,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff"
+                               data-loop="true"></i>
                             Bar Chart
                         </h4>
                     <span class="pull-right">
@@ -56,7 +58,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff"
+                               data-loop="true"></i>
                             Polar Area Chart
                         </h4>
                     <span class="pull-right">
@@ -79,7 +82,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff"
+                               data-loop="true"></i>
                             Line Chart
                         </h4>
                     <span class="pull-right">
@@ -100,7 +104,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff"
+                               data-loop="true"></i>
                             Radar Chart
                         </h4>
                     <span class="pull-right">
@@ -123,7 +128,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff"
+                               data-loop="true"></i>
                             Donut Chart
                         </h4>
                     <span class="pull-right">
@@ -143,7 +149,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff" data-loop="true"></i>
+                            <i class="livicon" data-name="barchart" data-size="18" data-c="#fff" data-hc="#fff"
+                               data-loop="true"></i>
                             Pie Charts
                         </h4>
                     <span class="pull-right">
@@ -161,11 +168,11 @@
         </div>
         <!-- row -->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script src="{{ asset('assets/vendors/jscharts/Chart.js') }}"></script>
     <script src="{{ asset('assets/js/pages/chartjs.js') }}"></script>
 @stop

@@ -2,73 +2,73 @@
 
 @section('main')
 
-<div class="row">
-    <div class="col-md-10 col-md-offset-2">
-        <h1>Edit Falta</h1>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <h1>Edit Falta</h1>
 
-        @if ($errors->any())
-        	<div class="alert alert-danger">
-        	    <ul>
-                    {{ implode('', $errors->all('<li class="error">:message</li>')) }}
-                </ul>
-        	</div>
-        @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                    </ul>
+                </div>
+            @endif
+        </div>
     </div>
-</div>
 
-{{ Form::model($falta, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('faltas.update', $falta->id))) }}
+    {{ Form::model($falta, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('faltas.update', $falta->id))) }}
 
-        <div class="form-group">
-            {{ Form::label('id_falta', 'Id_falta:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::input('number', 'id_falta', Input::old('id_falta'), array('class'=>'form-control')) }}
-            </div>
+    <div class="form-group">
+        {{ Form::label('id_falta', 'Id_falta:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+            {{ Form::input('number', 'id_falta', Input::old('id_falta'), array('class'=>'form-control')) }}
         </div>
-
-        <div class="form-group">
-            {{ Form::label('id_usuario', 'Id_usuario:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::text('id_usuario', Input::old('id_usuario'), array('class'=>'form-control', 'placeholder'=>'Id_usuario')) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('falta_leve', 'Falta_leve:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::input('number', 'falta_leve', Input::old('falta_leve'), array('class'=>'form-control')) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('falta_media', 'Falta_media:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::input('number', 'falta_media', Input::old('falta_media'), array('class'=>'form-control')) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('falta_grave', 'Falta_grave:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::input('number', 'falta_grave', Input::old('falta_grave'), array('class'=>'form-control')) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('nombre_usuario', 'Nombre_usuario:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              {{ Form::text('nombre_usuario', Input::old('nombre_usuario'), array('class'=>'form-control', 'placeholder'=>'Nombre_usuario')) }}
-            </div>
-        </div>
-
-
-<div class="form-group">
-    <label class="col-sm-2 control-label">&nbsp;</label>
-    <div class="col-sm-10">
-      {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}
-      {{ link_to_route('faltas.show', 'Cancel', $falta->id, array('class' => 'btn btn-lg btn-default')) }}
     </div>
-</div>
 
-{{ Form::close() }}
+    <div class="form-group">
+        {{ Form::label('id_usuario', 'Id_usuario:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+            {{ Form::text('id_usuario', Input::old('id_usuario'), array('class'=>'form-control', 'placeholder'=>'Id_usuario')) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ Form::label('falta_leve', 'Falta_leve:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+            {{ Form::input('number', 'falta_leve', Input::old('falta_leve'), array('class'=>'form-control')) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ Form::label('falta_media', 'Falta_media:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+            {{ Form::input('number', 'falta_media', Input::old('falta_media'), array('class'=>'form-control')) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ Form::label('falta_grave', 'Falta_grave:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+            {{ Form::input('number', 'falta_grave', Input::old('falta_grave'), array('class'=>'form-control')) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ Form::label('nombre_usuario', 'Nombre_usuario:', array('class'=>'col-md-2 control-label')) }}
+        <div class="col-sm-10">
+            {{ Form::text('nombre_usuario', Input::old('nombre_usuario'), array('class'=>'form-control', 'placeholder'=>'Nombre_usuario')) }}
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">&nbsp;</label>
+        <div class="col-sm-10">
+            {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}
+            {{ link_to_route('faltas.show', 'Cancel', $falta->id, array('class' => 'btn btn-lg btn-default')) }}
+        </div>
+    </div>
+
+    {{ Form::close() }}
 
 @stop

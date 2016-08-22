@@ -4,11 +4,11 @@
 @section('title')
     News Single Item
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/tags/dist/bootstrap-tagsinput.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/pages/blog.css') }}"/>
     <!-- end of page level css -->
@@ -46,14 +46,22 @@
                     </p>
 
                     <p class="text-justify">
-                        Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes icing lollipop gummi bears chupa chups
-                        pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops soufflé. Tilefish electric knifefish salmon shark southern Dolly Varden. Pacific argentine tope golden shiner ilisha barreleye
-                        loosejaw catla, dogteeth tetra catfish tenpounder nase scup Ragfish brotula." Codlet brook lamprey pleco, Japanese eel convict cichlid titan triggerfish, plownose chimaera topminnow Black scalyfin. Walleye pollock, blue shark
-                        Sacramento blackfish prickleback airbreathing catfish yellowfin cutthroat trout, goby southern sandfish. North Pacific daggertooth dorab cepalin weever flying gurnard.
+                        Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake
+                        chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes
+                        icing lollipop gummi bears chupa chups
+                        pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops
+                        soufflé. Tilefish electric knifefish salmon shark southern Dolly Varden. Pacific argentine tope
+                        golden shiner ilisha barreleye
+                        loosejaw catla, dogteeth tetra catfish tenpounder nase scup Ragfish brotula." Codlet brook
+                        lamprey pleco, Japanese eel convict cichlid titan triggerfish, plownose chimaera topminnow Black
+                        scalyfin. Walleye pollock, blue shark
+                        Sacramento blackfish prickleback airbreathing catfish yellowfin cutthroat trout, goby southern
+                        sandfish. North Pacific daggertooth dorab cepalin weever flying gurnard.
                     </p>
                     <blockquote>
                         <p>
-                            Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science.
+                            Science cuts two ways, of course; its products can be used for both good and evil. But
+                            there's no turning back from science.
                         </p>
                         <small>
                             Someone famous in
@@ -63,18 +71,30 @@
                     <h3>Sub heading here</h3>
 
                     <p class="text-justify">
-                        Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie donut. Oat
+                        Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps
+                        biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake soufflé jelly chocolate
+                        cake muffin. Topping brownie donut. Oat
                         cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee.
                     </p>
 
                     <h3>Sub heading here</h3>
 
                     <p class="text-justify">
-                        Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes icing lollipop gummi bears chupa chups
-                        pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops soufflé. Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps biscuit lemon drops dessert.
-                        Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee. Tilefish electric knifefish salmon
-                        shark southern Dolly Varden. Pacific argentine tope golden shiner ilisha barreleye loosejaw catla, dogteeth tetra catfish tenpounder nase scup Ragfish brotula." Codlet brook lamprey pleco, Japanese eel convict cichlid titan
-                        triggerfish, plownose chimaera topminnow Black scalyfin. Walleye pollock, blue shark Sacramento blackfish prickleback airbreathing catfish yellowfin cutthroat trout, goby southern sandfish. North Pacific daggertooth dorab
+                        Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake
+                        chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes
+                        icing lollipop gummi bears chupa chups
+                        pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops
+                        soufflé. Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame
+                        snaps biscuit lemon drops dessert.
+                        Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie
+                        donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee.
+                        Tilefish electric knifefish salmon
+                        shark southern Dolly Varden. Pacific argentine tope golden shiner ilisha barreleye loosejaw
+                        catla, dogteeth tetra catfish tenpounder nase scup Ragfish brotula." Codlet brook lamprey pleco,
+                        Japanese eel convict cichlid titan
+                        triggerfish, plownose chimaera topminnow Black scalyfin. Walleye pollock, blue shark Sacramento
+                        blackfish prickleback airbreathing catfish yellowfin cutthroat trout, goby southern sandfish.
+                        North Pacific daggertooth dorab
                         cepalin weever flying gurnard.
                     </p>
                     <hr>
@@ -90,7 +110,8 @@
                         <div class="form-group">
                             <input type="url" class="form-control input-lg" placeholder="Your website"></div>
                         <div class="form-group">
-                            <textarea class="form-control input-lg no-resize" style="height: 200px" placeholder="Your comment"></textarea>
+                            <textarea class="form-control input-lg no-resize" style="height: 200px"
+                                      placeholder="Your comment"></textarea>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-success btn-md"><i class="fa fa-comment"></i>
@@ -110,28 +131,32 @@
                         <div class="col-xs-3">
                             <p>
                                 <a href="#fakelink">
-                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle" alt="riot"></a>
+                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle"
+                                         alt="riot"></a>
                             </p>
                         </div>
                         <!-- /.col-xs-3 -->
                         <div class="col-xs-3">
                             <p>
                                 <a href="#fakelink">
-                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle" alt="riot"></a>
+                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle"
+                                         alt="riot"></a>
                             </p>
                         </div>
                         <!-- /.col-xs-3 -->
                         <div class="col-xs-3">
                             <p>
                                 <a href="#fakelink">
-                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle" alt="riot"></a>
+                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle"
+                                         alt="riot"></a>
                             </p>
                         </div>
                         <!-- /.col-xs-3 -->
                         <div class="col-xs-3">
                             <p>
                                 <a href="#fakelink">
-                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle" alt="riot"></a>
+                                    <img data-src="holder.js/22x22/#6CC66C:#fff" class="img-responsive img-circle"
+                                         alt="riot"></a>
                             </p>
                         </div>
                         <!-- /.col-xs-3 --> </div>
@@ -152,7 +177,8 @@
                         <div class="accordion">
                             <div class="accordion-group">
                                 <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_markup">Show code</a>
+                                    <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_markup">Show
+                                        code</a>
                                 </div>
                                 <div id="accordion_example_markup" class="accordion-body collapse">
                                     <div class="accordion-inner highlight">
@@ -180,16 +206,22 @@
                                 <p>I'm in Section 1.</p>
 
                                 <p>
-                                    Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie
-                                    donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee.
+                                    Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame
+                                    snaps biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake
+                                    soufflé jelly chocolate cake muffin. Topping brownie
+                                    donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée
+                                    toffee.
                                 </p>
                             </div>
                             <div id="tab_1_2" class="tab-pane">
                                 <p>Hi, I'm in Section 2.</p>
 
                                 <p>
-                                    Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes icing lollipop gummi bears
-                                    chupa chups pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops soufflé. Donut caramels gingerbread.
+                                    Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups
+                                    cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups.
+                                    Marshmallow chocolate jujubes icing lollipop gummi bears
+                                    chupa chups pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop
+                                    icing donut lemon drops soufflé. Donut caramels gingerbread.
                                 </p>
                             </div>
                         </div>
@@ -266,10 +298,10 @@
             <!-- /.col-sm-3 --> </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script src="{{ asset('assets/vendors/tags/dist/bootstrap-tagsinput.js') }}"></script>
 @stop

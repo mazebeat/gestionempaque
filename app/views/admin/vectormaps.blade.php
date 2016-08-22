@@ -4,11 +4,11 @@
 @section('title')
     Vector Maps
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/vendors/vectormaps/jqvmap.css') }}" media="screen" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop

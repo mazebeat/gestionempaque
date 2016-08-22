@@ -58,7 +58,8 @@
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Form Actions On Top
                                         </h3>
                                                 <span class="pull-right">
@@ -74,7 +75,8 @@
                                                     &nbsp;
                                                     <button type="button" class="btn btn-danger">Cancel</button>
                                                     &nbsp;
-                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                                </div>
                                             </div>
                                             <div class="form-body">
                                                 <div class="form-group pad-top40">
@@ -86,9 +88,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="user"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" class="form-control" placeholder="Username"></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Username"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -100,9 +105,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="mail"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Email Address" class="form-control"/>
+                                                            <input type="text" placeholder="Email Address"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -115,9 +123,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                        <i class="livicon" data-name="key"
+                                                                           data-size="16" data-loop="true" data-c="#000"
+                                                                           data-hc="#000"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Password" class="form-control"/>
+                                                            <input type="text" placeholder="Password"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -130,9 +141,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="cellphone" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="cellphone"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                            <input type="text" placeholder="Phone Number"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -145,16 +159,21 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="doc-portrait" data-c="#000" data-hc="#000" data-size="18" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="doc-portrait"
+                                                                           data-c="#000" data-hc="#000" data-size="18"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" class="form-control" placeholder=" Address"></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder=" Address"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputContent" class="col-md-3 control-label">Message</label>
+                                                    <label for="inputContent"
+                                                           class="col-md-3 control-label">Message</label>
 
                                                     <div class="col-md-9">
-                                                        <textarea id="inputContent" rows="3" class="form-control"></textarea>
+                                                        <textarea id="inputContent" rows="3"
+                                                                  class="form-control"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -166,7 +185,8 @@
                                 <div class="panel panel-success">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Form Actions On Bottom
                                         </h3>
                                                 <span class="pull-right">
@@ -186,9 +206,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="user"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" class="form-control" placeholder="Username"></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Username"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -200,9 +223,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="mail"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Email Address" class="form-control"/>
+                                                            <input type="text" placeholder="Email Address"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -215,9 +241,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                        <i class="livicon" data-name="key"
+                                                                           data-size="16" data-loop="true" data-c="#000"
+                                                                           data-hc="#000"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                            <input type="text" placeholder="Phone Number"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -230,9 +259,12 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="cellphone" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="cellphone"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                            <input type="text" placeholder="Phone Number"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -245,16 +277,21 @@
                                                     <div class="col-md-9">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="doc-portrait" data-c="#000" data-hc="#000" data-size="18" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="doc-portrait"
+                                                                           data-c="#000" data-hc="#000" data-size="18"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" class="form-control" placeholder=" Address"></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder=" Address"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputContent" class="col-md-3 control-label">Message</label>
+                                                    <label for="inputContent"
+                                                           class="col-md-3 control-label">Message</label>
 
                                                     <div class="col-md-9">
-                                                        <textarea id="inputContent" rows="3" class="form-control"></textarea>
+                                                        <textarea id="inputContent" rows="3"
+                                                                  class="form-control"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -264,7 +301,8 @@
                                                     &nbsp;
                                                     <button type="button" class="btn btn-danger">Cancel</button>
                                                     &nbsp;
-                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -274,7 +312,8 @@
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Form Actions On Top & Bottom
                                         </h3>
                                                 <span class="pull-right">
@@ -290,7 +329,8 @@
                                                     &nbsp;
                                                     <button type="button" class="btn btn-danger">Cancel</button>
                                                     &nbsp;
-                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                                </div>
                                             </div>
                                             <div class="form-body">
                                                 <div class="form-group pad-top40">
@@ -302,9 +342,12 @@
                                                     <div class="col-md-6">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="user"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" class="form-control" placeholder="Username"></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Username"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -316,9 +359,12 @@
                                                     <div class="col-md-6">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="mail"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Email Address" class="form-control"/>
+                                                            <input type="text" placeholder="Email Address"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -331,9 +377,12 @@
                                                     <div class="col-md-6">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                        <i class="livicon" data-name="key"
+                                                                           data-size="16" data-loop="true" data-c="#000"
+                                                                           data-hc="#000"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                            <input type="text" placeholder="Phone Number"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -346,9 +395,12 @@
                                                     <div class="col-md-6">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="cellphone" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="cellphone"
+                                                                           data-size="18" data-c="#000" data-hc="#000"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                            <input type="text" placeholder="Phone Number"
+                                                                   class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -361,16 +413,21 @@
                                                     <div class="col-md-6">
                                                         <div class="input-group">
                                                                     <span class="input-group-addon">
-                                                                        <i class="livicon" data-name="doc-portrait" data-c="#000" data-hc="#000" data-size="18" data-loop="true"></i>
+                                                                        <i class="livicon" data-name="doc-portrait"
+                                                                           data-c="#000" data-hc="#000" data-size="18"
+                                                                           data-loop="true"></i>
                                                                     </span>
-                                                            <input type="text" class="form-control" placeholder=" Address"></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder=" Address"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputContent" class="col-md-3 control-label">Message</label>
+                                                    <label for="inputContent"
+                                                           class="col-md-3 control-label">Message</label>
 
                                                     <div class="col-md-6">
-                                                        <textarea id="inputContent" rows="3" class="form-control"></textarea>
+                                                        <textarea id="inputContent" rows="3"
+                                                                  class="form-control"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -380,7 +437,8 @@
                                                     &nbsp;
                                                     <button type="button" class="btn btn-danger">Cancel</button>
                                                     &nbsp;
-                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -390,7 +448,8 @@
                                 <div class="panel panel-warning">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Left Aligned
                                         </h3>
                                                 <span class="pull-right">
@@ -405,7 +464,8 @@
                                                 &nbsp;
                                                 <button type="button" class="btn btn-danger">Cancel</button>
                                                 &nbsp;
-                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                            </div>
                                             <div class="form-body">
                                                 <div class="form-group mar-top">
                                                     <label for="inputUsername" class="control-label">
@@ -415,9 +475,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="user" data-size="18"
+                                                                       data-c="#000" data-hc="#000"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" class="form-control" placeholder="Username"></div>
+                                                        <input type="text" class="form-control" placeholder="Username">
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail" class="control-label">
@@ -427,9 +490,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="mail" data-size="18"
+                                                                       data-c="#000" data-hc="#000"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" placeholder="Email Address" class="form-control"/>
+                                                        <input type="text" placeholder="Email Address"
+                                                               class="form-control"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -440,9 +506,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                    <i class="livicon" data-name="key" data-size="16"
+                                                                       data-loop="true" data-c="#000"
+                                                                       data-hc="#000"></i>
                                                                 </span>
-                                                        <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                        <input type="text" placeholder="Phone Number"
+                                                               class="form-control"/>
 
                                                     </div>
                                                 </div>
@@ -454,9 +523,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="cellphone" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="cellphone"
+                                                                       data-size="18" data-c="#000" data-hc="#000"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                        <input type="text" placeholder="Phone Number"
+                                                               class="form-control"/>
                                                     </div>
 
                                                 </div>
@@ -468,14 +540,18 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="doc-portrait" data-c="#000" data-hc="#000" data-size="18" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="doc-portrait"
+                                                                       data-c="#000" data-hc="#000" data-size="18"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" class="form-control" placeholder=" Address"></div>
+                                                        <input type="text" class="form-control" placeholder=" Address">
+                                                    </div>
 
                                                 </div>
                                                 <div class="form-group mbn">
                                                     <label for="inputContent" class="control-label">Message</label>
-                                                    <textarea id="inputContent" rows="3" class="form-control"></textarea>
+                                                    <textarea id="inputContent" rows="3"
+                                                              class="form-control"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-actions">
@@ -483,7 +559,8 @@
                                                 &nbsp;
                                                 <button type="button" class="btn btn-danger">Cancel</button>
                                                 &nbsp;
-                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -492,7 +569,8 @@
                                 <div class="panel panel-danger">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Right Aligned
                                         </h3>
                                                 <span class="pull-right">
@@ -507,7 +585,8 @@
                                                 &nbsp;
                                                 <button type="button" class="btn btn-danger">Cancel</button>
                                                 &nbsp;
-                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                            </div>
                                             <div class="form-body">
                                                 <div class="form-group">
                                                     <label for="inputUsername" class="control-label">
@@ -517,9 +596,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="user" data-size="18"
+                                                                       data-c="#000" data-hc="#000"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" class="form-control" placeholder="Username"></div>
+                                                        <input type="text" class="form-control" placeholder="Username">
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail" class="control-label">
@@ -529,9 +611,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="mail" data-size="18"
+                                                                       data-c="#000" data-hc="#000"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" placeholder="Email Address" class="form-control"/>
+                                                        <input type="text" placeholder="Email Address"
+                                                               class="form-control"/>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -542,9 +627,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                                    <i class="livicon" data-name="key" data-size="16"
+                                                                       data-loop="true" data-c="#000"
+                                                                       data-hc="#000"></i>
                                                                 </span>
-                                                        <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                        <input type="text" placeholder="Phone Number"
+                                                               class="form-control"/>
 
                                                     </div>
                                                 </div>
@@ -556,9 +644,12 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="cellphone" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="cellphone"
+                                                                       data-size="18" data-c="#000" data-hc="#000"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" placeholder="Phone Number" class="form-control"/>
+                                                        <input type="text" placeholder="Phone Number"
+                                                               class="form-control"/>
                                                     </div>
 
                                                 </div>
@@ -570,14 +661,18 @@
 
                                                     <div class="input-group">
                                                                 <span class="input-group-addon">
-                                                                    <i class="livicon" data-name="doc-portrait" data-c="#000" data-hc="#000" data-size="18" data-loop="true"></i>
+                                                                    <i class="livicon" data-name="doc-portrait"
+                                                                       data-c="#000" data-hc="#000" data-size="18"
+                                                                       data-loop="true"></i>
                                                                 </span>
-                                                        <input type="text" class="form-control" placeholder=" Address"></div>
+                                                        <input type="text" class="form-control" placeholder=" Address">
+                                                    </div>
 
                                                 </div>
                                                 <div class="form-group mbn">
                                                     <label for="inputContent" class="control-label">Message</label>
-                                                    <textarea id="inputContent" rows="3" class="form-control"></textarea>
+                                                    <textarea id="inputContent" rows="3"
+                                                              class="form-control"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-actions text-right ">
@@ -585,7 +680,8 @@
                                                 &nbsp;
                                                 <button type="button" class="btn btn-danger">Cancel</button>
                                                 &nbsp;
-                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -598,7 +694,8 @@
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Form 2 Columns Default
                                         </h3>
                                                 <span class="pull-right">
@@ -611,10 +708,12 @@
                                             <div class="col-md-6">
                                                 <form class="form-horizontal">
                                                     <div class="form-group has-success">
-                                                        <label class="col-md-2 control-label" for="inputSuccess">First Name</label>
+                                                        <label class="col-md-2 control-label" for="inputSuccess">First
+                                                            Name</label>
 
                                                         <div class="col-md-10">
-                                                            <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success">
+                                                            <input type="text" id="inputSuccess" class="form-control"
+                                                                   placeholder="Input with success">
                                                             <span class="help-block">First name is too small</span>
                                                         </div>
                                                     </div>
@@ -622,15 +721,19 @@
                                                         <label class="col-md-2 control-label" for="inputWarning">Password</label>
 
                                                         <div class="col-md-10">
-                                                            <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+                                                            <input type="password" id="inputWarning"
+                                                                   class="form-control"
+                                                                   placeholder="Input with warning">
                                                             <span class="help-block">Password strength: Weak</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-error">
-                                                        <label class="col-md-2 control-label" for="inputError">Email</label>
+                                                        <label class="col-md-2 control-label"
+                                                               for="inputError">Email</label>
 
                                                         <div class="col-md-10">
-                                                            <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+                                                            <input type="email" id="inputError" class="form-control"
+                                                                   placeholder="Input with error">
                                                             <span class="help-block">Please enter a valid email address</span>
                                                         </div>
                                                     </div>
@@ -645,28 +748,35 @@
                                             <div class="col-md-6">
                                                 <form class="form-horizontal">
                                                     <div class="form-group has-success has-feedback">
-                                                        <label class="col-md-2 control-label" for="inputSuccess">Second Name</label>
+                                                        <label class="col-md-2 control-label" for="inputSuccess">Second
+                                                            Name</label>
 
                                                         <div class="col-md-10">
-                                                            <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success">
+                                                            <input type="text" id="inputSuccess" class="form-control"
+                                                                   placeholder="Input with success">
                                                             <span class="glyphicon glyphicon-ok form-control-feedback"></span>
                                                             <span class="help-block">Second name is too small</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-warning has-feedback">
-                                                        <label class="col-md-2 control-label" for="inputWarning">Confirm Password</label>
+                                                        <label class="col-md-2 control-label" for="inputWarning">Confirm
+                                                            Password</label>
 
                                                         <div class="col-md-10">
-                                                            <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+                                                            <input type="password" id="inputWarning"
+                                                                   class="form-control"
+                                                                   placeholder="Input with warning">
                                                             <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
                                                             <span class="help-block">Password mis-match</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-error has-feedback">
-                                                        <label class="col-md-2 control-label" for="inputError">Confirm Email</label>
+                                                        <label class="col-md-2 control-label" for="inputError">Confirm
+                                                            Email</label>
 
                                                         <div class="col-md-10">
-                                                            <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+                                                            <input type="email" id="inputError" class="form-control"
+                                                                   placeholder="Input with error">
                                                             <span class="glyphicon glyphicon-remove form-control-feedback"></span>
                                                             <span class="help-block">Email mis-match</span>
                                                         </div>
@@ -688,7 +798,8 @@
                                 <div class="panel panel-warning">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                            <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                               data-size="18" data-loop="true"></i>
                                             Personal Details Horizontal
                                         </h3>
                                                 <span class="pull-right">
@@ -701,22 +812,27 @@
                                             <div class="col-md-6">
                                                 <form class="form-horizontal">
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="firstName">First Name:</label>
+                                                        <label class="control-label col-md-3" for="firstName">First
+                                                            Name:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="text" class="form-control" id="firstName" placeholder="First Name"></div>
+                                                            <input type="text" class="form-control" id="firstName"
+                                                                   placeholder="First Name"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="inputEmail">Email:</label>
+                                                        <label class="control-label col-md-3"
+                                                               for="inputEmail">Email:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                                            <input type="email" class="form-control" id="inputEmail"
+                                                                   placeholder="Email"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3" for="inputPassword">Password:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                            <input type="password" class="form-control"
+                                                                   id="inputPassword" placeholder="Password"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">Date of Birth:</label>
@@ -738,21 +854,26 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="ZipCode">Zip Code:</label>
+                                                        <label class="control-label col-md-3" for="ZipCode">Zip
+                                                            Code:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="text" class="form-control" id="ZipCode" placeholder="Zip Code"></div>
+                                                            <input type="text" class="form-control" id="ZipCode"
+                                                                   placeholder="Zip Code"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="ZipCode">City:</label>
+                                                        <label class="control-label col-md-3"
+                                                               for="ZipCode">City:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="text" class="form-control" id="city" placeholder="City"></div>
+                                                            <input type="text" class="form-control" id="city"
+                                                                   placeholder="City"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="col-md-offset-3 col-md-9">
                                                             <label class="checkbox-inline mar-left5">
-                                                                <input type="checkbox" value="news">Send me latest news and updates.</label>
+                                                                <input type="checkbox" value="news">Send me latest news
+                                                                and updates.</label>
                                                         </div>
                                                     </div>
 
@@ -761,29 +882,37 @@
                                             <div class="col-md-6">
                                                 <form class="form-horizontal">
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="lastName">Last Name:</label>
+                                                        <label class="control-label col-md-3" for="lastName">Last
+                                                            Name:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="text" class="form-control" id="lastName" placeholder="Last Name"></div>
+                                                            <input type="text" class="form-control" id="lastName"
+                                                                   placeholder="Last Name"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="phoneNumber">Phone:</label>
+                                                        <label class="control-label col-md-3"
+                                                               for="phoneNumber">Phone:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number"></div>
+                                                            <input type="tel" class="form-control" id="phoneNumber"
+                                                                   placeholder="Phone Number"></div>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3" for="confirmPassword">Confirm Password:</label>
+                                                        <label class="control-label col-md-3" for="confirmPassword">Confirm
+                                                            Password:</label>
 
                                                         <div class="col-md-9">
-                                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"></div>
+                                                            <input type="password" class="form-control"
+                                                                   id="confirmPassword" placeholder="Confirm Password">
+                                                        </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3" for="postalAddress">Address:</label>
 
                                                         <div class="col-md-9">
-                                                            <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"></textarea>
+                                                            <textarea rows="3" class="form-control" id="postalAddress"
+                                                                      placeholder="Postal Address"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -825,7 +954,8 @@
                                     <div class="panel panel-info">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">
-                                                <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff"
+                                                   data-size="18" data-loop="true"></i>
                                                 Form 2 Columns Readonly
                                             </h3>
                                                     <span class="pull-right">
@@ -841,7 +971,9 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputFirstName" class="col-md-3 control-label">First Name :</label>
+                                                                <label for="inputFirstName"
+                                                                       class="col-md-3 control-label">First Name
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">Jenny</p>
@@ -850,7 +982,9 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputLastName" class="col-md-3 control-label">Last Name :</label>
+                                                                <label for="inputLastName"
+                                                                       class="col-md-3 control-label">Last Name
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">Kerry</p>
@@ -861,18 +995,21 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputEmail" class="col-md-3 control-label">Email :</label>
+                                                                <label for="inputEmail" class="col-md-3 control-label">Email
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">
-                                                                        <a href="mailto:whisfat1935@jourrapide.com">Jenny321@example.com</a>
+                                                                        <a href="mailto:whisfat1935@jourrapide.com">Jenny321@example
+                                                                            .com</a>
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="selGender" class="col-md-3 control-label">Gender :</label>
+                                                                <label for="selGender" class="col-md-3 control-label">Gender
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">Female</p>
@@ -883,7 +1020,8 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputBirthday" class="col-md-3 control-label">Birthday :</label>
+                                                                <label for="inputBirthday"
+                                                                       class="col-md-3 control-label">Birthday :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">10.11.1980</p>
@@ -892,7 +1030,8 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputPhone" class="col-md-3 control-label">Phone :</label>
+                                                                <label for="inputPhone" class="col-md-3 control-label">Phone
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">321-333-5432</p>
@@ -905,16 +1044,21 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputAddress1" class="col-md-3 control-label">Address 1 :</label>
+                                                                <label for="inputAddress1"
+                                                                       class="col-md-3 control-label">Address 1
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
-                                                                    <p class="form-control-static">1219 Quiet Subdivision</p>
+                                                                    <p class="form-control-static">1219 Quiet
+                                                                        Subdivision</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputAddress2" class="col-md-3 control-label">Address 2 :</label>
+                                                                <label for="inputAddress2"
+                                                                       class="col-md-3 control-label">Address 2
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">3536 Petunia Way</p>
@@ -925,7 +1069,8 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputStates" class="col-md-3 control-label">States :</label>
+                                                                <label for="inputStates" class="col-md-3 control-label">States
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">Canada</p>
@@ -934,7 +1079,8 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputCity" class="col-md-3 control-label">City :</label>
+                                                                <label for="inputCity" class="col-md-3 control-label">City
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">Canada</p>
@@ -945,7 +1091,9 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputPostCode" class="col-md-3 control-label">Post Code :</label>
+                                                                <label for="inputPostCode"
+                                                                       class="col-md-3 control-label">Post Code
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">7987678</p>
@@ -954,7 +1102,8 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="input con" class="col-md-3 control-label">Conditions :</label>
+                                                                <label for="input con" class="col-md-3 control-label">Conditions
+                                                                    :</label>
 
                                                                 <div class="col-md-9">
                                                                     <p class="form-control-static">True</p>
@@ -968,7 +1117,8 @@
                                                     &nbsp;
                                                     <button type="button" class="btn btn-danger">Cancel</button>
                                                     &nbsp;
-                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset"></div>
+                                                    <input type="reset" class="btn btn-default hidden-xs" value="Reset">
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
@@ -982,7 +1132,8 @@
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="bell" data-loop="true" data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
+                                            <i class="livicon" data-name="bell" data-loop="true" data-color="#fff"
+                                               data-hovercolor="#fff" data-size="18"></i>
                                             Form Bordered Striped
                                         </h3>
                                                 <span class="pull-right">
@@ -991,7 +1142,8 @@
                                                 </span>
                                     </div>
                                     <div class="panel-body border">
-                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered">
+                                        <form action="" method="post" enctype="multipart/form-data"
+                                              class="form-horizontal form-bordered">
                                             <div class="form-group striped-col">
                                                 <label class="col-md-3 control-label">Static</label>
 
@@ -1000,10 +1152,12 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-text-input">Text</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-text-input">Text</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Text">
+                                                    <input type="text" id="example-text-input" name="example-text-input"
+                                                           class="form-control" placeholder="Text">
                                                     <span class="help-block">This is a help text</span>
                                                 </div>
                                             </div>
@@ -1011,32 +1165,41 @@
                                                 <label class="col-md-3 control-label" for="example-email">Email</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email"></div>
+                                                    <input type="email" id="example-email" name="example-email"
+                                                           class="form-control" placeholder="Email"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-password">Password</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-password">Password</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="password" id="example-password" name="example-password" class="form-control" placeholder="Password"></div>
+                                                    <input type="password" id="example-password" name="example-password"
+                                                           class="form-control" placeholder="Password"></div>
                                             </div>
                                             <div class="form-group striped-col">
-                                                <label class="col-md-3 control-label" for="example-disabled">Disabled</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-disabled">Disabled</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="text" id="example-disabled" name="example-disabled" class="form-control" placeholder="Disabled" disabled></div>
+                                                    <input type="text" id="example-disabled" name="example-disabled"
+                                                           class="form-control" placeholder="Disabled" disabled></div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="example-textarea-input">Textarea</label>
 
                                                 <div class="col-md-6">
-                                                    <textarea id="example-textarea-input" name="example-textarea-input" rows="7" class="form-control" placeholder="Description.."></textarea>
+                                                    <textarea id="example-textarea-input" name="example-textarea-input"
+                                                              rows="7" class="form-control"
+                                                              placeholder="Description.."></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group striped-col">
-                                                <label class="col-md-3 control-label" for="example-select">Select</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-select">Select</label>
 
                                                 <div class="col-md-6">
-                                                    <select id="example-select" name="example-select" class="form-control" size="1">
+                                                    <select id="example-select" name="example-select"
+                                                            class="form-control" size="1">
                                                         <option value="0">Please select</option>
                                                         <option value="1">Bootstrap</option>
                                                         <option value="2">CSS</option>
@@ -1049,7 +1212,8 @@
                                                 <label class="col-md-3 control-label" for="example-multiple-select">Multiple</label>
 
                                                 <div class="col-md-6">
-                                                    <select id="example-multiple-select" name="example-multiple-select" class="form-control" size="5" multiple>
+                                                    <select id="example-multiple-select" name="example-multiple-select"
+                                                            class="form-control" size="5" multiple>
                                                         <option value="1">Option #1</option>
                                                         <option value="2">Option #2</option>
                                                         <option value="3">Option #3</option>
@@ -1069,15 +1233,19 @@
                                                 <div class="col-md-9">
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio1">
-                                                            <input type="radio" id="example-radio1" name="example-radios" value="option1">HTML</label>
+                                                            <input type="radio" id="example-radio1"
+                                                                   name="example-radios" value="option1">HTML</label>
                                                     </div>
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio2">
-                                                            <input type="radio" id="example-radio2" name="example-radios" value="option2">CSS</label>
+                                                            <input type="radio" id="example-radio2"
+                                                                   name="example-radios" value="option2">CSS</label>
                                                     </div>
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio3">
-                                                            <input type="radio" id="example-radio3" name="example-radios" value="option3">Javascript</label>
+                                                            <input type="radio" id="example-radio3"
+                                                                   name="example-radios"
+                                                                   value="option3">Javascript</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1086,11 +1254,15 @@
 
                                                 <div class="col-md-9">
                                                     <label class="radio-inline " for="example-inline-radio1">
-                                                        <input type="radio" id="example-inline-radio1" name="example-inline-radios" value="option1">HTML</label>
+                                                        <input type="radio" id="example-inline-radio1"
+                                                               name="example-inline-radios" value="option1">HTML</label>
                                                     <label class="radio-inline" for="example-inline-radio2">
-                                                        <input type="radio" id="example-inline-radio2" name="example-inline-radios" value="option2">CSS</label>
+                                                        <input type="radio" id="example-inline-radio2"
+                                                               name="example-inline-radios" value="option2">CSS</label>
                                                     <label class="radio-inline" for="example-inline-radio3">
-                                                        <input type="radio" id="example-inline-radio3" name="example-inline-radios" value="option3">Javascript</label>
+                                                        <input type="radio" id="example-inline-radio3"
+                                                               name="example-inline-radios"
+                                                               value="option3">Javascript</label>
                                                 </div>
                                             </div>
                                             <div class="form-group striped-col">
@@ -1099,15 +1271,19 @@
                                                 <div class="col-md-9">
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox1">
-                                                            <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1">HTML</label>
+                                                            <input type="checkbox" id="example-checkbox1"
+                                                                   name="example-checkbox1" value="option1">HTML</label>
                                                     </div>
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox2">
-                                                            <input type="checkbox" id="example-checkbox2" name="example-checkbox2" value="option2">CSS</label>
+                                                            <input type="checkbox" id="example-checkbox2"
+                                                                   name="example-checkbox2" value="option2">CSS</label>
                                                     </div>
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox3">
-                                                            <input type="checkbox" id="example-checkbox3" name="example-checkbox3" value="option3">Javascript</label>
+                                                            <input type="checkbox" id="example-checkbox3"
+                                                                   name="example-checkbox3"
+                                                                   value="option3">Javascript</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1115,30 +1291,46 @@
                                                 <label class="col-md-3 control-label">Inline Checkboxes</label>
 
                                                 <div class="col-md-9">
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox1">
-                                                        <input type="checkbox" id="example-inline-checkbox1" name="example-inline-checkbox1" value="option1">HTML</label>
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox2">
-                                                        <input type="checkbox" id="example-inline-checkbox2" name="example-inline-checkbox2" value="option2">CSS</label>
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox3">
-                                                        <input type="checkbox" id="example-inline-checkbox3" name="example-inline-checkbox3" value="option3">Javascript</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox1">
+                                                        <input type="checkbox" id="example-inline-checkbox1"
+                                                               name="example-inline-checkbox1"
+                                                               value="option1">HTML</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox2">
+                                                        <input type="checkbox" id="example-inline-checkbox2"
+                                                               name="example-inline-checkbox2"
+                                                               value="option2">CSS</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox3">
+                                                        <input type="checkbox" id="example-inline-checkbox3"
+                                                               name="example-inline-checkbox3" value="option3">Javascript</label>
                                                 </div>
                                             </div>
                                             <div class="form-group striped-col ">
-                                                <label class="col-md-3 control-label" for="example-file-input">File</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-file-input">File</label>
 
                                                 <div class="col-md-9 pad-top20 ">
-                                                    <input type="file" id="example-file-input" name="example-file-input"></div>
+                                                    <input type="file" id="example-file-input"
+                                                           name="example-file-input"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple File</label>
+                                                <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple
+                                                    File</label>
 
                                                 <div class="col-md-9 pad-top20">
-                                                    <input type="file" id="example-file-multiple-input" name="example-file-multiple-input" multiple></div>
+                                                    <input type="file" id="example-file-multiple-input"
+                                                           name="example-file-multiple-input" multiple></div>
                                             </div>
                                             <div class="form-group form-actions">
                                                 <div class="col-md-9 col-md-offset-3">
-                                                    <button type="submit" class="btn btn-effect-ripple btn-primary">Submit</button>
-                                                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                                                    <button type="submit" class="btn btn-effect-ripple btn-primary">
+                                                        Submit
+                                                    </button>
+                                                    <button type="reset" class="btn btn-effect-ripple btn-danger">
+                                                        Reset
+                                                    </button>
                                                 </div>
                                             </div>
                                         </form>
@@ -1147,7 +1339,8 @@
                                 <div class="panel panel-warning">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="bell" data-loop="true" data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
+                                            <i class="livicon" data-name="bell" data-loop="true" data-color="#fff"
+                                               data-hovercolor="#fff" data-size="18"></i>
                                             Form Seperated Row Striped
                                         </h3>
                                                 <span class="pull-right">
@@ -1156,7 +1349,8 @@
                                                 </span>
                                     </div>
                                     <div class="panel-body border">
-                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered-row">
+                                        <form action="" method="post" enctype="multipart/form-data"
+                                              class="form-horizontal form-bordered-row">
                                             <div class="form-group striped-col">
                                                 <label class="col-md-3 control-label">Static</label>
 
@@ -1165,10 +1359,12 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-text-input">Text</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-text-input">Text</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Text">
+                                                    <input type="text" id="example-text-input" name="example-text-input"
+                                                           class="form-control" placeholder="Text">
                                                     <span class="help-block">This is a help text</span>
                                                 </div>
                                             </div>
@@ -1176,32 +1372,41 @@
                                                 <label class="col-md-3 control-label" for="example-email">Email</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email"></div>
+                                                    <input type="email" id="example-email" name="example-email"
+                                                           class="form-control" placeholder="Email"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-password">Password</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-password">Password</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="password" id="example-password" name="example-password" class="form-control" placeholder="Password"></div>
+                                                    <input type="password" id="example-password" name="example-password"
+                                                           class="form-control" placeholder="Password"></div>
                                             </div>
                                             <div class="form-group striped-col">
-                                                <label class="col-md-3 control-label" for="example-disabled">Disabled</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-disabled">Disabled</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="text" id="example-disabled" name="example-disabled" class="form-control" placeholder="Disabled" disabled></div>
+                                                    <input type="text" id="example-disabled" name="example-disabled"
+                                                           class="form-control" placeholder="Disabled" disabled></div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="example-textarea-input">Textarea</label>
 
                                                 <div class="col-md-6">
-                                                    <textarea id="example-textarea-input" name="example-textarea-input" rows="7" class="form-control" placeholder="Description.."></textarea>
+                                                    <textarea id="example-textarea-input" name="example-textarea-input"
+                                                              rows="7" class="form-control"
+                                                              placeholder="Description.."></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group striped-col">
-                                                <label class="col-md-3 control-label" for="example-select">Select</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-select">Select</label>
 
                                                 <div class="col-md-6">
-                                                    <select id="example-select" name="example-select" class="form-control" size="1">
+                                                    <select id="example-select" name="example-select"
+                                                            class="form-control" size="1">
                                                         <option value="0">Please select</option>
                                                         <option value="1">Bootstrap</option>
                                                         <option value="2">CSS</option>
@@ -1214,7 +1419,8 @@
                                                 <label class="col-md-3 control-label" for="example-multiple-select">Multiple</label>
 
                                                 <div class="col-md-6">
-                                                    <select id="example-multiple-select" name="example-multiple-select" class="form-control" size="5" multiple>
+                                                    <select id="example-multiple-select" name="example-multiple-select"
+                                                            class="form-control" size="5" multiple>
                                                         <option value="1">Option #1</option>
                                                         <option value="2">Option #2</option>
                                                         <option value="3">Option #3</option>
@@ -1234,15 +1440,19 @@
                                                 <div class="col-md-9">
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio1">
-                                                            <input type="radio" id="example-radio1" name="example-radios" value="option1">HTML</label>
+                                                            <input type="radio" id="example-radio1"
+                                                                   name="example-radios" value="option1">HTML</label>
                                                     </div>
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio2">
-                                                            <input type="radio" id="example-radio2" name="example-radios" value="option2">CSS</label>
+                                                            <input type="radio" id="example-radio2"
+                                                                   name="example-radios" value="option2">CSS</label>
                                                     </div>
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio3">
-                                                            <input type="radio" id="example-radio3" name="example-radios" value="option3">Javascript</label>
+                                                            <input type="radio" id="example-radio3"
+                                                                   name="example-radios"
+                                                                   value="option3">Javascript</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1251,11 +1461,15 @@
 
                                                 <div class="col-md-9">
                                                     <label class="radio-inline " for="example-inline-radio1">
-                                                        <input type="radio" id="example-inline-radio1" name="example-inline-radios" value="option1">HTML</label>
+                                                        <input type="radio" id="example-inline-radio1"
+                                                               name="example-inline-radios" value="option1">HTML</label>
                                                     <label class="radio-inline" for="example-inline-radio2">
-                                                        <input type="radio" id="example-inline-radio2" name="example-inline-radios" value="option2">CSS</label>
+                                                        <input type="radio" id="example-inline-radio2"
+                                                               name="example-inline-radios" value="option2">CSS</label>
                                                     <label class="radio-inline" for="example-inline-radio3">
-                                                        <input type="radio" id="example-inline-radio3" name="example-inline-radios" value="option3">Javascript</label>
+                                                        <input type="radio" id="example-inline-radio3"
+                                                               name="example-inline-radios"
+                                                               value="option3">Javascript</label>
                                                 </div>
                                             </div>
                                             <div class="form-group striped-col">
@@ -1264,15 +1478,19 @@
                                                 <div class="col-md-9">
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox1">
-                                                            <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1">HTML</label>
+                                                            <input type="checkbox" id="example-checkbox1"
+                                                                   name="example-checkbox1" value="option1">HTML</label>
                                                     </div>
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox2">
-                                                            <input type="checkbox" id="example-checkbox2" name="example-checkbox2" value="option2">CSS</label>
+                                                            <input type="checkbox" id="example-checkbox2"
+                                                                   name="example-checkbox2" value="option2">CSS</label>
                                                     </div>
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox3">
-                                                            <input type="checkbox" id="example-checkbox3" name="example-checkbox3" value="option3">Javascript</label>
+                                                            <input type="checkbox" id="example-checkbox3"
+                                                                   name="example-checkbox3"
+                                                                   value="option3">Javascript</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1280,30 +1498,46 @@
                                                 <label class="col-md-3 control-label">Inline Checkboxes</label>
 
                                                 <div class="col-md-9">
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox1">
-                                                        <input type="checkbox" id="example-inline-checkbox1" name="example-inline-checkbox1" value="option1">HTML</label>
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox2">
-                                                        <input type="checkbox" id="example-inline-checkbox2" name="example-inline-checkbox2" value="option2">CSS</label>
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox3">
-                                                        <input type="checkbox" id="example-inline-checkbox3" name="example-inline-checkbox3" value="option3">Javascript</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox1">
+                                                        <input type="checkbox" id="example-inline-checkbox1"
+                                                               name="example-inline-checkbox1"
+                                                               value="option1">HTML</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox2">
+                                                        <input type="checkbox" id="example-inline-checkbox2"
+                                                               name="example-inline-checkbox2"
+                                                               value="option2">CSS</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox3">
+                                                        <input type="checkbox" id="example-inline-checkbox3"
+                                                               name="example-inline-checkbox3" value="option3">Javascript</label>
                                                 </div>
                                             </div>
                                             <div class="form-group striped-col ">
-                                                <label class="col-md-3 control-label" for="example-file-input">File</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-file-input">File</label>
 
                                                 <div class="col-md-9 pad-top20">
-                                                    <input type="file" id="example-file-input" name="example-file-input"></div>
+                                                    <input type="file" id="example-file-input"
+                                                           name="example-file-input"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple File</label>
+                                                <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple
+                                                    File</label>
 
                                                 <div class="col-md-9 pad-top20">
-                                                    <input type="file" id="example-file-multiple-input" name="example-file-multiple-input" multiple></div>
+                                                    <input type="file" id="example-file-multiple-input"
+                                                           name="example-file-multiple-input" multiple></div>
                                             </div>
                                             <div class="form-group form-actions">
                                                 <div class="col-md-9 col-md-offset-3">
-                                                    <button type="submit" class="btn btn-effect-ripple btn-primary">Submit</button>
-                                                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                                                    <button type="submit" class="btn btn-effect-ripple btn-primary">
+                                                        Submit
+                                                    </button>
+                                                    <button type="reset" class="btn btn-effect-ripple btn-danger">
+                                                        Reset
+                                                    </button>
                                                 </div>
                                             </div>
                                         </form>
@@ -1312,7 +1546,8 @@
                                 <div class="panel panel-danger">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            <i class="livicon" data-name="bell" data-loop="true" data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
+                                            <i class="livicon" data-name="bell" data-loop="true" data-color="#fff"
+                                               data-hovercolor="#fff" data-size="18"></i>
                                             Form Bordered
                                         </h3>
                                                 <span class="pull-right">
@@ -1321,7 +1556,8 @@
                                                 </span>
                                     </div>
                                     <div class="panel-body border">
-                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered">
+                                        <form action="" method="post" enctype="multipart/form-data"
+                                              class="form-horizontal form-bordered">
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label">Static</label>
 
@@ -1330,10 +1566,12 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-text-input">Text</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-text-input">Text</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Text">
+                                                    <input type="text" id="example-text-input" name="example-text-input"
+                                                           class="form-control" placeholder="Text">
                                                     <span class="help-block">This is a help text</span>
                                                 </div>
                                             </div>
@@ -1341,32 +1579,41 @@
                                                 <label class="col-md-3 control-label" for="example-email">Email</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email"></div>
+                                                    <input type="email" id="example-email" name="example-email"
+                                                           class="form-control" placeholder="Email"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-password">Password</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-password">Password</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="password" id="example-password" name="example-password" class="form-control" placeholder="Password"></div>
+                                                    <input type="password" id="example-password" name="example-password"
+                                                           class="form-control" placeholder="Password"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-disabled">Disabled</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-disabled">Disabled</label>
 
                                                 <div class="col-md-6">
-                                                    <input type="text" id="example-disabled" name="example-disabled" class="form-control" placeholder="Disabled" disabled></div>
+                                                    <input type="text" id="example-disabled" name="example-disabled"
+                                                           class="form-control" placeholder="Disabled" disabled></div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label" for="example-textarea-input">Textarea</label>
 
                                                 <div class="col-md-6">
-                                                    <textarea id="example-textarea-input" name="example-textarea-input" rows="7" class="form-control" placeholder="Description.."></textarea>
+                                                    <textarea id="example-textarea-input" name="example-textarea-input"
+                                                              rows="7" class="form-control"
+                                                              placeholder="Description.."></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-select">Select</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-select">Select</label>
 
                                                 <div class="col-md-6">
-                                                    <select id="example-select" name="example-select" class="form-control" size="1">
+                                                    <select id="example-select" name="example-select"
+                                                            class="form-control" size="1">
                                                         <option value="0">Please select</option>
                                                         <option value="1">Bootstrap</option>
                                                         <option value="2">CSS</option>
@@ -1379,7 +1626,8 @@
                                                 <label class="col-md-3 control-label" for="example-multiple-select">Multiple</label>
 
                                                 <div class="col-md-6">
-                                                    <select id="example-multiple-select" name="example-multiple-select" class="form-control" size="5" multiple>
+                                                    <select id="example-multiple-select" name="example-multiple-select"
+                                                            class="form-control" size="5" multiple>
                                                         <option value="1">Option #1</option>
                                                         <option value="2">Option #2</option>
                                                         <option value="3">Option #3</option>
@@ -1399,15 +1647,19 @@
                                                 <div class="col-md-9">
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio1">
-                                                            <input type="radio" id="example-radio1" name="example-radios" value="option1">HTML</label>
+                                                            <input type="radio" id="example-radio1"
+                                                                   name="example-radios" value="option1">HTML</label>
                                                     </div>
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio2">
-                                                            <input type="radio" id="example-radio2" name="example-radios" value="option2">CSS</label>
+                                                            <input type="radio" id="example-radio2"
+                                                                   name="example-radios" value="option2">CSS</label>
                                                     </div>
                                                     <div class="radio mar-left5">
                                                         <label for="example-radio3">
-                                                            <input type="radio" id="example-radio3" name="example-radios" value="option3">Javascript</label>
+                                                            <input type="radio" id="example-radio3"
+                                                                   name="example-radios"
+                                                                   value="option3">Javascript</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1416,11 +1668,15 @@
 
                                                 <div class="col-md-9">
                                                     <label class="radio-inline " for="example-inline-radio1">
-                                                        <input type="radio" id="example-inline-radio1" name="example-inline-radios" value="option1">HTML</label>
+                                                        <input type="radio" id="example-inline-radio1"
+                                                               name="example-inline-radios" value="option1">HTML</label>
                                                     <label class="radio-inline" for="example-inline-radio2">
-                                                        <input type="radio" id="example-inline-radio2" name="example-inline-radios" value="option2">CSS</label>
+                                                        <input type="radio" id="example-inline-radio2"
+                                                               name="example-inline-radios" value="option2">CSS</label>
                                                     <label class="radio-inline" for="example-inline-radio3">
-                                                        <input type="radio" id="example-inline-radio3" name="example-inline-radios" value="option3">Javascript</label>
+                                                        <input type="radio" id="example-inline-radio3"
+                                                               name="example-inline-radios"
+                                                               value="option3">Javascript</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -1429,15 +1685,19 @@
                                                 <div class="col-md-9">
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox1">
-                                                            <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1">HTML</label>
+                                                            <input type="checkbox" id="example-checkbox1"
+                                                                   name="example-checkbox1" value="option1">HTML</label>
                                                     </div>
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox2">
-                                                            <input type="checkbox" id="example-checkbox2" name="example-checkbox2" value="option2">CSS</label>
+                                                            <input type="checkbox" id="example-checkbox2"
+                                                                   name="example-checkbox2" value="option2">CSS</label>
                                                     </div>
                                                     <div class="checkbox mar-left5">
                                                         <label for="example-checkbox3">
-                                                            <input type="checkbox" id="example-checkbox3" name="example-checkbox3" value="option3">Javascript</label>
+                                                            <input type="checkbox" id="example-checkbox3"
+                                                                   name="example-checkbox3"
+                                                                   value="option3">Javascript</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1445,30 +1705,46 @@
                                                 <label class="col-md-3 control-label">Inline Checkboxes</label>
 
                                                 <div class="col-md-9">
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox1">
-                                                        <input type="checkbox" id="example-inline-checkbox1" name="example-inline-checkbox1" value="option1">HTML</label>
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox2">
-                                                        <input type="checkbox" id="example-inline-checkbox2" name="example-inline-checkbox2" value="option2">CSS</label>
-                                                    <label class="checkbox-inline mar-left5" for="example-inline-checkbox3">
-                                                        <input type="checkbox" id="example-inline-checkbox3" name="example-inline-checkbox3" value="option3">Javascript</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox1">
+                                                        <input type="checkbox" id="example-inline-checkbox1"
+                                                               name="example-inline-checkbox1"
+                                                               value="option1">HTML</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox2">
+                                                        <input type="checkbox" id="example-inline-checkbox2"
+                                                               name="example-inline-checkbox2"
+                                                               value="option2">CSS</label>
+                                                    <label class="checkbox-inline mar-left5"
+                                                           for="example-inline-checkbox3">
+                                                        <input type="checkbox" id="example-inline-checkbox3"
+                                                               name="example-inline-checkbox3" value="option3">Javascript</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-file-input">File</label>
+                                                <label class="col-md-3 control-label"
+                                                       for="example-file-input">File</label>
 
                                                 <div class="col-md-9 pad-top20">
-                                                    <input type="file" id="example-file-input" name="example-file-input"></div>
+                                                    <input type="file" id="example-file-input"
+                                                           name="example-file-input"></div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple File</label>
+                                                <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple
+                                                    File</label>
 
                                                 <div class="col-md-9 pad-top20">
-                                                    <input type="file" id="example-file-multiple-input" name="example-file-multiple-input" multiple></div>
+                                                    <input type="file" id="example-file-multiple-input"
+                                                           name="example-file-multiple-input" multiple></div>
                                             </div>
                                             <div class="form-group form-actions">
                                                 <div class="col-md-9 col-md-offset-3">
-                                                    <button type="submit" class="btn btn-effect-ripple btn-primary">Submit</button>
-                                                    <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                                                    <button type="submit" class="btn btn-effect-ripple btn-primary">
+                                                        Submit
+                                                    </button>
+                                                    <button type="reset" class="btn btn-effect-ripple btn-danger">
+                                                        Reset
+                                                    </button>
                                                 </div>
                                             </div>
                                         </form>
@@ -1485,7 +1761,8 @@
                                         <div class="panel panel-primary">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="bell" data-loop="true" data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
+                                                    <i class="livicon" data-name="bell" data-loop="true"
+                                                       data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
                                                     Vertical Form Layout
                                                 </h3>
                                                         <span class="pull-right">
@@ -1497,13 +1774,16 @@
                                                 <form>
                                                     <div class="form-group">
                                                         <label for="inputEmail">Email</label>
-                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                                        <input type="email" class="form-control" id="inputEmail"
+                                                               placeholder="Email"></div>
                                                     <div class="form-group">
                                                         <label for="inputPassword">Password</label>
-                                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                        <input type="password" class="form-control" id="inputPassword"
+                                                               placeholder="Password"></div>
                                                     <div class="checkbox mar-left5">
                                                         <label>
-                                                            <input type="checkbox" style="margin-right: 7px;">Remember me</label>
+                                                            <input type="checkbox" style="margin-right: 7px;">Remember
+                                                            me</label>
                                                     </div>
                                                     <button type="submit" class="btn btn-primary">Login</button>
                                                 </form>
@@ -1513,7 +1793,8 @@
                                         <div class="panel panel-success">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Inline Form Layout
                                                 </h3>
                                                         <span class="pull-right">
@@ -1525,13 +1806,16 @@
                                                 <form class="form-inline" role="form">
                                                     <div class="form-group">
                                                         <label class="sr-only" for="inputEmail">Email</label>
-                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                                        <input type="email" class="form-control" id="inputEmail"
+                                                               placeholder="Email"></div>
                                                     <div class="form-group">
                                                         <label class="sr-only" for="inputPassword">Password</label>
-                                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                        <input type="password" class="form-control" id="inputPassword"
+                                                               placeholder="Password"></div>
                                                     <div class="checkbox ">
                                                         <label class="mar-left5">
-                                                            <input type="checkbox" class="mar-right4">Remember me</label>
+                                                            <input type="checkbox" class="mar-right4">Remember
+                                                            me</label>
                                                     </div>
                                                     <button type="submit" class="btn btn-primary mar-top">Login</button>
                                                 </form>
@@ -1540,7 +1824,8 @@
                                         <div class="panel panel-info">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Static Form Control
                                                 </h3>
                                                         <span class="pull-right">
@@ -1551,18 +1836,22 @@
                                             <div class="panel-body">
                                                 <form class="form-horizontal">
                                                     <div class="form-group">
-                                                        <label for="inputEmail" class="control-label col-xs-2">Email</label>
+                                                        <label for="inputEmail"
+                                                               class="control-label col-xs-2">Email</label>
 
                                                         <div class="col-xs-10">
                                                             <p class="form-control-static">harrypotter@mail.com</p>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="inputPassword" class="control-label col-xs-2 hidden-xs">Password</label>
-                                                        <label for="inputPassword" class="control-label visible-xs  hidden-lg hidden-sm hidden-md col-xs-2">Pwd</label>
+                                                        <label for="inputPassword"
+                                                               class="control-label col-xs-2 hidden-xs">Password</label>
+                                                        <label for="inputPassword"
+                                                               class="control-label visible-xs  hidden-lg hidden-sm hidden-md col-xs-2">Pwd</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                            <input type="password" class="form-control"
+                                                                   id="inputPassword" placeholder="Password"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="col-xs-offset-2 col-xs-10">
@@ -1583,7 +1872,8 @@
                                         <div class="panel panel-warning">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Grid sizing of Inputs, Textareas and Select Boxes
                                                 </h3>
                                                         <span class="pull-right">
@@ -1640,7 +1930,8 @@
                                         <div class="panel panel-danger">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Creating Button Dropdowns
                                                 </h3>
                                                         <span class="pull-right">
@@ -1654,7 +1945,9 @@
                                                         <div class="col-xs-6">
                                                             <div class="input-group">
                                                                 <div class="input-group-btn">
-                                                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                                                    <button type="button"
+                                                                            class="btn btn-info dropdown-toggle"
+                                                                            data-toggle="dropdown">
                                                                         Action
                                                                         <span class="caret"></span>
                                                                     </button>
@@ -1678,7 +1971,9 @@
                                                                 <input type="text" class="form-control">
 
                                                                 <div class="input-group-btn">
-                                                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                                                    <button type="button"
+                                                                            class="btn btn-info dropdown-toggle"
+                                                                            data-toggle="dropdown">
                                                                         Action
                                                                         <span class="caret"></span>
                                                                     </button>
@@ -1703,7 +1998,9 @@
                                                 <form>
                                                     <div class="input-group">
                                                         <div class="input-group-btn">
-                                                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                                            <button type="button"
+                                                                    class="btn btn-warning dropdown-toggle"
+                                                                    data-toggle="dropdown">
                                                                 Action
                                                                 <span class="caret"></span>
                                                             </button>
@@ -1730,7 +2027,9 @@
                                                         <input type="text" class="form-control">
 
                                                         <div class="input-group-btn">
-                                                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                                            <button type="button"
+                                                                    class="btn btn-warning dropdown-toggle"
+                                                                    data-toggle="dropdown">
                                                                 Action
                                                                 <span class="caret"></span>
                                                             </button>
@@ -1758,7 +2057,8 @@
                                         <div class="panel panel-primary">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Creating Disabled Inputs
                                                 </h3>
                                                         <span class="pull-right">
@@ -1768,21 +2068,25 @@
                                             </div>
                                             <div class="panel-body">
                                                 <form>
-                                                    <input type="text" class="form-control" placeholder="Disabled input" disabled="disabled"></form>
+                                                    <input type="text" class="form-control" placeholder="Disabled input"
+                                                           disabled="disabled"></form>
                                                 <hr>
                                                 <form class="form-horizontal">
                                                     <fieldset disabled="disabled">
                                                         <div class="form-group">
-                                                            <label for="inputEmail" class="control-label col-xs-2">Email</label>
+                                                            <label for="inputEmail"
+                                                                   class="control-label col-xs-2">Email</label>
 
                                                             <div class="col-xs-10">
-                                                                <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                                                <input type="email" class="form-control" id="inputEmail"
+                                                                       placeholder="Email"></div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="inputPassword" class="control-label col-xs-2">Password</label>
 
                                                             <div class="col-xs-10">
-                                                                <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                                <input type="password" class="form-control"
+                                                                       id="inputPassword" placeholder="Password"></div>
                                                         </div>
                                                         <div class="form-group">
                                                             <div class="col-xs-offset-2 col-xs-10">
@@ -1794,7 +2098,8 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <div class="col-xs-offset-2 col-xs-10">
-                                                                <button type="submit" class="btn btn-primary">Login</button>
+                                                                <button type="submit" class="btn btn-primary">Login
+                                                                </button>
                                                             </div>
                                                         </div>
                                                     </fieldset>
@@ -1804,7 +2109,8 @@
                                         <div class="panel panel-info">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Supported Form Controls in Twitter Bootstrap
                                                 </h3>
                                                         <span class="pull-right">
@@ -1815,40 +2121,52 @@
                                             <div class="panel-body">
                                                 <form class="form-horizontal">
                                                     <div class="form-group">
-                                                        <label class="control-label col-xs-3" for="inputEmail">Email:</label>
+                                                        <label class="control-label col-xs-3"
+                                                               for="inputEmail">Email:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                                            <input type="email" class="form-control" id="inputEmail"
+                                                                   placeholder="Email"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-xs-3" for="inputPassword">Password:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                            <input type="password" class="form-control"
+                                                                   id="inputPassword" placeholder="Password"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-xs-3" for="confirmPassword">Confirm Password:</label>
+                                                        <label class="control-label col-xs-3" for="confirmPassword">Confirm
+                                                            Password:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"></div>
+                                                            <input type="password" class="form-control"
+                                                                   id="confirmPassword" placeholder="Confirm Password">
+                                                        </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-xs-3" for="firstName">First Name:</label>
+                                                        <label class="control-label col-xs-3" for="firstName">First
+                                                            Name:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="text" class="form-control" id="firstName" placeholder="First Name"></div>
+                                                            <input type="text" class="form-control" id="firstName"
+                                                                   placeholder="First Name"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-xs-3" for="lastName">Last Name:</label>
+                                                        <label class="control-label col-xs-3" for="lastName">Last
+                                                            Name:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="text" class="form-control" id="lastName" placeholder="Last Name"></div>
+                                                            <input type="text" class="form-control" id="lastName"
+                                                                   placeholder="Last Name"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-xs-3" for="phoneNumber">Phone:</label>
+                                                        <label class="control-label col-xs-3"
+                                                               for="phoneNumber">Phone:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number"></div>
+                                                            <input type="tel" class="form-control" id="phoneNumber"
+                                                                   placeholder="Phone Number"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-xs-3">Date of Birth:</label>
@@ -1873,14 +2191,17 @@
                                                         <label class="control-label col-xs-3" for="postalAddress">Address:</label>
 
                                                         <div class="col-xs-9">
-                                                            <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"></textarea>
+                                                            <textarea rows="3" class="form-control" id="postalAddress"
+                                                                      placeholder="Postal Address"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-xs-3" for="ZipCode">Zip Code:</label>
+                                                        <label class="control-label col-xs-3" for="ZipCode">Zip
+                                                            Code:</label>
 
                                                         <div class="col-xs-9">
-                                                            <input type="text" class="form-control" id="ZipCode" placeholder="Zip Code"></div>
+                                                            <input type="text" class="form-control" id="ZipCode"
+                                                                   placeholder="Zip Code"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-xs-3">Gender:</label>
@@ -1897,7 +2218,8 @@
                                                     <div class="form-group">
                                                         <div class="col-xs-offset-3 col-xs-9">
                                                             <label class="checkbox-inline mar-left5">
-                                                                <input type="checkbox" value="news">Send me latest news and updates.</label>
+                                                                <input type="checkbox" value="news">Send me latest news
+                                                                and updates.</label>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -1915,7 +2237,8 @@
                                                     <div class="form-group">
                                                         <div class="col-xs-offset-3 col-xs-9">
                                                             <input type="submit" class="btn btn-primary" value="Submit">
-                                                            <input type="reset" class="btn btn-default" value="Reset"></div>
+                                                            <input type="reset" class="btn btn-default" value="Reset">
+                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1925,7 +2248,8 @@
                                         <div class="panel panel-success">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="bell" data-loop="true" data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
+                                                    <i class="livicon" data-name="bell" data-loop="true"
+                                                       data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
                                                     Horizontal Form Layout Example
                                                 </h3>
                                                         <span class="pull-right">
@@ -1936,17 +2260,22 @@
                                             <div class="panel-body">
                                                 <form class="form-horizontal">
                                                     <div class="form-group">
-                                                        <label for="inputEmail" class="control-label col-xs-2">Email</label>
+                                                        <label for="inputEmail"
+                                                               class="control-label col-xs-2">Email</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                                            <input type="email" class="form-control" id="inputEmail"
+                                                                   placeholder="Email"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="inputPassword" class="control-label hidden-xs col-xs-2">Password</label>
-                                                        <label for="inputPassword" class="control-label visible-xs  hidden-lg hidden-sm hidden-md col-xs-2">Pwd</label>
+                                                        <label for="inputPassword"
+                                                               class="control-label hidden-xs col-xs-2">Password</label>
+                                                        <label for="inputPassword"
+                                                               class="control-label visible-xs  hidden-lg hidden-sm hidden-md col-xs-2">Pwd</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+                                                            <input type="password" class="form-control"
+                                                                   id="inputPassword" placeholder="Password"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="col-xs-offset-2 col-xs-10">
@@ -1967,7 +2296,8 @@
                                         <div class="panel panel-warning">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="bell" data-loop="true" data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
+                                                    <i class="livicon" data-name="bell" data-loop="true"
+                                                       data-color="#fff" data-hovercolor="#fff" data-size="18"></i>
                                                     General Controls
                                                 </h3>
                                                         <span class="pull-right">
@@ -1977,7 +2307,8 @@
                                             </div>
                                             <div class="panel-body">
 
-                                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                                <form action="" method="post" enctype="multipart/form-data"
+                                                      class="form-horizontal">
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label">Static</label>
 
@@ -1989,40 +2320,53 @@
                                                         <label class="col-md-3 control-label" for="example-text-input">Text</label>
 
                                                         <div class="col-md-6">
-                                                            <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Text">
+                                                            <input type="text" id="example-text-input"
+                                                                   name="example-text-input" class="form-control"
+                                                                   placeholder="Text">
                                                             <span class="help-block">This is a help text</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="example-email">Email</label>
+                                                        <label class="col-md-3 control-label"
+                                                               for="example-email">Email</label>
 
                                                         <div class="col-md-6">
-                                                            <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email"></div>
+                                                            <input type="email" id="example-email" name="example-email"
+                                                                   class="form-control" placeholder="Email"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label" for="example-password">Password</label>
 
                                                         <div class="col-md-6">
-                                                            <input type="password" id="example-password" name="example-password" class="form-control" placeholder="Password"></div>
+                                                            <input type="password" id="example-password"
+                                                                   name="example-password" class="form-control"
+                                                                   placeholder="Password"></div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label" for="example-disabled">Disabled</label>
 
                                                         <div class="col-md-6">
-                                                            <input type="text" id="example-disabled" name="example-disabled" class="form-control" placeholder="Disabled" disabled></div>
+                                                            <input type="text" id="example-disabled"
+                                                                   name="example-disabled" class="form-control"
+                                                                   placeholder="Disabled" disabled></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="example-textarea-input">Textarea</label>
+                                                        <label class="col-md-3 control-label"
+                                                               for="example-textarea-input">Textarea</label>
 
                                                         <div class="col-md-9">
-                                                            <textarea id="example-textarea-input" name="example-textarea-input" rows="7" class="form-control" placeholder="Description.."></textarea>
+                                                            <textarea id="example-textarea-input"
+                                                                      name="example-textarea-input" rows="7"
+                                                                      class="form-control"
+                                                                      placeholder="Description.."></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="col-md-3 control-label" for="example-select">Select</label>
 
                                                         <div class="col-md-6">
-                                                            <select id="example-select" name="example-select" class="form-control" size="1">
+                                                            <select id="example-select" name="example-select"
+                                                                    class="form-control" size="1">
                                                                 <option value="0">Please select</option>
                                                                 <option value="1">Bootstrap</option>
                                                                 <option value="2">CSS</option>
@@ -2032,10 +2376,13 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="example-multiple-select">Multiple</label>
+                                                        <label class="col-md-3 control-label"
+                                                               for="example-multiple-select">Multiple</label>
 
                                                         <div class="col-md-6">
-                                                            <select id="example-multiple-select" name="example-multiple-select" class="form-control" size="5" multiple>
+                                                            <select id="example-multiple-select"
+                                                                    name="example-multiple-select" class="form-control"
+                                                                    size="5" multiple>
                                                                 <option value="1">Option #1</option>
                                                                 <option value="2">Option #2</option>
                                                                 <option value="3">Option #3</option>
@@ -2055,15 +2402,20 @@
                                                         <div class="col-md-9">
                                                             <div class="radio mar-left5">
                                                                 <label for="example-radio1">
-                                                                    <input type="radio" id="example-radio1" name="example-radios" value="option1">HTML</label>
+                                                                    <input type="radio" id="example-radio1"
+                                                                           name="example-radios"
+                                                                           value="option1">HTML</label>
                                                             </div>
                                                             <div class="radio mar-left5">
                                                                 <label for="example-radio2">
-                                                                    <input type="radio" id="example-radio2" name="example-radios" value="option2">CSS</label>
+                                                                    <input type="radio" id="example-radio2"
+                                                                           name="example-radios"
+                                                                           value="option2">CSS</label>
                                                             </div>
                                                             <div class="radio mar-left5">
                                                                 <label for="example-radio3">
-                                                                    <input type="radio" id="example-radio3" name="example-radios" value="option3">Javascript</label>
+                                                                    <input type="radio" id="example-radio3"
+                                                                           name="example-radios" value="option3">Javascript</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2072,11 +2424,14 @@
 
                                                         <div class="col-md-9">
                                                             <label class="radio-inline " for="example-inline-radio1">
-                                                                <input type="radio" id="example-inline-radio1" name="example-inline-radios" value="option1">HTML</label>
+                                                                <input type="radio" id="example-inline-radio1"
+                                                                       name="example-inline-radios" value="option1">HTML</label>
                                                             <label class="radio-inline" for="example-inline-radio2">
-                                                                <input type="radio" id="example-inline-radio2" name="example-inline-radios" value="option2">CSS</label>
+                                                                <input type="radio" id="example-inline-radio2"
+                                                                       name="example-inline-radios" value="option2">CSS</label>
                                                             <label class="radio-inline" for="example-inline-radio3">
-                                                                <input type="radio" id="example-inline-radio3" name="example-inline-radios" value="option3">Javascript</label>
+                                                                <input type="radio" id="example-inline-radio3"
+                                                                       name="example-inline-radios" value="option3">Javascript</label>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -2085,15 +2440,18 @@
                                                         <div class="col-md-9">
                                                             <div class="checkbox mar-left5">
                                                                 <label for="example-checkbox1">
-                                                                    <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1">HTML</label>
+                                                                    <input type="checkbox" id="example-checkbox1"
+                                                                           name="example-checkbox1" value="option1">HTML</label>
                                                             </div>
                                                             <div class="checkbox mar-left5">
                                                                 <label for="example-checkbox2">
-                                                                    <input type="checkbox" id="example-checkbox2" name="example-checkbox2" value="option2">CSS</label>
+                                                                    <input type="checkbox" id="example-checkbox2"
+                                                                           name="example-checkbox2" value="option2">CSS</label>
                                                             </div>
                                                             <div class="checkbox mar-left5">
                                                                 <label for="example-checkbox3">
-                                                                    <input type="checkbox" id="example-checkbox3" name="example-checkbox3" value="option3">Javascript</label>
+                                                                    <input type="checkbox" id="example-checkbox3"
+                                                                           name="example-checkbox3" value="option3">Javascript</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2101,30 +2459,43 @@
                                                         <label class="col-md-3 control-label">Inline Checkboxes</label>
 
                                                         <div class="col-md-9">
-                                                            <label class="checkbox-inline mar-left5" for="example-inline-checkbox1">
-                                                                <input type="checkbox" id="example-inline-checkbox1" name="example-inline-checkbox1" value="option1">HTML</label>
-                                                            <label class="checkbox-inline mar-left5" for="example-inline-checkbox2">
-                                                                <input type="checkbox" id="example-inline-checkbox2" name="example-inline-checkbox2" value="option2">CSS</label>
-                                                            <label class="checkbox-inline mar-left5" for="example-inline-checkbox3">
-                                                                <input type="checkbox" id="example-inline-checkbox3" name="example-inline-checkbox3" value="option3">Javascript</label>
+                                                            <label class="checkbox-inline mar-left5"
+                                                                   for="example-inline-checkbox1">
+                                                                <input type="checkbox" id="example-inline-checkbox1"
+                                                                       name="example-inline-checkbox1" value="option1">HTML</label>
+                                                            <label class="checkbox-inline mar-left5"
+                                                                   for="example-inline-checkbox2">
+                                                                <input type="checkbox" id="example-inline-checkbox2"
+                                                                       name="example-inline-checkbox2" value="option2">CSS</label>
+                                                            <label class="checkbox-inline mar-left5"
+                                                                   for="example-inline-checkbox3">
+                                                                <input type="checkbox" id="example-inline-checkbox3"
+                                                                       name="example-inline-checkbox3" value="option3">Javascript</label>
                                                         </div>
                                                     </div>
                                                     <div class="form-group ">
                                                         <label class="col-md-3 control-label" for="example-file-input">File</label>
 
                                                         <div class="col-md-9 mar-top">
-                                                            <input type="file" id="example-file-input" name="example-file-input"></div>
+                                                            <input type="file" id="example-file-input"
+                                                                   name="example-file-input"></div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="example-file-multiple-input">Multiple File</label>
+                                                        <label class="col-md-3 control-label"
+                                                               for="example-file-multiple-input">Multiple File</label>
 
                                                         <div class="col-md-9 mar-top">
-                                                            <input type="file" id="example-file-multiple-input" name="example-file-multiple-input" multiple></div>
+                                                            <input type="file" id="example-file-multiple-input"
+                                                                   name="example-file-multiple-input" multiple></div>
                                                     </div>
                                                     <div class="form-group form-actions">
                                                         <div class="col-md-9 col-md-offset-3">
-                                                            <button type="submit" class="btn btn-effect-ripple btn-primary">Submit</button>
-                                                            <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button>
+                                                            <button type="submit"
+                                                                    class="btn btn-effect-ripple btn-primary">Submit
+                                                            </button>
+                                                            <button type="reset"
+                                                                    class="btn btn-effect-ripple btn-danger">Reset
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -2133,7 +2504,8 @@
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Height Sizing of Input Groups
                                                 </h3>
                                                         <span class="pull-right">
@@ -2216,7 +2588,8 @@
                                         <div class="panel panel-danger">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Twitter Bootstrap Form Validation States
                                                 </h3>
                                                         <span class="pull-right">
@@ -2230,7 +2603,8 @@
                                                         <label class="col-xs-2 control-label" for="inputSuccess">Username</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success">
+                                                            <input type="text" id="inputSuccess" class="form-control"
+                                                                   placeholder="Input with success">
                                                             <span class="help-block">Username is available</span>
                                                         </div>
                                                     </div>
@@ -2238,15 +2612,19 @@
                                                         <label class="col-xs-2 control-label" for="inputWarning">Password</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+                                                            <input type="password" id="inputWarning"
+                                                                   class="form-control"
+                                                                   placeholder="Input with warning">
                                                             <span class="help-block">Password strength: Weak</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-error">
-                                                        <label class="col-xs-2 control-label" for="inputError">Email</label>
+                                                        <label class="col-xs-2 control-label"
+                                                               for="inputError">Email</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+                                                            <input type="email" id="inputError" class="form-control"
+                                                                   placeholder="Input with error">
                                                             <span class="help-block">Please enter a valid email address</span>
                                                         </div>
                                                     </div>
@@ -2261,7 +2639,8 @@
                                                         <label class="col-xs-2 control-label" for="inputSuccess">Username</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success">
+                                                            <input type="text" id="inputSuccess" class="form-control"
+                                                                   placeholder="Input with success">
                                                             <span class="glyphicon glyphicon-ok form-control-feedback"></span>
                                                             <span class="help-block">Username is available</span>
                                                         </div>
@@ -2270,16 +2649,20 @@
                                                         <label class="col-xs-2 control-label" for="inputWarning">Password</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+                                                            <input type="password" id="inputWarning"
+                                                                   class="form-control"
+                                                                   placeholder="Input with warning">
                                                             <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
                                                             <span class="help-block">Password strength: Weak</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-error has-feedback">
-                                                        <label class="col-xs-2 control-label" for="inputError">Email</label>
+                                                        <label class="col-xs-2 control-label"
+                                                               for="inputError">Email</label>
 
                                                         <div class="col-xs-10">
-                                                            <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+                                                            <input type="email" id="inputError" class="form-control"
+                                                                   placeholder="Input with error">
                                                             <span class="glyphicon glyphicon-remove form-control-feedback"></span>
                                                             <span class="help-block">Please enter a valid email address</span>
                                                         </div>
@@ -2300,7 +2683,8 @@
                                         <div class="panel panel-info">
                                             <div class="panel-heading">
                                                 <h3 class="panel-title">
-                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="doc-portrait" data-c="#fff"
+                                                       data-hc="#fff" data-size="18" data-loop="true"></i>
                                                     Bootstrap Form Inputs
                                                 </h3>
                                                         <span class="pull-right">
@@ -2317,9 +2701,12 @@
                                                         <div class="col-md-8">
                                                             <div class="input-group">
                                                                         <span class="input-group-addon">
-                                                                            <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                            <i class="livicon" data-name="mail"
+                                                                               data-size="18" data-c="#000"
+                                                                               data-hc="#000" data-loop="true"></i>
                                                                         </span>
-                                                                <input type="text" class="form-control" placeholder="Email Address"></div>
+                                                                <input type="text" class="form-control"
+                                                                       placeholder="Email Address"></div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -2328,9 +2715,13 @@
                                                         <div class="col-md-8">
                                                             <div class="input-group">
                                                                         <span class="input-group-addon">
-                                                                            <i class="livicon" data-name="key" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                                                            <i class="livicon" data-name="key"
+                                                                               data-size="18" data-c="#000"
+                                                                               data-hc="#000" data-loop="true"></i>
                                                                         </span>
-                                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></div>
+                                                                <input type="password" class="form-control"
+                                                                       id="exampleInputPassword1"
+                                                                       placeholder="Password"></div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-success">
@@ -2339,22 +2730,29 @@
                                                         <div class="col-md-8">
                                                             <div class="input-group input-icon right">
                                                                         <span class="input-group-addon">
-                                                                            <i class="livicon" data-name="mail" data-size="18" data-c="#01BC8C" data-hc="#01BC8C" data-loop="true"></i>
+                                                                            <i class="livicon" data-name="mail"
+                                                                               data-size="18" data-c="#01BC8C"
+                                                                               data-hc="#01BC8C" data-loop="true"></i>
                                                                         </span>
 
-                                                                <input id="email" class="input-error form-control" type="text" placeholder="Email Address"></div>
+                                                                <input id="email" class="input-error form-control"
+                                                                       type="text" placeholder="Email Address"></div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group has-error">
-                                                        <label class="col-md-2 control-label">Validation Password</label>
+                                                        <label class="col-md-2 control-label">Validation
+                                                            Password</label>
 
                                                         <div class="col-md-8">
                                                             <div class="input-group input-icon right">
                                                                         <span class="input-group-addon">
-                                                                            <i class="livicon" data-name="key" data-size="18" data-c="#EF6F6C" data-hc="#EF6F6C" data-loop="true"></i>
+                                                                            <i class="livicon" data-name="key"
+                                                                               data-size="18" data-c="#EF6F6C"
+                                                                               data-hc="#EF6F6C" data-loop="true"></i>
                                                                         </span>
 
-                                                                <input type="password" class="input-error form-control" placeholder="Password"></div>
+                                                                <input type="password" class="input-error form-control"
+                                                                       placeholder="Password"></div>
                                                         </div>
 
                                                     </div>
@@ -2418,7 +2816,8 @@
                                                         <label class="col-md-2 control-label">Readonly</label>
 
                                                         <div class="col-md-8">
-                                                            <input type="text" class="form-control" placeholder="Readonly" readonly=""></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Readonly" readonly=""></div>
                                                     </div>
                                                 </form>
                                                 <div class="panel-footer">

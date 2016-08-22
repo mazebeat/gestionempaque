@@ -4,11 +4,11 @@
 @section('title')
     Notifications
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/noty-2.2.4/fluid.css') }}"/>
     <link href="{{ asset('assets/css/pages/toastr.css') }}" rel="stylesheet"/>
     <!--end of page level css-->
@@ -37,7 +37,8 @@
             <div class="col-md-12">
                 <div class="panel panel-danger">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Notifications
                         </h3>
                     </div>
@@ -66,7 +67,8 @@
                                     <span class="runner" data-layout="topLeft" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="topLeft" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="topLeft" data-type="information">Information</span>
+                                    <span class="runner" data-layout="topLeft"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="topLeft" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -78,7 +80,8 @@
                                     <span class="runner" data-layout="topCenter" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="topCenter" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="topCenter" data-type="information">Information</span>
+                                    <span class="runner" data-layout="topCenter"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="topCenter" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -90,7 +93,8 @@
                                     <span class="runner" data-layout="topRight" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="topRight" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="topRight" data-type="information">Information</span>
+                                    <span class="runner" data-layout="topRight"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="topRight" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -103,7 +107,8 @@
                                     <span class="runner" data-layout="centerLeft" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="centerLeft" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="centerLeft" data-type="information">Information</span>
+                                    <span class="runner" data-layout="centerLeft"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="centerLeft" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -127,7 +132,8 @@
                                     <span class="runner" data-layout="centerRight" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="centerRight" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="centerRight" data-type="information">Information</span>
+                                    <span class="runner" data-layout="centerRight"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="centerRight" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -140,7 +146,8 @@
                                     <span class="runner" data-layout="bottomLeft" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="bottomLeft" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="bottomLeft" data-type="information">Information</span>
+                                    <span class="runner" data-layout="bottomLeft"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="bottomLeft" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -152,7 +159,8 @@
                                     <span class="runner" data-layout="bottomCenter" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="bottomCenter" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="bottomCenter" data-type="information">Information</span>
+                                    <span class="runner" data-layout="bottomCenter"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="bottomCenter" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -164,7 +172,8 @@
                                     <span class="runner" data-layout="bottomRight" data-type="error">Error</span>
                                     <br>
                                     <span class="runner" data-layout="bottomRight" data-type="warning">Warning</span>
-                                    <span class="runner" data-layout="bottomRight" data-type="information">Information</span>
+                                    <span class="runner" data-layout="bottomRight"
+                                          data-type="information">Information</span>
                                     <span class="runner" data-layout="bottomRight" data-type="confirm">Confirm</span>
                                 </h6>
                             </div>
@@ -194,6 +203,7 @@
 
 {{-- page level scripts --}}
 @section('footer_scripts')
-    <script type="text/javascript" src="{{ asset('assets/vendors/noty-2.2.4/js/noty/packaged/jquery.noty.packaged.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/noty-2.2.4/js/noty/packaged/jquery.noty.packaged.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/vendors/noty-2.2.4/js/script.js') }}"></script>
 @stop

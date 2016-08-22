@@ -4,11 +4,11 @@
 @section('title')
     Nestable List
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/vendors/nestable_files/jquery.nestable.css') }}" rel="stylesheet"/>
     <!--end of page level css-->
 @stop
@@ -48,7 +48,8 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                                <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff"
+                                   data-hc="white"></i>
                                 Nestable List 1
                             </h3>
                         </div>
@@ -104,7 +105,8 @@
                     <div class="panel panel-success">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                                <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff"
+                                   data-hc="white"></i>
                                 Nestable List 2
                             </h3>
                         </div>
@@ -141,7 +143,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Nestable List 3
                         </h3>
                     </div>
@@ -181,11 +184,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script src="{{ asset('assets/vendors/nestable_files/jquery.nestable.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/nestable_files/ui-nestable.js') }}"></script>
     <script>

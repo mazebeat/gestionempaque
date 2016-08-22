@@ -1,13 +1,13 @@
 <?php
 /**
-* Language file for group section titles
-*
-*/
+ * Language file for group section titles
+ *
+ */
 
 return array(
 
-    'create'			=> 'Create New Group',
-    'edit' 				=> 'Edit Group',
-    'management'	=> 'Manage Groups',
+	'create'     => 'Create New Group',
+	'edit'       => 'Edit Group',
+	'management' => 'Manage Groups',
 
 );

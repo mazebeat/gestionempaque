@@ -35,7 +35,8 @@
                         <h3>Draggable Events</h3>
 
                         <div class="pull-right box-toolbar">
-                            <a href="#" class="btn btn-link btn-xs" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus"></i>
+                            <a href="#" class="btn btn-link btn-xs" data-toggle="modal" data-target="#myModal"> <i
+                                        class="fa fa-plus"></i>
                             </a>
                         </div>
                     </div>
@@ -53,7 +54,8 @@
                         </div>
                     </div>
                     <div class="box-footer">
-                        <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">Create event</a>
+                        <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">Create
+                            event</a>
                     </div>
                 </div>
                 <!-- /.box --> </div>
@@ -66,7 +68,8 @@
                 <!-- /.box --> </div>
             <!-- /.col --> </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -81,7 +84,8 @@
                             <input type="text" id="new-event" class="form-control" placeholder="Event">
 
                             <div class="input-group-btn">
-                                <button type="button" id="color-chooser-btn" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" id="color-chooser-btn" class="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
                                     Type
                                     <span class="caret"></span>
                                 </button>

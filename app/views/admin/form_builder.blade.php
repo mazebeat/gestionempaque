@@ -41,7 +41,8 @@
                 <!--form builder-->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="help" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="help" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Drag & Drop components
                         </h3>
                         <span class="pull-right clickable"></span>
@@ -84,5 +85,6 @@
 
 {{-- page level scripts --}}
 @section('footer_scripts')
-    <script data-main="{{ asset('assets/vendors/Bootstrap-Form-Builder3/assets/js/main-built.js') }}" src="{{ asset('assets/vendors/Bootstrap-Form-Builder3/assets/js/lib/require.js') }}"></script>
+    <script data-main="{{ asset('assets/vendors/Bootstrap-Form-Builder3/assets/js/main-built.js') }}"
+            src="{{ asset('assets/vendors/Bootstrap-Form-Builder3/assets/js/lib/require.js') }}"></script>
 @stop

@@ -1,6 +1,7 @@
 <?php
 
-class NormasController extends JoshController {
+class NormasController extends JoshController
+{
 
 	/**
 	 * Norma Repository
@@ -58,8 +59,7 @@ class NormasController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Norma::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->norma->create($input);
 
 			return Redirect::route('admin.normas.index');
@@ -74,7 +74,7 @@ class NormasController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -87,15 +87,14 @@ class NormasController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$norma = $this->norma->find($id);
 
-		if (is_null($norma))
-		{
+		if (is_null($norma)) {
 			return Redirect::route('admin.normas.index');
 		}
 
@@ -105,7 +104,7 @@ class NormasController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -113,8 +112,7 @@ class NormasController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Norma::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$norma = $this->norma->find($id);
 			$norma->update($input);
 
@@ -130,7 +128,7 @@ class NormasController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

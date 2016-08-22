@@ -36,17 +36,16 @@ class LocalController extends JoshController
 		$input = Input::all();
 		$validation = Validator::make($input, Falta::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->local->create($input);
 
 			return Redirect::route('admin.locales.index');
 		}
 
 		return Redirect::route('admin.locales.index')
-		               ->withInput()
-		               ->withErrors($validation)
-		               ->with('message', 'There were validation errors.');
+			->withInput()
+			->withErrors($validation)
+			->with('message', 'There were validation errors.');
 	}
 
 	public function detalle($id = null)
@@ -54,9 +53,12 @@ class LocalController extends JoshController
 		if (isset($id)) {
 			$normas = Norma::all();
 
-			return View::make('admin.locales.detalle', compact('id'), compact('normas'))->withDays(self::$days)->withTurns(self::$turns);
+			return View::make('admin.locales.detalle', compact('id'),
+				compact('normas'))->withDays(self::$days)->withTurns(self::$turns);
 		}
 	}
 
-	public function addempaque() {}
+	public function addempaque()
+	{
+	}
 }

@@ -35,7 +35,8 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="star-full" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="star-full" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Circle Dials
                         </h3>
                     <span class="pull-right clickable">
@@ -47,7 +48,8 @@
                         <div class="row visible-ie8">
                             <div class="col-md-12">
                                 <div class="alert alert-warning alert-dismissable">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-hidden="true">&times;</button>
                                     The Circle Dial plugin is not compatible with Internet Explorer 8 and older.
                                 </div>
                             </div>
@@ -56,30 +58,37 @@
                             <div class="row">
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Disable</div>
-                                    <input class="knob" data-width="80%" data-fgColor="#418bca" data-displayinput=false value="35"></div>
+                                    <input class="knob" data-width="80%" data-fgColor="#418bca" data-displayinput=false
+                                           value="35"></div>
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Cursor</div>
-                                    <input class="knob" data-width="80%" data-cursor=true data-fgColor="#6cc66c" data-thickness=.3 value="29"></div>
+                                    <input class="knob" data-width="80%" data-cursor=true data-fgColor="#6cc66c"
+                                           data-thickness=.3 value="29"></div>
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Display previous</div>
-                                    <input class="knob" data-width="80%" data-fgColor="#67c5df" data-min="-100" data-displayprevious=true value="44"></div>
+                                    <input class="knob" data-width="80%" data-fgColor="#67c5df" data-min="-100"
+                                           data-displayprevious=true value="44"></div>
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Angle offset</div>
-                                    <input class="knob" data-angleoffset="90" data-fgcolor="#ef6f6c" data-width="80%" value="35"></div>
+                                    <input class="knob" data-angleoffset="90" data-fgcolor="#ef6f6c" data-width="80%"
+                                           value="35"></div>
                             </div>
                             <div class="row">
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Angle offset arc</div>
-                                    <input class="knob" data-angleoffset="-125" data-anglearc="250" data-fgcolor="#ef6f6c" data-width="80%" value="35"></div>
+                                    <input class="knob" data-angleoffset="-125" data-anglearc="250"
+                                           data-fgcolor="#ef6f6c" data-width="80%" value="35"></div>
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">5-digit values</div>
-                                    <input class="knob" data-min="-15000" data-fgColor="#67c5df" data-max="15000" data-width="80%" value="-11000"></div>
+                                    <input class="knob" data-min="-15000" data-fgColor="#67c5df" data-max="15000"
+                                           data-width="80%" value="-11000"></div>
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Responsive</div>
                                     <input class="knob" data-width="80%" data-fgColor="#6cc66c" value="35"></div>
                                 <div class="col-md-3 col-sm-3 col-xs-5">
                                     <div class="text-left">Readonly</div>
-                                    <input class="knob" data-fgColor="#418bca" data-thickness=".4" data-width="80%" readonly value="22"></div>
+                                    <input class="knob" data-fgColor="#418bca" data-thickness=".4" data-width="80%"
+                                           readonly value="22"></div>
                             </div>
                         </div>
                     </div>
@@ -87,11 +96,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script src="{{ asset('assets/vendors/Knob/jquery.knob.js') }}"></script>
     <script>
         $(function ($) {

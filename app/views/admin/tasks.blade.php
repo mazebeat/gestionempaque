@@ -4,11 +4,11 @@
 @section('title')
     Tasks
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/todolist.css') }}"/>
     <!-- end of page level css -->
 @stop
@@ -38,7 +38,8 @@
                 <div class="todolist">
                     <header>
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="medal" data-size="18" data-color="white" data-hc="white" data-l="true"></i>
+                            <i class="livicon" data-name="medal" data-size="18" data-color="white" data-hc="white"
+                               data-l="true"></i>
                             To Do List
                         </h3>
                     </header>
@@ -217,7 +218,8 @@
                     <div class="todolist_list adds">
                         <form role="form" id="main_input_box">
                             <div class="col-md-6 col-xs-6">
-                                <input id="custom_textbox" name="Item" type="text" required placeholder="Add list item here" class="form-control"/>
+                                <input id="custom_textbox" name="Item" type="text" required
+                                       placeholder="Add list item here" class="form-control"/>
                             </div>
                             <div class="col-md-4 col-xs-4">
                                 <input type="submit" value="Add Task" class="btn btn-primary add_button"/>
@@ -228,10 +230,10 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript" src="{{ asset('assets/js/todolist.js') }}"></script>
 @stop

@@ -1,6 +1,7 @@
 <?php
 
-class RegionsController extends JoshController {
+class RegionsController extends JoshController
+{
 
 	/**
 	 * Region Repository
@@ -46,8 +47,7 @@ class RegionsController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Region::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->region->create($input);
 
 			return Redirect::route('admin.regions.index');
@@ -62,7 +62,7 @@ class RegionsController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,15 +75,14 @@ class RegionsController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$region = $this->region->find($id);
 
-		if (is_null($region))
-		{
+		if (is_null($region)) {
 			return Redirect::route('admin.regions.index');
 		}
 
@@ -93,7 +92,7 @@ class RegionsController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -101,8 +100,7 @@ class RegionsController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Region::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$region = $this->region->find($id);
 			$region->update($input);
 
@@ -118,7 +116,7 @@ class RegionsController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

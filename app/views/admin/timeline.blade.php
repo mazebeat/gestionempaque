@@ -4,11 +4,11 @@
 @section('title')
     Timeline
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/css/pages/timeline.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/css/pages/timeline2.css') }}" rel="stylesheet"/>
     <!--end of page level css-->
@@ -39,7 +39,8 @@
             <div class="col-md-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="share" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Timeline
                         </h3>
                     <span class="pull-right clickable">
@@ -52,7 +53,8 @@
                             <ul class="timeline">
                                 <li>
                                     <div class="timeline-badge">
-                                        <i class="livicon" data-name="users" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                        <i class="livicon" data-name="users" data-c="#fff" data-hc="#fff" data-size="18"
+                                           data-loop="true"></i>
                                     </div>
                                     <div class="timeline-panel" style="display:inline-block;">
                                         <div class="timeline-heading">
@@ -60,21 +62,24 @@
 
                                             <p>
                                                 <small class="text-muted">
-                                                    <i class="livicon" data-name="bell" data-c="#f89a14" data-hc="#f89a14" data-size="18" data-loop="true"></i>
+                                                    <i class="livicon" data-name="bell" data-c="#f89a14"
+                                                       data-hc="#f89a14" data-size="18" data-loop="true"></i>
                                                     11 hours ago via Twitter
                                                 </small>
                                             </p>
                                         </div>
                                         <div class="timeline-body">
                                             <p>
-                                                Lorem Ipsum is simply dummy, vidis lio, in elementis mé pra quem é amistosis quis leo..
+                                                Lorem Ipsum is simply dummy, vidis lio, in elementis mé pra quem é
+                                                amistosis quis leo..
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
                                     <div class="timeline-badge danger">
-                                        <i class="livicon" data-name="trophy" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                        <i class="livicon" data-name="trophy" data-c="#fff" data-hc="#fff"
+                                           data-size="18" data-loop="true"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -87,7 +92,8 @@
                                 </li>
                                 <li>
                                     <div class="timeline-badge info">
-                                        <i class="livicon" data-name="user" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                        <i class="livicon" data-name="user" data-c="#fff" data-hc="#fff" data-size="18"
+                                           data-loop="true"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -95,14 +101,16 @@
                                         </div>
                                         <div class="timeline-body">
                                             <p>
-                                                Lorem Ipsum is simply dummy, vidis litro abertis. Consetis adipiscings elitis. Pra uium u num gostis.
+                                                Lorem Ipsum is simply dummy, vidis litro abertis. Consetis adipiscings
+                                                elitis. Pra uium u num gostis.
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
                                     <div class="timeline-badge  ">
-                                        <i class="livicon" data-name="home" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                        <i class="livicon" data-name="home" data-c="#fff" data-hc="#fff" data-size="18"
+                                           data-loop="true"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -110,14 +118,16 @@
                                         </div>
                                         <div class="timeline-body">
                                             <p>
-                                                Lorem Ipsum is simply dummy, vidis litro abertis. Cais bolis eu num gostis.
+                                                Lorem Ipsum is simply dummy, vidis litro abertis. Cais bolis eu num
+                                                gostis.
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="timeline-badge primary">
-                                        <i class="livicon" data-name="hammer" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i>
+                                        <i class="livicon" data-name="hammer" data-c="#fff" data-hc="#fff"
+                                           data-size="18" data-loop="true"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -125,11 +135,13 @@
                                         </div>
                                         <div class="timeline-body">
                                             <p>
-                                                Lorem Ipsum is simply dummy, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, s mé pra quem é amistosis.
+                                                Lorem Ipsum is simply dummy, vidis litro abertis. Consetis adipiscings
+                                                elitis. Pra lá , depois divoltis porris, s mé pra quem é amistosis.
                                             </p>
                                             <hr>
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle"
+                                                        data-toggle="dropdown">
                                                     <i class="glyphicon glyphicon-cog"></i>
                                                     <span class="caret"></span>
                                                 </button>
@@ -164,7 +176,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Timeline 2
                         </h3>
                     <span class="pull-right clickable">
@@ -177,7 +190,8 @@
                                 <li>
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record invert" rel="tooltip" title="7Hours ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record invert" rel="tooltip"
+                                               title="7Hours ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
@@ -198,12 +212,14 @@
                                 <li class="timeline2-inverted">
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record invert" rel="tooltip" title="2 Days ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record invert" rel="tooltip"
+                                               title="2 Days ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
                                         <div class="timeline2-heading">
-                                            <img data-src="holder.js/580x160/#489a14:#fff" class='img-responsive' alt="image"></div>
+                                            <img data-src="holder.js/580x160/#489a14:#fff" class='img-responsive'
+                                                 alt="image"></div>
                                         <div class="timeline2-body">
                                             <p>We went out for Dinner and then long Drive</p>
                                         </div>
@@ -221,12 +237,14 @@
                                 <li>
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record" rel="tooltip" title="5 Days ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record" rel="tooltip"
+                                               title="5 Days ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
                                         <div class="timeline2-heading">
-                                            <img data-src="holder.js/580x160/#418bca:#fff" class='img-responsive' alt="image"></div>
+                                            <img data-src="holder.js/580x160/#418bca:#fff" class='img-responsive'
+                                                 alt="image"></div>
                                         <div class="timeline2-body">
                                             <p>I asked her contact number and She Gave IT!!</p>
                                         </div>
@@ -244,7 +262,8 @@
                                 <li class="timeline2-inverted">
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record invert" rel="tooltip" title="6 Days ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record invert" rel="tooltip"
+                                               title="6 Days ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
@@ -265,12 +284,14 @@
                                 <li>
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record" rel="tooltip" title="7 Days ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record" rel="tooltip"
+                                               title="7 Days ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
                                         <div class="timeline2-heading">
-                                            <img data-src="holder.js/580x160/#67c5df:#fff" class='img-responsive' alt="image"></div>
+                                            <img data-src="holder.js/580x160/#67c5df:#fff" class='img-responsive'
+                                                 alt="image"></div>
                                         <div class="timeline2-body">
                                             <p>She accepted my friend Request on facebook</p>
                                         </div>
@@ -288,12 +309,14 @@
                                 <li class="timeline2-inverted">
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record invert" rel="tooltip" title="9 Days ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record invert" rel="tooltip"
+                                               title="9 Days ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
                                         <div class="timeline2-heading">
-                                            <img data-src="holder.js/580x160/#6cc66c:#fff" class='img-responsive' alt="image"></div>
+                                            <img data-src="holder.js/580x160/#6cc66c:#fff" class='img-responsive'
+                                                 alt="image"></div>
                                         <div class="timeline2-body">
                                             <p>I said HI she too said HI</p>
                                         </div>
@@ -311,7 +334,8 @@
                                 <li>
                                     <div class="timeline2-badge">
                                         <a>
-                                            <i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 Days ago via Facebook"></i>
+                                            <i class="glyphicon glyphicon-record invert" rel="tooltip"
+                                               title="11 Days ago via Facebook"></i>
                                         </a>
                                     </div>
                                     <div class="timeline2-panel">
@@ -338,11 +362,11 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript">
         $(document).ready(function () {
             var my_posts = $("[rel=tooltip]");

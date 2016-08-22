@@ -173,10 +173,10 @@
                     </div>
 
                     {{--<div class="form-group">--}}
-                        {{--{{ Form::label('fecha_hora', 'Fecha_hora:', array('class'=>'col-md-2 control-label')) }}--}}
-                        {{--<div class="col-sm-10">--}}
-                            {{--{{ Form::input('date', 'fecha_hora', Carbon::parse(Input::old('fecha_hora'))->toDateString(), array('class'=>'form-control', 'placeholder'=>'Fecha_hora')) }}--}}
-                        {{--</div>--}}
+                    {{--{{ Form::label('fecha_hora', 'Fecha_hora:', array('class'=>'col-md-2 control-label')) }}--}}
+                    {{--<div class="col-sm-10">--}}
+                    {{--{{ Form::input('date', 'fecha_hora', Carbon::parse(Input::old('fecha_hora'))->toDateString(), array('class'=>'form-control', 'placeholder'=>'Fecha_hora')) }}--}}
+                    {{--</div>--}}
                     {{--</div>--}}
 
 

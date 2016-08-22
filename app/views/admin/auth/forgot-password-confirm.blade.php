@@ -28,14 +28,17 @@
                         <!-- New Password -->
                         <div class="form-group{{ $errors->first('password', ' has-error') }} col-sm-12">
                             <label for="password">@lang('auth/form.newpassword')</label>
-                            <input type="password" name="password" id="password" value="{{ Input::old('password') }}" class="form-control"/>
+                            <input type="password" name="password" id="password" value="{{ Input::old('password') }}"
+                                   class="form-control"/>
                             {{ $errors->first('password', '<span class="help-block">:message</span>') }}
                         </div>
 
                         <!-- Password Confirm -->
                         <div class="form-group{{ $errors->first('password_confirm', ' has-error') }} col-sm-12">
-                            <label class="control-label" for="password_confirm">@lang('auth/form.confirmpassword')</label>
-                            <input type="password" name="password_confirm" id="password_confirm" value="{{ Input::old('password_confirm') }}" class="form-control"/>
+                            <label class="control-label"
+                                   for="password_confirm">@lang('auth/form.confirmpassword')</label>
+                            <input type="password" name="password_confirm" id="password_confirm"
+                                   value="{{ Input::old('password_confirm') }}" class="form-control"/>
                             {{ $errors->first('password_confirm', '<span class="help-block">:message</span>') }}
                         </div>
 

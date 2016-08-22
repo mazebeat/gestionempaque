@@ -31,7 +31,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h4 class="panel-title">Busqueda</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -87,7 +88,8 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h4 class="panel-title">Formulario</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -96,14 +98,15 @@
                         <fieldset>
 
                             <!-- Form Name -->
-                            {{--<legend>Form Name</legend>--}}
+                        {{--<legend>Form Name</legend>--}}
 
-                            <!-- Text input-->
+                        <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="name">Nombre Perfil</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" name="name" placeholder="" class="form-control input-md" required="" type="text">
+                                    <input id="name" name="name" placeholder="" class="form-control input-md"
+                                           required="" type="text">
                                 </div>
                             </div>
 
@@ -128,7 +131,8 @@
             <div class="panel panel-warning">
                 <div class="panel-heading">
                     <h4 class="panel-title">Creados</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>

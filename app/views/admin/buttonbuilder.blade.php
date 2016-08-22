@@ -40,7 +40,8 @@
                 </div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="vector-square" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="vector-square" data-size="16"
+                                                   data-loop="true" data-c="#fff" data-hc="white"></i>
                             Button Builder
                         </h3>
                     <span class="pull-right clickable">
@@ -65,7 +66,8 @@
 
                                         <p>
                                             Generated Code
-                                            <input id="output" type="text" class="form-control input-block-level" placeholder="Output"></p>
+                                            <input id="output" type="text" class="form-control input-block-level"
+                                                   placeholder="Output"></p>
                                     </div>
                                 </div>
                                 <p></p>
@@ -78,29 +80,46 @@
                                 <p class="lead">Button text :</p>
 
                                 <p id="input">
-                                    <input id="name" autocomplete="off" class="form-control" type="text" placeholder="Please enter your button name"></p>
+                                    <input id="name" autocomplete="off" class="form-control" type="text"
+                                           placeholder="Please enter your button name"></p>
 
                                 <p class="lead">Color :</p>
 
                                 <div id="types" class="btn-group">
-                                    <button name="color" type="button" class="btn btn-default" value="btn-default">Default</button>
-                                    <button name="color" type="button" class="btn btn-primary" value="btn-primary">Primary</button>
-                                    <button name="color" type="button" class="btn btn-info" value="btn-info">Info</button>
-                                    <button name="color" type="button" class="btn btn-success" value="btn-success">Success</button>
-                                    <button name="color" type="button" class="btn btn-warning" value="btn-warning">Warning</button>
-                                    <button name="color" type="button" class="btn btn-danger" value="btn-danger">Danger</button>
+                                    <button name="color" type="button" class="btn btn-default" value="btn-default">
+                                        Default
+                                    </button>
+                                    <button name="color" type="button" class="btn btn-primary" value="btn-primary">
+                                        Primary
+                                    </button>
+                                    <button name="color" type="button" class="btn btn-info" value="btn-info">Info
+                                    </button>
+                                    <button name="color" type="button" class="btn btn-success" value="btn-success">
+                                        Success
+                                    </button>
+                                    <button name="color" type="button" class="btn btn-warning" value="btn-warning">
+                                        Warning
+                                    </button>
+                                    <button name="color" type="button" class="btn btn-danger" value="btn-danger">
+                                        Danger
+                                    </button>
                                 </div>
                                 <p class="lead">Size :</p>
 
                                 <div id="sizes">
                                     <p>
-                                        <button class="btn btn-xs btn-primary" value="btn-xs" type="button">Mini</button>
-                                        <button class="btn btn-sm btn-primary" value="btn-sm" type="button">Small</button>
-                                        <button class="btn btn-md btn-primary" value="btn-md" type="button">Default</button>
-                                        <button class="btn btn-primary btn-lg" value="btn-lg" type="button">Large</button>
+                                        <button class="btn btn-xs btn-primary" value="btn-xs" type="button">Mini
+                                        </button>
+                                        <button class="btn btn-sm btn-primary" value="btn-sm" type="button">Small
+                                        </button>
+                                        <button class="btn btn-md btn-primary" value="btn-md" type="button">Default
+                                        </button>
+                                        <button class="btn btn-primary btn-lg" value="btn-lg" type="button">Large
+                                        </button>
                                     </p>
                                     <p>
-                                        <a href="#" class="btn btn-primary btn-block" data-toggle="button">Full width button</a>
+                                        <a href="#" class="btn btn-primary btn-block" data-toggle="button">Full width
+                                            button</a>
                                     </p>
                                 </div>
                             </div>
@@ -113,7 +132,8 @@
                                     <div class="row">
                                         <div class="col-md-2">Search icons :</div>
                                         <div class="col-md-4">
-                                            <input id="search" type="text" autocomplete="off" placeholder="Search icon" class="typeahead form-control"></div>
+                                            <input id="search" type="text" autocomplete="off" placeholder="Search icon"
+                                                   class="typeahead form-control"></div>
                                         <div class="col-md-6">
                                             Icon position :
                                             <div id="icon-position" class="btn-group">

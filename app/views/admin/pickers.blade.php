@@ -4,17 +4,20 @@
 @section('title')
     Pickers
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/vendors/clockface/css/clockface.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/colorpicker/css/bootstrap-colorpicker.min.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/timepicker/css/bootstrap-timepicker.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('assets/vendors/datetimepicker/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet" media="screen"/>
-    <link href="{{ asset('assets/vendors/touchspin/dist/jquery.bootstrap-touchspin.css') }}" rel="stylesheet" type="text/css" media="all"/>
-    <link rel="stylesheet" href="{{ asset('assets/vendors/multiselect/css/bootstrap-multiselect.css') }}" type="text/css"/>
+    <link href="{{ asset('assets/vendors/datetimepicker/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet"
+          media="screen"/>
+    <link href="{{ asset('assets/vendors/touchspin/dist/jquery.bootstrap-touchspin.css') }}" rel="stylesheet"
+          type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ asset('assets/vendors/multiselect/css/bootstrap-multiselect.css') }}"
+          type="text/css"/>
     <link href="{{ asset('assets/vendors/switch/dist/css/bootstrap3/bootstrap-switch.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/spinner/dist/bootstrap-spinner.css') }}" rel="stylesheet"/>
     <!--end of page level css-->
@@ -48,7 +51,8 @@
             <div class="col-md-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="camcoder" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="camcoder" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Color Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -66,7 +70,8 @@
                             <!-- Color Picker -->
                             <div class="form-group">
                                 <label>Color picker with RGB notation</label>
-                                <input type="text" class="form-control demo2" value="rgb(0,194,255,0.78)" data-color-format="rgba"/>
+                                <input type="text" class="form-control demo2" value="rgb(0,194,255,0.78)"
+                                       data-color-format="rgba"/>
                             </div>
                             <!-- /.form group -->
                             <!-- Color Picker -->
@@ -103,11 +108,13 @@
                                 Color Picker in a Modal
                             </button>
 
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">&times;</button>
                                             <h4 class="modal-title" id="myModalLabel">In a Modal</h4>
                                         </div>
                                         <div class="modal-body">
@@ -117,7 +124,8 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -131,7 +139,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-one" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-one" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Time Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -171,7 +180,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="cloud-snow" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="cloud-snow" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bootstrap TouchSpin
                         </h3>
                     <span class="pull-right clickable">
@@ -240,7 +250,8 @@
                                 <label>Button postfix (large)</label>
 
                                 <div class="form-group">
-                                    <input id="demo4_2" type="text" value="" name="demo4_2" class="form-control input-lg"></div>
+                                    <input id="demo4_2" type="text" value="" name="demo4_2"
+                                           class="form-control input-lg"></div>
                             </div>
                             <!-- /.form group -->
 
@@ -250,7 +261,8 @@
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input id="demo5" type="text" class="form-control" name="demo5" value="50"></div>
+                                        <input id="demo5" type="text" class="form-control" name="demo5" value="50">
+                                    </div>
                                 </div>
                             </div>
                             <!-- /.form group -->
@@ -269,7 +281,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="magnet" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="magnet" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bootstrap Switch
                         </h3>
                     <span class="pull-right clickable">
@@ -293,9 +306,12 @@
                             <label>Color Switch</label>
 
                             <div class="form-group">
-                                <input type="checkbox" name="my-checkbox" checked data-on-color="primary" data-off-color="info">
-                                <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="warning">
-                                <input type="checkbox" name="my-checkbox" checked data-on-color="warning" data-off-color="danger"></div>
+                                <input type="checkbox" name="my-checkbox" checked data-on-color="primary"
+                                       data-off-color="info">
+                                <input type="checkbox" name="my-checkbox" checked data-on-color="success"
+                                       data-off-color="warning">
+                                <input type="checkbox" name="my-checkbox" checked data-on-color="warning"
+                                       data-off-color="danger"></div>
                         </div>
                         <!-- /.form group -->
                         <!--switch -->
@@ -303,9 +319,12 @@
                             <label>Animate</label>
 
                             <div class="form-group">
-                                <input type="checkbox" name="my-checkbox" data-on-color="info" data-off-color="primary" data-animate>
-                                <input type="checkbox" name="my-checkbox" checked data-on-color="danger" data-off-color="warning" data-animate>
-                                <input type="checkbox" name="my-checkbox" checked data-on-color="warning" data-off-color="success" data-animate></div>
+                                <input type="checkbox" name="my-checkbox" data-on-color="info" data-off-color="primary"
+                                       data-animate>
+                                <input type="checkbox" name="my-checkbox" checked data-on-color="danger"
+                                       data-off-color="warning" data-animate>
+                                <input type="checkbox" name="my-checkbox" checked data-on-color="warning"
+                                       data-off-color="success" data-animate></div>
                         </div>
                         <!-- /.form group -->
                         <!--switch -->
@@ -323,7 +342,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             General Pickers
                         </h3>
                                 <span class="pull-right clickable">
@@ -422,7 +442,8 @@
 
                                 <div class="form-group">
                                     <div class="input-group spinner" data-trigger="spinner" id="customize-spinner1">
-                                        <input type="text" value="100" data-max="200" data-min="0" data-step="1" disabled="disabled">
+                                        <input type="text" value="100" data-max="200" data-min="0" data-step="1"
+                                               disabled="disabled">
 
                                         <div class="input-group-addon">
                                             <a href="javascript:;" class="spin-up" data-spin="up">
@@ -445,7 +466,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="clock" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="clock" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Clock Face Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -455,7 +477,8 @@
                     <div class="panel-body">
                         <div class="form-group">
                             <label for="t1" class="control-label">Default clock</label>
-                            <input id="t1" class="form-control input-small" value="2:30 PM" data-format="hh:mm A" type="text"></div>
+                            <input id="t1" class="form-control input-small" value="2:30 PM" data-format="hh:mm A"
+                                   type="text"></div>
                         <div class="form-group">
                             <label for="t2" class="control-label">Button</label>
 
@@ -480,7 +503,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="alarm" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="alarm" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Date Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -493,7 +517,8 @@
                             <div class="form-group">
                                 <label>Default</label>
 
-                                <div class="input-group date form_datetime col-md-8" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                <div class="input-group date form_datetime col-md-8" data-date="1979-09-16T05:25:07Z"
+                                     data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                     <input class="form-control" size="16" type="text" value="" readonly>
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-th"></span>
@@ -504,7 +529,8 @@
                             <div class="form-group">
                                 <label>Date time picker:</label>
 
-                                <div class="input-group date form_datetime0 col-md-8" data-date="2012-12-21T15:25:00Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                <div class="input-group date form_datetime0 col-md-8" data-date="2012-12-21T15:25:00Z"
+                                     data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                     <input size="16" type="text" value="" readonly class="form-control">
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-th"></span>
@@ -515,7 +541,8 @@
                             <div class="form-group">
                                 <label>Positionning</label>
 
-                                <div class="input-group date form_datetime2 col-md-8" data-date="2012-12-21T15:25:00Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                <div class="input-group date form_datetime2 col-md-8" data-date="2012-12-21T15:25:00Z"
+                                     data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                     <input size="16" type="text" value="" readonly class="form-control">
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-th"></span>
@@ -526,7 +553,8 @@
                             <div class="form-group">
                                 <label>Advanced Time picker</label>
 
-                                <div class="input-group date form_datetime3 col-md-8" data-date="2012-12-21T15:25:00Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                <div class="input-group date form_datetime3 col-md-8" data-date="2012-12-21T15:25:00Z"
+                                     data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                     <input class="form-control" size="16" type="text" value="" readonly>
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-remove"></span>
@@ -541,7 +569,8 @@
                             <div class="form-group">
                                 <label>Mirror field</label>
 
-                                <div class="input-group date form_datetime4 col-md-8" data-date="2012-12-21T15:25:00Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                <div class="input-group date form_datetime4 col-md-8" data-date="2012-12-21T15:25:00Z"
+                                     data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                     <input size="16" type="text" value="" class="form-control" readonly>
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-remove"></span>
@@ -558,7 +587,8 @@
                             <div class="form-group">
                                 <label>Meridian format</label>
 
-                                <div class="input-group date form_datetime5 col-md-8" data-date="2012-12-21T15:25:00Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                                <div class="input-group date form_datetime5 col-md-8" data-date="2012-12-21T15:25:00Z"
+                                     data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                     <input size="16" type="text" value="" class="form-control" readonly>
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-remove"></span>
@@ -575,7 +605,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="balance" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="balance" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Multiselect
                         </h3>
                     <span class="pull-right clickable">
@@ -754,18 +785,21 @@
             <!--col-md-6 ends--> </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <!--color picker-->
     <script src="{{ asset('assets/vendors/colorpicker/js/bootstrap-colorpicker.min.js') }}"></script>
     <!--time picker-->
     <script src="{{ asset('assets/vendors/timepicker/js/bootstrap-timepicker.min.js') }}"></script>
     <!--datetime picker-->
-    <script type="text/javascript" src="{{ asset('assets/vendors/datetimepicker/js/bootstrap-datetimepicker.js') }}" charset="UTF-8"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/datetimepicker/js/locales/bootstrap-datetimepicker.fr.js') }}" charset="UTF-8"></script>
+    <script type="text/javascript" src="{{ asset('assets/vendors/datetimepicker/js/bootstrap-datetimepicker.js') }}"
+            charset="UTF-8"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/datetimepicker/js/locales/bootstrap-datetimepicker.fr.js') }}"
+            charset="UTF-8"></script>
     <!--clockface-->
     <script src="{{ asset('assets/vendors/clockface/js/clockface.js') }}"></script>
     <!--touchspin-->

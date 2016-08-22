@@ -4,11 +4,11 @@
 @section('title')
     Tags Input
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/tags/bower_components/bootstrap/assets/css/docs.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/tags/dist/bootstrap-tagsinput.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/tags/assets/app.css') }}"/>
@@ -38,7 +38,8 @@
             <div class="col-md-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Markup
                         </h3>
                     <span class="pull-right clickable">
@@ -56,12 +57,14 @@
                             </p>
 
                             <div class="bs-example">
-                                <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput"/>
+                                <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo"
+                                       data-role="tagsinput"/>
                             </div>
                             <div class="accordion">
                                 <div class="accordion-group">
                                     <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_markup">Show code</a>
+                                        <a class="accordion-toggle" data-toggle="collapse"
+                                           href="#accordion_example_markup">Show code</a>
                                     </div>
                                     <div id="accordion_example_markup" class="accordion-body collapse">
                                         <div class="accordion-inner highlight">
@@ -78,7 +81,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Categorizing tags
                         </h3>
                     <span class="pull-right clickable">
@@ -90,7 +94,8 @@
                             <h3>Categorizing tags</h3>
 
                             <p>
-                                You can set a fixed css class for your tags, or determine dynamically by provinding a custom function.
+                                You can set a fixed css class for your tags, or determine dynamically by provinding a
+                                custom function.
                             </p>
 
                             <div class="bs-example">
@@ -99,7 +104,8 @@
                             <div class="accordion">
                                 <div class="accordion-group">
                                     <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_tagclass">Show code</a>
+                                        <a class="accordion-toggle" data-toggle="collapse"
+                                           href="#accordion_example_tagclass">Show code</a>
                                     </div>
                                     <div id="accordion_example_tagclass" class="accordion-body collapse">
                                         <div class="accordion-inner">
@@ -148,7 +154,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="sky-dish" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             True multi value
                         </h3>
                     <span class="pull-right clickable">
@@ -162,9 +169,11 @@
                             <p>
                                 Use a
                                 <code>&lt;select multiple /&gt;</code>
-                                as your input element for a tags input, to gain true multivalue support. Instead of a comma separated string, the values will be set in an array. Existing
+                                as your input element for a tags input, to gain true multivalue support. Instead of a
+                                comma separated string, the values will be set in an array. Existing
                                 <code>&lt;option /&gt;</code>
-                                elements will automatically be set as tags. This makes it also possible to create tags containing a comma.
+                                elements will automatically be set as tags. This makes it also possible to create tags
+                                containing a comma.
                             </p>
 
                             <div class="bs-example">
@@ -179,7 +188,8 @@
                             <div class="accordion ">
                                 <div class="accordion-group">
                                     <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" href="#example_multivalue">Show code</a>
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#example_multivalue">Show
+                                            code</a>
                                     </div>
                                     <div id="example_multivalue" class="accordion-body collapse">
                                         <div class="accordion-inner">
@@ -202,7 +212,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="legal" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="legal" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Objects as tags
                         </h3>
                     <span class="pull-right clickable">
@@ -215,7 +226,9 @@
                                 <h3>Objects as tags</h3>
 
                                 <p>
-                                    Instead of just adding strings as tags, bind objects to your tags. This makes it possible to set id values in your input field's value, instead of just the tag's text.
+                                    Instead of just adding strings as tags, bind objects to your tags. This makes it
+                                    possible to set id values in your input field's value, instead of just the tag's
+                                    text.
                                 </p>
 
                                 <div class="bs-example">
@@ -224,7 +237,8 @@
                                 <div class="accordion">
                                     <div class="accordion-group">
                                         <div class="accordion-heading">
-                                            <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_objects_as_tags">Show code</a>
+                                            <a class="accordion-toggle" data-toggle="collapse"
+                                               href="#accordion_example_objects_as_tags">Show code</a>
                                         </div>
                                         <div id="accordion_example_objects_as_tags" class="accordion-body collapse">
                                             <div class="accordion-inner">
@@ -266,7 +280,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="sandglass" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="sandglass" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Typeahead
                         </h3>
                     <span class="pull-right clickable">
@@ -276,7 +291,8 @@
                     <div class="panel-body">
                         <div class="example example_typeahead">
                             <h3>Typeahead</h3>
-                            Typeahead is not included in Bootstrap 3, so you'll have to include your own typeahead library. I'd recommed
+                            Typeahead is not included in Bootstrap 3, so you'll have to include your own typeahead
+                            library. I'd recommed
                             <a href="http://twitter.github.io/typeahead.js/">typeahead.js</a>
                             . An example of using this is shown below.
                             <div class="bs-example">
@@ -285,7 +301,8 @@
                             <div class="accordion ">
                                 <div class="accordion-group">
                                     <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" href="#example_typeahead">Show code</a>
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#example_typeahead">Show
+                                            code</a>
                                     </div>
                                     <div id="example_typeahead" class="accordion-body collapse">
                                         <div class="accordion-inner">
@@ -312,11 +329,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript">
         $(document).on('click', '.panel-heading span.clickable', function (e) {
             var $this = $(this);

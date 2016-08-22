@@ -2,24 +2,27 @@
 
 @section('style')
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/contact.css') }}">
-    @endsection
+@endsection
 
 
-    @section('content')
-            <!-- Breadcrumb Section Start -->
+@section('content')
+    <!-- Breadcrumb Section Start -->
     <div class="breadcum clearfix">
         <ol class="breadcrumb">
             <li>
-                <a href="{{ url('')  }}"> <i class="livicon icon3 icon4" data-name="home" data-size="18" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i>Inicio
+                <a href="{{ url('')  }}"> <i class="livicon icon3 icon4" data-name="home" data-size="18"
+                                             data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i>Inicio
                 </a>
             </li>
             <li class="hidden-xs">
-                <i class="livicon icon3" data-name="angle-double-right" data-size="18" data-loop="true" data-c="#01bc8c" data-hc="#01bc8c"></i>
+                <i class="livicon icon3" data-name="angle-double-right" data-size="18" data-loop="true" data-c="#01bc8c"
+                   data-hc="#01bc8c"></i>
                 <a href="#">Contacto</a>
             </li>
         </ol>
         <div class="pull-right">
-            <i class="livicon icon3" data-name="cellphone" data-size="20" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i> Contacto
+            <i class="livicon icon3" data-name="cellphone" data-size="20" data-loop="true" data-c="#3d3d3d"
+               data-hc="#3d3d3d"></i> Contacto
         </div>
     </div>
     <!-- //Breadcrumb Section End -->
@@ -43,7 +46,8 @@
                         <input type="email" class="form-control input-lg" placeholder="Tú email">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control input-lg no-resize" rows="6" placeholder="Tú comentario"></textarea>
+                        <textarea class="form-control input-lg no-resize" rows="6"
+                                  placeholder="Tú comentario"></textarea>
                     </div>
                     <div class="input-group">
                         <button class="btn btn-primary">Enviar</button>
@@ -58,7 +62,8 @@
                     <div class="media-left media-top">
                         <a href="#">
                             <div class="box-icon">
-                                <i class="livicon" data-name="home" data-size="22" data-loop="true" data-c="#fff" data-hc="#fff"></i>
+                                <i class="livicon" data-name="home" data-size="22" data-loop="true" data-c="#fff"
+                                   data-hc="#fff"></i>
                             </div>
                         </a>
                     </div>
@@ -78,7 +83,8 @@
                     <div class="media-left media-top">
                         <a href="#">
                             <div class="box-icon">
-                                <i class="livicon" data-name="phone" data-size="22" data-loop="true" data-c="#fff" data-hc="#fff"></i>
+                                <i class="livicon" data-name="phone" data-size="22" data-loop="true" data-c="#fff"
+                                   data-hc="#fff"></i>
                             </div>
                         </a>
                     </div>

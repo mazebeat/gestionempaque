@@ -40,7 +40,8 @@
             <div class="col-md-12">
                 <div class="panel panel-danger">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="responsive" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="responsive" data-size="16"
+                                                   data-loop="true" data-c="#fff" data-hc="white"></i>
                             Form Builder
                         </h3>
                     <span class="pull-right clickable">
@@ -61,7 +62,9 @@
                                         <option value="2">2 Columns</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-danger" data-clipboard-text="testing" id="copy-to-clipboard">Copy HTML</button>
+                                <button type="submit" class="btn btn-danger" data-clipboard-text="testing"
+                                        id="copy-to-clipboard">Copy HTML
+                                </button>
                             </form>
                         </nav>
                         <div style="margin-top: -20px;">
@@ -72,13 +75,15 @@
                                     <form role="form">
                                         <div class="form-group draggable">
                                             <label for="input-text-1">Text Input</label>
-                                            <input type="email" class="form-control" id="input-text-1" placeholder="Enter email">
+                                            <input type="email" class="form-control" id="input-text-1"
+                                                   placeholder="Enter email">
 
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
                                         <div class="form-group draggable">
                                             <label for="input-password-1">Password</label>
-                                            <input type="password" class="form-control" id="input-password-1" placeholder="Password">
+                                            <input type="password" class="form-control" id="input-password-1"
+                                                   placeholder="Password">
 
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
@@ -112,7 +117,9 @@
                                 <div class="col-md-8" style="padding: 30px;">
                                     <div style="background-color: #fff; border-radius: 5px; padding: 20px;
                                                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); ">
-                                        <div class="text-muted empty-form text-center" style="font-size: 24px;">Drag & Drop elements to build form.</div>
+                                        <div class="text-muted empty-form text-center" style="font-size: 24px;">Drag &
+                                            Drop elements to build form.
+                                        </div>
                                         <div class="row form-body">
                                             <div class="col-md-12 droppable sortable"></div>
                                             <div class="col-md-6 droppable sortable" style="display: none;"></div>

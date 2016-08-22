@@ -4,13 +4,14 @@
 @section('title')
     Add New Blog
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/blog.css') }}"/>
-    <link href="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/src/bootstrap-wysihtml5.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/src/bootstrap-wysihtml5.css') }}" rel="stylesheet"
+          type="text/css"/>
     <!--end of page level css-->
 @stop
 
@@ -44,7 +45,8 @@
                                 <input type="text" class="form-control input-lg" placeholder="Post title here..."></div>
                             <div class='box-body pad'>
                                 <form>
-                                    <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                    <textarea class="textarea" placeholder="Place some text here"
+                                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                 </form>
                             </div>
                         </div>
@@ -55,7 +57,8 @@
                                 <input type="text" class="form-control" placeholder="Post category"></div>
                             <div class="form-group">
                                 <label>Post date</label>
-                                <input type="text" class="form-control datepicker" data-date-format="mm-dd-yy" placeholder="mm-dd-yy"></div>
+                                <input type="text" class="form-control datepicker" data-date-format="mm-dd-yy"
+                                       placeholder="mm-dd-yy"></div>
                             <div class="form-group">
                                 <label>Post author</label>
                                 <input type="text" class="form-control" placeholder="Post author"></div>
@@ -69,7 +72,8 @@
                                     <input type="file"/>
                                 </span>
                                     <span class="fileupload-preview"></span>
-                                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload"
+                                       style="float: none">×</a>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -83,14 +87,16 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <!--new blog-->
-    <script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/core-b3.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/core-b3.js') }}"></script>
     <script type="text/javascript">
         $(function () {
             // Replace the <textarea id="editor1"> with a CKEditor

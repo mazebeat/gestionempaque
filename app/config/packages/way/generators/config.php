@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	
+
 	/*
 	|--------------------------------------------------------------------------
 	| Where the templates for the generators are stored...

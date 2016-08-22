@@ -9,7 +9,8 @@
 {{-- page level styles --}}
 @section('header_styles')
     <link href="{{ asset('assets/css/pages/alertmessage.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/src/bootstrap-wysihtml5.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/src/bootstrap-wysihtml5.css') }}" rel="stylesheet"
+          type="text/css"/>
     <link href="{{ asset('assets/css/pages/mail_box.css') }}" rel="stylesheet" type="text/css"/>
 @stop
 
@@ -93,11 +94,13 @@
                             <td colspan="4">
                                 <div class="compose row">
                                     <label class="col-xs-2 hidden-xs" for="to">To:</label>
-                                    <input type="text" class="col-xs-9" id="to" value="zeast@joshadmin.com, " tabindex="1">
+                                    <input type="text" class="col-xs-9" id="to" value="zeast@joshadmin.com, "
+                                           tabindex="1">
 
                                     <div class="clear"></div>
                                     <label class="col-xs-2 hidden-xs" for="to">Subject:</label>
-                                    <input type="text" class="col-xs-9" id="to" tabindex="1" value="Re: New server for datacenter needed ">
+                                    <input type="text" class="col-xs-9" id="to" tabindex="1"
+                                           value="Re: New server for datacenter needed ">
 
                                     <div class="clear"></div>
                                     <a href="#" id="ccb">Cc</a>
@@ -113,7 +116,8 @@
                                         <input type="text" class="col-xs-9" tabindex="1" placeholder="Bcc:"></div>
                                     <div class='box-body pad'>
                                         <form>
-                                            <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                            <textarea class="textarea" placeholder="Place some text here"
+                                                      style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                         </form>
                                     </div>
                                 </div>
@@ -126,19 +130,22 @@
                                     <div class="col-md-8">
                                         <div class="col-md-4">
                                             <a href="mail_box" class="btn btn-sm btn-primary">
-                                                <span class="livicon" data-n="external-link" data-s="12" data-c="white" data-hc="white"></span>
+                                                <span class="livicon" data-n="external-link" data-s="12" data-c="white"
+                                                      data-hc="white"></span>
                                                 Send
                                             </a>
                                         </div>
                                         <div class="col-md-4">
                                             <a href="mail_box" class="btn btn-sm btn-success">
-                                                <span class="livicon" data-n="briefcase" data-s="12" data-c="white" data-hc="white"></span>
+                                                <span class="livicon" data-n="briefcase" data-s="12" data-c="white"
+                                                      data-hc="white"></span>
                                                 Draft
                                             </a>
                                         </div>
                                         <div class="col-md-4">
                                             <a href="mail_box" class="btn btn-sm btn-warning">
-                                                <span class="livicon" data-n="trash" data-s="12" data-c="white" data-hc="white"></span>
+                                                <span class="livicon" data-n="trash" data-s="12" data-c="white"
+                                                      data-hc="white"></span>
                                                 Discard
                                             </a>
                                         </div>
@@ -154,11 +161,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js-->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js-->
     <script type="text/javascript">
         $('#slimscrollside').slimscroll({
             height: '700px',
@@ -178,8 +185,10 @@
 
         });
     </script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/core-b3.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/bootstrap-wysihtml5-rails-b3/vendor/assets/javascripts/bootstrap-wysihtml5/core-b3.js') }}"></script>
 
     <script type="text/javascript">
         $(function () {

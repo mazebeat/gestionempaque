@@ -30,7 +30,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h4 class="panel-title">...</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -52,10 +53,10 @@
                     {{ Form::model($casaEstudio, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('admin.casaestudios.update', $casaEstudio->id))) }}
 
                     {{--<div class="form-group">--}}
-                        {{--{{ Form::label('id_ce', 'Id_ce:', array('class'=>'col-md-2 control-label')) }}--}}
-                        {{--<div class="col-sm-10">--}}
-                            {{--{{ Form::input('number', 'id_ce', Input::old('id_ce'), array('class'=>'form-control')) }}--}}
-                        {{--</div>--}}
+                    {{--{{ Form::label('id_ce', 'Id_ce:', array('class'=>'col-md-2 control-label')) }}--}}
+                    {{--<div class="col-sm-10">--}}
+                    {{--{{ Form::input('number', 'id_ce', Input::old('id_ce'), array('class'=>'form-control')) }}--}}
+                    {{--</div>--}}
                     {{--</div>--}}
 
                     <div class="form-group">

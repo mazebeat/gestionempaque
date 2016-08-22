@@ -43,7 +43,8 @@
                 <!--basic form starts-->
                 <div class="panel panel-primary" id="hidepanel1">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="clock" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="clock" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Basic form #1
                         </h3>
                     <span class="pull-right">
@@ -59,7 +60,8 @@
                                     <label class="col-md-3 control-label" for="name">Name</label>
 
                                     <div class="col-md-9">
-                                        <input id="name" name="name" type="text" placeholder="Your name" class="form-control"></div>
+                                        <input id="name" name="name" type="text" placeholder="Your name"
+                                               class="form-control"></div>
                                 </div>
                                 <!-- Email input-->
                                 <div class="form-group">
@@ -68,7 +70,8 @@
                                     </label>
 
                                     <div class="col-md-9">
-                                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control"></div>
+                                        <input id="email" name="email" type="text" placeholder="Your email"
+                                               class="form-control"></div>
                                 </div>
                                 <!-- Message body -->
                                 <div class="form-group">
@@ -77,7 +80,8 @@
                                     </label>
 
                                     <div class="col-md-9">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                        <textarea class="form-control" id="message" name="message"
+                                                  placeholder="Please enter your message here..." rows="5"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -97,14 +101,16 @@
                                             </span>
                                             <span class="fileinput-exists">Change</span>
                                             <input type="file" name="..."></span>
-                                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                            <a href="#" class="input-group-addon btn btn-default fileinput-exists"
+                                               data-dismiss="fileinput">Remove</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Form actions -->
                                 <div class="form-group">
                                     <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-responsive btn-primary btn-sm">Submit</button>
+                                        <button type="submit" class="btn btn-responsive btn-primary btn-sm">Submit
+                                        </button>
                                     </div>
                                 </div>
                             </fieldset>
@@ -115,7 +121,8 @@
                 <div class="panel panel-info" id="hidepanel2">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="help" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="help" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Basic Form #2
                         </h3>
                     <span class="pull-right">
@@ -133,14 +140,16 @@
                                     </label>
 
                                     <div class="col-md-9">
-                                        <input id="name1" name="name" type="text" placeholder="Enter your Email" class="form-control"></div>
+                                        <input id="name1" name="name" type="text" placeholder="Enter your Email"
+                                               class="form-control"></div>
                                 </div>
                                 <!-- Email input-->
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="password">Password</label>
 
                                     <div class="col-md-9">
-                                        <input id="password" name="password" type="password" placeholder="Enter your Password" class="form-control"></div>
+                                        <input id="password" name="password" type="password"
+                                               placeholder="Enter your Password" class="form-control"></div>
                                 </div>
                                 <div class="checkbox">
                                     <label>
@@ -151,7 +160,8 @@
                                 <!-- Form actions -->
                                 <div class="form-group">
                                     <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-responsive btn-info btn-sm">Sign in</button>
+                                        <button type="submit" class="btn btn-responsive btn-info btn-sm">Sign in
+                                        </button>
                                     </div>
                                 </div>
                             </fieldset>
@@ -162,7 +172,8 @@
                 <div class="panel panel-warning" id="hidepanel5">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Form Inputs
                         </h3>
                     <span class="pull-right">
@@ -198,7 +209,8 @@
                             </span>
                             </div>
                             <div class="fileinput fileinput-new" data-provides="fileinput">
-                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                <div class="fileinput-preview thumbnail" data-trigger="fileinput"
+                                     style="width: 200px; height: 150px;"></div>
                                 <div>
                                 <span class="btn btn-default btn-file">
                                     <span class="fileinput-new">
@@ -206,7 +218,8 @@
                                     </span>
                                     <span class="fileinput-exists">Change</span>
                                     <input type="file" name="..."></span>
-                                    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                    <a href="#" class="btn btn-default fileinput-exists"
+                                       data-dismiss="fileinput">Remove</a>
                                 </div>
                             </div>
                         </form>
@@ -220,7 +233,8 @@
                 <div class="panel panel-success" id="hidepanel6">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Form controls
                         </h3>
                     <span class="pull-right">
@@ -290,15 +304,18 @@
 
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1</label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                                               checked>Radio 1</label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2</label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio
+                                        2</label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3</label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio
+                                        3</label>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -306,11 +323,14 @@
                                     Inline Radio Buttons
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1</label>
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
+                                           value="option1" checked>1</label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2</label>
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2"
+                                           value="option2">2</label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3</label>
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3"
+                                           value="option3">3</label>
                             </div>
                             <div class="form-group">
                                 <label>Selects</label>
@@ -338,7 +358,8 @@
                                 <div class="fileinput fileinput-new" data-provides="fileinput">
                                     <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
                                         <img data-src="holder.js/100%x100%" alt="..."></div>
-                                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                                    <div class="fileinput-preview fileinput-exists thumbnail"
+                                         style="max-width: 200px; max-height: 150px;"></div>
                                     <div>
                                     <span class="btn btn-default btn-file">
                                         <span class="fileinput-new">
@@ -367,7 +388,8 @@
                 <div class="panel panel-danger" id="hidepanel4">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Validation states
                         </h3>
                     <span class="pull-right">
@@ -401,7 +423,8 @@
                 <div class="panel panel-default" id="hidepanel3">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="leaf" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="leaf" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Disabled fieldsets
                         </h3>
                     <span class="pull-right">
@@ -416,7 +439,8 @@
                                     <label for="disabledSelect">
                                         Disabled input
                                     </label>
-                                    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled></div>
+                                    <input class="form-control" id="disabledInput" type="text"
+                                           placeholder="Disabled input" disabled></div>
                                 <div class="form-group">
                                     <label for="disabledSelect">
                                         Disabled select menu

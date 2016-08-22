@@ -4,11 +4,11 @@
 @section('title')
     Advanced Buttons
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/Buttons-master/css/buttons.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/pages/advbuttons.css') }}"/>
     <!--end of page level css-->
@@ -39,7 +39,8 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="edit" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="edit" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Flat Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -152,7 +153,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Border Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -194,7 +196,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="signal" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="signal" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Glow Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -231,7 +234,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Rounded Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -270,7 +274,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="location" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="location" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Pill Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -307,7 +312,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="pacman" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="pacman" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Square Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -346,7 +352,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             3-D Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -386,7 +393,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="notebook" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="notebook" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Button Wrapper
                         </h3>
                     <span class="pull-right clickable">
@@ -423,7 +431,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="more" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="more" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Button size
                         </h3>
                     <span class="pull-right clickable">
@@ -434,16 +443,19 @@
                         <div class="flatbuttons_size">
                             <ul>
                                 <li>
-                                    <a href="#" class="button button-rounded button-flat-primary button-jumbo">button</a>
+                                    <a href="#"
+                                       class="button button-rounded button-flat-primary button-jumbo">button</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="button button-rounded button-flat-primary button-large">button</a>
+                                    <a href="#"
+                                       class="button button-rounded button-flat-primary button-large">button</a>
                                 </li>
                                 <li>
                                     <a href="#" class="button button-rounded button-flat-primary">button</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="button button-rounded button-flat-primary button-small">button</a>
+                                    <a href="#"
+                                       class="button button-rounded button-flat-primary button-small">button</a>
                                 </li>
                                 <li>
                                     <a href="#" class="button button-rounded button-flat-primary button-tiny">button</a>
@@ -455,7 +467,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="signal" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="signal" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Dropdown Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -587,7 +600,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="help" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="help" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Block Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -598,13 +612,16 @@
                         <div class="flatbuttons_small1">
                             <a href="#" class="button button-block button-rounded button-large">button</a>
                             <br/>
-                            <a href="#" class="button button-block button-rounded button-primary button-large">button</a>
+                            <a href="#"
+                               class="button button-block button-rounded button-primary button-large">button</a>
                             <br/>
                             <a href="#" class="button button-block button-rounded button-action button-large">button</a>
                             <br/>
-                            <a href="#" class="button button-block button-rounded button-highlight button-large">button</a>
+                            <a href="#"
+                               class="button button-block button-rounded button-highlight button-large">button</a>
                             <br/>
-                            <a href="#" class="button button-block button-rounded button-caution button-large">button</a>
+                            <a href="#"
+                               class="button button-block button-rounded button-caution button-large">button</a>
                             <br/>
                             <a href="#" class="button button-block button-rounded button-royal button-large">button</a>
                         </div>
@@ -613,7 +630,8 @@
                 <div class="panel  panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="legal" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="legal" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Social Dashboard
                         </h3>
                     <span class="pull-right clickable">
@@ -702,7 +720,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="magic" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="magic" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Button Group
                         </h3>
                     <span class="pull-right clickable">
@@ -747,7 +766,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Quick Shortcuts
                         </h3>
                     <span class="pull-right clickable">
@@ -810,7 +830,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Group buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -894,7 +915,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="cloud-snow" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="cloud-snow" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Buttons With Labels
                         </h3>
                     <span class="pull-right clickable">
@@ -1001,7 +1023,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Social Buttons
                         </h3>
                     <span class="pull-right clickable">
@@ -1158,11 +1181,11 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript" src="{{ asset('assets/vendors/Buttons-master/js/vendor/scrollto.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/vendors/Buttons-master/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/vendors/Buttons-master/js/buttons.js') }}"></script>

@@ -4,12 +4,13 @@
 @section('title')
     Ver Detalle Usuario
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
-    <link href="{{ asset('assets/vendors/jasny-bootstrap/css/jasny-bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
+    <link href="{{ asset('assets/vendors/jasny-bootstrap/css/jasny-bootstrap.css') }}" rel="stylesheet"
+          type="text/css"/>
     <link href="{{ asset('assets/vendors/x-editable/css/bootstrap-editable.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('assets/css/pages/user_profile.css') }}" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
@@ -35,19 +36,22 @@
             <div class="col-lg-12">
                 <ul class="nav  nav-tabs ">
                     <li class="active">
-                        <a href="#tab1" data-toggle="tab"> <i class="livicon" data-name="user" data-size="16" data-c="#000" data-hc="#000" data-loop="true"></i>
+                        <a href="#tab1" data-toggle="tab"> <i class="livicon" data-name="user" data-size="16"
+                                                              data-c="#000" data-hc="#000" data-loop="true"></i>
                             Perfil Usuario
                         </a>
                     </li>
                     <li>
                         <a href="#tab2" data-toggle="tab">
-                            <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Cambiar Contraseña
                         </a>
                     </li>
                     <li>
                         <a href="{{ URL::to('admin/user_profile') }}">
-                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="gift" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Perfil Usuario Avanzado
                         </a>
                     </li>
@@ -70,7 +74,8 @@
 
                                             <div class="img-file">
                                                 @if($user->pic)
-                                                    <img src="{{{ url('/').'/uploads/users/'.$user->pic }}}" alt="profile pic" class="img-max">
+                                                    <img src="{{{ url('/').'/uploads/users/'.$user->pic }}}"
+                                                         alt="profile pic" class="img-max">
                                                 @else
                                                     <img src="http://placehold.it/200x200" alt="profile pic">
                                                 @endif
@@ -199,7 +204,8 @@
                                             <div class="col-md-9">
                                                 <div class="input-group">
                                                 <span class="input-group-addon">
-                                                    <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                    <i class="livicon" data-name="key" data-size="16" data-loop="true"
+                                                       data-c="#000" data-hc="#000"></i>
                                                 </span>
                                                     <input type="password" placeholder="Password" class="form-control"/>
                                                 </div>
@@ -214,7 +220,8 @@
                                             <div class="col-md-9">
                                                 <div class="input-group">
                                                 <span class="input-group-addon">
-                                                    <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                                                    <i class="livicon" data-name="key" data-size="16" data-loop="true"
+                                                       data-c="#000" data-hc="#000"></i>
                                                 </span>
                                                     <input type="password" placeholder="Password" class="form-control"/>
                                                 </div>
@@ -237,10 +244,10 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- Bootstrap WYSIHTML5 -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- Bootstrap WYSIHTML5 -->
     <script src="{{ asset('assets/vendors/jasny-bootstrap/js/jasny-bootstrap.js') }}" type="text/javascript"></script>
 @stop

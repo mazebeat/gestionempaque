@@ -32,7 +32,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><i class="livicon" data-name="search" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i> Search Place</h4>
+                        <h4 class="panel-title"><i class="livicon" data-name="search" data-c="#fff" data-hc="#fff"
+                                                   data-size="18" data-loop="true"></i> Search Place</h4>
                     <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
@@ -56,7 +57,8 @@
             <div class="col-lg-12">
                 <div class="panel panel-danger">
                     <div class="panel-heading">
-                        <h4 class="panel-title"><i class="livicon" data-name="search" data-c="#fff" data-hc="#fff" data-size="18" data-loop="true"></i> Search Routes</h4>
+                        <h4 class="panel-title"><i class="livicon" data-name="search" data-c="#fff" data-hc="#fff"
+                                                   data-size="18" data-loop="true"></i> Search Routes</h4>
                     <span class="pull-right">
                         <i class="glyphicon glyphicon-chevron-up showhide clickable"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>

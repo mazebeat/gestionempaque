@@ -16,7 +16,8 @@ class FrontendController extends JoshController
 
 	public function postSignin2()
 	{
-		$validator = Validator::make(Input::all(), array('email' => 'required|email', 'password' => 'required|between:3,32',));
+		$validator = Validator::make(Input::all(),
+			array('email' => 'required|email', 'password' => 'required|between:3,32',));
 		if ($validator->fails()) {
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
@@ -53,7 +54,8 @@ class FrontendController extends JoshController
 		return Redirect::to('/')->with('success', 'You have successfully logged out!');
 	}
 
-	public function showNormas() {
+	public function showNormas()
+	{
 		return View::make('frontend.normas');
 	}
 

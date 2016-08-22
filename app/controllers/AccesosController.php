@@ -44,7 +44,7 @@ class AccesosController extends JoshController
 	 */
 	public function store()
 	{
-		$input      = Input::all();
+		$input = Input::all();
 		$validation = Validator::make($input, Acceso::$rules);
 
 		if ($validation->passes()) {
@@ -54,9 +54,9 @@ class AccesosController extends JoshController
 		}
 
 		return Redirect::route('admin.accesos.create')
-		               ->withInput()
-		               ->withErrors($validation)
-		               ->with('message', 'There were validation errors.');
+			->withInput()
+			->withErrors($validation)
+			->with('message', 'There were validation errors.');
 	}
 
 	/**
@@ -100,7 +100,7 @@ class AccesosController extends JoshController
 	 */
 	public function update($id)
 	{
-		$input      = array_except(Input::all(), '_method');
+		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Acceso::$rules);
 
 		if ($validation->passes()) {
@@ -111,9 +111,9 @@ class AccesosController extends JoshController
 		}
 
 		return Redirect::route('admin.accesos.edit', $id)
-		               ->withInput()
-		               ->withErrors($validation)
-		               ->with('message', 'There were validation errors.');
+			->withInput()
+			->withErrors($validation)
+			->with('message', 'There were validation errors.');
 	}
 
 	/**

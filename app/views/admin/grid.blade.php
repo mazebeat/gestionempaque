@@ -35,7 +35,8 @@
             <div class="col-md-12 ">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="star-half" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="star-half" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Bootstrap grid Examples
                         </h3>
                     <span class="pull-right clickable">
@@ -46,25 +47,31 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p>
-                                    we created some grid samples now you can examine in your browser. This first grid is using all 4 grid sizes combined in a single row. second grid indicates xs Grid,Third grid indicates sd Grid,fourth grid indicates
+                                    we created some grid samples now you can examine in your browser. This first grid is
+                                    using all 4 grid sizes combined in a single row. second grid indicates xs Grid,Third
+                                    grid indicates sd Grid,fourth grid indicates
                                     md,fifth grid indicates lg.
                                 </p>
 
                                 <div class="panel-heading">
                                     <p class="visible-lg">
-                                        lg indicates that the large grid displaying. The grid stacks horizontally &lt; 1200px.
+                                        lg indicates that the large grid displaying. The grid stacks horizontally &lt;
+                                        1200px.
                                     </p>
 
                                     <p class="visible-md">
-                                        md indicates that the medium grid displaying. The grid stacks horizontally &lt; 992px.
+                                        md indicates that the medium grid displaying. The grid stacks horizontally &lt;
+                                        992px.
                                     </p>
 
                                     <p class="visible-sm">
-                                        sm indicates that the small grid displaying. The grid stacks horizontally &lt; 768px.
+                                        sm indicates that the small grid displaying. The grid stacks horizontally &lt;
+                                        768px.
                                     </p>
 
                                     <p class="visible-xs">
-                                        xs indicates that the extra small grid displaying. This grid is always horizontal.
+                                        xs indicates that the extra small grid displaying. This grid is always
+                                        horizontal.
                                     </p>
                                 </div>
                             </div>
@@ -182,7 +189,8 @@
                     <div class="panel panel-success">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                <i class="livicon" data-name="screenshot" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                                <i class="livicon" data-name="screenshot" data-size="16" data-loop="true" data-c="#fff"
+                                   data-hc="white"></i>
                                 Bootstrap grid
                             </h3>
                         <span class="pull-right clickable">
@@ -422,11 +430,11 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript">
         $('#slim1').slimscroll({
             height: '500px',

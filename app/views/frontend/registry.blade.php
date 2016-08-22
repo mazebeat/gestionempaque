@@ -20,11 +20,11 @@
                     @endif
 
                     @if ($errors->any() && Config::get('app.debug'))
-                    <div class="alert alert-danger">
-                    <ul>
-                    {{ implode('', $errors->all('<li class="error">:message</li>')) }}
-                    </ul>
-                    </div>
+                        <div class="alert alert-danger">
+                            <ul>
+                                {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                            </ul>
+                        </div>
                     @endif
                 </div>
             </div>
@@ -33,7 +33,8 @@
             <form class="contact">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombres" name="nombre" value="{{ Input::old('nombre') }}">
+                        <input type="text" class="form-control" placeholder="Nombres" name="nombre"
+                               value="{{ Input::old('nombre') }}">
                         <div class="error">{{ $errors->first('nombre') }}</div>
                     </div>
                 </div>
@@ -67,7 +68,7 @@
                 <div class="form-group">
                     <div class="col-sm-6">
                         {{ Form::input('date','fecha_nacimiento', Input::old('fecha_nacimiento'), array('class' => 'form-control', 'placeholder' =>'Fecha Nacimiento')) }}
-{{--                        {{ Form::input('text','fecha_nacimiento', Input::old('fecha_nacimiento'), array('class' => 'form-control', 'onfocus' => "this.type='date';this.setAttribute('onfocus','');this.blur();this.focus();", 'placeholder' =>'Fecha Nacimiento')) }}--}}
+                        {{--                        {{ Form::input('text','fecha_nacimiento', Input::old('fecha_nacimiento'), array('class' => 'form-control', 'onfocus' => "this.type='date';this.setAttribute('onfocus','');this.blur();this.focus();", 'placeholder' =>'Fecha Nacimiento')) }}--}}
                         <div class="error">{{ $errors->first('fecha_nacimiento') }}</div>
                     </div>
 

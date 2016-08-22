@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePefilsTable extends Migration {
+class CreatePefilsTable extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -12,7 +13,7 @@ class CreatePefilsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('pefils', function(Blueprint $table) {
+		Schema::create('pefils', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('id_perfil');
 			$table->string('nom_perfil');

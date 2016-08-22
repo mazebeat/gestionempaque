@@ -40,43 +40,56 @@
                         <fieldset>
                             <div class="form-group input-group {{ $errors->first('first_name', 'has-error') }}">
                                 <div class="input-group-addon">
-                                    <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                    <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000"
+                                       data-loop="true"></i>
                                 </div>
-                                <input class="form-control" placeholder="First Name" name="first_name" type="text" value="{{{ Input::old('first_name') }}}"/>
+                                <input class="form-control" placeholder="First Name" name="first_name" type="text"
+                                       value="{{{ Input::old('first_name') }}}"/>
                             </div>
                             <div class="form-group input-group {{ $errors->first('last_name', 'has-error') }}">
                                 <div class="input-group-addon">
-                                    <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                    <i class="livicon" data-name="user" data-size="18" data-c="#000" data-hc="#000"
+                                       data-loop="true"></i>
                                 </div>
-                                <input class="form-control" placeholder="Last Name" name="last_name" type="text" value="{{{ Input::old('last_name') }}}"/>
+                                <input class="form-control" placeholder="Last Name" name="last_name" type="text"
+                                       value="{{{ Input::old('last_name') }}}"/>
                             </div>
                             <div class="form-group input-group {{ $errors->first('email', 'has-error') }}">
                                 <div class="input-group-addon">
-                                    <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                    <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000"
+                                       data-loop="true"></i>
                                 </div>
-                                <input class="form-control" placeholder="E-Mail" name="email" type="email" value="{{{ Input::old('email') }}}"/>
+                                <input class="form-control" placeholder="E-Mail" name="email" type="email"
+                                       value="{{{ Input::old('email') }}}"/>
                             </div>
                             <div class="form-group input-group {{ $errors->first('email_confirm', 'has-error') }}">
                                 <div class="input-group-addon">
-                                    <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                    <i class="livicon" data-name="mail" data-size="18" data-c="#000" data-hc="#000"
+                                       data-loop="true"></i>
                                 </div>
-                                <input class="form-control" placeholder="Confirm E-Mail" name="email_confirm" type="email" value="{{{ Input::old('email_confirm') }}}"/>
+                                <input class="form-control" placeholder="Confirm E-Mail" name="email_confirm"
+                                       type="email" value="{{{ Input::old('email_confirm') }}}"/>
                             </div>
                             <div class="form-group input-group {{ $errors->first('password', 'has-error') }}">
                                 <div class="input-group-addon">
-                                    <i class="livicon" data-name="key" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                    <i class="livicon" data-name="key" data-size="18" data-c="#000" data-hc="#000"
+                                       data-loop="true"></i>
                                 </div>
-                                <input class="form-control" placeholder="Password" name="password" type="password" value="{{{ Input::old('password') }}}"/>
+                                <input class="form-control" placeholder="Password" name="password" type="password"
+                                       value="{{{ Input::old('password') }}}"/>
                             </div>
                             <div class="form-group input-group {{ $errors->first('password_confirm', 'has-error') }}">
                                 <div class="input-group-addon">
-                                    <i class="livicon" data-name="key" data-size="18" data-c="#000" data-hc="#000" data-loop="true"></i>
+                                    <i class="livicon" data-name="key" data-size="18" data-c="#000" data-hc="#000"
+                                       data-loop="true"></i>
                                 </div>
-                                <input class="form-control" placeholder="Confirm Password" name="password_confirm" type="password" value="{{{ Input::old('password_confirm') }}}"/>
+                                <input class="form-control" placeholder="Confirm Password" name="password_confirm"
+                                       type="password" value="{{{ Input::old('password_confirm') }}}"/>
                             </div>
                             <div class="checkbox {{ $errors->first('terms', 'has-error') }}">
                                 <label>
-                                    <input name="terms" type="checkbox" value="1" class="minimal-blue" {{{ Input::old('terms')?"checked='checked'":"" }}}>
+                                    <input name="terms" type="checkbox" value="1" class="minimal-blue"
+                                           {{{ Input::old('terms')?"checked='checked'":"" }}}>
                                     I agree for terms
                                 </label>
                             </div>

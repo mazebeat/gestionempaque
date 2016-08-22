@@ -13,7 +13,8 @@
 {{-- Page content --}}
 @section('content')
     <section class="content-header">
-        <h1>Provincias {{ link_to_route('admin.provincia.index', 'Volver', null, array('class'=>'btn btn-xs btn-link')) }}</h1>
+        <h1>
+            Provincias {{ link_to_route('admin.provincia.index', 'Volver', null, array('class'=>'btn btn-xs btn-link')) }}</h1>
         <ol class="breadcrumb">
             <li>
                 <a href="#">
@@ -30,7 +31,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h4 class="panel-title">Busqueda</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -50,8 +52,8 @@
 
                         <tbody>
                         <tr>
-{{--                            <td>{{{ $provincium->id_pr }}}</td>--}}
-{{--                            <td>{{{ $provincium->id_re }}}</td>--}}
+                            {{--                            <td>{{{ $provincium->id_pr }}}</td>--}}
+                            {{--                            <td>{{{ $provincium->id_re }}}</td>--}}
                             <td>{{{ $provincium->str_descripcion }}}</td>
                             <td>{{{ $provincium->num_comunas }}}</td>
                             <td>

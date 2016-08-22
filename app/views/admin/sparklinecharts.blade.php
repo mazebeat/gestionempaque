@@ -4,11 +4,11 @@
 @section('title')
     Sparkline Charts
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/css/pages/sparklinecharts.css') }}" rel="stylesheet" type="text/css"/>
     <!-- end of page level css -->
 @stop
@@ -20,7 +20,8 @@
         <h1>Sparkline Charts</h1>
         <ol class="breadcrumb">
             <li class="active">
-                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="16" data-color="#333" data-hovercolor="#333"></i>
+                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="16" data-color="#333"
+                                                       data-hovercolor="#333"></i>
                     Home
                 </a>
             </li>
@@ -38,7 +39,8 @@
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <i class="livicon" data-name="spinner-five" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                    <i class="livicon" data-name="spinner-five" data-size="16" data-loop="true" data-c="#fff"
+                       data-hc="white"></i>
                     Sparkline Charts
                 </h3>
             </div>

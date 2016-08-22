@@ -6,26 +6,31 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/vendors/owl-carousel/owl.theme.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/vendors/devicon/devicon.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/vendors/devicon/devicon-colors.css') }}">
-    @endsection
+@endsection
 
-    @section('content')
-            <!-- Slider Section Start -->
+@section('content')
+    <!-- Slider Section Start -->
     <div class="row">
         <!-- Left Heading Section Start -->
         <div class="col-md-7 col-sm-12">
             <h2><label>Bienvenido a <strong>Gestión Empaques</strong></label></h2>
 
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type
                 specimen book.
             </p>
 
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s.
             </p>
 
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s.Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Corrupti atque, tenetur
                 quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem
             </p>
         </div>

@@ -15,5 +15,5 @@ class Provincium extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'region_cl';
 	protected $primaryKey = "_id";
-	protected $dates      = ['deleted_at'];
+	protected $dates = ['deleted_at'];
 }

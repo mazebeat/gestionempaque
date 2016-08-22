@@ -7,5 +7,5 @@ class Repechaje extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'repechaje';
 	protected $primaryKey = "_id";
-	protected $dates      = ['deleted_at'];
+	protected $dates = ['deleted_at'];
 }

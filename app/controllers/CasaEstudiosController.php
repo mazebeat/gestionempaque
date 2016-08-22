@@ -1,6 +1,7 @@
 <?php
 
-class CasaestudiosController extends JoshController {
+class CasaestudiosController extends JoshController
+{
 
 	/**
 	 * CasaEstudio Repository
@@ -46,8 +47,7 @@ class CasaestudiosController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, CasaEstudio::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->casaEstudio->create($input);
 
 			return Redirect::route('admin.casaestudios.index');
@@ -62,7 +62,7 @@ class CasaestudiosController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,15 +75,14 @@ class CasaestudiosController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$casaEstudio = $this->casaEstudio->find($id);
 
-		if (is_null($casaEstudio))
-		{
+		if (is_null($casaEstudio)) {
 			return Redirect::route('admin.casaestudios.index');
 		}
 
@@ -93,7 +92,7 @@ class CasaestudiosController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -101,8 +100,7 @@ class CasaestudiosController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, CasaEstudio::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$casaEstudio = $this->casaEstudio->find($id);
 			$casaEstudio->update($input);
 
@@ -118,7 +116,7 @@ class CasaestudiosController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

@@ -4,11 +4,11 @@
 @section('title')
     Page Builder
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/vendors/gridmanager/dist/css/jquery.gridmanager.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/gridmanager/demo.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/css/pages/grid_manager.css') }}" rel="stylesheet"/>
@@ -24,7 +24,8 @@
         </h1>
         <ol class="breadcrumb">
             <li class="active">
-                <a href="index"> <i class="livicon" data-name="home" data-size="16" data-color="#333" data-hovercolor="#333"></i>
+                <a href="index"> <i class="livicon" data-name="home" data-size="16" data-color="#333"
+                                    data-hovercolor="#333"></i>
                     Home
                 </a>
             </li>
@@ -47,7 +48,8 @@
         </div>
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="livicon" data-name="map" data-size="14" data-loop="true" data-c="white" data-hc="white"></i>
+                <h3 class="panel-title"><i class="livicon" data-name="map" data-size="14" data-loop="true"
+                                           data-c="white" data-hc="white"></i>
                     Page Builder
                 </h3>
             <span class="pull-right clickable">
@@ -70,8 +72,12 @@
                                 </h2>
 
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lorem sed posuere eleifend. Ut nec tellus sed erat iaculis bibendum ac et diam. Cras convallis tincidunt placerat. Duis posuere leo
-                                    quis tincidunt iaculis. Vestibulum pulvinar, neque quis cursus rhoncus, justo mi dictum enim, non facilisis ligula justo eleifend felis. Donec velit nibh, egestas eu sapien at, bibendum consectetur urna. Donec
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit
+                                    lorem sed posuere eleifend. Ut nec tellus sed erat iaculis bibendum ac et diam. Cras
+                                    convallis tincidunt placerat. Duis posuere leo
+                                    quis tincidunt iaculis. Vestibulum pulvinar, neque quis cursus rhoncus, justo mi
+                                    dictum enim, non facilisis ligula justo eleifend felis. Donec velit nibh, egestas eu
+                                    sapien at, bibendum consectetur urna. Donec
                                     tincidunt vitae erat vitae congue.
                                 </p>
                             </div>
@@ -81,8 +87,12 @@
                                 </h2>
 
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lorem sed posuere eleifend. Ut nec tellus sed erat iaculis bibendum ac et diam. Cras convallis tincidunt placerat. Duis posuere leo
-                                    quis tincidunt iaculis. Vestibulum pulvinar, neque quis cursus rhoncus, justo mi dictum enim, non facilisis ligula justo eleifend felis. Donec velit nibh, egestas eu sapien at, bibendum consectetur urna. Donec
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit
+                                    lorem sed posuere eleifend. Ut nec tellus sed erat iaculis bibendum ac et diam. Cras
+                                    convallis tincidunt placerat. Duis posuere leo
+                                    quis tincidunt iaculis. Vestibulum pulvinar, neque quis cursus rhoncus, justo mi
+                                    dictum enim, non facilisis ligula justo eleifend felis. Donec velit nibh, egestas eu
+                                    sapien at, bibendum consectetur urna. Donec
                                     tincidunt vitae erat vitae congue.
                                 </p>
                             </div>
@@ -94,8 +104,11 @@
                                 </h3>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                             <div class='column col-md-4'>
@@ -104,8 +117,11 @@
                                 </h3>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                             <div class='column col-md-4'>
@@ -114,8 +130,11 @@
                                 </h3>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                         </div>
@@ -128,8 +147,11 @@
                                 </h4>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                             <div class='column col-md-3'>
@@ -140,8 +162,11 @@
                                 </h4>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                             <div class='column col-md-3'>
@@ -152,8 +177,11 @@
                                 </h4>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                             <div class='column col-md-3'>
@@ -164,8 +192,11 @@
                                 </h4>
 
                                 <p>
-                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum. Pellentesque at mauris non tortor elementum pretium.
-                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
+                                    Vivamus faucibus nibh ut aliquam dignissim. Nunc tempus velit sit amet eleifend
+                                    tempor. Aliquam vel tortor euismod, viverra urna tempus, scelerisque ipsum.
+                                    Pellentesque at mauris non tortor elementum pretium.
+                                    Integer rutrum libero at facilisis interdum. Praesent lobortis elit erat, quis
+                                    elementum justo rhoncus eu. Ut eu dui lectus. Duis faucibus eu augue ut placerat.
                                 </p>
                             </div>
                         </div>
@@ -235,7 +266,8 @@
 
 @section('footer_scripts')
     <script type="text/javascript" src="{{ asset('assets/vendors/tinymce/js/tinymce/tinymce.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/tinymce/js/tinymce/jquery.tinymce.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/gridmanager/dist/js/jquery.gridmanager.js') }}"></script>
     <script src="{{ asset('assets/js/pages/grid_manager.js') }}"></script>
 @stop

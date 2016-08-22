@@ -15,13 +15,17 @@
                 <br/>
 
                 <div class="divide">
-                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
+                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true"
+                                                    data-c="#3a5795" data-hc="#3a5795"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
+                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee"
+                                    data-hc="#55acee"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
+                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true"
+                                    data-c="#d73d32" data-hc="#d73d32"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
+                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true"
+                                    data-c="#1b86bd" data-hc="#1b86bd"></i>
                     </a>
                 </div>
             </div>
@@ -39,13 +43,17 @@
                 <br/>
 
                 <div class="divide">
-                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
+                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true"
+                                                    data-c="#3a5795" data-hc="#3a5795"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
+                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee"
+                                    data-hc="#55acee"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
+                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true"
+                                    data-c="#d73d32" data-hc="#d73d32"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
+                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true"
+                                    data-c="#1b86bd" data-hc="#1b86bd"></i>
                     </a>
                 </div>
             </div>
@@ -63,13 +71,17 @@
                 <br/>
 
                 <div class="divide">
-                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
+                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true"
+                                                    data-c="#3a5795" data-hc="#3a5795"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
+                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee"
+                                    data-hc="#55acee"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
+                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true"
+                                    data-c="#d73d32" data-hc="#d73d32"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
+                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true"
+                                    data-c="#1b86bd" data-hc="#1b86bd"></i>
                     </a>
                 </div>
             </div>
@@ -87,13 +99,17 @@
                 <br/>
 
                 <div class="divide">
-                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
+                    <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true"
+                                                    data-c="#3a5795" data-hc="#3a5795"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
+                    <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee"
+                                    data-hc="#55acee"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
+                    <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true"
+                                    data-c="#d73d32" data-hc="#d73d32"></i>
                     </a>
-                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
+                    <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true"
+                                    data-c="#1b86bd" data-hc="#1b86bd"></i>
                     </a>
                 </div>
             </div>

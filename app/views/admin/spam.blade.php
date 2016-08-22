@@ -152,7 +152,8 @@
                             </td>
                             <td width="22%" class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">John</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">John</a>
                             </td>
                             <td width="56%" class="view-message ">
                                 <a href="view_mail">Fwd: Make changes as needed</a>
@@ -178,7 +179,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Marin</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Marin</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Ya comin' to our July webinar?</a>
@@ -202,7 +204,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Jenny</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Jenny</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Mobile-First Type & Layout</a>
@@ -226,7 +229,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Twiter</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Twiter</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">This looks like borrows page</a>
@@ -250,7 +254,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Grace</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Grace</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Ya comin' to our July webinar?</a>
@@ -274,7 +279,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Kimy</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Kimy</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Analysis on Views</a>
@@ -300,7 +306,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Tony</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Tony</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Ya comin' to our July webinar?</a>
@@ -326,7 +333,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Sandy</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Sandy</a>
                             </td>
                             <td class="view-message view-message">
                                 <a href="view_mail">Analysis on Views</a>
@@ -350,7 +358,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Avin</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Avin</a>
                             </td>
                             <td class="view-message view-message">
                                 <a href="view_mail">Mobile-First Type & Layout</a>
@@ -374,7 +383,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">MJ</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">MJ</a>
                             </td>
                             <td class="view-message view-message">
                                 <a href="view_mail">Make changes as needed</a>
@@ -398,7 +408,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Lofer</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Lofer</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Welcome back to here</a>
@@ -423,7 +434,8 @@
                             <td class="hidden-xs">
                                 <span class="view-message hidden-xs">
                                     <a href="view_mail">
-                                        <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Renny</a>
+                                        <img data-src="holder.js/25x25/#000:#fff"
+                                             class="img-circle img-responsive pull-left" alt="Image">Renny</a>
                                 </span>
                             </td>
                             <td class="view-message">
@@ -450,7 +462,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Benny</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Benny</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">This looks like borrows page</a>
@@ -477,7 +490,8 @@
                             <td class="hidden-xs">
                                 <span class="view-message hidden-xs">
                                     <a href="view_mail">
-                                        <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Grace</a>
+                                        <img data-src="holder.js/25x25/#000:#fff"
+                                             class="img-circle img-responsive pull-left" alt="Image">Grace</a>
                                 </span>
                             </td>
                             <td class="view-message view-message">
@@ -502,7 +516,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Mike</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Mike</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Ya comin' to our July webinar?</a>
@@ -526,7 +541,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Clark</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Clark</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Make changes as needed</a>
@@ -550,7 +566,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">Robin</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">Robin</a>
                             </td>
                             <td class="view-message">
                                 <a href="view_mail">Mobile-First Type & Layout</a>
@@ -574,7 +591,8 @@
                             </td>
                             <td class="view-message hidden-xs">
                                 <a href="view_mail">
-                                    <img data-src="holder.js/25x25/#000:#fff" class="img-circle img-responsive pull-left" alt="Image">FB</a>
+                                    <img data-src="holder.js/25x25/#000:#fff"
+                                         class="img-circle img-responsive pull-left" alt="Image">FB</a>
                             </td>
                             <td class="view-message view-message">
                                 <a href="view_mail">Ya comin' to our July webinar?</a>

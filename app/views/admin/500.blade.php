@@ -18,7 +18,8 @@
     <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10 middle">
         <div class="error-container">
             <div class="error-main">
-                <h1><i class="livicon" data-name="warning" data-s="100" data-c="#ffbc60" data-eventtype="click" data-iteration="15" data-duration="2000"></i>
+                <h1><i class="livicon" data-name="warning" data-s="100" data-c="#ffbc60" data-eventtype="click"
+                       data-iteration="15" data-duration="2000"></i>
                     500
                 </h1>
 
@@ -27,7 +28,8 @@
                     <br>
                     There was an error. Please Try again later. Thats all we know
                 </h3>
-                <button type="button" class="btn btn-responsive button-alignment btn-Primary" style="margin-bottom:7px;" data-toggle="button">
+                <button type="button" class="btn btn-responsive button-alignment btn-Primary" style="margin-bottom:7px;"
+                        data-toggle="button">
                     <a href="index">Home</a>
                 </button>
                 <br></div>

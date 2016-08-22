@@ -8,7 +8,8 @@
 
 {{-- page level styles --}}
 @section('header_styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css"/>
 @stop
 
@@ -33,7 +34,8 @@
             <div class="panel panel-warning">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <i class="livicon" data-name="users-remove" data-size="18" data-c="#ffffff" data-hc="#ffffff"></i>
+                        <i class="livicon" data-name="users-remove" data-size="18" data-c="#ffffff"
+                           data-hc="#ffffff"></i>
                         Deleted Users List
                     </h4>
                 </div>
@@ -56,7 +58,11 @@
                                 <td>{{{ $user->email }}}</td>
                                 <td>{{{ $user->created_at->diffForHumans() }}}</td>
                                 <td>
-                                    <a href="{{ route('restore/user', $user->id) }}"><i class="livicon" data-name="user-flag" data-c="#6CC66C" data-hc="#6CC66C" data-size="18"></i></a>
+                                    <a href="{{ route('restore/user', $user->id) }}"><i class="livicon"
+                                                                                        data-name="user-flag"
+                                                                                        data-c="#6CC66C"
+                                                                                        data-hc="#6CC66C"
+                                                                                        data-size="18"></i></a>
                                 </td>
                             </tr>
                         @endforeach

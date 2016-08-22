@@ -4,12 +4,13 @@
 @section('title')
     Form Elements
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!-- daterange picker -->
-    <link href="{{ asset('assets/vendors/daterangepicker/css/daterangepicker-bs3.css') }}" rel="stylesheet" type="text/css"/>
+{{-- page level styles --}}
+@section('header_styles')
+    <!-- daterange picker -->
+    <link href="{{ asset('assets/vendors/daterangepicker/css/daterangepicker-bs3.css') }}" rel="stylesheet"
+          type="text/css"/>
     <!--select css-->
     <link href="{{ asset('assets/vendors/select2/select2.css') }}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ asset('assets/vendors/select2/select2-bootstrap.css') }}"/>
@@ -47,7 +48,8 @@
             <div class="col-md-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="magic" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="magic" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Input masks
                         </h3>
                     <span class="pull-right clickable">
@@ -66,7 +68,8 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                    <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
+                                           data-mask/>
                                 </div>
                                 <!-- /.input group --> </div>
                             <!-- /.form group -->
@@ -76,7 +79,8 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
+                                    <input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'"
+                                           data-mask/>
                                 </div>
                                 <!-- /.input group --> </div>
                             <!-- /.form group -->
@@ -90,7 +94,8 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                    <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"'
+                                           data-mask/>
                                 </div>
                                 <!-- /.input group --> </div>
                             <!-- /.form group -->
@@ -104,7 +109,9 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <input type="text" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask/>
+                                    <input type="text" class="form-control"
+                                           data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']"
+                                           data-mask/>
                                 </div>
                                 <!-- /.input group --> </div>
                             <!-- /.form group -->
@@ -126,7 +133,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Select2
                         </h3>
                     <span class="pull-right clickable">
@@ -636,8 +644,11 @@
                                     <button class="btn btn-default" type="button" data-select2-open="multi-append">
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
-                                    <button class="btn btn-default" type="button" data-select2-open="multi-prepend">State</button>
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button" data-select2-open="multi-prepend">
+                                        State
+                                    </button>
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
                                         Action
                                         <span class="caret"></span>
                                     </button>
@@ -672,8 +683,11 @@
 
                             <div class="input-group select2-bootstrap-prepend">
                                 <div class="input-group-btn">
-                                    <button class="btn btn-default" type="button" data-select2-open="multi-prepend">State</button>
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button" data-select2-open="multi-prepend">
+                                        State
+                                    </button>
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">
                                         Action
                                         <span class="caret"></span>
                                     </button>
@@ -1374,7 +1388,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="credit-card" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="credit-card" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Credit Card
                         </h3>
                                 <span class="pull-right clickable">
@@ -1393,7 +1408,8 @@
                                         <label class="col-md-3 control-label">Card Number</label>
 
                                         <div class="col-md-9">
-                                            <input name="number" required type="text" placeholder="" class="form-control"/>
+                                            <input name="number" required type="text" placeholder=""
+                                                   class="form-control"/>
                                         </div>
                                     </div>
 
@@ -1433,7 +1449,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="clock" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="clock" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Date Range picker
                         </h3>
                     <span class="pull-right clickable">
@@ -1491,7 +1508,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="tag" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="tag" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             iCheck - Checkbox &amp; Radio Inputs
                         </h3>
                     <span class="pull-right clickable">
@@ -1585,7 +1603,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="gear" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gear" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bootstrap Input MaxLength
                         </h3>
                     <span class="pull-right clickable">
@@ -1599,12 +1618,14 @@
                             <label for="default" class="control-label">
                                 Default MaxLength
                             </label>
-                            <input maxlength="25" name="defaultconfig" id="defaultconfig" type="text" class="form-control" placeholder="Placeholder text"></div>
+                            <input maxlength="25" name="defaultconfig" id="defaultconfig" type="text"
+                                   class="form-control" placeholder="Placeholder text"></div>
                         <div class="form-group">
                             <label for="default" class="control-label">
                                 Threshold value
                             </label>
-                            <input type="text" maxlength="25" name="thresholdconfig" class="form-control" id="thresholdconfig"/>
+                            <input type="text" maxlength="25" name="thresholdconfig" class="form-control"
+                                   id="thresholdconfig"/>
                         </div>
                         <div class="form-group">
                             <label for="default" class="control-label">Options</label>
@@ -1618,7 +1639,8 @@
                         </div>
                         <div class="form-group">
                             <label for="default" class="control-label">Text Area</label>
-                            <textarea id="textarea" class="form-control" maxlength="225" rows="2" placeholder="This textarea has a limit of 225 chars."></textarea>
+                            <textarea id="textarea" class="form-control" maxlength="225" rows="2"
+                                      placeholder="This textarea has a limit of 225 chars."></textarea>
                         </div>
                         <div class="form-group">
                             <label for="default" class="control-label">Position</label>
@@ -1629,7 +1651,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="lab" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="lab" data-size="18" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Auto Grow
                         </h3>
                     <span class="pull-right clickable">
@@ -1643,7 +1666,8 @@
                             </label>
 
                             <div class="input-group">
-                                <textarea placeholder="Write something here..." class="form-control" data-autogrow rows="3" cols="80"></textarea>
+                                <textarea placeholder="Write something here..." class="form-control" data-autogrow
+                                          rows="3" cols="80"></textarea>
                             </div>
                             <!-- /.input group --> </div>
                         <div class="form-group">
@@ -1652,7 +1676,8 @@
                             </label>
 
                             <div class="input-group">
-                                <textarea placeholder="Write something here..." class="auto2 form-control pd-45" data-autogrow rows="3" cols="80"></textarea>
+                                <textarea placeholder="Write something here..." class="auto2 form-control pd-45"
+                                          data-autogrow rows="3" cols="80"></textarea>
                             </div>
                             <!-- /.input group --> </div>
                         <div class="form-group">
@@ -1661,7 +1686,8 @@
                             </label>
 
                             <div class="input-group">
-                                <textarea placeholder="Write something here..." class="span3 form-control scroll pd" data-autogrow rows="3" cols="80"></textarea>
+                                <textarea placeholder="Write something here..." class="span3 form-control scroll pd"
+                                          data-autogrow rows="3" cols="80"></textarea>
                             </div>
                             <!-- /.input group --> </div>
                         <div class="form-group">
@@ -1671,8 +1697,11 @@
 
                             <div class="input-group">
                                 <div class="span4">
-                                    <textarea placeholder="Write something here..." class="span3 form-control display-no" data-autogrow rows="3" cols="80"></textarea>
-                                    <a onclick="$(this).closest('.span4').find('textarea').toggle(); $(this).text(this.text=='Show'?'Hide':'Show');return false;" href="#">Show</a>
+                                    <textarea placeholder="Write something here..."
+                                              class="span3 form-control display-no" data-autogrow rows="3"
+                                              cols="80"></textarea>
+                                    <a onclick="$(this).closest('.span4').find('textarea').toggle(); $(this).text(this.text=='Show'?'Hide':'Show');return false;"
+                                       href="#">Show</a>
                                 </div>
                             </div>
                             <!-- /.input group --> </div>
@@ -1682,15 +1711,17 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <!-- InputMask -->
     <script src="{{ asset('assets/vendors/input-mask/jquery.inputmask.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('assets/vendors/input-mask/jquery.inputmask.date.extensions.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('assets/vendors/input-mask/jquery.inputmask.extensions.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/vendors/input-mask/jquery.inputmask.date.extensions.js') }}"
+            type="text/javascript"></script>
+    <script src="{{ asset('assets/vendors/input-mask/jquery.inputmask.extensions.js') }}"
+            type="text/javascript"></script>
     <!-- date-range-picker -->
     <script src="{{ asset('assets/vendors/daterangepicker/daterangepicker.js') }}" type="text/javascript"></script>
     <script src="{{ asset('assets/vendors/select2/select2.js') }}" type="text/javascript"></script>

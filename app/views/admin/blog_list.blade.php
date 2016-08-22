@@ -47,20 +47,25 @@
                         <p class="date">2 hours ago</p>
 
                         <p>
-                            Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+                            Science cuts two ways, of course; its products can be used for both good and evil. But
+                            there's no turning back from science. The early warnings about technological dangers also
+                            come from science.
                         </p>
 
                         <p class="additional-post-wrap">
-                        <span class="additional-post"> <i class="livicon" data-name="user" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                        <span class="additional-post"> <i class="livicon" data-name="user" data-size="13"
+                                                          data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
                             by
                             <a href="#">Admin</a>
                         </span>
                         <span class="additional-post">
-                            <i class="livicon" data-name="clock" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="clock" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             <a href="#">April 20</a>
                         </span>
                         <span class="additional-post">
-                            <i class="livicon" data-name="comment" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="comment" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             <a href="#">3 comments</a>
                         </span>
                         </p>
@@ -84,21 +89,26 @@
                         <p class="date">2 hours ago</p>
 
                         <p>
-                            Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+                            Science cuts two ways, of course; its products can be used for both good and evil. But
+                            there's no turning back from science. The early warnings about technological dangers also
+                            come from science.
                         </p>
 
                         <p class="additional-post-wrap">
                         <span class="additional-post">
-                            <i class="livicon" data-name="user" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="user" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             by
                             <a href="#">Admin</a>
                         </span>
                         <span class="additional-post">
-                            <i class="livicon" data-name="clock" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="clock" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             <a href="#">April 20</a>
                         </span>
                         <span class="additional-post">
-                            <i class="livicon" data-name="comment" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="comment" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             <a href="#">3 comments</a>
                         </span>
                         </p>
@@ -122,21 +132,26 @@
                         <p class="date">2 hours ago</p>
 
                         <p>
-                            Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+                            Science cuts two ways, of course; its products can be used for both good and evil. But
+                            there's no turning back from science. The early warnings about technological dangers also
+                            come from science.
                         </p>
 
                         <p class="additional-post-wrap">
                         <span class="additional-post">
-                            <i class="livicon" data-name="user" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="user" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             by
                             <a href="#">Admin</a>
                         </span>
                         <span class="additional-post">
-                            <i class="livicon" data-name="clock" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="clock" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             <a href="#">April 20</a>
                         </span>
                         <span class="additional-post">
-                            <i class="livicon" data-name="comment" data-size="13" data-loop="true" data-c="#5bc0de" data-hc="#5bc0de"></i>
+                            <i class="livicon" data-name="comment" data-size="13" data-loop="true" data-c="#5bc0de"
+                               data-hc="#5bc0de"></i>
                             <a href="#">3 comments</a>
                         </span>
                         </p>
@@ -219,7 +234,8 @@
                         <div class="accordion">
                             <div class="accordion-group">
                                 <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_markup">Show code</a>
+                                    <a class="accordion-toggle" data-toggle="collapse" href="#accordion_example_markup">Show
+                                        code</a>
                                 </div>
                                 <div id="accordion_example_markup" class="accordion-body collapse">
                                     <div class="accordion-inner highlight">
@@ -305,7 +321,8 @@
                     <ul class="media-list media-xs media-dotted">
                         <li class="media">
                             <a class="pull-left" href="#">
-                                <img data-src="holder.js/35x35/#6CC66C:#fff" width="35" class="img-circle img-responsive pull-left" height="35" alt="riot"></a>
+                                <img data-src="holder.js/35x35/#6CC66C:#fff" width="35"
+                                     class="img-circle img-responsive pull-left" height="35" alt="riot"></a>
 
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -318,14 +335,16 @@
                                     <small>yesterday</small>
                                 </p>
                                 <p class="small">
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo...
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin commodo...
                                 </p>
                             </div>
                         </li>
                         <hr>
                         <li class="media">
                             <a class="pull-left" href="#">
-                                <img data-src="holder.js/35x35/#6CC66C:#fff" width="35" class="img-circle img-responsive pull-left" height="35" alt="riot"></a>
+                                <img data-src="holder.js/35x35/#6CC66C:#fff" width="35"
+                                     class="img-circle img-responsive pull-left" height="35" alt="riot"></a>
 
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -338,14 +357,16 @@
                                     <small>yesterday</small>
                                 </p>
                                 <p class="small">
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo...
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin commodo...
                                 </p>
                             </div>
                         </li>
                         <hr>
                         <li class="media">
                             <a class="pull-left" href="#">
-                                <img data-src="holder.js/35x35/#6CC66C:#fff" width="35" class="img-circle img-responsive pull-left" height="35" alt="riot"></a>
+                                <img data-src="holder.js/35x35/#6CC66C:#fff" width="35"
+                                     class="img-circle img-responsive pull-left" height="35" alt="riot"></a>
 
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -358,7 +379,8 @@
                                     <small>yesterday</small>
                                 </p>
                                 <p class="small">
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo...
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin commodo...
                                 </p>
                             </div>
                         </li>
@@ -369,9 +391,9 @@
             <!-- /.col-md-4 --> </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    @section('footer_scripts')
-            <!--tags-->
+@section('footer_scripts')
+    <!--tags-->
     <script src="{{ asset('assets/vendors/tags/dist/bootstrap-tagsinput.js') }}"></script>
 @stop

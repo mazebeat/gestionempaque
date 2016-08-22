@@ -1,6 +1,7 @@
 <?php
 
-class LocalsController extends JoshController {
+class LocalsController extends JoshController
+{
 
 	/**
 	 * Local Repository
@@ -46,8 +47,7 @@ class LocalsController extends JoshController {
 		$input = Input::all();
 		$validation = Validator::make($input, Local::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$this->local->create($input);
 
 			return Redirect::route('admin.locals.index');
@@ -62,7 +62,7 @@ class LocalsController extends JoshController {
 	/**
 	 * Display the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function show($id)
@@ -75,15 +75,14 @@ class LocalsController extends JoshController {
 	/**
 	 * Show the form for editing the specified resource.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
 		$local = $this->local->find($id);
 
-		if (is_null($local))
-		{
+		if (is_null($local)) {
 			return Redirect::route('admin.locals.index');
 		}
 
@@ -93,7 +92,7 @@ class LocalsController extends JoshController {
 	/**
 	 * Update the specified resource in storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function update($id)
@@ -101,8 +100,7 @@ class LocalsController extends JoshController {
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Local::$rules);
 
-		if ($validation->passes())
-		{
+		if ($validation->passes()) {
 			$local = $this->local->find($id);
 			$local->update($input);
 
@@ -118,7 +116,7 @@ class LocalsController extends JoshController {
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int $id
 	 * @return Response
 	 */
 	public function destroy($id)

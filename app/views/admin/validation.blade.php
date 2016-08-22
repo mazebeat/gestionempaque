@@ -4,11 +4,11 @@
 @section('title')
     Form Validations
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/form2.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/pages/form3.css') }}"/>
     <link href="{{ asset('assets/vendors/jasny-bootstrap/css/jasny-bootstrap.min.css') }}" rel="stylesheet"/>
@@ -45,7 +45,8 @@
             <div class="col-md-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="wrench" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="wrench" data-size="16" data-loop="true"
+                                                   data-c="#fff" data-hc="white"></i>
                             Registration Validation
                         </h3>
                     <span class="pull-right clickable">
@@ -56,7 +57,8 @@
                         <form method="post">
                             <div class="form-group">
                                 <div class="alert alert-success alert-dismissable">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-hidden="true">&times;</button>
                                     Press tab for validation after entering input.
                                 </div>
                                 <label for="validate-text">
@@ -64,7 +66,8 @@
                                 </label>
 
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="validate-text" id="validate-text" placeholder="Enter Validate Text" required>
+                                    <input type="text" class="form-control" name="validate-text" id="validate-text"
+                                           placeholder="Enter Validate Text" required>
                                 <span class="input-group-addon danger">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </span>
@@ -74,7 +77,8 @@
                                 <label for="validate-optional">Optional</label>
 
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="validate-optional" id="validate-optional" placeholder="Optional">
+                                    <input type="text" class="form-control" name="validate-optional"
+                                           id="validate-optional" placeholder="Optional">
                                 <span class="input-group-addon info">
                                     <span class="glyphicon glyphicon-asterisk"></span>
                                 </span>
@@ -86,7 +90,8 @@
                                 </label>
 
                                 <div class="input-group" data-validate="email">
-                                    <input type="text" class="form-control" name="validate-email" id="validate-email" placeholder="Enter Validate Email" required>
+                                    <input type="text" class="form-control" name="validate-email" id="validate-email"
+                                           placeholder="Enter Validate Email" required>
                                 <span class="input-group-addon danger">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </span>
@@ -98,7 +103,8 @@
                                 </label>
 
                                 <div class="input-group" data-validate="phone">
-                                    <input type="text" class="form-control" name="validate-phone" id="validate-phone" placeholder="(814) 555-1234" required>
+                                    <input type="text" class="form-control" name="validate-phone" id="validate-phone"
+                                           placeholder="(814) 555-1234" required>
                                 <span class="input-group-addon danger">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </span>
@@ -110,7 +116,8 @@
                                 </label>
 
                                 <div class="input-group" data-validate="length" data-length="5">
-                                    <input type="text" class="form-control" name="validate-length" id="validate-length" placeholder="Maximum length 5 characters" required>
+                                    <input type="text" class="form-control" name="validate-length" id="validate-length"
+                                           placeholder="Maximum length 5 characters" required>
                                 <span class="input-group-addon danger">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </span>
@@ -141,7 +148,8 @@
                                 </label>
 
                                 <div class="input-group" data-validate="number">
-                                    <input type="text" class="form-control" name="validate-number" id="validate-number" placeholder="Validate Number" required>
+                                    <input type="text" class="form-control" name="validate-number" id="validate-number"
+                                           placeholder="Validate Number" required>
                                 <span class="input-group-addon danger">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </span>
@@ -153,7 +161,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="search" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="search" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Form Validation
                         </h3>
                     <span class="pull-right clickable">
@@ -161,28 +170,34 @@
                     </span>
                     </div>
                     <div class="panel-body">
-                        <form method="post" name="frmOnline" onsubmit="return Validation()" enctype="multipart/form-data">
+                        <form method="post" name="frmOnline" onsubmit="return Validation()"
+                              enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="txtName" id="txtName" class="form-control input-md" placeholder="First Name"></div>
+                                        <input type="text" name="txtName" id="txtName" class="form-control input-md"
+                                               placeholder="First Name"></div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="last_name" id="txtlastname" class="form-control input-md" placeholder="Last Name"></div>
+                                        <input type="text" name="last_name" id="txtlastname"
+                                               class="form-control input-md" placeholder="Last Name"></div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="txtEmail" id="txtEmail" class="form-control input-md" placeholder=" Email Address"></div>
+                                    <input type="text" name="txtEmail" id="txtEmail" class="form-control input-md"
+                                           placeholder=" Email Address"></div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="display_name" id="txtAddress1" class="form-control input-md" placeholder="Address line1"></div>
+                                    <input type="text" name="display_name" id="txtAddress1"
+                                           class="form-control input-md" placeholder="Address line1"></div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="display_name" id="txtAddress2" class="form-control input-md" placeholder="Address line2"></div>
+                                    <input type="text" name="display_name" id="txtAddress2"
+                                           class="form-control input-md" placeholder="Address line2"></div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -278,18 +293,22 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="display_name" id="txtPhone" class="form-control input-md" placeholder="Your phone number"></div>
+                                    <input type="text" name="display_name" id="txtPhone" class="form-control input-md"
+                                           placeholder="Your phone number"></div>
                             </div>
                             <div class="col-md-12">
                             <span class="button-checkbox">
-                                <button type="button" class="btn btn-block btn-info" id="btn" data-color="info" tabindex="7">I Agree</button>
+                                <button type="button" class="btn btn-block btn-info" id="btn" data-color="info"
+                                        tabindex="7">I Agree</button>
                                 <input type="checkbox" name="chkConditions" id="chkConditions" class="hidden" value="1"></span>
                             </div>
                             <div class="col-md-12 mar-10">
                                 <div class="col-xs-6 col-md-6">
-                                    <input type="submit" name="btnSubmit" id="btnSubmit" value="Register" class="btn btn-primary btn-block btn-md btn-responsive"></div>
+                                    <input type="submit" name="btnSubmit" id="btnSubmit" value="Register"
+                                           class="btn btn-primary btn-block btn-md btn-responsive"></div>
                                 <div class="col-xs-6 col-md-6">
-                                    <input type="reset" value="Cancel" class="btn btn-success btn-block btn-md btn-responsive"></div>
+                                    <input type="reset" value="Cancel"
+                                           class="btn btn-success btn-block btn-md btn-responsive"></div>
                             </div>
                         </form>
                     </div>
@@ -299,7 +318,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Password Validation
                         </h3>
                     <span class="pull-right clickable">
@@ -308,7 +328,8 @@
                     </div>
                     <div class="panel-body">
                         <form method="post" id="passwordForm">
-                            <input type="password" class="input-md form-control" name="password1" id="password1" placeholder="New Password" autocomplete="off">
+                            <input type="password" class="input-md form-control" name="password1" id="password1"
+                                   placeholder="New Password" autocomplete="off">
 
                             <div class="row">
                                 <div class="col-sm-6 padding">
@@ -326,7 +347,8 @@
                                     One Number
                                 </div>
                             </div>
-                            <input type="password" class="input-md form-control" name="password2" id="password2" placeholder="Repeat Password" autocomplete="off">
+                            <input type="password" class="input-md form-control" name="password2" id="password2"
+                                   placeholder="Repeat Password" autocomplete="off">
 
                             <div class="row">
                                 <div class="col-sm-12 padding">
@@ -345,7 +367,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Terms in Modal
                         </h3>
                     <span class="pull-right clickable">
@@ -358,36 +381,49 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="first_name" id="first_name" class="form-control input-md" placeholder="First Name" tabindex="1"></div>
+                                            <input type="text" name="first_name" id="first_name"
+                                                   class="form-control input-md" placeholder="First Name" tabindex="1">
+                                        </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="last_name" id="last_name" class="form-control input-md" placeholder="Last Name" tabindex="2"></div>
+                                            <input type="text" name="last_name" id="last_name"
+                                                   class="form-control input-md" placeholder="Last Name" tabindex="2">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="display_name" id="display_name" class="form-control input-md" placeholder="Display Name" tabindex="3"></div>
+                                        <input type="text" name="display_name" id="display_name"
+                                               class="form-control input-md" placeholder="Display Name" tabindex="3">
+                                    </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control input-md" placeholder="Email Address" tabindex="4"></div>
+                                        <input type="email" name="email" id="email" class="form-control input-md"
+                                               placeholder="Email Address" tabindex="4"></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="form-control input-md" placeholder="Password" tabindex="5"></div>
+                                            <input type="password" name="password" id="password"
+                                                   class="form-control input-md" placeholder="Password" tabindex="5">
+                                        </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-md" placeholder="Confirm Password" tabindex="6"></div>
+                                            <input type="password" name="password_confirmation"
+                                                   id="password_confirmation" class="form-control input-md"
+                                                   placeholder="Confirm Password" tabindex="6"></div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                     <span class="button-checkbox">
-                                        <button type="button" class="btn btn-block btn-default" data-color="info" tabindex="7">I Agree</button>
-                                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1"></span>
+                                        <button type="button" class="btn btn-block btn-default" data-color="info"
+                                                tabindex="7">I Agree</button>
+                                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden"
+                                               value="1"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-12 padding">
@@ -409,33 +445,42 @@
                             </form>
                         </div>
                         <!-- Modal -->
-                        <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                                        </button>
                                         <h4 class="modal-title" id="myModalLabel">
                                             Terms & Conditions
                                         </h4>
                                     </div>
                                     <div class="modal-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque,
+                                            modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis
+                                            perferendis rem nisi tempore possimus ipsa porro delectus
                                             quidem dolorem ad.
                                         </p>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque,
+                                            modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis
+                                            perferendis rem nisi tempore possimus ipsa porro delectus
                                             quidem dolorem ad.
                                         </p>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque,
+                                            modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis
+                                            perferendis rem nisi tempore possimus ipsa porro delectus
                                             quidem dolorem ad.
                                         </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree
+                                        </button>
                                     </div>
                                 </div>
                                 <!-- /.modal-content --> </div>
@@ -446,7 +491,8 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="pacman" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="pacman" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Validation
                         </h3>
                     <span class="pull-right clickable">
@@ -463,7 +509,8 @@
                                     "Enter First Name"/>
                                 </div>
                                 <div class="col-md-4 col-xs-6 colsm-6">
-                                    <input type="text" class="form-control" name="lastName" placeholder="Enter Last Name"/>
+                                    <input type="text" class="form-control" name="lastName"
+                                           placeholder="Enter Last Name"/>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -472,7 +519,8 @@
                                 </label>
 
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control" name="email" placeholder="Enter Email Address"/>
+                                    <input type="text" class="form-control" name="email"
+                                           placeholder="Enter Email Address"/>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -511,13 +559,14 @@
         </div>
         <!--row ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script src="{{ asset('assets/vendors/jasny-bootstrap/js/jasny-bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/vendors/validation/dist/js/bootstrapValidator.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('assets/vendors/validation/dist/js/bootstrapValidator.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/pages/validation.js') }}"></script>
 
     <!-- end of page level js -->

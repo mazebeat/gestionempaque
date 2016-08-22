@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePermisosTable extends Migration {
+class CreatePermisosTable extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -12,7 +13,7 @@ class CreatePermisosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('permisos', function(Blueprint $table) {
+		Schema::create('permisos', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('id_perfil');
 			$table->integer('id_acceso');

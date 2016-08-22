@@ -12,8 +12,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/custom.css') }}">
     <!--end of global css-->
     <!--page level css starts-->
-    @yield('style')
-    <!--end of page level css-->
+@yield('style')
+<!--end of page level css-->
 </head>
 
 <body>
@@ -22,19 +22,26 @@
     <!-- Icon Section Start -->
     <div class="icon-section">
         <div class="container">
-{{--            @include('frontend.layouts.modules.socialicons')--}}
+            {{--            @include('frontend.layouts.modules.socialicons')--}}
             @include('frontend.layouts.modules.navbar')
         </div>
     </div>
     <!-- //Icon Section End -->
 
     <!-- Nav bar Start -->
-    {{--<section id="mainnavbar">--}}
-        {{--@include('frontend.layouts.modules.navbar')--}}
-    {{--</section>--}}
-    <!-- Nav bar End -->
+{{--<section id="mainnavbar">--}}
+{{--@include('frontend.layouts.modules.navbar')--}}
+{{--</section>--}}
+<!-- Nav bar End -->
 </header>
 <!-- //Header End -->
+@if(Session::has('message') && Session::has('type'))
+    <div class="col-xs-8 col-xs-offset-2">
+        <div class="alert alert-{{ Session::get('type', 'danger') }}" role="alert" id="messagefront">
+            <strong>Mensaje: </strong> {{ Session::get('message') }}
+        </div>
+    </div>
+@endif
 
 <!--Carousel Start -->
 <section id="carousel">
@@ -59,7 +66,8 @@
     </div>
 </div>
 <!-- Copy right Section End -->
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top" data-toggle="tooltip" data-placement="left">
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top"
+   data-toggle="tooltip" data-placement="left">
     <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
 </a>
 <!--global js starts-->
@@ -72,6 +80,13 @@
 <!--global js end-->
 <!-- page level js starts-->
 @yield('script')
+@if(Session::has('message'))
+    <script type="text/javascript">
+        $(function () {
+            $('#messagefront').delay(1500).slideUp(1000);
+        });
+    </script>
+@endif
 <!--page level js ends-->
 </body>
 </html>

@@ -4,11 +4,11 @@
 @section('title')
     Portlets
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/portlet.css') }}"/>
     <!--end of page level css-->
 @stop
@@ -40,7 +40,8 @@
                 <div class=" portlet box primary">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -56,7 +57,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -65,7 +67,8 @@
                 <div class=" portlet box warning">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -81,7 +84,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -90,7 +94,8 @@
                 <div class=" portlet box primary">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -106,7 +111,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -117,7 +123,8 @@
                 <div class=" portlet box success">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -133,7 +140,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -142,7 +150,8 @@
                 <div class="portlet box danger">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -158,7 +167,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -167,7 +177,8 @@
                 <div class=" portlet box success">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -183,7 +194,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -194,7 +206,8 @@
                 <div class=" portlet box info">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -210,7 +223,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -219,7 +233,8 @@
                 <div class=" portlet box default">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -235,7 +250,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -244,7 +260,8 @@
                 <div class=" portlet box info">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18" data-loop="true"></i>
+                            <i class="livicon" data-c="#fff" data-hc="#fff" data-name="gift" data-size="18"
+                               data-loop="true"></i>
                             Portlet
                         </div>
                         <div class="actions">
@@ -260,7 +277,8 @@
                     </div>
                     <div class="portlet-body">
                         <div>
-                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
+                            Tom loves Canada. Angela and Tom met. Angela and Tom want to play. Angela and Tom want to
+                            jump. Angela and Tom want to yell. Angela and Tom play, jump and yell.
                         </div>
                     </div>
                 </div>
@@ -268,11 +286,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js-->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js-->
     <script>
         jQuery(document).ready(function () {
 

@@ -30,7 +30,8 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h4 class="panel-title">... </h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -51,10 +52,10 @@
 
                         <tbody>
                         <tr>
-{{--                            <td>{{{ $acceso->id_acceso }}}</td>--}}
+                            {{--                            <td>{{{ $acceso->id_acceso }}}</td>--}}
                             <td>{{{ $acceso->nom_acceso }}}</td>
                             <td>{{{ $acceso->nombre_usuario }}}</td>
-{{--                            <td>{{{ $acceso->fecha_hora }}}</td>--}}
+                            {{--                            <td>{{{ $acceso->fecha_hora }}}</td>--}}
                             <td>
                                 {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.accesos.destroy', $acceso->id))) }}
                                 {{ Form::submit('Eliminar', array('class' => 'btn btn-danger')) }}

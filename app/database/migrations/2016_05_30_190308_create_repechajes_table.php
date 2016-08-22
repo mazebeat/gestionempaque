@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateRepechajesTable extends Migration {
+class CreateRepechajesTable extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -12,7 +13,7 @@ class CreateRepechajesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('repechajes', function(Blueprint $table) {
+		Schema::create('repechajes', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('id_repechaje');
 			$table->date('fecha');

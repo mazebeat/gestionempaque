@@ -4,11 +4,11 @@
 @section('title')
     Session Timeout
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/css/pages/session_timeout.css') }}"/>
     <!--end of page level css-->
 @stop
@@ -59,7 +59,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="rocket" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Session Timeout
                         </h3>
                                 <span class="pull-right clickable">
@@ -69,9 +70,14 @@
                     <div class="panel-body">
                         <div class="note note-success">
                             <p>
-                                After a set amount of time(10 seconds set for demo), a dialog is shown to the user with the option to either log out now, or stay connected. If log out now is selected, the page is redirected to a logout URL. If stay
-                                connected is selected, a keep-alive URL is requested through AJAX. If no options is selected after another set amount of time, the page is automatically redirected to a timeout URL. To learn more please check out
-                                <a href="https://github.com/maxfierke/jquery-sessionTimeout-bootstrap" target="_blank">the plugin's official homepage</a>
+                                After a set amount of time(10 seconds set for demo), a dialog is shown to the user with
+                                the option to either log out now, or stay connected. If log out now is selected, the
+                                page is redirected to a logout URL. If stay
+                                connected is selected, a keep-alive URL is requested through AJAX. If no options is
+                                selected after another set amount of time, the page is automatically redirected to a
+                                timeout URL. To learn more please check out
+                                <a href="https://github.com/maxfierke/jquery-sessionTimeout-bootstrap" target="_blank">the
+                                    plugin's official homepage</a>
                             </p>
                         </div>
                     </div>
@@ -79,11 +85,11 @@
             </div>
         </div>
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <script type="text/javascript">
         $(document).on('click', '.panel-heading span.clickable', function (e) {
             var $this = $(this);

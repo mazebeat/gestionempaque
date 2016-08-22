@@ -31,7 +31,8 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h4 class="panel-title">Formulario</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -43,7 +44,8 @@
                                 <label class="col-md-4 control-label" for="name">Nombre</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" name="name" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="name" name="name" placeholder="..." class="form-control input-md"
+                                           required="" type="text">
 
                                 </div>
                             </div>
@@ -53,7 +55,8 @@
                                 <label class="col-md-4 control-label" for="address">Dirección</label>
 
                                 <div class="col-md-6">
-                                    <input id="address" name="address" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="address" name="address" placeholder="..." class="form-control input-md"
+                                           required="" type="text">
 
                                 </div>
                             </div>
@@ -63,7 +66,8 @@
                                 <label class="col-md-4 control-label" for="contactname">Nombre Contacto</label>
 
                                 <div class="col-md-6">
-                                    <input id="contactname" name="contactname" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="contactname" name="contactname" placeholder="..."
+                                           class="form-control input-md" required="" type="text">
 
                                 </div>
                             </div>
@@ -73,7 +77,8 @@
                                 <label class="col-md-4 control-label" for="contactphone">Teléfono Contacto</label>
 
                                 <div class="col-md-6">
-                                    <input id="contactphone" name="contactphone" placeholder="..." class="form-control input-md" required="" type="text">
+                                    <input id="contactphone" name="contactphone" placeholder="..."
+                                           class="form-control input-md" required="" type="text">
                                     <span class="help-block">ej: +56 9 1234 5678</span>
                                 </div>
                             </div>
@@ -98,7 +103,8 @@
             <div class="panel panel-warning">
                 <div class="panel-heading">
                     <h4 class="panel-title">Registrados</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>

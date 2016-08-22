@@ -8,9 +8,12 @@
 
 {{-- page level styles --}}
 @section('header_styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.colReorder.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.scroller.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.colReorder.min.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.scroller.min.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('assets/vendors/datatables/css/dataTables.bootstrap.css') }}"/>
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css">
 @stop
 
@@ -34,7 +37,8 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h4 class="panel-title">...</h4>
-                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable" title="Show Panel content"></i>
+                    <span class="pull-right"> <i class="glyphicon glyphicon-chevron-up showhide clickable"
+                                                 title="Show Panel content"></i>
                         <i class="glyphicon glyphicon-remove removepanel clickable"></i>
                     </span>
                 </div>
@@ -61,7 +65,7 @@
                                     {{--<td>{{{ $acceso->id_acceso }}}</td>--}}
                                     <td>{{{ $acceso->nom_acceso }}}</td>
                                     <td>{{{ $acceso->nombre_usuario }}}</td>
-{{--                                    <td>{{{ $acceso->fecha_hora }}}</td>--}}
+                                    {{--                                    <td>{{{ $acceso->fecha_hora }}}</td>--}}
                                     <td>
                                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.accesos.destroy', $acceso->id))) }}
                                         {{ Form::submit('Eliminar', array('class' => 'btn btn-xs btn-danger')) }}

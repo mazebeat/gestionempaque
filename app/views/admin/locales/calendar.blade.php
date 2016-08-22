@@ -13,8 +13,11 @@
                     @for ($i = 0; $i < 7; $i++)
                         <div class="col-xs-12 calendar-day">
                             <div class="text-center vertical">
-                                <small>{{ $turn }}</small></br>
-                                <button type="button" class="btn btn-xs btn-block btn-info taketurn" data-id="{{ $turn }}" data-total="{{ $i }}" data-left="{{ $i }}" data-take="false">
+                                <small>{{ $turn }}</small>
+                                </br>
+                                <button type="button" class="btn btn-xs btn-block btn-info taketurn"
+                                        data-id="{{ $turn }}" data-total="{{ $i }}" data-left="{{ $i }}"
+                                        data-take="false">
                                     {{ $text }}
                                 </button>
                             </div>

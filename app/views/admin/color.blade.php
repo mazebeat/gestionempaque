@@ -8,7 +8,8 @@
 
 {{-- page level styles --}}
 @section('header_styles')
-    <link href="{{ asset('assets/vendors/jquery-colorpickersliders/jquery-colorpickersliders/jquery.colorpickersliders.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('assets/vendors/jquery-colorpickersliders/jquery-colorpickersliders/jquery.colorpickersliders.css') }}"
+          rel="stylesheet" type="text/css" media="all"/>
 @stop
 
 
@@ -36,7 +37,8 @@
             <div class="col-md-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><i class="livicon" data-name="camera-alt" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <h3 class="panel-title"><i class="livicon" data-name="camera-alt" data-size="16"
+                                                   data-loop="true" data-c="#fff" data-hc="white"></i>
                             Color Picker Slider
                         </h3>
                     <span class="pull-right clickable">
@@ -64,7 +66,8 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="gear" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="gear" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             HSL Color Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -81,7 +84,8 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="spinner-seven" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="spinner-seven" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             RGB Color Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -101,7 +105,8 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="share" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             CIE Lch Color Picker
                         </h3>
                     <span class="pull-right clickable">
@@ -120,7 +125,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="biohazard" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="biohazard" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Color picker onchange()
                         </h3>
                     <span class="pull-right clickable">
@@ -139,7 +145,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="location" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="location" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Color picker in a popup &amp; Popup on any element
                         </h3>
                     <span class="pull-right clickable">
@@ -171,7 +178,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="leaf" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="leaf" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Color picker onchange()
                         </h3>
                     <span class="pull-right clickable">
@@ -190,10 +198,10 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    @section('footer_scripts')
-            <!--color picker slider-->
+@section('footer_scripts')
+    <!--color picker slider-->
     <script src="{{ asset('assets/vendors/jquery-colorpickersliders/libraries/tinycolor.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-colorpickersliders/jquery-colorpickersliders/jquery.colorpickersliders.js') }}"></script>
     <script>

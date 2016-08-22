@@ -4,11 +4,11 @@
 @section('title')
     Pie Charts
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/css/pages/piecharts.css') }}" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop
@@ -20,7 +20,8 @@
         <h1>Pie Charts</h1>
         <ol class="breadcrumb">
             <li>
-                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="16" data-color="#000"></i>
+                <a href="{{ route('dashboard') }}"> <i class="livicon" data-name="home" data-size="16"
+                                                       data-color="#000"></i>
                     Dashboard
                 </a>
             </li>
@@ -36,7 +37,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Interactive Charts
                         </h3>
                     <span class="pull-right">
@@ -68,7 +70,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Radius Label
                         </h3>
                     <span class="pull-right">
@@ -88,7 +91,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Styled Label #1
                         </h3>
                     <span class="pull-right">
@@ -118,7 +122,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Hidden Labels &amp; Rectangular Pie
                         </h3>
                     <span class="pull-right">
@@ -150,7 +155,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Pie Chart #1
                         </h3>
                     <span class="pull-right">
@@ -170,7 +176,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000" data-hc="#000"></i>
+                            <i class="livicon" data-name="piechart" data-size="16" data-loop="true" data-c="#000"
+                               data-hc="#000"></i>
                             Donut Hole
                         </h3>
                     <span class="pull-right">
@@ -196,8 +203,12 @@
 
 {{-- page level scripts --}}
 @section('footer_scripts')
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.pie.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/vendors/charts/jquery.flot.resize.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/js/pages/custompiecharts.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.pie.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/vendors/charts/jquery.flot.resize.js') }}"></script>
+    <script language="javascript" type="text/javascript"
+            src="{{ asset('assets/js/pages/custompiecharts.js') }}"></script>
 @stop

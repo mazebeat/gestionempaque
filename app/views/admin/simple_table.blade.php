@@ -4,11 +4,11 @@
 @section('title')
     Simple Tables
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!-- page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!-- page level css -->
     <link href="{{ asset('assets/css/pages/tables.css') }}" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop
@@ -38,7 +38,8 @@
                 <!-- BEGIN SAMPLE TABLE PORTLET-->
                 <div class="portlet box primary">
                     <div class="portlet-title">
-                        <div class="caption"><i class="livicon" data-name="camera-alt" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                        <div class="caption"><i class="livicon" data-name="camera-alt" data-size="16" data-loop="true"
+                                                data-c="#fff" data-hc="white"></i>
                             Simple Table
                         </div>
                     </div>
@@ -102,7 +103,8 @@
                 <div class="portlet box danger">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="wifi" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="wifi" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bordered Table
                         </div>
                     </div>
@@ -167,7 +169,8 @@
                 <div class="portlet box info">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="timer" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="timer" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Striped Rows Table
                         </div>
                     </div>
@@ -231,7 +234,8 @@
                 <div class="portlet box warning">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="film" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="film" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Condensed Table
                         </div>
                     </div>
@@ -306,7 +310,8 @@
                 <div class="portlet box danger">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="lab" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="lab" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Color Rows
                         </div>
                     </div>
@@ -362,7 +367,8 @@
                 <div class="portlet box default">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="pen" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="pen" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Advanced Table
                         </div>
                     </div>
@@ -452,7 +458,8 @@
                 <div class="portlet box primary">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="screenshot" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="screenshot" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Columns Tables
                         </div>
                     </div>
@@ -508,7 +515,8 @@
                 <div class="portlet box danger">
                     <div class="portlet-title">
                         <div class="caption">
-                            <i class="livicon" data-name="pencil" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                            <i class="livicon" data-name="pencil" data-size="16" data-loop="true" data-c="#fff"
+                               data-hc="white"></i>
                             Bootstrap Table
                         </div>
                     </div>

@@ -1,12 +1,12 @@
 <?php
 /**
-* Language file for general strings
-*
-*/
+ * Language file for general strings
+ *
+ */
 return array(
 
-    'no'  			=> 'No',
-    'noresults'  	=> 'Sin Resultados',
-    'yes' 			=> 'Sí',
+	'no'        => 'No',
+	'noresults' => 'Sin Resultados',
+	'yes'       => 'Sí',
 
 );

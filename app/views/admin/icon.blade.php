@@ -4,13 +4,14 @@
 @section('title')
     Font Icons
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link href="{{ asset('assets/css/pages/icon.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('assets/vendors/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/vendors/Simple-Line-Icons-Webfont/simple-line-icons.css') }}" rel="stylesheet"
+          type="text/css"/>
     <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
     <!--end of page level css-->
 @stop
@@ -39,7 +40,8 @@
 
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true"
+                                           data-c="#fff" data-hc="white"></i>
                     Icons
                 </h3>
             <span class="pull-right clickable">
@@ -2812,7 +2814,8 @@
                                     <div class="row" style="margin-top:40px;">
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="ion-ionic" data-pack="default" data-tags="badass, framework, sexy, hawt"></i>
+                                        <i class="ion-ionic" data-pack="default"
+                                           data-tags="badass, framework, sexy, hawt"></i>
                                         &nbsp; ion-ionic
                                     </span>
                                         </div>
@@ -2902,7 +2905,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-arrow-swap qwe" data-pack="default" data-tags="switch, fip"></i>
+                                        <i class="icon ion-arrow-swap qwe" data-pack="default"
+                                           data-tags="switch, fip"></i>
                                         &nbsp; ion-arrow-swap
                                     </span>
                                         </div>
@@ -2914,7 +2918,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-arrow-expand qwe" data-pack="default" data-tags="fullscreen"></i>
+                                        <i class="icon ion-arrow-expand qwe" data-pack="default"
+                                           data-tags="fullscreen"></i>
                                         &nbsp; ion-arrow-expand
                                     </span>
                                         </div>
@@ -2932,43 +2937,50 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-chevron-up qwe" data-pack="default" data-tags="arrow, up"></i>
+                                        <i class="icon ion-chevron-up qwe" data-pack="default"
+                                           data-tags="arrow, up"></i>
                                         &nbsp; ion-chevron-up
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-chevron-right qwe" data-pack="default" data-tags="arrow, right"></i>
+                                        <i class="icon ion-chevron-right qwe" data-pack="default"
+                                           data-tags="arrow, right"></i>
                                         &nbsp; ion-chevron-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-chevron-down qwe" data-pack="default" data-tags="arrow, down"></i>
+                                        <i class="icon ion-chevron-down qwe" data-pack="default"
+                                           data-tags="arrow, down"></i>
                                         &nbsp; ion-chevron-down
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-chevron-left qwe" data-pack="default" data-tags="arrow, left"></i>
+                                        <i class="icon ion-chevron-left qwe" data-pack="default"
+                                           data-tags="arrow, left"></i>
                                         &nbsp; ion-chevron-left
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-navicon-round qwe" data-pack="default" data-tags="menu, hamburger, side menu"></i>
+                                        <i class="icon ion-navicon-round qwe" data-pack="default"
+                                           data-tags="menu, hamburger, side menu"></i>
                                         &nbsp; ion-navicon-round
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-navicon qwe" data-pack="default" data-tags="menu, hamburger, side menu"></i>
+                                        <i class="icon ion-navicon qwe" data-pack="default"
+                                           data-tags="menu, hamburger, side menu"></i>
                                         &nbsp; ion-navicon qwe
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-drag qwe" data-pack="default" data-tags="reorder, move, drag"></i>
+                                        <i class="icon ion-drag qwe" data-pack="default"
+                                           data-tags="reorder, move, drag"></i>
                                         &nbsp; ion-drag
                                     </span>
                                         </div>
@@ -2986,133 +2998,155 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-checkmark-round qwe" data-pack="default" data-tags="complete, finished, success, on"></i>
+                                        <i class="icon ion-checkmark-round qwe" data-pack="default"
+                                           data-tags="complete, finished, success, on"></i>
                                         &nbsp; ion-checkmark-round
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-checkmark qwe" data-pack="default" data-tags="complete, finished, success, on"></i>
+                                        <i class="icon ion-checkmark qwe" data-pack="default"
+                                           data-tags="complete, finished, success, on"></i>
                                         &nbsp; ion-checkmark
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-checkmark-circled qwe" data-pack="default" data-tags="complete, finished, success, on"></i>
+                                        <i class="icon ion-checkmark-circled qwe" data-pack="default"
+                                           data-tags="complete, finished, success, on"></i>
                                         &nbsp; ion-checkmark-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-close-round qwe" data-pack="default" data-tags="delete, trash, kill, x"></i>
+                                        <i class="icon ion-close-round qwe" data-pack="default"
+                                           data-tags="delete, trash, kill, x"></i>
                                         &nbsp; ion-close-round
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-close qwe" data-pack="default" data-tags="delete, trash, kill, x"></i>
+                                        <i class="icon ion-close qwe" data-pack="default"
+                                           data-tags="delete, trash, kill, x"></i>
                                         &nbsp; ion-close
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-close-circled qwe" data-pack="default" data-tags="delete, trash, kill, x"></i>
+                                        <i class="icon ion-close-circled qwe" data-pack="default"
+                                           data-tags="delete, trash, kill, x"></i>
                                         &nbsp; ion-close-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-plus-round qwe" data-pack="default" data-tags="add, include, new, invite, +"></i>
+                                        <i class="icon ion-plus-round qwe" data-pack="default"
+                                           data-tags="add, include, new, invite, +"></i>
                                         &nbsp; ion-plus-round
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-plus qwe" data-pack="default" data-tags="add, include, new, invite, +"></i>
+                                        <i class="icon ion-plus qwe" data-pack="default"
+                                           data-tags="add, include, new, invite, +"></i>
                                         &nbsp; ion-plus
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-plus-circled qwe" data-pack="default" data-tags="add, include, new, invite, +"></i>
+                                        <i class="icon ion-plus-circled qwe" data-pack="default"
+                                           data-tags="add, include, new, invite, +"></i>
                                         &nbsp; ion-plus-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-minus-round qwe" data-pack="default" data-tags="hide, remove, minimize, -"></i>
+                                        <i class="icon ion-minus-round qwe" data-pack="default"
+                                           data-tags="hide, remove, minimize, -"></i>
                                         &nbsp; ion-minus-round
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-minus qwe" data-pack="default" data-tags="hide, remove, minimize, -"></i>
+                                        <i class="icon ion-minus qwe" data-pack="default"
+                                           data-tags="hide, remove, minimize, -"></i>
                                         &nbsp; ion-minus
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-minus-circled qwe" data-pack="default" data-tags="hide, remove, minimize, -"></i>
+                                        <i class="icon ion-minus-circled qwe" data-pack="default"
+                                           data-tags="hide, remove, minimize, -"></i>
                                         &nbsp; ion-minus-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-information ion qwe" data-pack="default" data-tags="help, more, tooltip"></i>
+                                        <i class="icon ion-information ion qwe" data-pack="default"
+                                           data-tags="help, more, tooltip"></i>
                                         &nbsp; ion-information ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-information ion-circled qwe" data-pack="default" data-tags="help, more, tooltip"></i>
+                                        <i class="icon ion-information ion-circled qwe" data-pack="default"
+                                           data-tags="help, more, tooltip"></i>
                                         &nbsp; ion-information ion-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-help qwe" data-pack="default qwe" data-tags="questicon ion, ?"></i>
+                                        <i class="icon ion-help qwe" data-pack="default qwe"
+                                           data-tags="questicon ion, ?"></i>
                                         &nbsp; ion-help
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-help-circled qwe" data-pack="default" data-tags="questicon ion, ?"></i>
+                                        <i class="icon ion-help-circled qwe" data-pack="default"
+                                           data-tags="questicon ion, ?"></i>
                                         &nbsp; ion-help-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-help-buoy qwe" data-pack="default" data-tags="questicon ion, ?"></i>
+                                        <i class="icon ion-help-buoy qwe" data-pack="default"
+                                           data-tags="questicon ion, ?"></i>
                                         &nbsp; ion-help-buoy
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-asterisk qwe" data-pack="default" data-tags="favorite, mark, star"></i>
+                                        <i class="icon ion-asterisk qwe" data-pack="default"
+                                           data-tags="favorite, mark, star"></i>
                                         &nbsp; ion-asterisk
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-alert qwe" data-pack="default" data-tags="attenticon ion, warning, notice, !, exclamaticon ion"></i>
+                                        <i class="icon ion-alert qwe" data-pack="default"
+                                           data-tags="attenticon ion, warning, notice, !, exclamaticon ion"></i>
                                         &nbsp; ion-alert
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-alert-circled qwe" data-pack="default" data-tags="attenticon ion, warning, notice, !, exclamaticon ion"></i>
+                                        <i class="icon ion-alert-circled qwe" data-pack="default"
+                                           data-tags="attenticon ion, warning, notice, !, exclamaticon ion"></i>
                                         &nbsp; ion-alert-circled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-refresh qwe" data-pack="default" data-tags="reload, renew"></i>
+                                        <i class="icon ion-refresh qwe" data-pack="default"
+                                           data-tags="reload, renew"></i>
                                         &nbsp; ion-refresh
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-refreshing qwe" data-pack="default" data-tags="reload, renew, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-refreshing qwe" data-pack="default"
+                                           data-tags="reload, renew, animaticon ion" data-animaticon></i>
                                         &nbsp; ion-refreshing
                                     </span>
                                         </div>
@@ -3124,7 +3158,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-looping qwe" data-pack="default" data-tags="refresh, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-looping qwe" data-pack="default"
+                                           data-tags="refresh, animaticon ion" data-animaticon></i>
                                         &nbsp; ion-looping
                                     </span>
                                         </div>
@@ -3142,13 +3177,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-search qwe" data-pack="default" data-tags="magnifying glass"></i>
+                                        <i class="icon ion-search qwe" data-pack="default"
+                                           data-tags="magnifying glass"></i>
                                         &nbsp; ion-search
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-flag qwe" data-pack="default" data-tags="favorite, mark, star"></i>
+                                        <i class="icon ion-flag qwe" data-pack="default"
+                                           data-tags="favorite, mark, star"></i>
                                         &nbsp; ion-flag
                                     </span>
                                         </div>
@@ -3172,73 +3209,85 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-gear-a qwe" data-pack="default" data-tags="settings, opticon ions, cog"></i>
+                                        <i class="icon ion-gear-a qwe" data-pack="default"
+                                           data-tags="settings, opticon ions, cog"></i>
                                         &nbsp; ion-gear-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-gear-b qwe" data-pack="default" data-tags="settings, opticon ions, cog"></i>
+                                        <i class="icon ion-gear-b qwe" data-pack="default"
+                                           data-tags="settings, opticon ions, cog"></i>
                                         &nbsp; ion-gear-b
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-toggle-filled qwe" data-pack="default" data-tags="settings, opticon ions, switch"></i>
+                                        <i class="icon ion-toggle-filled qwe" data-pack="default"
+                                           data-tags="settings, opticon ions, switch"></i>
                                         &nbsp; ion-toggle-filled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-toggle qwe" data-pack="default" data-tags="settings, opticon ions, switch"></i>
+                                        <i class="icon ion-toggle qwe" data-pack="default"
+                                           data-tags="settings, opticon ions, switch"></i>
                                         &nbsp; ion-toggle
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-settings qwe" data-pack="default" data-tags="opticon ions, tools"></i>
+                                        <i class="icon ion-settings qwe" data-pack="default"
+                                           data-tags="opticon ions, tools"></i>
                                         &nbsp; ion-settings
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-wrench qwe" data-pack="default" data-tags="settings, opticon ions, tools"></i>
+                                        <i class="icon ion-wrench qwe" data-pack="default"
+                                           data-tags="settings, opticon ions, tools"></i>
                                         &nbsp; ion-wrench
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-hammer qwe" data-pack="default" data-tags="settings, opticon ions, tools"></i>
+                                        <i class="icon ion-hammer qwe" data-pack="default"
+                                           data-tags="settings, opticon ions, tools"></i>
                                         &nbsp; ion-hammer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-edit qwe" data-pack="default" data-tags="change, update, write, type, pencil"></i>
+                                        <i class="icon ion-edit qwe" data-pack="default"
+                                           data-tags="change, update, write, type, pencil"></i>
                                         &nbsp; ion-edit
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-trash-a qwe" data-pack="default" data-tags="delete, remove, dump"></i>
+                                        <i class="icon ion-trash-a qwe" data-pack="default"
+                                           data-tags="delete, remove, dump"></i>
                                         &nbsp; ion-trash-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-trash-b qwe" data-pack="default" data-tags="delete, remove, dump"></i>
+                                        <i class="icon ion-trash-b qwe" data-pack="default"
+                                           data-tags="delete, remove, dump"></i>
                                         &nbsp; ion-trash-b
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-document qwe" data-pack="default" data-tags="paper, file"></i>
+                                        <i class="icon ion-document qwe" data-pack="default"
+                                           data-tags="paper, file"></i>
                                         &nbsp; ion-document
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-document-text qwe" data-pack="default" data-tags="paper, file"></i>
+                                        <i class="icon ion-document-text qwe" data-pack="default"
+                                           data-tags="paper, file"></i>
                                         &nbsp; ion-document-text
                                     </span>
                                         </div>
@@ -3262,7 +3311,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-bookmark qwe" data-pack="default" data-tags="favorite, tag, save"></i>
+                                        <i class="icon ion-bookmark qwe" data-pack="default"
+                                           data-tags="favorite, tag, save"></i>
                                         &nbsp; ion-bookmark
                                     </span>
                                         </div>
@@ -3316,13 +3366,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-paper-airplane qwe" data-pack="default" data-tags="outbound, mail, letter, send"></i>
+                                        <i class="icon ion-paper-airplane qwe" data-pack="default"
+                                           data-tags="outbound, mail, letter, send"></i>
                                         &nbsp; ion-paper-airplane
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-link qwe" data-pack="default" data-tags="chain, anchor, href, attach"></i>
+                                        <i class="icon ion-link qwe" data-pack="default"
+                                           data-tags="chain, anchor, href, attach"></i>
                                         &nbsp; ion-link
                                     </span>
                                         </div>
@@ -3334,13 +3386,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-compose qwe" data-pack="default" data-tags="write, compose, type"></i>
+                                        <i class="icon ion-compose qwe" data-pack="default"
+                                           data-tags="write, compose, type"></i>
                                         &nbsp; ion-compose
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-briefcase qwe" data-pack="default" data-tags="store, organize"></i>
+                                        <i class="icon ion-briefcase qwe" data-pack="default"
+                                           data-tags="store, organize"></i>
                                         &nbsp; ion-briefcase
                                     </span>
                                         </div>
@@ -3364,7 +3418,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-quote qwe" data-pack="default" data-tags="chat, quotaticon ion"></i>
+                                        <i class="icon ion-quote qwe" data-pack="default"
+                                           data-tags="chat, quotaticon ion"></i>
                                         &nbsp; ion-quote
                                     </span>
                                         </div>
@@ -3376,7 +3431,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-upload qwe" data-pack="default" data-tags="storage, cloud"></i>
+                                        <i class="icon ion-upload qwe" data-pack="default"
+                                           data-tags="storage, cloud"></i>
                                         &nbsp; ion-upload
                                     </span>
                                         </div>
@@ -3394,61 +3450,71 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-calendar qwe" data-pack="default" data-tags="date, time, month, year"></i>
+                                        <i class="icon ion-calendar qwe" data-pack="default"
+                                           data-tags="date, time, month, year"></i>
                                         &nbsp; ion-calendar
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-clock qwe" data-pack="default" data-tags="time, watch, hours, minutes, seconds"></i>
+                                        <i class="icon ion-clock qwe" data-pack="default"
+                                           data-tags="time, watch, hours, minutes, seconds"></i>
                                         &nbsp; ion-clock
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-compass qwe" data-pack="default" data-tags="location ion, directicon ions, navigaticon ion"></i>
+                                        <i class="icon ion-compass qwe" data-pack="default"
+                                           data-tags="location ion, directicon ions, navigaticon ion"></i>
                                         &nbsp; ion-compass
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pinpoint qwe" data-pack="default" data-tags="gps, navigaticon ion"></i>
+                                        <i class="icon ion-pinpoint qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion"></i>
                                         &nbsp; ion-pinpoint
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pin qwe" data-pack="default" data-tags="gps, navigaticon ion"></i>
+                                        <i class="icon ion-pin qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion"></i>
                                         &nbsp; ion-pin
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-navigate qwe" data-pack="default" data-tags="gps, location ion pin"></i>
+                                        <i class="icon ion-navigate qwe" data-pack="default"
+                                           data-tags="gps, location ion pin"></i>
                                         &nbsp; ion-navigate
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-location ion qwe" data-pack="default" data-tags="gps, navigaticon ion, pin"></i>
+                                        <i class="icon ion-location ion qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion, pin"></i>
                                         &nbsp; ion-location ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-map qwe" data-pack="default" data-tags="gps, navigaticon ion, pin"></i>
+                                        <i class="icon ion-map qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion, pin"></i>
                                         &nbsp; ion-map
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-model-s qwe" data-pack="default" data-tags="navigaticon ion, car, drive, transportaticon ion, tesla, sexy"></i>
+                                        <i class="icon ion-model-s qwe" data-pack="default"
+                                           data-tags="navigaticon ion, car, drive, transportaticon ion, tesla, sexy"></i>
                                         &nbsp; ion-model-s
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-locked qwe" data-pack="default" data-tags="padlock, security"></i>
+                                        <i class="icon ion-locked qwe" data-pack="default"
+                                           data-tags="padlock, security"></i>
                                         &nbsp; ion-locked
                                     </span>
                                         </div>
@@ -3472,13 +3538,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-paper-airplane qwe" data-pack="default" data-tags="outbound, mail, letter, send"></i>
+                                        <i class="icon ion-paper-airplane qwe" data-pack="default"
+                                           data-tags="outbound, mail, letter, send"></i>
                                         &nbsp; ion-paper-airplane
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-link qwe" data-pack="default" data-tags="chain, anchor, href, attach"></i>
+                                        <i class="icon ion-link qwe" data-pack="default"
+                                           data-tags="chain, anchor, href, attach"></i>
                                         &nbsp; ion-link
                                     </span>
                                         </div>
@@ -3490,13 +3558,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-compose qwe" data-pack="default" data-tags="write, compose, type"></i>
+                                        <i class="icon ion-compose qwe" data-pack="default"
+                                           data-tags="write, compose, type"></i>
                                         &nbsp; ion-compose
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-briefcase qwe" data-pack="default" data-tags="store, organize"></i>
+                                        <i class="icon ion-briefcase qwe" data-pack="default"
+                                           data-tags="store, organize"></i>
                                         &nbsp; ion-briefcase
                                     </span>
                                         </div>
@@ -3520,7 +3590,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pound qwe" data-pack="default" data-tags="chat, quotaticon ion"></i>
+                                        <i class="icon ion-pound qwe" data-pack="default"
+                                           data-tags="chat, quotaticon ion"></i>
                                         &nbsp; ion-pound
                                     </span>
                                         </div>
@@ -3532,7 +3603,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-upload qwe" data-pack="default" data-tags="storage, cloud"></i>
+                                        <i class="icon ion-upload qwe" data-pack="default"
+                                           data-tags="storage, cloud"></i>
                                         &nbsp; ion-upload
                                     </span>
                                         </div>
@@ -3550,67 +3622,78 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-calendar qwe" data-pack="default" data-tags="date, time, month, year"></i>
+                                        <i class="icon ion-calendar qwe" data-pack="default"
+                                           data-tags="date, time, month, year"></i>
                                         &nbsp; ion-calendar
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-clock qwe" data-pack="default" data-tags="time, watch, hours, minutes, seconds"></i>
+                                        <i class="icon ion-clock qwe" data-pack="default"
+                                           data-tags="time, watch, hours, minutes, seconds"></i>
                                         &nbsp; ion-clock
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-compass qwe" data-pack="default" data-tags="location ion, directicon ions, navigaticon ion"></i>
+                                        <i class="icon ion-compass qwe" data-pack="default"
+                                           data-tags="location ion, directicon ions, navigaticon ion"></i>
                                         &nbsp; ion-compass
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pinpoint qwe" data-pack="default" data-tags="gps, navigaticon ion"></i>
+                                        <i class="icon ion-pinpoint qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion"></i>
                                         &nbsp; ion-pinpoint
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pin qwe" data-pack="default" data-tags="gps, navigaticon ion"></i>
+                                        <i class="icon ion-pin qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion"></i>
                                         &nbsp; ion-pin
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-navigate qwe" data-pack="default" data-tags="gps, location ion pin"></i>
+                                        <i class="icon ion-navigate qwe" data-pack="default"
+                                           data-tags="gps, location ion pin"></i>
                                         &nbsp;ion-navigate
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-location ion qwe" data-pack="default" data-tags="gps, navigaticon ion, pin"></i>
+                                        <i class="icon ion-location ion qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion, pin"></i>
                                         &nbsp; ion-location ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-map qwe" data-pack="default" data-tags="gps, navigaticon ion, pin"></i>
+                                        <i class="icon ion-map qwe" data-pack="default"
+                                           data-tags="gps, navigaticon ion, pin"></i>
                                         &nbsp; ion-map
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-model-s qwe" data-pack="default" data-tags="navigaticon ion, car, drive, transportaticon ion, tesla, sexy"></i>
+                                        <i class="icon ion-model-s qwe" data-pack="default"
+                                           data-tags="navigaticon ion, car, drive, transportaticon ion, tesla, sexy"></i>
                                         &nbsp; ion-model-s
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-locked qwe" data-pack="default" data-tags="padlock, security"></i>
+                                        <i class="icon ion-locked qwe" data-pack="default"
+                                           data-tags="padlock, security"></i>
                                         &nbsp; ion-locked
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-unlocked qwe" data-pack="default" data-tags="padlock, security"></i>
+                                        <i class="icon ion-unlocked qwe" data-pack="default"
+                                           data-tags="padlock, security"></i>
                                         &nbsp; ion-unlocked
                                     </span>
                                         </div>
@@ -3622,25 +3705,29 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-arrow-graph-up-right qwe" data-pack="default" data-tags="stats"></i>
+                                        <i class="icon ion-arrow-graph-up-right qwe" data-pack="default"
+                                           data-tags="stats"></i>
                                         &nbsp; ion-arrow-graph-up-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-arrow-graph-down-right qwe" data-pack="default" data-tags="stats"></i>
+                                        <i class="icon ion-arrow-graph-down-right qwe" data-pack="default"
+                                           data-tags="stats"></i>
                                         &nbsp; ion-arrow-graph-down-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-arrow-graph-up-left qwe" data-pack="default" data-tags="stats"></i>
+                                        <i class="icon ion-arrow-graph-up-left qwe" data-pack="default"
+                                           data-tags="stats"></i>
                                         &nbsp; ion-arrow-graph-up-left
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-arrow-graph-down-left qwe" data-pack="default" data-tags="stats"></i>
+                                        <i class="icon ion-arrow-graph-down-left qwe" data-pack="default"
+                                           data-tags="stats"></i>
                                         &nbsp;ion-arrow-graph-down-left
                                     </span>
                                         </div>
@@ -3652,7 +3739,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-connection-bars qwe" data-pack="default" data-tags="data, stats"></i>
+                                        <i class="icon ion-connection-bars qwe" data-pack="default"
+                                           data-tags="data, stats"></i>
                                         &nbsp; ion-connection-bars
                                     </span>
                                         </div>
@@ -3670,7 +3758,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-chatbubble-working qwe" data-pack="default" data-tags="talk"></i>
+                                        <i class="icon ion-chatbubble-working qwe" data-pack="default"
+                                           data-tags="talk"></i>
                                         &nbsp; ion-chatbubble-working
                                     </span>
                                         </div>
@@ -3688,7 +3777,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-chatbox-working qwe" data-pack="default" data-tags="talk"></i>
+                                        <i class="icon ion-chatbox-working qwe" data-pack="default"
+                                           data-tags="talk"></i>
                                         &nbsp; ion-chatbox-working
                                     </span>
                                         </div>
@@ -3700,91 +3790,106 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-person qwe" data-pack="default" data-tags="users, staff, head, human"></i>
+                                        <i class="icon ion-person qwe" data-pack="default"
+                                           data-tags="users, staff, head, human"></i>
                                         &nbsp; ion-person
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-person-add qwe" data-pack="default" data-tags="users, staff, head, human, member, new"></i>
+                                        <i class="icon ion-person-add qwe" data-pack="default"
+                                           data-tags="users, staff, head, human, member, new"></i>
                                         &nbsp; ion-person-add
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-person-stalker qwe" data-pack="default" data-tags="people, human, users, staff"></i>
+                                        <i class="icon ion-person-stalker qwe" data-pack="default"
+                                           data-tags="people, human, users, staff"></i>
                                         &nbsp; ion-person-stalker
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-woman qwe" data-pack="default" data-tags="female, lady, girl, dudette"></i>
+                                        <i class="icon ion-woman qwe" data-pack="default"
+                                           data-tags="female, lady, girl, dudette"></i>
                                         &nbsp; ion-woman
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-man qwe" data-pack="default" data-tags="male, guy, boy, dude"></i>
+                                        <i class="icon ion-man qwe" data-pack="default"
+                                           data-tags="male, guy, boy, dude"></i>
                                         &nbsp; ion-man
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-female qwe" data-pack="default" data-tags="lady, girl, dudette"></i>
+                                        <i class="icon ion-female qwe" data-pack="default"
+                                           data-tags="lady, girl, dudette"></i>
                                         &nbsp;ion-female
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-male qwe" data-pack="default" data-tags="male, guy, boy, dude"></i>
+                                        <i class="icon ion-male qwe" data-pack="default"
+                                           data-tags="male, guy, boy, dude"></i>
                                         &nbsp; ion-male
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-fork qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-fork qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-fork
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-knife qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-knife qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-knife
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-spoon qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-spoon qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-spoon
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-beer qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-beer qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-beer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-wineglass qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-wineglass qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-wineglass
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-coffee qwe" data-pack="default" data-tags="food, drink, eat, caffeine"></i>
+                                        <i class="icon ion-coffee qwe" data-pack="default"
+                                           data-tags="food, drink, eat, caffeine"></i>
                                         &nbsp; ion-coffee
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-icecream qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-icecream qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-icecream
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pizza qwe" data-pack="default" data-tags="food, drink, eat"></i>
+                                        <i class="icon ion-pizza qwe" data-pack="default"
+                                           data-tags="food, drink, eat"></i>
                                         &nbsp; ion-pizza
                                     </span>
                                         </div>
@@ -3832,19 +3937,22 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-wifi qwe" data-pack="default" data-tags="internet, connection ion"></i>
+                                        <i class="icon ion-wifi qwe" data-pack="default"
+                                           data-tags="internet, connection ion"></i>
                                         &nbsp; ion-wifi
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-bluetooth qwe" data-pack="default" data-tags="connection ion, cloud"></i>
+                                        <i class="icon ion-bluetooth qwe" data-pack="default"
+                                           data-tags="connection ion, cloud"></i>
                                         &nbsp; ion-bluetooth
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-calculator qwe" data-pack="default" data-tags="math, arithmatic, numbers, additicon ion, subtracticon ion"></i>
+                                        <i class="icon ion-calculator qwe" data-pack="default"
+                                           data-tags="math, arithmatic, numbers, additicon ion, subtracticon ion"></i>
                                         &nbsp; ion-calculator
                                     </span>
                                         </div>
@@ -3856,19 +3964,22 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-eye qwe" data-pack="default" data-tags="view, see, creeper"></i>
+                                        <i class="icon ion-eye qwe" data-pack="default"
+                                           data-tags="view, see, creeper"></i>
                                         &nbsp; ion-eye
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-eye-disabled qwe" data-pack="default" data-tags="view, see, creeper"></i>
+                                        <i class="icon ion-eye-disabled qwe" data-pack="default"
+                                           data-tags="view, see, creeper"></i>
                                         &nbsp; ion-eye-disabled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-flash qwe" data-pack="default" data-tags="ightning, weather, whether"></i>
+                                        <i class="icon ion-flash qwe" data-pack="default"
+                                           data-tags="ightning, weather, whether"></i>
                                         &nbsp; ion-flash
                                     </span>
                                         </div>
@@ -3898,115 +4009,134 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-contrast qwe" data-pack="default" data-tags="images, levels, ight, dark, settings"></i>
+                                        <i class="icon ion-contrast qwe" data-pack="default"
+                                           data-tags="images, levels, ight, dark, settings"></i>
                                         &nbsp; ion-contrast
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-wand qwe" data-pack="default" data-tags="images, levels, ight, dark, settings"></i>
+                                        <i class="icon ion-wand qwe" data-pack="default"
+                                           data-tags="images, levels, ight, dark, settings"></i>
                                         &nbsp; ion-wand
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-aperture qwe" data-pack="default" data-tags="images, levels, ight, dark, settings"></i>
+                                        <i class="icon ion-aperture qwe" data-pack="default"
+                                           data-tags="images, levels, ight, dark, settings"></i>
                                         &nbsp; ion-aperture
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-monitor qwe" data-pack="default" data-tags="thunderbolt, screen"></i>
+                                        <i class="icon ion-monitor qwe" data-pack="default"
+                                           data-tags="thunderbolt, screen"></i>
                                         &nbsp; ion-monitor
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-laptop qwe" data-pack="default" data-tags="macbook, apple, osx"></i>
+                                        <i class="icon ion-laptop qwe" data-pack="default"
+                                           data-tags="macbook, apple, osx"></i>
                                         &nbsp; ion-laptop
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ipad qwe" data-pack="default" data-tags="tablet, mobile, apple, retina, device"></i>
+                                        <i class="icon ion-ipad qwe" data-pack="default"
+                                           data-tags="tablet, mobile, apple, retina, device"></i>
                                         &nbsp; ion-ipad
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-iphone qwe" data-pack="default" data-tags="smartphone, mobile, apple, retina, device"></i>
+                                        <i class="icon ion-iphone qwe" data-pack="default"
+                                           data-tags="smartphone, mobile, apple, retina, device"></i>
                                         &nbsp; ion-iphone
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ipod qwe" data-pack="default" data-tags="music, player, apple, retina, device"></i>
+                                        <i class="icon ion-ipod qwe" data-pack="default"
+                                           data-tags="music, player, apple, retina, device"></i>
                                         &nbsp;ion-ipod
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-usb qwe" data-pack="default" data-tags="digital, computer"></i>
+                                        <i class="icon ion-usb qwe" data-pack="default"
+                                           data-tags="digital, computer"></i>
                                         &nbsp; ion-usb
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-outlet qwe" data-pack="default" data-tags="digital, computer, electricity"></i>
+                                        <i class="icon ion-outlet qwe" data-pack="default"
+                                           data-tags="digital, computer, electricity"></i>
                                         &nbsp; ion-outlet
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-bug qwe" data-pack="default" data-tags="develop, program, hacker, error"></i>
+                                        <i class="icon ion-bug qwe" data-pack="default"
+                                           data-tags="develop, program, hacker, error"></i>
                                         &nbsp; ion-bug
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-code qwe" data-pack="default" data-tags="develop, program, hacker"></i>
+                                        <i class="icon ion-code qwe" data-pack="default"
+                                           data-tags="develop, program, hacker"></i>
                                         &nbsp; ion-code
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-code-working qwe" data-pack="default" data-tags="develop, program, hacker"></i>
+                                        <i class="icon ion-code-working qwe" data-pack="default"
+                                           data-tags="develop, program, hacker"></i>
                                         &nbsp; ion-code-working
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-fork-repo qwe" data-pack="default" data-tags="develop, program, hacker, github"></i>
+                                        <i class="icon ion-fork-repo qwe" data-pack="default"
+                                           data-tags="develop, program, hacker, github"></i>
                                         &nbsp; ion-fork-repo
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-network qwe" data-pack="default" data-tags="develop, program, hacker, github"></i>
+                                        <i class="icon ion-network qwe" data-pack="default"
+                                           data-tags="develop, program, hacker, github"></i>
                                         &nbsp; ion-network
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pull-request qwe" data-pack="default" data-tags="develop, program, hacker, github"></i>
+                                        <i class="icon ion-pull-request qwe" data-pack="default"
+                                           data-tags="develop, program, hacker, github"></i>
                                         &nbsp; ion-pull-request
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-merge qwe" data-pack="default" data-tags="develop, program, hacker, github"></i>
+                                        <i class="icon ion-merge qwe" data-pack="default"
+                                           data-tags="develop, program, hacker, github"></i>
                                         &nbsp; ion-merge
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-game-controller-a qwe" data-pack="default" data-tags="fun"></i>
+                                        <i class="icon ion-game-controller-a qwe" data-pack="default"
+                                           data-tags="fun"></i>
                                         &nbsp; ion-game-controller-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-game-controller-b qwe" data-pack="default" data-tags="fun"></i>
+                                        <i class="icon ion-game-controller-b qwe" data-pack="default"
+                                           data-tags="fun"></i>
                                         &nbsp; ion-game-controller-b
                                     </span>
                                         </div>
@@ -4018,7 +4148,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-playstaticon ion qwe" data-pack="default" data-tags="fun, games"></i>
+                                        <i class="icon ion-playstaticon ion qwe" data-pack="default"
+                                           data-tags="fun, games"></i>
                                         &nbsp; ion-playstaticon ion
                                     </span>
                                         </div>
@@ -4030,19 +4161,22 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-closed-captioning qwe" data-pack="default" data-tags="movie, film, televisicon ion"></i>
+                                        <i class="icon ion-closed-captioning qwe" data-pack="default"
+                                           data-tags="movie, film, televisicon ion"></i>
                                         &nbsp;ion-closed-captioning
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-videocamera qwe" data-pack="default" data-tags="movie, film, televisicon ion"></i>
+                                        <i class="icon ion-videocamera qwe" data-pack="default"
+                                           data-tags="movie, film, televisicon ion"></i>
                                         &nbsp; ion-videocamera
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-film-marker qwe" data-pack="default" data-tags="film, cut, acticon ion"></i>
+                                        <i class="icon ion-film-marker qwe" data-pack="default"
+                                           data-tags="film, cut, acticon ion"></i>
                                         &nbsp; ion-film-marker
                                     </span>
                                         </div>
@@ -4054,7 +4188,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-headphone qwe" data-pack="default" data-tags="music, earbuds, beats"></i>
+                                        <i class="icon ion-headphone qwe" data-pack="default"
+                                           data-tags="music, earbuds, beats"></i>
                                         &nbsp; ion-headphone
                                     </span>
                                         </div>
@@ -4066,37 +4201,43 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-radio-waves qwe" data-pack="default" data-tags="music, sound, speaker"></i>
+                                        <i class="icon ion-radio-waves qwe" data-pack="default"
+                                           data-tags="music, sound, speaker"></i>
                                         &nbsp; ion-radio-waves
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-speakerphone qwe" data-pack="default" data-tags="sound, speaker, loud, ampify"></i>
+                                        <i class="icon ion-speakerphone qwe" data-pack="default"
+                                           data-tags="sound, speaker, loud, ampify"></i>
                                         &nbsp; ion-speakerphone
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-mic-a qwe" data-pack="default" data-tags="sound, talk, speaker"></i>
+                                        <i class="icon ion-mic-a qwe" data-pack="default"
+                                           data-tags="sound, talk, speaker"></i>
                                         &nbsp; ion-mic-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-mic-b qwe" data-pack="default" data-tags="sound, talk, speaker"></i>
+                                        <i class="icon ion-mic-b qwe" data-pack="default"
+                                           data-tags="sound, talk, speaker"></i>
                                         &nbsp; ion-mic-b
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-mic-c qwe" data-pack="default" data-tags="sound, talk, speaker"></i>
+                                        <i class="icon ion-mic-c qwe" data-pack="default"
+                                           data-tags="sound, talk, speaker"></i>
                                         &nbsp;ion-mic-c
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-volume-high qwe" data-pack="default" data-tags="sound, noise"></i>
+                                        <i class="icon ion-volume-high qwe" data-pack="default"
+                                           data-tags="sound, noise"></i>
                                         &nbsp; ion-volume-high
                                     </span>
                                         </div>
@@ -4120,97 +4261,113 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-levels qwe" data-pack="default" data-tags="opticon ions, toggles, sound, mixer"></i>
+                                        <i class="icon ion-levels qwe" data-pack="default"
+                                           data-tags="opticon ions, toggles, sound, mixer"></i>
                                         &nbsp; ion-levels
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-play qwe" data-pack="default" data-tags="music, watch, arrow, right"></i>
+                                        <i class="icon ion-play qwe" data-pack="default"
+                                           data-tags="music, watch, arrow, right"></i>
                                         &nbsp; ion-play
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pause qwe" data-pack="default" data-tags="music, break, hold, freeze"></i>
+                                        <i class="icon ion-pause qwe" data-pack="default"
+                                           data-tags="music, break, hold, freeze"></i>
                                         &nbsp; ion-pause
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-stop qwe" data-pack="default" data-tags="music, square, hold, freeze"></i>
+                                        <i class="icon ion-stop qwe" data-pack="default"
+                                           data-tags="music, square, hold, freeze"></i>
                                         &nbsp; ion-stop
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-record qwe" data-pack="default" data-tags="music, circle"></i>
+                                        <i class="icon ion-record qwe" data-pack="default"
+                                           data-tags="music, circle"></i>
                                         &nbsp; ion-record
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-skip-forward qwe" data-pack="default" data-tags="music, next"></i>
+                                        <i class="icon ion-skip-forward qwe" data-pack="default"
+                                           data-tags="music, next"></i>
                                         &nbsp; ion-skip-forward
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-skip-backward qwe" data-pack="default" data-tags="music, previous"></i>
+                                        <i class="icon ion-skip-backward qwe" data-pack="default"
+                                           data-tags="music, previous"></i>
                                         &nbsp; ion-skip-backward
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-eject qwe" data-pack="default" data-tags="music, dvd, remove"></i>
+                                        <i class="icon ion-eject qwe" data-pack="default"
+                                           data-tags="music, dvd, remove"></i>
                                         &nbsp; ion-eject
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-bag qwe" data-pack="default" data-tags="shopping, price, cart, money, container, $"></i>
+                                        <i class="icon ion-bag qwe" data-pack="default"
+                                           data-tags="shopping, price, cart, money, container, $"></i>
                                         &nbsp; ion-bag
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-card qwe" data-pack="default" data-tags="credit, price, debit, money, shopping, cash, dollars, $"></i>
+                                        <i class="icon ion-card qwe" data-pack="default"
+                                           data-tags="credit, price, debit, money, shopping, cash, dollars, $"></i>
                                         &nbsp; ion-card
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-cash qwe" data-pack="default" data-tags="credit, price, debit, money, shopping, dollars, $"></i>
+                                        <i class="icon ion-cash qwe" data-pack="default"
+                                           data-tags="credit, price, debit, money, shopping, dollars, $"></i>
                                         &nbsp; ion-cash
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pricetag qwe" data-pack="default" data-tags="credit, debit, money, shopping, cash, dollars, $"></i>
+                                        <i class="icon ion-pricetag qwe" data-pack="default"
+                                           data-tags="credit, debit, money, shopping, cash, dollars, $"></i>
                                         &nbsp; ion-pricetag
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-pricetags qwe" data-pack="default" data-tags="credit, debit, money, shopping, cash, dollars, $"></i>
+                                        <i class="icon ion-pricetags qwe" data-pack="default"
+                                           data-tags="credit, debit, money, shopping, cash, dollars, $"></i>
                                         &nbsp;ion-pricetags
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-thumbsup qwe" data-pack="default" data-tags="ike, fun, yes"></i>
+                                        <i class="icon ion-thumbsup qwe" data-pack="default"
+                                           data-tags="ike, fun, yes"></i>
                                         &nbsp; ion-thumbsup
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-thumbsdown qwe" data-pack="default" data-tags="disike, boring, no"></i>
+                                        <i class="icon ion-thumbsdown qwe" data-pack="default"
+                                           data-tags="disike, boring, no"></i>
                                         &nbsp; ion-thumbsdown
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-happy qwe" data-pack="default" data-tags="good, ike, fun, yes"></i>
+                                        <i class="icon ion-happy qwe" data-pack="default"
+                                           data-tags="good, ike, fun, yes"></i>
                                         &nbsp;ion-happy
                                     </span>
                                         </div>
@@ -4222,97 +4379,113 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-trophy qwe" data-pack="default" data-tags="competiticon ion, compete, win, lose, award"></i>
+                                        <i class="icon ion-trophy qwe" data-pack="default"
+                                           data-tags="competiticon ion, compete, win, lose, award"></i>
                                         &nbsp; ion-trophy
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-podium qwe" data-pack="default" data-tags="competiticon ion, compete, win, lose, award"></i>
+                                        <i class="icon ion-podium qwe" data-pack="default"
+                                           data-tags="competiticon ion, compete, win, lose, award"></i>
                                         &nbsp; ion-podium
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ribbon-a qwe" data-pack="default" data-tags="competiticon ion, compete, win, lose, award, trophy"></i>
+                                        <i class="icon ion-ribbon-a qwe" data-pack="default"
+                                           data-tags="competiticon ion, compete, win, lose, award, trophy"></i>
                                         &nbsp; ion-ribbon-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ribbon-b qwe" data-pack="default" data-tags="competiticon ion, compete, win, lose, award, trophy"></i>
+                                        <i class="icon ion-ribbon-b qwe" data-pack="default"
+                                           data-tags="competiticon ion, compete, win, lose, award, trophy"></i>
                                         &nbsp; ion-ribbon-b
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-university qwe" data-pack="default" data-tags="graduate, educaticon ion, school, tassle"></i>
+                                        <i class="icon ion-university qwe" data-pack="default"
+                                           data-tags="graduate, educaticon ion, school, tassle"></i>
                                         &nbsp; ion-university
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-magnet qwe" data-pack="default" data-tags="sticky, attracticon ion"></i>
+                                        <i class="icon ion-magnet qwe" data-pack="default"
+                                           data-tags="sticky, attracticon ion"></i>
                                         &nbsp;ion-magnet
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-beaker qwe" data-pack="default" data-tags="mixture, poticon ion, flask"></i>
+                                        <i class="icon ion-beaker qwe" data-pack="default"
+                                           data-tags="mixture, poticon ion, flask"></i>
                                         &nbsp; ion-beaker
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-flask qwe" data-pack="default" data-tags="bubbles, mixture, poticon ion"></i>
+                                        <i class="icon ion-flask qwe" data-pack="default"
+                                           data-tags="bubbles, mixture, poticon ion"></i>
                                         &nbsp; ion-flask
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-egg qwe" data-pack="default" data-tags="birth, twitter, bird, baby"></i>
+                                        <i class="icon ion-egg qwe" data-pack="default"
+                                           data-tags="birth, twitter, bird, baby"></i>
                                         &nbsp; ion-egg
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-earth qwe" data-pack="default" data-tags="nature, globe, home, planet"></i>
+                                        <i class="icon ion-earth qwe" data-pack="default"
+                                           data-tags="nature, globe, home, planet"></i>
                                         &nbsp; ion-earth
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-planet qwe" data-pack="default" data-tags="nature, globe, home, planet, space"></i>
+                                        <i class="icon ion-planet qwe" data-pack="default"
+                                           data-tags="nature, globe, home, planet, space"></i>
                                         &nbsp; ion-planet
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-lightbulb qwe" data-pack="default" data-tags="idea, new, aha!"></i>
+                                        <i class="icon ion-lightbulb qwe" data-pack="default"
+                                           data-tags="idea, new, aha!"></i>
                                         &nbsp;ion-lightbulb
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-cube qwe" data-pack="default" data-tags="box, square, container"></i>
+                                        <i class="icon ion-cube qwe" data-pack="default"
+                                           data-tags="box, square, container"></i>
                                         &nbsp; ion-cube
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-leaf qwe" data-pack="default" data-tags="green, recycle, plant, nature"></i>
+                                        <i class="icon ion-leaf qwe" data-pack="default"
+                                           data-tags="green, recycle, plant, nature"></i>
                                         &nbsp; ion-leaf
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-waterdrop qwe" data-pack="default" data-tags="nature, clean, recycle, fresh, wet, rain"></i>
+                                        <i class="icon ion-waterdrop qwe" data-pack="default"
+                                           data-tags="nature, clean, recycle, fresh, wet, rain"></i>
                                         &nbsp; ion-waterdrop
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-flame qwe" data-pack="default" data-tags="fire, hot, heat"></i>
+                                        <i class="icon ion-flame qwe" data-pack="default"
+                                           data-tags="fire, hot, heat"></i>
                                         &nbsp; ion-flame
                                     </span>
                                         </div>
@@ -4330,31 +4503,36 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-umbrella qwe" data-pack="default" data-tags="wet, rain, dry, shelter"></i>
+                                        <i class="icon ion-umbrella qwe" data-pack="default"
+                                           data-tags="wet, rain, dry, shelter"></i>
                                         &nbsp; ion-umbrella
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-nuclear qwe" data-pack="default" data-tags="danger, warning, hazard"></i>
+                                        <i class="icon ion-nuclear qwe" data-pack="default"
+                                           data-tags="danger, warning, hazard"></i>
                                         &nbsp; ion-nuclear
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-no-smoking qwe" data-pack="default" data-tags="danger, warning, cigarette, cancer"></i>
+                                        <i class="icon ion-no-smoking qwe" data-pack="default"
+                                           data-tags="danger, warning, cigarette, cancer"></i>
                                         &nbsp; ion-no-smoking
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-thermometer qwe" data-pack="default" data-tags="hot, cold, heat, temperature, mercury"></i>
+                                        <i class="icon ion-thermometer qwe" data-pack="default"
+                                           data-tags="hot, cold, heat, temperature, mercury"></i>
                                         &nbsp;ion-thermometer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-speedometer qwe" data-pack="default" data-tags="travel, accelerate"></i>
+                                        <i class="icon ion-speedometer qwe" data-pack="default"
+                                           data-tags="travel, accelerate"></i>
                                         &nbsp; ion-speedometer
                                     </span>
                                         </div>
@@ -4372,67 +4550,78 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-load-a qwe" data-pack="default" data-tags="spinner, waiting, refresh"></i>
+                                        <i class="icon ion-load-a qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh"></i>
                                         &nbsp; ion-load-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-loading-a qwe" data-pack="default" data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-loading-a qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
                                         &nbsp; ion-loading-a
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-load-b qwe" data-pack="default" data-tags="spinner, waiting, refresh"></i>
+                                        <i class="icon ion-load-b qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh"></i>
                                         &nbsp; ion-load-b
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-loading-b qwe" data-pack="default" data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-loading-b qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
                                         &nbsp; ion-loading-b
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-load-c qwe" data-pack="default" data-tags="spinner, waiting, refresh"></i>
+                                        <i class="icon ion-load-c qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh"></i>
                                         &nbsp; ion-load-c
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-loading-c qwe" data-pack="default" data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-loading-c qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
                                         &nbsp; on-loading-c
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-load-d qwe" data-pack="default" data-tags="spinner, waiting, refresh"></i>
+                                        <i class="icon ion-load-d qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh"></i>
                                         &nbsp; ion-load-d
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-loading-d qwe" data-pack="default" data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-loading-d qwe" data-pack="default"
+                                           data-tags="spinner, waiting, refresh, animaticon ion" data-animaticon></i>
                                         &nbsp; ion-loading-d
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-ionic-outline qwe" data-pack="ios7" data-tags="badass, framework, sexy"></i>
+                                        <i class="icon ion-ios7-ionic-outline qwe" data-pack="ios7"
+                                           data-tags="badass, framework, sexy"></i>
                                         &nbsp; ion-ios7-ionic-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-back qwe" data-pack="ios7" data-tags="chevron, left"></i>
+                                        <i class="icon ion-ios7-arrow-back qwe" data-pack="ios7"
+                                           data-tags="chevron, left"></i>
                                         &nbsp; ion-ios7-arrow-back
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-forward qwe" data-pack="ios7" data-tags="chevron, right"></i>
+                                        <i class="icon ion-ios7-arrow-forward qwe" data-pack="ios7"
+                                           data-tags="chevron, right"></i>
                                         &nbsp;ion-ios7-arrow-forward
                                     </span>
                                         </div>
@@ -4444,193 +4633,225 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-right qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-right qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp; ion-ios7-arrow-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-down qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-down qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp; ion-ios7-arrow-down
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-left qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-left qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp; ion-ios7-arrow-left
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-thin-up qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-thin-up qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp; ion-ios7-arrow-thin-up
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-thin-right qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-thin-right qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp; ion-ios7-arrow-thin-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-thin-down qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-thin-down qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp; ion-ios7-arrow-thin-down
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-arrow-thin-left qwe" data-pack="ios7" data-tags="chevron"></i>
+                                        <i class="icon ion-ios7-arrow-thin-left qwe" data-pack="ios7"
+                                           data-tags="chevron"></i>
                                         &nbsp;ion-ios7-arrow-thin-left
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-circle-filled qwe" data-pack="ios7" data-tags="checkmark, radio, dot, on, selected, button"></i>
+                                        <i class="icon ion-ios7-circle-filled qwe" data-pack="ios7"
+                                           data-tags="checkmark, radio, dot, on, selected, button"></i>
                                         &nbsp; ion-ios7-circle-filled
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-circle-outline qwe" data-pack="ios7" data-tags="checkmark, radio, dot, off, button"></i>
+                                        <i class="icon ion-ios7-circle-outline qwe" data-pack="ios7"
+                                           data-tags="checkmark, radio, dot, off, button"></i>
                                         &nbsp; ion-ios7-circle-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-checkmark-empty qwe" data-pack="ios7" data-tags="success, confirmed, on, finished, complete"></i>
+                                        <i class="icon ion-ios7-checkmark-empty qwe" data-pack="ios7"
+                                           data-tags="success, confirmed, on, finished, complete"></i>
                                         &nbsp; on-ios7-checkmark-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-checkmark-outline qwe" data-pack="ios7" data-tags="success, confirmed, on, finished, complete"></i>
+                                        <i class="icon ion-ios7-checkmark-outline qwe" data-pack="ios7"
+                                           data-tags="success, confirmed, on, finished, complete"></i>
                                         &nbsp; ion-ios7-checkmark-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-checkmark qwe" data-pack="ios7" data-tags="success, confirmed, on, finished, complete"></i>
+                                        <i class="icon ion-ios7-checkmark qwe" data-pack="ios7"
+                                           data-tags="success, confirmed, on, finished, complete"></i>
                                         &nbsp; ion-ios7-checkmark
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-plus-empty qwe" data-pack="ios7" data-tags="add, include, new, invite, +"></i>
+                                        <i class="icon ion-ios7-plus-empty qwe" data-pack="ios7"
+                                           data-tags="add, include, new, invite, +"></i>
                                         &nbsp; ion-ios7-plus-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-plus-outline qwe" data-pack="ios7" data-tags="add, include, new, invite, +"></i>
+                                        <i class="icon ion-ios7-plus-outline qwe" data-pack="ios7"
+                                           data-tags="add, include, new, invite, +"></i>
                                         &nbsp; ion-ios7-plus-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-plus qwe" data-pack="ios7" data-tags="add, include, new, invite, +"></i>
+                                        <i class="icon ion-ios7-plus qwe" data-pack="ios7"
+                                           data-tags="add, include, new, invite, +"></i>
                                         &nbsp; ion-ios7-plus
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-close-empty qwe" data-pack="ios7" data-tags="delete, remove, trash, end, stop, x"></i>
+                                        <i class="icon ion-ios7-close-empty qwe" data-pack="ios7"
+                                           data-tags="delete, remove, trash, end, stop, x"></i>
                                         &nbsp; ion-ios7-close-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-close-outline qwe" data-pack="ios7" data-tags="delete, remove, trash, end, stop, x"></i>
+                                        <i class="icon ion-ios7-close-outline qwe" data-pack="ios7"
+                                           data-tags="delete, remove, trash, end, stop, x"></i>
                                         &nbsp; ion-ios7-close-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-close qwe" data-pack="ios7" data-tags="delete, remove, trash, end, stop, x"></i>
+                                        <i class="icon ion-ios7-close qwe" data-pack="ios7"
+                                           data-tags="delete, remove, trash, end, stop, x"></i>
                                         &nbsp; ion-ios7-close
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-minus-empty qwe" data-pack="ios7" data-tags="hide, remove, minimize, -"></i>
+                                        <i class="icon ion-ios7-minus-empty qwe" data-pack="ios7"
+                                           data-tags="hide, remove, minimize, -"></i>
                                         &nbsp; ion-ios7-minus-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-minus-outline qwe" data-pack="ios7" data-tags="hide, remove, minimize, -"></i>
+                                        <i class="icon ion-ios7-minus-outline qwe" data-pack="ios7"
+                                           data-tags="hide, remove, minimize, -"></i>
                                         &nbsp; ion-ios7-minus-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-minus qwe" data-pack="ios7" data-tags="hide, remove, minimize, -"></i>
+                                        <i class="icon ion-ios7-minus qwe" data-pack="ios7"
+                                           data-tags="hide, remove, minimize, -"></i>
                                         &nbsp; ion-ios7-minus
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-information ion-empty qwe" data-pack="ios7" data-tags="help, questicon ion"></i>
+                                        <i class="icon ion-ios7-information ion-empty qwe" data-pack="ios7"
+                                           data-tags="help, questicon ion"></i>
                                         &nbsp; ion-ios7-information ion-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-information ion-outline qwe" data-pack="ios7" data-tags="help, questicon ion"></i>
+                                        <i class="icon ion-ios7-information ion-outline qwe" data-pack="ios7"
+                                           data-tags="help, questicon ion"></i>
                                         &nbsp; ion-ios7-information ion-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-information ion qwe" data-pack="ios7" data-tags="help, questicon ion"></i>
+                                        <i class="icon ion-ios7-information ion qwe" data-pack="ios7"
+                                           data-tags="help, questicon ion"></i>
                                         &nbsp; ion-ios7-information ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-help-empty qwe" data-pack="ios7" data-tags="questicon ion, information ion, ?"></i>
+                                        <i class="icon ion-ios7-help-empty qwe" data-pack="ios7"
+                                           data-tags="questicon ion, information ion, ?"></i>
                                         &nbsp; ion-ios7-help-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-help-outline qwe" data-pack="ios7" data-tags="questicon ion, information ion, ?"></i>
+                                        <i class="icon ion-ios7-help-outline qwe" data-pack="ios7"
+                                           data-tags="questicon ion, information ion, ?"></i>
                                         &nbsp; ion-ios7-help-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-help qwe" data-pack="ios7" data-tags="questicon ion, information ion, ?"></i>
+                                        <i class="icon ion-ios7-help qwe" data-pack="ios7"
+                                           data-tags="questicon ion, information ion, ?"></i>
                                         &nbsp; ion-ios7-help
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-search qwe" data-pack="ios7" data-tags="find, seek, look, magnifying glass"></i>
+                                        <i class="icon ion-ios7-search qwe" data-pack="ios7"
+                                           data-tags="find, seek, look, magnifying glass"></i>
                                         &nbsp; ion-ios7-search
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-search-strong qwe" data-pack="ios7" data-tags="find, seek, look, magnifying glass"></i>
+                                        <i class="icon ion-ios7-search-strong qwe" data-pack="ios7"
+                                           data-tags="find, seek, look, magnifying glass"></i>
                                         &nbsp; ion-ios7-search-strong
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-star qwe" data-pack="ios7" data-tags="favorite, rate"></i>
+                                        <i class="icon ion-ios7-star qwe" data-pack="ios7"
+                                           data-tags="favorite, rate"></i>
                                         &nbsp; ion-ios7-star
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-star-half qwe" data-pack="ios7" data-tags="favorite, rate"></i>
+                                        <i class="icon ion-ios7-star-half qwe" data-pack="ios7"
+                                           data-tags="favorite, rate"></i>
                                         &nbsp; ion-ios7-star-half
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-star-outline qwe" data-pack="ios7" data-tags="favorite, rate"></i>
+                                        <i class="icon ion-ios7-star-outline qwe" data-pack="ios7"
+                                           data-tags="favorite, rate"></i>
                                         &nbsp; ion-ios7-star-outline
                                     </span>
                                         </div>
@@ -4642,7 +4863,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-heart-outline qwe" data-pack="ios7" data-tags="love"></i>
+                                        <i class="icon ion-ios7-heart-outline qwe" data-pack="ios7"
+                                           data-tags="love"></i>
                                         &nbsp; ion-ios7-heart-outline
                                     </span>
                                         </div>
@@ -4666,145 +4888,169 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-home-outline qwe" data-pack="ios7" data-tags="house"></i>
+                                        <i class="icon ion-ios7-home-outline qwe" data-pack="ios7"
+                                           data-tags="house"></i>
                                         &nbsp; ion-ios7-home-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloud qwe" data-pack="ios7" data-tags="storage, weather, whether"></i>
+                                        <i class="icon ion-ios7-cloud qwe" data-pack="ios7"
+                                           data-tags="storage, weather, whether"></i>
                                         &nbsp; ion-ios7-cloud
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloud-outline qwe" data-pack="ios7" data-tags="storage, weather, whether"></i>
+                                        <i class="icon ion-ios7-cloud-outline qwe" data-pack="ios7"
+                                           data-tags="storage, weather, whether"></i>
                                         &nbsp; on-ios7-cloud-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloud-upload qwe" data-pack="ios7" data-tags="storage"></i>
+                                        <i class="icon ion-ios7-cloud-upload qwe" data-pack="ios7"
+                                           data-tags="storage"></i>
                                         &nbsp; ion-ios7-cloud-upload
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloud-upload-outline qwe" data-pack="ios7" data-tags="storage"></i>
+                                        <i class="icon ion-ios7-cloud-upload-outline qwe" data-pack="ios7"
+                                           data-tags="storage"></i>
                                         &nbsp; ion-ios7-cloud-upload-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloud-download qwe" data-pack="ios7" data-tags="storage"></i>
+                                        <i class="icon ion-ios7-cloud-download qwe" data-pack="ios7"
+                                           data-tags="storage"></i>
                                         &nbsp; ion-ios7-cloud-download
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloud-download-outline qwe" data-pack="ios7" data-tags="storage"></i>
+                                        <i class="icon ion-ios7-cloud-download-outline qwe" data-pack="ios7"
+                                           data-tags="storage"></i>
                                         &nbsp; ion-ios7-cloud-download-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-upload qwe" data-pack="ios7" data-tags="share, import"></i>
+                                        <i class="icon ion-ios7-upload qwe" data-pack="ios7"
+                                           data-tags="share, import"></i>
                                         &nbsp; ion-ios7-upload
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-upload-outline qwe" data-pack="ios7" data-tags="share, import"></i>
+                                        <i class="icon ion-ios7-upload-outline qwe" data-pack="ios7"
+                                           data-tags="share, import"></i>
                                         &nbsp; ion-ios7-upload-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-download qwe" data-pack="ios7" data-tags="save, export"></i>
+                                        <i class="icon ion-ios7-download qwe" data-pack="ios7"
+                                           data-tags="save, export"></i>
                                         &nbsp; ion-ios7-download
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-download-outline qwe" data-pack="ios7" data-tags="save, export"></i>
+                                        <i class="icon ion-ios7-download-outline qwe" data-pack="ios7"
+                                           data-tags="save, export"></i>
                                         &nbsp; ion-ios7-download-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-refresh qwe" data-pack="ios7" data-tags="reload, renew, reset"></i>
+                                        <i class="icon ion-ios7-refresh qwe" data-pack="ios7"
+                                           data-tags="reload, renew, reset"></i>
                                         &nbsp; ion-ios7-refresh
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-refresh-outline qwe" data-pack="ios7" data-tags="reload, renew, reset"></i>
+                                        <i class="icon ion-ios7-refresh-outline qwe" data-pack="ios7"
+                                           data-tags="reload, renew, reset"></i>
                                         &nbsp; on-ios7-refresh-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-refresh-empty qwe" data-pack="ios7" data-tags="reload, renew"></i>
+                                        <i class="icon ion-ios7-refresh-empty qwe" data-pack="ios7"
+                                           data-tags="reload, renew"></i>
                                         &nbsp; ion-ios7-refresh-empty
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-reload qwe" data-pack="ios7" data-tags="renew, reset"></i>
+                                        <i class="icon ion-ios7-reload qwe" data-pack="ios7"
+                                           data-tags="renew, reset"></i>
                                         &nbsp; ion-ios7-reload
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-reloading qwe" data-pack="ios7" data-tags="renew, reset, animaticon ion" data-animaticon></i>
+                                        <i class="icon ion-ios7-reloading qwe" data-pack="ios7"
+                                           data-tags="renew, reset, animaticon ion" data-animaticon></i>
                                         &nbsp; ion-ios7-reloading
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-loop-strong qwe" data-pack="ios7" data-tags="reload, renew, reset"></i>
+                                        <i class="icon ion-ios7-loop-strong qwe" data-pack="ios7"
+                                           data-tags="reload, renew, reset"></i>
                                         &nbsp; ion-ios7-loop-strong
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-loop qwe" data-pack="ios7" data-tags="reload, renew, reset"></i>
+                                        <i class="icon ion-ios7-loop qwe" data-pack="ios7"
+                                           data-tags="reload, renew, reset"></i>
                                         &nbsp; ion-ios7-loop
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-bookmarks qwe" data-pack="ios7" data-tags="favorite"></i>
+                                        <i class="icon ion-ios7-bookmarks qwe" data-pack="ios7"
+                                           data-tags="favorite"></i>
                                         &nbsp; ion-ios7-bookmarks
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-bookmarks-outline qwe" data-pack="ios7" data-tags="favorite"></i>
+                                        <i class="icon ion-ios7-bookmarks-outline qwe" data-pack="ios7"
+                                           data-tags="favorite"></i>
                                         &nbsp; ion-ios7-bookmarks-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-flag qwe" data-pack="ios7" data-tags="marker, favorite"></i>
+                                        <i class="icon ion-ios7-flag qwe" data-pack="ios7"
+                                           data-tags="marker, favorite"></i>
                                         &nbsp; ion-ios7-flag
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-flag-outline qwe" data-pack="ios7" data-tags="marker, favorite"></i>
+                                        <i class="icon ion-ios7-flag-outline qwe" data-pack="ios7"
+                                           data-tags="marker, favorite"></i>
                                         &nbsp; ion-ios7-flag-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-glasses qwe" data-pack="ios7" data-tags="steve, reading, look, see"></i>
+                                        <i class="icon ion-ios7-glasses qwe" data-pack="ios7"
+                                           data-tags="steve, reading, look, see"></i>
                                         &nbsp; ion-ios7-glasses
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-glasses-outline qwe" data-pack="ios7" data-tags="steve, reading, look, see"></i>
+                                        <i class="icon ion-ios7-glasses-outline qwe" data-pack="ios7"
+                                           data-tags="steve, reading, look, see"></i>
                                         &nbsp; ion-ios7-glasses-outline
                                     </span>
                                         </div>
@@ -4816,7 +5062,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-browsers-outline qwe" data-pack="ios7" data-tags="square"></i>
+                                        <i class="icon ion-ios7-browsers-outline qwe" data-pack="ios7"
+                                           data-tags="square"></i>
                                         &nbsp; ion-ios7-browsers-outline
                                     </span>
                                         </div>
@@ -4834,37 +5081,43 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cart qwe" data-pack="ios7" data-tags="shopping, money, items, commerce, $"></i>
+                                        <i class="icon ion-ios7-cart qwe" data-pack="ios7"
+                                           data-tags="shopping, money, items, commerce, $"></i>
                                         &nbsp; ion-ios7-cart
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cart-outline qwe" data-pack="ios7" data-tags="shopping, money, items, commerce, $"></i>
+                                        <i class="icon ion-ios7-cart-outline qwe" data-pack="ios7"
+                                           data-tags="shopping, money, items, commerce, $"></i>
                                         &nbsp; ion-ios7-cart-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pricetag qwe" data-pack="ios7" data-tags="shopping, money, items, commerce, $"></i>
+                                        <i class="icon ion-ios7-pricetag qwe" data-pack="ios7"
+                                           data-tags="shopping, money, items, commerce, $"></i>
                                         &nbsp; ion-ios7-pricetag
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pricetag-outline qwe" data-pack="ios7" data-tags="shopping, money, items, commerce, $"></i>
+                                        <i class="icon ion-ios7-pricetag-outline qwe" data-pack="ios7"
+                                           data-tags="shopping, money, items, commerce, $"></i>
                                         &nbsp; ion-ios7-pricetag-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pricetags qwe" data-pack="ios7" data-tags="shopping, money, items, commerce, $"></i>
+                                        <i class="icon ion-ios7-pricetags qwe" data-pack="ios7"
+                                           data-tags="shopping, money, items, commerce, $"></i>
                                         &nbsp; ion-ios7-pricetags
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pricetags-outline qwe" data-pack="ios7" data-tags="shopping, money, items, commerce, $"></i>
+                                        <i class="icon ion-ios7-pricetags-outline qwe" data-pack="ios7"
+                                           data-tags="shopping, money, items, commerce, $"></i>
                                         &nbsp; ion-ios7-pricetags-outline
                                     </span>
                                         </div>
@@ -4876,7 +5129,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-chatboxes-outline qwe" data-pack="ios7" data-tags="talk"></i>
+                                        <i class="icon ion-ios7-chatboxes-outline qwe" data-pack="ios7"
+                                           data-tags="talk"></i>
                                         &nbsp; ion-ios7-chatboxes-outline
                                     </span>
                                         </div>
@@ -4888,91 +5142,106 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-chatbubble-outline qwe" data-pack="ios7" data-tags="talk"></i>
+                                        <i class="icon ion-ios7-chatbubble-outline qwe" data-pack="ios7"
+                                           data-tags="talk"></i>
                                         &nbsp; ion-ios7-chatbubble-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cog qwe" data-pack="ios7" data-tags="settings, gear, opticon ions"></i>
+                                        <i class="icon ion-ios7-cog qwe" data-pack="ios7"
+                                           data-tags="settings, gear, opticon ions"></i>
                                         &nbsp; ion-ios7-cog
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cog-outline qwe" data-pack="ios7" data-tags="settings, gear, opticon ions"></i>
+                                        <i class="icon ion-ios7-cog-outline qwe" data-pack="ios7"
+                                           data-tags="settings, gear, opticon ions"></i>
                                         &nbsp; ion-ios7-cog-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-gear qwe" data-pack="ios7" data-tags="cog, settings, opticon ions"></i>
+                                        <i class="icon ion-ios7-gear qwe" data-pack="ios7"
+                                           data-tags="cog, settings, opticon ions"></i>
                                         &nbsp; ion-ios7-gear
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-gear-outline qwe" data-pack="ios7" data-tags="cog, settings, opticon ions"></i>
+                                        <i class="icon ion-ios7-gear-outline qwe" data-pack="ios7"
+                                           data-tags="cog, settings, opticon ions"></i>
                                         &nbsp; ion-ios7-gear-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-settings qwe" data-pack="ios7" data-tags="cog, settings, opticon ions"></i>
+                                        <i class="icon ion-ios7-settings qwe" data-pack="ios7"
+                                           data-tags="cog, settings, opticon ions"></i>
                                         &nbsp; ion-ios7-settings
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-settings-strong qwe" data-pack="ios7" data-tags="cog, settings, opticon ions"></i>
+                                        <i class="icon ion-ios7-settings-strong qwe" data-pack="ios7"
+                                           data-tags="cog, settings, opticon ions"></i>
                                         &nbsp; ion-ios7-settings-strong
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-toggle qwe" data-pack="ios7" data-tags="settings, opticon ions, switch"></i>
+                                        <i class="icon ion-ios7-toggle qwe" data-pack="ios7"
+                                           data-tags="settings, opticon ions, switch"></i>
                                         &nbsp; ion-ios7-toggle
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-toggle-outline qwe" data-pack="ios7" data-tags="settings, opticon ions, switch"></i>
+                                        <i class="icon ion-ios7-toggle-outline qwe" data-pack="ios7"
+                                           data-tags="settings, opticon ions, switch"></i>
                                         &nbsp; ion-ios7-toggle-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-analytics qwe" data-pack="ios7" data-tags="metrics, track, data"></i>
+                                        <i class="icon ion-ios7-analytics qwe" data-pack="ios7"
+                                           data-tags="metrics, track, data"></i>
                                         &nbsp; ion-ios7-analytics
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-analytics-outline qwe" data-pack="ios7" data-tags="metrics, track, data"></i>
+                                        <i class="icon ion-ios7-analytics-outline qwe" data-pack="ios7"
+                                           data-tags="metrics, track, data"></i>
                                         &nbsp; ion-ios7-analytics-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pie qwe" data-pack="ios7" data-tags="cog, settings, opticon ions"></i>
+                                        <i class="icon ion-ios7-pie qwe" data-pack="ios7"
+                                           data-tags="cog, settings, opticon ions"></i>
                                         &nbsp; ion-ios7-pie
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pie-outline qwe" data-pack="ios7" data-tags="cog, settings, opticon ions"></i>
+                                        <i class="icon ion-ios7-pie-outline qwe" data-pack="ios7"
+                                           data-tags="cog, settings, opticon ions"></i>
                                         &nbsp;ion-ios7-pie-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pulse qwe" data-pack="ios7" data-tags="ive, hot, rate"></i>
+                                        <i class="icon ion-ios7-pulse qwe" data-pack="ios7"
+                                           data-tags="ive, hot, rate"></i>
                                         &nbsp; ion-ios7-pulse
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="ion-ios7-pulse-strong qwe" data-pack="ios7" data-tags="ive, hot, rate"></i>
+                                        <i class="ion-ios7-pulse-strong qwe" data-pack="ios7"
+                                           data-tags="ive, hot, rate"></i>
                                         &nbsp; ion-ios7-pulse-strong
                                     </span>
                                         </div>
@@ -4984,7 +5253,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-filing-outline qwe" data-pack="ios7" data-tags="archive"></i>
+                                        <i class="icon ion-ios7-filing-outline qwe" data-pack="ios7"
+                                           data-tags="archive"></i>
                                         &nbsp; ion-ios7-filing-outline
                                     </span>
                                         </div>
@@ -4996,43 +5266,50 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-box-outline qwe" data-pack="ios7" data-tags="archive"></i>
+                                        <i class="icon ion-ios7-box-outline qwe" data-pack="ios7"
+                                           data-tags="archive"></i>
                                         &nbsp; ion-ios7-box-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-compose qwe" data-pack="ios7" data-tags="write, type, create"></i>
+                                        <i class="icon ion-ios7-compose qwe" data-pack="ios7"
+                                           data-tags="write, type, create"></i>
                                         &nbsp; ion-ios7-compose
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-compose-outline qwe" data-pack="ios7" data-tags="write, type, create"></i>
+                                        <i class="icon ion-ios7-compose-outline qwe" data-pack="ios7"
+                                           data-tags="write, type, create"></i>
                                         &nbsp; ion-ios7-compose-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-trash qwe" data-pack="ios7" data-tags="delete, remove, dispose, waste, basket, dump, kill"></i>
+                                        <i class="icon ion-ios7-trash qwe" data-pack="ios7"
+                                           data-tags="delete, remove, dispose, waste, basket, dump, kill"></i>
                                         &nbsp; ion-ios7-trash
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-trash-outline qwe" data-pack="ios7" data-tags="delete, remove, dispose, waste, basket, dump, kill"></i>
+                                        <i class="icon ion-ios7-trash-outline qwe" data-pack="ios7"
+                                           data-tags="delete, remove, dispose, waste, basket, dump, kill"></i>
                                         &nbsp; ion-ios7-trash-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-copy qwe" data-pack="ios7" data-tags="dupicate, paper"></i>
+                                        <i class="icon ion-ios7-copy qwe" data-pack="ios7"
+                                           data-tags="dupicate, paper"></i>
                                         &nbsp; ion-ios7-copy
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-copy-outline qwe" data-pack="ios7" data-tags="dupicate, paper"></i>
+                                        <i class="icon ion-ios7-copy-outline qwe" data-pack="ios7"
+                                           data-tags="dupicate, paper"></i>
                                         &nbsp; ion-ios7-copy-outline
                                     </span>
                                         </div>
@@ -5044,7 +5321,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-email-outline qwe" data-pack="ios7" data-tags="snail, mail"></i>
+                                        <i class="icon ion-ios7-email-outline qwe" data-pack="ios7"
+                                           data-tags="snail, mail"></i>
                                         &nbsp; ion-ios7-email-outline
                                     </span>
                                         </div>
@@ -5056,7 +5334,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-undo-outline qwe" data-pack="ios7" data-tags="reply"></i>
+                                        <i class="icon ion-ios7-undo-outline qwe" data-pack="ios7"
+                                           data-tags="reply"></i>
                                         &nbsp; ion-ios7-undo-outline
                                     </span>
                                         </div>
@@ -5068,7 +5347,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-redo-outline qwe" data-pack="ios7" data-tags="forward"></i>
+                                        <i class="icon ion-ios7-redo-outline qwe" data-pack="ios7"
+                                           data-tags="forward"></i>
                                         &nbsp; ion-ios7-redo-outline
                                     </span>
                                         </div>
@@ -5080,7 +5360,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-paperplane-outline qwe" data-pack="ios7" data-tags="send"></i>
+                                        <i class="icon ion-ios7-paperplane-outline qwe" data-pack="ios7"
+                                           data-tags="send"></i>
                                         &nbsp; ion-ios7-paperplane-outline
                                     </span>
                                         </div>
@@ -5092,7 +5373,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-folder-outline qwe" data-pack="ios7" data-tags="file"></i>
+                                        <i class="icon ion-ios7-folder-outline qwe" data-pack="ios7"
+                                           data-tags="file"></i>
                                         &nbsp; ion-ios7-folder-outline
                                     </span>
                                         </div>
@@ -5104,19 +5386,22 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-paper-outline qwe" data-pack="ios7" data-tags="feed, paper"></i>
+                                        <i class="icon ion-ios7-paper-outline qwe" data-pack="ios7"
+                                           data-tags="feed, paper"></i>
                                         &nbsp; ion-ios7-paper-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-world qwe" data-pack="ios7" data-tags="globe, earth"></i>
+                                        <i class="icon ion-ios7-world qwe" data-pack="ios7"
+                                           data-tags="globe, earth"></i>
                                         &nbsp; ion-ios7-world
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-world-outline qwe" data-pack="ios7" data-tags="globe, earth"></i>
+                                        <i class="icon ion-ios7-world-outline qwe" data-pack="ios7"
+                                           data-tags="globe, earth"></i>
                                         &nbsp; ion-ios7-world-outline
                                     </span>
                                         </div>
@@ -5128,103 +5413,120 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-alarm-outline qwe" data-pack="ios7" data-tags="wake, ring"></i>
+                                        <i class="icon ion-ios7-alarm-outline qwe" data-pack="ios7"
+                                           data-tags="wake, ring"></i>
                                         &nbsp; ion-ios7-alarm-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-speedometer qwe" data-pack="ios7" data-tags="speed, drive, level"></i>
+                                        <i class="icon ion-ios7-speedometer qwe" data-pack="ios7"
+                                           data-tags="speed, drive, level"></i>
                                         &nbsp; ion-ios7-speedometer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-speedometer-outline qwe" data-pack="ios7" data-tags="speed, drive, level"></i>
+                                        <i class="icon ion-ios7-speedometer-outline qwe" data-pack="ios7"
+                                           data-tags="speed, drive, level"></i>
                                         &nbsp; ion-ios7-speedometer-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-stopwatch qwe" data-pack="ios7" data-tags="time, speed"></i>
+                                        <i class="icon ion-ios7-stopwatch qwe" data-pack="ios7"
+                                           data-tags="time, speed"></i>
                                         &nbsp; ion-ios7-stopwatch
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-stopwatch-outline qwe" data-pack="ios7" data-tags="time, speed"></i>
+                                        <i class="icon ion-ios7-stopwatch-outline qwe" data-pack="ios7"
+                                           data-tags="time, speed"></i>
                                         &nbsp; ion-ios7-stopwatch-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-timer qwe" data-pack="ios7" data-tags="cooking, alarm, buzz"></i>
+                                        <i class="icon ion-ios7-timer qwe" data-pack="ios7"
+                                           data-tags="cooking, alarm, buzz"></i>
                                         &nbsp; ion-ios7-timer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-timer-outline qwe" data-pack="ios7" data-tags="cooking, alarm, buzz"></i>
+                                        <i class="icon ion-ios7-timer-outline qwe" data-pack="ios7"
+                                           data-tags="cooking, alarm, buzz"></i>
                                         &nbsp; ion-ios7-timer-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-clock qwe" data-pack="ios7" data-tags="time, date, hours, minutes, seconds, watch"></i>
+                                        <i class="icon ion-ios7-clock qwe" data-pack="ios7"
+                                           data-tags="time, date, hours, minutes, seconds, watch"></i>
                                         &nbsp; ion-ios7-clock
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-clock-outline qwe" data-pack="ios7" data-tags="time, date, hours, minutes, seconds, watch"></i>
+                                        <i class="icon ion-ios7-clock-outline qwe" data-pack="ios7"
+                                           data-tags="time, date, hours, minutes, seconds, watch"></i>
                                         &nbsp; ion-ios7-clock-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-time qwe" data-pack="ios7" data-tags="clock, watch, hour, minute, second"></i>
+                                        <i class="icon ion-ios7-time qwe" data-pack="ios7"
+                                           data-tags="clock, watch, hour, minute, second"></i>
                                         &nbsp; ion-ios7-time
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-time-outline qwe" data-pack="ios7" data-tags="clock, watch, hour, minute, second"></i>
+                                        <i class="icon ion-ios7-time-outline qwe" data-pack="ios7"
+                                           data-tags="clock, watch, hour, minute, second"></i>
                                         &nbsp; ion-ios7-time-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-calendar qwe" data-pack="ios7" data-tags="date, time, month, year"></i>
+                                        <i class="icon ion-ios7-calendar qwe" data-pack="ios7"
+                                           data-tags="date, time, month, year"></i>
                                         &nbsp; ion-ios7-calendar
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-calendar-outline qwe" data-pack="ios7" data-tags="date, time, month, year"></i>
+                                        <i class="icon ion-ios7-calendar-outline qwe" data-pack="ios7"
+                                           data-tags="date, time, month, year"></i>
                                         &nbsp; ion-ios7-calendar-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-photos qwe" data-pack="ios7" data-tags="images, stills, square"></i>
+                                        <i class="icon ion-ios7-photos qwe" data-pack="ios7"
+                                           data-tags="images, stills, square"></i>
                                         &nbsp; ion-ios7-photos
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-photos-outline qwe" data-pack="ios7" data-tags="images, stills, square"></i>
+                                        <i class="icon ion-ios7-photos-outline qwe" data-pack="ios7"
+                                           data-tags="images, stills, square"></i>
                                         &nbsp; ion-ios7-photos-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-albums qwe" data-pack="ios7" data-tags="square, boxes, sides"></i>
+                                        <i class="icon ion-ios7-albums qwe" data-pack="ios7"
+                                           data-tags="square, boxes, sides"></i>
                                         &nbsp; ion-ios7-albums
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-albums-outline qwe" data-pack="ios7" data-tags="square, boxes, sides"></i>
+                                        <i class="icon ion-ios7-albums-outline qwe" data-pack="ios7"
+                                           data-tags="square, boxes, sides"></i>
                                         &nbsp; ion-ios7-albums-outline
                                     </span>
                                         </div>
@@ -5236,193 +5538,225 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-camera-outline qwe" data-pack="ios7" data-tags="picture"></i>
+                                        <i class="icon ion-ios7-camera-outline qwe" data-pack="ios7"
+                                           data-tags="picture"></i>
                                         &nbsp; ion-ios7-camera-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-reverse-camera qwe" data-pack="ios7" data-tags="picture"></i>
+                                        <i class="icon ion-ios7-reverse-camera qwe" data-pack="ios7"
+                                           data-tags="picture"></i>
                                         &nbsp; ion-ios7-reverse-camera
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-reverse-camera-outline qwe" data-pack="ios7" data-tags="picture"></i>
+                                        <i class="icon ion-ios7-reverse-camera-outline qwe" data-pack="ios7"
+                                           data-tags="picture"></i>
                                         &nbsp; ion-ios7-reverse-camera-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-eye qwe" data-pack="ios7" data-tags="view, see, exposed, look"></i>
+                                        <i class="icon ion-ios7-eye qwe" data-pack="ios7"
+                                           data-tags="view, see, exposed, look"></i>
                                         &nbsp; ion-ios7-eye
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-eye-outline qwe" data-pack="ios7" data-tags="view, see, exposed, look"></i>
+                                        <i class="icon ion-ios7-eye-outline qwe" data-pack="ios7"
+                                           data-tags="view, see, exposed, look"></i>
                                         &nbsp; ion-ios7-eye-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-bolt qwe" data-pack="ios7" data-tags="flash, ightning"></i>
+                                        <i class="icon ion-ios7-bolt qwe" data-pack="ios7"
+                                           data-tags="flash, ightning"></i>
                                         &nbsp; ion-ios7-bolt
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-bolt-outline qwe" data-pack="ios7" data-tags="flash, ightning"></i>
+                                        <i class="icon ion-ios7-bolt-outline qwe" data-pack="ios7"
+                                           data-tags="flash, ightning"></i>
                                         &nbsp; ion-ios7-bolt-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-barcode qwe" data-pack="ios7" data-tags="reader, camera"></i>
+                                        <i class="icon ion-ios7-barcode qwe" data-pack="ios7"
+                                           data-tags="reader, camera"></i>
                                         &nbsp; ion-ios7-barcode
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-barcode-outline qwe" data-pack="ios7" data-tags="reader, camera"></i>
+                                        <i class="icon ion-ios7-barcode-outline qwe" data-pack="ios7"
+                                           data-tags="reader, camera"></i>
                                         &nbsp; ion-ios7-barcode-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-briefcase qwe" data-pack="ios7" data-tags="organize, folder"></i>
+                                        <i class="icon ion-ios7-briefcase qwe" data-pack="ios7"
+                                           data-tags="organize, folder"></i>
                                         &nbsp; ion-ios7-briefcase
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-briefcase-outline qwe" data-pack="ios7" data-tags="organize, folder"></i>
+                                        <i class="icon ion-ios7-briefcase-outline qwe" data-pack="ios7"
+                                           data-tags="organize, folder"></i>
                                         &nbsp; ion-ios7-briefcase-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-medkit qwe" data-pack="ios7" data-tags="health, case, first aid, sick, disease"></i>
+                                        <i class="icon ion-ios7-medkit qwe" data-pack="ios7"
+                                           data-tags="health, case, first aid, sick, disease"></i>
                                         &nbsp; ion-ios7-medkit
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-medkit-outline qwe" data-pack="ios7" data-tags="health, case, first aid, sick, disease"></i>
+                                        <i class="icon ion-ios7-medkit-outline qwe" data-pack="ios7"
+                                           data-tags="health, case, first aid, sick, disease"></i>
                                         &nbsp; ion-ios7-medkit-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-infinite qwe" data-pack="ios7" data-tags="forever, loop"></i>
+                                        <i class="icon ion-ios7-infinite qwe" data-pack="ios7"
+                                           data-tags="forever, loop"></i>
                                         &nbsp; ion-ios7-infinite
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-infinite-outline qwe" data-pack="ios7" data-tags="forever, loop"></i>
+                                        <i class="icon ion-ios7-infinite-outline qwe" data-pack="ios7"
+                                           data-tags="forever, loop"></i>
                                         &nbsp; ion-ios7-infinite-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-calculator qwe" data-pack="ios7" data-tags="math, arithmatic"></i>
+                                        <i class="icon ion-ios7-calculator qwe" data-pack="ios7"
+                                           data-tags="math, arithmatic"></i>
                                         &nbsp; ion-ios7-calculator
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-calculator-outline qwe" data-pack="ios7" data-tags="math, arithmatic"></i>
+                                        <i class="icon ion-ios7-calculator-outline qwe" data-pack="ios7"
+                                           data-tags="math, arithmatic"></i>
                                         &nbsp; ion-ios7-calculator-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-keypad qwe" data-pack="ios7" data-tags="type, grid, circle"></i>
+                                        <i class="icon ion-ios7-keypad qwe" data-pack="ios7"
+                                           data-tags="type, grid, circle"></i>
                                         &nbsp; ion-ios7-keypad
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-keypad-outline qwe" data-pack="ios7" data-tags="type, grid, circle"></i>
+                                        <i class="icon ion-ios7-keypad-outline qwe" data-pack="ios7"
+                                           data-tags="type, grid, circle"></i>
                                         &nbsp; ion-ios7-keypad-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-telephone qwe" data-pack="ios7" data-tags="oldschool, call"></i>
+                                        <i class="icon ion-ios7-telephone qwe" data-pack="ios7"
+                                           data-tags="oldschool, call"></i>
                                         &nbsp; ion-ios7-telephone
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-telephone-outline qwe" data-pack="ios7" data-tags="oldschool, call"></i>
+                                        <i class="icon ion-ios7-telephone-outline qwe" data-pack="ios7"
+                                           data-tags="oldschool, call"></i>
                                         &nbsp; ion-ios7-telephone-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-drag qwe" data-pack="ios7" data-tags="reorder, move, drag"></i>
+                                        <i class="icon ion-ios7-drag qwe" data-pack="ios7"
+                                           data-tags="reorder, move, drag"></i>
                                         &nbsp; ion-ios7-drag
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-location ion qwe" data-pack="ios7" data-tags="navigaticon ion, map, gps, pin"></i>
+                                        <i class="icon ion-ios7-location ion qwe" data-pack="ios7"
+                                           data-tags="navigaticon ion, map, gps, pin"></i>
                                         &nbsp; ion-ios7-location ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-location ion-outline qwe" data-pack="ios7" data-tags="navigaticon ion, map, gps, pin"></i>
+                                        <i class="icon ion-ios7-location ion-outline qwe" data-pack="ios7"
+                                           data-tags="navigaticon ion, map, gps, pin"></i>
                                         &nbsp; ion-ios7-location ion-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-navigate qwe" data-pack="ios7" data-tags="location ion, map, gps, pin"></i>
+                                        <i class="icon ion-ios7-navigate qwe" data-pack="ios7"
+                                           data-tags="location ion, map, gps, pin"></i>
                                         &nbsp; ion-ios7-navigate
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-navigate-outline qwe" data-pack="ios7" data-tags="location ion, map, gps, pin"></i>
+                                        <i class="icon ion-ios7-navigate-outline qwe" data-pack="ios7"
+                                           data-tags="location ion, map, gps, pin"></i>
                                         &nbsp; ion-ios7-navigate-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-locked qwe" data-pack="ios7" data-tags="security, padlock, safe"></i>
+                                        <i class="icon ion-ios7-locked qwe" data-pack="ios7"
+                                           data-tags="security, padlock, safe"></i>
                                         &nbsp; ion-ios7-locked
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-locked-outline qwe" data-pack="ios7" data-tags="security, padlock, safe"></i>
+                                        <i class="icon ion-ios7-locked-outline qwe" data-pack="ios7"
+                                           data-tags="security, padlock, safe"></i>
                                         &nbsp; ion-ios7-locked-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-unlocked qwe" data-pack="ios7" data-tags="security, padlock, safe"></i>
+                                        <i class="icon ion-ios7-unlocked qwe" data-pack="ios7"
+                                           data-tags="security, padlock, safe"></i>
                                         &nbsp; ion-ios7-unlocked
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-unlocked-outline qwe" data-pack="ios7" data-tags="security, padlock, safe"></i>
+                                        <i class="icon ion-ios7-unlocked-outline qwe" data-pack="ios7"
+                                           data-tags="security, padlock, safe"></i>
                                         &nbsp; ion-ios7-unlocked-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-monitor qwe" data-pack="ios7" data-tags="thunderbolt, display, screen"></i>
+                                        <i class="icon ion-ios7-monitor qwe" data-pack="ios7"
+                                           data-tags="thunderbolt, display, screen"></i>
                                         &nbsp; ion-ios7-monitor
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-monitor-outline qwe" data-pack="ios7" data-tags="thunderbolt, display, screen"></i>
+                                        <i class="icon ion-ios7-monitor-outline qwe" data-pack="ios7"
+                                           data-tags="thunderbolt, display, screen"></i>
                                         &nbsp; ion-ios7-monitor-outline
                                     </span>
                                         </div>
@@ -5434,355 +5768,414 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-printer-outline qwe" data-pack="ios7" data-tags="paper"></i>
+                                        <i class="icon ion-ios7-printer-outline qwe" data-pack="ios7"
+                                           data-tags="paper"></i>
                                         &nbsp; ion-ios7-printer-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-person qwe" data-pack="ios7" data-tags="users, staff, head, human"></i>
+                                        <i class="icon ion-ios7-person qwe" data-pack="ios7"
+                                           data-tags="users, staff, head, human"></i>
                                         &nbsp; ion-ios7-person
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-person-outline qwe" data-pack="ios7" data-tags="users, staff, head, human"></i>
+                                        <i class="icon ion-ios7-person-outline qwe" data-pack="ios7"
+                                           data-tags="users, staff, head, human"></i>
                                         &nbsp; ion-ios7-person-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-personadd qwe" data-pack="ios7" data-tags="users, staff, head, human, new, invite"></i>
+                                        <i class="icon ion-ios7-personadd qwe" data-pack="ios7"
+                                           data-tags="users, staff, head, human, new, invite"></i>
                                         &nbsp; ion-ios7-personadd
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-personadd-outline qwe" data-pack="ios7" data-tags="users, staff, head, human, new, invite"></i>
+                                        <i class="icon ion-ios7-personadd-outline qwe" data-pack="ios7"
+                                           data-tags="users, staff, head, human, new, invite"></i>
                                         &nbsp; ion-ios7-personadd-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-people qwe" data-pack="ios7" data-tags="stalker, person, users, head, human"></i>
+                                        <i class="icon ion-ios7-people qwe" data-pack="ios7"
+                                           data-tags="stalker, person, users, head, human"></i>
                                         &nbsp; ion-ios7-people
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-people-outline qwe" data-pack="ios7" data-tags="stalker, person, users, head, human"></i>
+                                        <i class="icon ion-ios7-people-outline qwe" data-pack="ios7"
+                                           data-tags="stalker, person, users, head, human"></i>
                                         &nbsp; ion-ios7-people-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-tennisball qwe" data-pack="ios7" data-tags="play, sports, fun, activity"></i>
+                                        <i class="icon ion-ios7-tennisball qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity"></i>
                                         &nbsp; ion-ios7-tennisball
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-tennisball-outline qwe" data-pack="ios7" data-tags="play, sports, fun, activity"></i>
+                                        <i class="icon ion-ios7-tennisball-outline qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity"></i>
                                         &nbsp; ion-ios7-tennisball-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-baseball qwe" data-pack="ios7" data-tags="play, sports, fun, activity, mlb"></i>
+                                        <i class="icon ion-ios7-baseball qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, mlb"></i>
                                         &nbsp; ion-ios7-baseball
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-baseball-outline qwe" data-pack="ios7" data-tags="play, sports, fun, activity, mlb"></i>
+                                        <i class="icon ion-ios7-baseball-outline qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, mlb"></i>
                                         &nbsp; ion-ios7-baseball-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-basketball qwe" data-pack="ios7" data-tags="play, sports, fun, activity, mba"></i>
+                                        <i class="icon ion-ios7-basketball qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, mba"></i>
                                         &nbsp; ion-ios7-basketball
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-basketball-outline qwe" data-pack="ios7" data-tags="play, sports, fun, activity, mba"></i>
+                                        <i class="icon ion-ios7-basketball-outline qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, mba"></i>
                                         &nbsp; ion-ios7-basketball-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-football qwe" data-pack="ios7" data-tags="play, sports, fun, activity, soccer, gentleman"></i>
+                                        <i class="icon ion-ios7-football qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, soccer, gentleman"></i>
                                         &nbsp; ion-ios7-football
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-football-outline qwe" data-pack="ios7" data-tags="play, sports, fun, activity, soccer, gentleman"></i>
+                                        <i class="icon ion-ios7-football-outline qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, soccer, gentleman"></i>
                                         &nbsp; ion-ios7-football-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-americanfootball qwe" data-pack="ios7" data-tags="play, sports, fun, activity, nfl"></i>
+                                        <i class="icon ion-ios7-americanfootball qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, nfl"></i>
                                         &nbsp; ion-ios7-americanfootball
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-americanfootball-outline qwe" data-pack="ios7" data-tags="play, sports, fun, activity, nfl"></i>
+                                        <i class="icon ion-ios7-americanfootball-outline qwe" data-pack="ios7"
+                                           data-tags="play, sports, fun, activity, nfl"></i>
                                         &nbsp; ion-ios7-americanfootball-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-paw qwe" data-pack="ios7" data-tags="play, dog, pet"></i>
+                                        <i class="icon ion-ios7-paw qwe" data-pack="ios7"
+                                           data-tags="play, dog, pet"></i>
                                         &nbsp; ion-ios7-paw
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-paw-outline qwe" data-pack="ios7" data-tags="play, dog, pet"></i>
+                                        <i class="icon ion-ios7-paw-outline qwe" data-pack="ios7"
+                                           data-tags="play, dog, pet"></i>
                                         &nbsp; ion-ios7-paw-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-sunny qwe" data-pack="ios7" data-tags="weather, whether, ight, sky"></i>
+                                        <i class="icon ion-ios7-sunny qwe" data-pack="ios7"
+                                           data-tags="weather, whether, ight, sky"></i>
                                         &nbsp; ion-ios7-sunny
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-sunny-outline qwe" data-pack="ios7" data-tags="weather, whether, ight, sky"></i>
+                                        <i class="icon ion-ios7-sunny-outline qwe" data-pack="ios7"
+                                           data-tags="weather, whether, ight, sky"></i>
                                         &nbsp; ion-ios7-sunny-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-partlysunny qwe" data-pack="ios7" data-tags="ight, weather, whether, cloudy"></i>
+                                        <i class="icon ion-ios7-partlysunny qwe" data-pack="ios7"
+                                           data-tags="ight, weather, whether, cloudy"></i>
                                         &nbsp; ion-ios7-partlysunny
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-partlysunny-outline qwe" data-pack="ios7" data-tags="ight, weather, whether, cloudy"></i>
+                                        <i class="icon ion-ios7-partlysunny-outline qwe" data-pack="ios7"
+                                           data-tags="ight, weather, whether, cloudy"></i>
                                         &nbsp; ion-ios7-partlysunny-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloudy qwe" data-pack="ios7" data-tags="weather, whether, overcast"></i>
+                                        <i class="icon ion-ios7-cloudy qwe" data-pack="ios7"
+                                           data-tags="weather, whether, overcast"></i>
                                         &nbsp; ion-ios7-cloudy
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloudy-outline qwe" data-pack="ios7" data-tags="weather, whether, overcast"></i>
+                                        <i class="icon ion-ios7-cloudy-outline qwe" data-pack="ios7"
+                                           data-tags="weather, whether, overcast"></i>
                                         &nbsp; ion-ios7-cloudy-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-rainy qwe" data-pack="ios7" data-tags="whether, weather, water, cloud"></i>
+                                        <i class="icon ion-ios7-rainy qwe" data-pack="ios7"
+                                           data-tags="whether, weather, water, cloud"></i>
                                         &nbsp; ion-ios7-rainy
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-rainy-outline qwe" data-pack="ios7" data-tags="whether, weather, water, cloud"></i>
+                                        <i class="icon ion-ios7-rainy-outline qwe" data-pack="ios7"
+                                           data-tags="whether, weather, water, cloud"></i>
                                         &nbsp; ion-ios7-rainy-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-thunderstorm qwe" data-pack="ios7" data-tags="whether, weather, sky, ightning, rain, cloudy, overcast, storm"></i>
+                                        <i class="icon ion-ios7-thunderstorm qwe" data-pack="ios7"
+                                           data-tags="whether, weather, sky, ightning, rain, cloudy, overcast, storm"></i>
                                         &nbsp; ion-ios7-thunderstorm
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-thunderstorm-outline qwe" data-pack="ios7" data-tags="whether, weather, sky, ightning, rain, cloudy, overcast, storm"></i>
+                                        <i class="icon ion-ios7-thunderstorm-outline qwe" data-pack="ios7"
+                                           data-tags="whether, weather, sky, ightning, rain, cloudy, overcast, storm"></i>
                                         &nbsp; ion-ios7-thunderstorm-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-snowy qwe" data-pack="ios7" data-tags="cold, weather, whether, overcast"></i>
+                                        <i class="icon ion-ios7-snowy qwe" data-pack="ios7"
+                                           data-tags="cold, weather, whether, overcast"></i>
                                         &nbsp; ion-ios7-snowy
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-moon qwe" data-pack="ios7" data-tags="sky, night, dark"></i>
+                                        <i class="icon ion-ios7-moon qwe" data-pack="ios7"
+                                           data-tags="sky, night, dark"></i>
                                         &nbsp; ion-ios7-moon
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-moon-outline qwe" data-pack="ios7" data-tags="sky, night, dark"></i>
+                                        <i class="icon ion-ios7-moon-outline qwe" data-pack="ios7"
+                                           data-tags="sky, night, dark"></i>
                                         &nbsp; ion-ios7-moon-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloudy-night qwe" data-pack="ios7" data-tags="weather, whether, overcast"></i>
+                                        <i class="icon ion-ios7-cloudy-night qwe" data-pack="ios7"
+                                           data-tags="weather, whether, overcast"></i>
                                         &nbsp; ion-ios7-cloudy-night
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-cloudy-night-outline qwe" data-pack="ios7" data-tags="weather, whether, overcast"></i>
+                                        <i class="icon ion-ios7-cloudy-night-outline qwe" data-pack="ios7"
+                                           data-tags="weather, whether, overcast"></i>
                                         &nbsp; ion-ios7-cloudy-night-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-musical-notes qwe" data-pack="ios7" data-tags="sound, noise, istening, play"></i>
+                                        <i class="icon ion-ios7-musical-notes qwe" data-pack="ios7"
+                                           data-tags="sound, noise, istening, play"></i>
                                         &nbsp; ion-ios7-musical-notes
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-musical-note qwe" data-pack="ios7" data-tags="sound, noise, istening, play"></i>
+                                        <i class="icon ion-ios7-musical-note qwe" data-pack="ios7"
+                                           data-tags="sound, noise, istening, play"></i>
                                         &nbsp; ion-ios7-musical-note
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-bell qwe" data-pack="ios7" data-tags="right, noise, alarm, sound, music"></i>
+                                        <i class="icon ion-ios7-bell qwe" data-pack="ios7"
+                                           data-tags="right, noise, alarm, sound, music"></i>
                                         &nbsp; ion-ios7-bell
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-bell-outline qwe" data-pack="ios7" data-tags="right, noise, alarm, sound, music"></i>
+                                        <i class="icon ion-ios7-bell-outline qwe" data-pack="ios7"
+                                           data-tags="right, noise, alarm, sound, music"></i>
                                         &nbsp; ion-ios7-bell-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-mic qwe" data-pack="ios7" data-tags="sound, noise, speaker, talk"></i>
+                                        <i class="icon ion-ios7-mic qwe" data-pack="ios7"
+                                           data-tags="sound, noise, speaker, talk"></i>
                                         &nbsp; ion-ios7-mic
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-mic-outline qwe" data-pack="ios7" data-tags="sound, noise, speaker, talk"></i>
+                                        <i class="icon ion-ios7-mic-outline qwe" data-pack="ios7"
+                                           data-tags="sound, noise, speaker, talk"></i>
                                         &nbsp; ion-ios7-mic-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-mic-off qwe" data-pack="ios7" data-tags="sound, noise, speaker, talk"></i>
+                                        <i class="icon ion-ios7-mic-off qwe" data-pack="ios7"
+                                           data-tags="sound, noise, speaker, talk"></i>
                                         &nbsp; ion-ios7-mic-off
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-volume-high qwe" data-pack="ios7" data-tags="sound, noise, isten, music"></i>
+                                        <i class="icon ion-ios7-volume-high qwe" data-pack="ios7"
+                                           data-tags="sound, noise, isten, music"></i>
                                         &nbsp; ion-ios7-volume-high
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-volume-low qwe" data-pack="ios7" data-tags="sound, noise, isten, music"></i>
+                                        <i class="icon ion-ios7-volume-low qwe" data-pack="ios7"
+                                           data-tags="sound, noise, isten, music"></i>
                                         &nbsp; ion-ios7-volume-low
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-play qwe" data-pack="ios7" data-tags="music, watch, arrow, right"></i>
+                                        <i class="icon ion-ios7-play qwe" data-pack="ios7"
+                                           data-tags="music, watch, arrow, right"></i>
                                         &nbsp; ion-ios7-play
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-play-outline qwe" data-pack="ios7" data-tags="music, watch, arrow, right"></i>
+                                        <i class="icon ion-ios7-play-outline qwe" data-pack="ios7"
+                                           data-tags="music, watch, arrow, right"></i>
                                         &nbsp; ion-ios7-play-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pause qwe" data-pack="ios7" data-tags="music, break, hold, freeze"></i>
+                                        <i class="icon ion-ios7-pause qwe" data-pack="ios7"
+                                           data-tags="music, break, hold, freeze"></i>
                                         &nbsp; ion-ios7-pause
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-pause-outline qwe" data-pack="ios7" data-tags="music, break, hold, freeze"></i>
+                                        <i class="icon ion-ios7-pause-outline qwe" data-pack="ios7"
+                                           data-tags="music, break, hold, freeze"></i>
                                         &nbsp; ion-ios7-pause-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-recording qwe" data-pack="ios7" data-tags="film, tape, voicemail"></i>
+                                        <i class="icon ion-ios7-recording qwe" data-pack="ios7"
+                                           data-tags="film, tape, voicemail"></i>
                                         &nbsp; ion-ios7-recording
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-recording-outline qwe" data-pack="ios7" data-tags="film, tape, voicemail"></i>
+                                        <i class="icon ion-ios7-recording-outline qwe" data-pack="ios7"
+                                           data-tags="film, tape, voicemail"></i>
                                         &nbsp; ion-ios7-recording-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-fastforward qwe" data-pack="ios7" data-tags="next, skip, jump"></i>
+                                        <i class="icon ion-ios7-fastforward qwe" data-pack="ios7"
+                                           data-tags="next, skip, jump"></i>
                                         &nbsp; ion-ios7-fastforward
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-fastforward-outline qwe" data-pack="ios7" data-tags="next, skip, jump"></i>
+                                        <i class="icon ion-ios7-fastforward-outline qwe" data-pack="ios7"
+                                           data-tags="next, skip, jump"></i>
                                         &nbsp; ion-ios7-fastforward-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-rewind qwe" data-pack="ios7" data-tags="music, previous, back"></i>
+                                        <i class="icon ion-ios7-rewind qwe" data-pack="ios7"
+                                           data-tags="music, previous, back"></i>
                                         &nbsp; ion-ios7-rewind
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-rewind-outline qwe" data-pack="ios7" data-tags="music, previous, back"></i>
+                                        <i class="icon ion-ios7-rewind-outline qwe" data-pack="ios7"
+                                           data-tags="music, previous, back"></i>
                                         &nbsp; ion-ios7-rewind-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-skipbackward qwe" data-pack="ios7" data-tags="music, previous"></i>
+                                        <i class="icon ion-ios7-skipbackward qwe" data-pack="ios7"
+                                           data-tags="music, previous"></i>
                                         &nbsp; ion-ios7-skipbackward
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-skipbackward-outline qwe" data-pack="ios7" data-tags="music, previous"></i>
+                                        <i class="icon ion-ios7-skipbackward-outline qwe" data-pack="ios7"
+                                           data-tags="music, previous"></i>
                                         &nbsp; ion-ios7-skipbackward-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-skipforward qwe" data-pack="ios7" data-tags="music, next"></i>
+                                        <i class="icon ion-ios7-skipforward qwe" data-pack="ios7"
+                                           data-tags="music, next"></i>
                                         &nbsp; ion-ios7-skipforward
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-skipforward-outline qwe" data-pack="ios7" data-tags="music, next"></i>
+                                        <i class="icon ion-ios7-skipforward-outline qwe" data-pack="ios7"
+                                           data-tags="music, next"></i>
                                         &nbsp; ion-ios7-skipforward-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-videocam qwe" data-pack="ios7" data-tags="film, movie, camera"></i>
+                                        <i class="icon ion-ios7-videocam qwe" data-pack="ios7"
+                                           data-tags="film, movie, camera"></i>
                                         &nbsp; ion-ios7-videocam
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-videocam-outline qwe" data-pack="ios7" data-tags="film, movie, camera"></i>
+                                        <i class="icon ion-ios7-videocam-outline qwe" data-pack="ios7"
+                                           data-tags="film, movie, camera"></i>
                                         &nbsp; ion-ios7-videocam-outline
                                     </span>
                                         </div>
@@ -5794,55 +6187,64 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-film-outline qwe" data-pack="ios7" data-tags="movie"></i>
+                                        <i class="icon ion-ios7-film-outline qwe" data-pack="ios7"
+                                           data-tags="movie"></i>
                                         &nbsp; ion-ios7-film-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-lightbulb qwe" data-pack="ios7" data-tags="idea, new, bright, aha!"></i>
+                                        <i class="icon ion-ios7-lightbulb qwe" data-pack="ios7"
+                                           data-tags="idea, new, bright, aha!"></i>
                                         &nbsp; ion-ios7-lightbulb
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-lightbulb-outline qwe" data-pack="ios7" data-tags="idea, new, bright, aha!"></i>
+                                        <i class="icon ion-ios7-lightbulb-outline qwe" data-pack="ios7"
+                                           data-tags="idea, new, bright, aha!"></i>
                                         &nbsp; ion-ios7-lightbulb-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-wineglass qwe" data-pack="ios7" data-tags="alcohol, drink, food, iquid"></i>
+                                        <i class="icon ion-ios7-wineglass qwe" data-pack="ios7"
+                                           data-tags="alcohol, drink, food, iquid"></i>
                                         &nbsp; ion-ios7-wineglass
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-ios7-wineglass-outline qwe" data-pack="ios7" data-tags="alcohol, drink, food, iquid"></i>
+                                        <i class="icon ion-ios7-wineglass-outline qwe" data-pack="ios7"
+                                           data-tags="alcohol, drink, food, iquid"></i>
                                         &nbsp; ion-ios7-wineglass
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-system-back qwe" data-pack="android" data-tags="arrows"></i>
+                                        <i class="icon ion-android-system-back qwe" data-pack="android"
+                                           data-tags="arrows"></i>
                                         &nbsp; ion-android-system-back
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-system-home qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-system-home qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-system-home
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-system-windows qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-system-windows qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-system-windows
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-wifi qwe" data-pack="android " data-tags="internet,connection ion, bars"></i>
+                                        <i class="icon ion-android-wifi qwe" data-pack="android "
+                                           data-tags="internet,connection ion, bars"></i>
                                         &nbsp; ion-android-wifi
                                     </span>
                                         </div>
@@ -5866,49 +6268,57 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-call qwe" data-pack="android" data-tags="telephone"></i>
+                                        <i class="icon ion-android-call qwe" data-pack="android"
+                                           data-tags="telephone"></i>
                                         &nbsp; ion-android-call
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-arrow-back qwe" data-pack="android" data-tags="chevron, navigaticon ion"></i>
+                                        <i class="icon ion-android-arrow-back qwe" data-pack="android"
+                                           data-tags="chevron, navigaticon ion"></i>
                                         &nbsp; ion-android-arrow-back
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-arrow-forward qwe" data-pack="android" data-tags="chevron, navigaticon ion"></i>
+                                        <i class="icon ion-android-arrow-forward qwe" data-pack="android"
+                                           data-tags="chevron, navigaticon ion"></i>
                                         &nbsp; ion-android-arrow-forward
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-arrow-up-right qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-arrow-up-right qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-arrow-up-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-arrow-down-right qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-arrow-down-right qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-arrow-down-right
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-arrow-down-left qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-arrow-down-left qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-arrow-down-left
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-arrow-up-left qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-arrow-up-left qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-arrow-up-left
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-sort qwe" data-pack="android" data-tags="reorder"></i>
+                                        <i class="icon ion-android-sort qwe" data-pack="android"
+                                           data-tags="reorder"></i>
                                         &nbsp; ion-android-sort
                                     </span>
                                         </div>
@@ -5920,13 +6330,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-stair-drawer qwe" data-pack="android" data-tags=""></i>
+                                        <i class="icon ion-android-stair-drawer qwe" data-pack="android"
+                                           data-tags=""></i>
                                         &nbsp; ion-android-stair-drawer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-more qwe" data-pack="android" data-tags="opticon ions"></i>
+                                        <i class="icon ion-android-more qwe" data-pack="android"
+                                           data-tags="opticon ions"></i>
                                         &nbsp; ion-android-more
                                     </span>
                                         </div>
@@ -5938,37 +6350,43 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-settings qwe" data-pack="android" data-tags="opticon ions"></i>
+                                        <i class="icon ion-android-settings qwe" data-pack="android"
+                                           data-tags="opticon ions"></i>
                                         &nbsp; ion-android-settings
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-mixer qwe" data-pack="android" data-tags="settings, opticon ions"></i>
+                                        <i class="icon ion-android-mixer qwe" data-pack="android"
+                                           data-tags="settings, opticon ions"></i>
                                         &nbsp; ion-android-mixer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-display qwe" data-pack="android" data-tags="settings"></i>
+                                        <i class="icon ion-android-display qwe" data-pack="android"
+                                           data-tags="settings"></i>
                                         &nbsp; ion-android-display
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-star qwe" data-pack="android" data-tags="favorite"></i>
+                                        <i class="icon ion-android-star qwe" data-pack="android"
+                                           data-tags="favorite"></i>
                                         &nbsp; ion-android-star
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-search qwe" data-pack="android" data-tags="magnifying glass"></i>
+                                        <i class="icon ion-android-search qwe" data-pack="android"
+                                           data-tags="magnifying glass"></i>
                                         &nbsp; ion-android-search
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-microphone qwe" data-pack="android" data-tags="recorde, speak, noise, music, sound"></i>
+                                        <i class="icon ion-android-microphone qwe" data-pack="android"
+                                           data-tags="recorde, speak, noise, music, sound"></i>
                                         &nbsp; ion-android-microphone
                                     </span>
                                         </div>
@@ -5980,37 +6398,43 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-information ion qwe" data-pack="android" data-tags="knowledge, help"></i>
+                                        <i class="icon ion-android-information ion qwe" data-pack="android"
+                                           data-tags="knowledge, help"></i>
                                         &nbsp; ion-android-information ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-add qwe" data-pack="android" data-tags="plus, include, invite"></i>
+                                        <i class="icon ion-android-add qwe" data-pack="android"
+                                           data-tags="plus, include, invite"></i>
                                         &nbsp; ion-android-add
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-remove qwe" data-pack="android" data-tags="minus, subtract"></i>
+                                        <i class="icon ion-android-remove qwe" data-pack="android"
+                                           data-tags="minus, subtract"></i>
                                         &nbsp; ion-android-remove
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-close qwe" data-pack="android" data-tags="delete, remove"></i>
+                                        <i class="icon ion-android-close qwe" data-pack="android"
+                                           data-tags="delete, remove"></i>
                                         &nbsp; ion-android-close
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-trash qwe" data-pack="android" data-tags="delete, close, remove"></i>
+                                        <i class="icon ion-android-trash qwe" data-pack="android"
+                                           data-tags="delete, close, remove"></i>
                                         &nbsp; ion-android-trash
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-volume qwe" data-pack="android" data-tags="music, sound, noise"></i>
+                                        <i class="icon ion-android-volume qwe" data-pack="android"
+                                           data-tags="music, sound, noise"></i>
                                         &nbsp; ion-android-volume
                                     </span>
                                         </div>
@@ -6022,7 +6446,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-download qwe" data-pack="android" data-tags="export"></i>
+                                        <i class="icon ion-android-download qwe" data-pack="android"
+                                           data-tags="export"></i>
                                         &nbsp; ion-android-download
                                     </span>
                                         </div>
@@ -6034,13 +6459,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-developer qwe" data-pack="android" data-tags="code, hacker"></i>
+                                        <i class="icon ion-android-developer qwe" data-pack="android"
+                                           data-tags="code, hacker"></i>
                                         &nbsp; ion-android-developer
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-calendar qwe" data-pack="android" data-tags="date, month, week"></i>
+                                        <i class="icon ion-android-calendar qwe" data-pack="android"
+                                           data-tags="date, month, week"></i>
                                         &nbsp; ion-android-calendar
                                     </span>
                                         </div>
@@ -6076,25 +6503,29 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-camera qwe" data-pack="android" data-tags="image, photo"></i>
+                                        <i class="icon ion-android-camera qwe" data-pack="android"
+                                           data-tags="image, photo"></i>
                                         &nbsp; ion-android-camera
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-image qwe" data-pack="android" data-tags="camera, photo"></i>
+                                        <i class="icon ion-android-image qwe" data-pack="android"
+                                           data-tags="camera, photo"></i>
                                         &nbsp; ion-android-image
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-location ion qwe" data-pack="android" data-tags="gps, navigate, maps"></i>
+                                        <i class="icon ion-android-location ion qwe" data-pack="android"
+                                           data-tags="gps, navigate, maps"></i>
                                         &nbsp; ion-android-location ion
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-locate qwe" data-pack="android" data-tags="gps, navigate, maps"></i>
+                                        <i class="icon ion-android-locate qwe" data-pack="android"
+                                           data-tags="gps, navigate, maps"></i>
                                         &nbsp; ion-android-locate
                                     </span>
                                         </div>
@@ -6112,13 +6543,15 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-note qwe" data-pack="android" data-tags="letter, paper"></i>
+                                        <i class="icon ion-android-note qwe" data-pack="android"
+                                           data-tags="letter, paper"></i>
                                         &nbsp; ion-android-note
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-promotion ion qwe" data-pack="android" data-tags="shopping, price, money"></i>
+                                        <i class="icon ion-android-promotion ion qwe" data-pack="android"
+                                           data-tags="shopping, price, money"></i>
                                         &nbsp; ion-android-promotion ion
                                     </span>
                                         </div>
@@ -6136,7 +6569,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-send qwe" data-pack="android" data-tags="email, paper"></i>
+                                        <i class="icon ion-android-send qwe" data-pack="android"
+                                           data-tags="email, paper"></i>
                                         &nbsp; ion-android-send
                                     </span>
                                         </div>
@@ -6154,7 +6588,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-archive qwe" data-pack="android" data-tags="email"></i>
+                                        <i class="icon ion-android-archive qwe" data-pack="android"
+                                           data-tags="email"></i>
                                         &nbsp; ion-android-archive
                                     </span>
                                         </div>
@@ -6166,127 +6601,148 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-forums qwe" data-pack="android" data-tags="talk, text, chat"></i>
+                                        <i class="icon ion-android-forums qwe" data-pack="android"
+                                           data-tags="talk, text, chat"></i>
                                         &nbsp; ion-android-forums
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-chat qwe" data-pack="android" data-tags="talk, text"></i>
+                                        <i class="icon ion-android-chat qwe" data-pack="android"
+                                           data-tags="talk, text"></i>
                                         &nbsp; ion-android-chat
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-user-menu qwe" data-pack="android" data-tags="people, social, users"></i>
+                                        <i class="icon ion-android-user-menu qwe" data-pack="android"
+                                           data-tags="people, social, users"></i>
                                         &nbsp; ion-android-user-men
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-contact qwe" data-pack="android" data-tags="people, social, users"></i>
+                                        <i class="icon ion-android-contact qwe" data-pack="android"
+                                           data-tags="people, social, users"></i>
                                         &nbsp; ion-android-contact
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-contacts qwe" data-pack="android" data-tags="people, social, users"></i>
+                                        <i class="icon ion-android-contacts qwe" data-pack="android"
+                                           data-tags="people, social, users"></i>
                                         &nbsp; ion-android-contacts
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-friends qwe" data-pack="android" data-tags="people, social, users"></i>
+                                        <i class="icon ion-android-friends qwe" data-pack="android"
+                                           data-tags="people, social, users"></i>
                                         &nbsp; ion-android-friends
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-add-contact qwe" data-pack="android" data-tags="include, invite, person, friend, contact, user"></i>
+                                        <i class="icon ion-android-add-contact qwe" data-pack="android"
+                                           data-tags="include, invite, person, friend, contact, user"></i>
                                         &nbsp; ion-android-add-contact
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-social-user qwe" data-pack="android" data-tags="person, people, contact, friend"></i>
+                                        <i class="icon ion-android-social-user qwe" data-pack="android"
+                                           data-tags="person, people, contact, friend"></i>
                                         &nbsp; ion-android-social-user
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-social qwe" data-pack="android" data-tags="user, person, people, contact, friend"></i>
+                                        <i class="icon ion-android-social qwe" data-pack="android"
+                                           data-tags="user, person, people, contact, friend"></i>
                                         &nbsp; ion-android-social
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-reminder qwe" data-pack="android" data-tags="bell, alarm, noise, sound"></i>
+                                        <i class="icon ion-android-reminder qwe" data-pack="android"
+                                           data-tags="bell, alarm, noise, sound"></i>
                                         &nbsp; ion-android-reminder
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-android-lightbulb qwe" data-pack="android" data-tags="new, idea"></i>
+                                        <i class="icon ion-android-lightbulb qwe" data-pack="android"
+                                           data-tags="new, idea"></i>
                                         &nbsp; ion-android-lightbulb
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-twitter qwe" data-pack="social" data-tags="follow, post, share"></i>
+                                        <i class="icon ion-social-twitter qwe" data-pack="social"
+                                           data-tags="follow, post, share"></i>
                                         &nbsp; ion-social-twitter
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-twitter-outline qwe" data-pack="social" data-tags="follow, post, share"></i>
+                                        <i class="icon ion-social-twitter-outline qwe" data-pack="social"
+                                           data-tags="follow, post, share"></i>
                                         &nbsp; ion-social-twitter-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-facebook qwe" data-pack="social" data-tags="ike, post, share"></i>
+                                        <i class="icon ion-social-facebook qwe" data-pack="social"
+                                           data-tags="ike, post, share"></i>
                                         &nbsp; ion-social-facebook
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-facebook-outline qwe" data-pack="social" data-tags="ike, post, share"></i>
+                                        <i class="icon ion-social-facebook-outline qwe" data-pack="social"
+                                           data-tags="ike, post, share"></i>
                                         &nbsp; ion-social-facebook-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-googleplus qwe" data-pack="social" data-tags="follow, post, share"></i>
+                                        <i class="icon ion-social-googleplus qwe" data-pack="social"
+                                           data-tags="follow, post, share"></i>
                                         &nbsp; ion-social-googleplus
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-googleplus-outline qwe" data-pack="social" data-tags="follow, post, share"></i>
+                                        <i class="icon ion-social-googleplus-outline qwe" data-pack="social"
+                                           data-tags="follow, post, share"></i>
                                         &nbsp; ion-social-googleplus-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-google qwe" data-pack="social" data-tags="follow, post, share"></i>
+                                        <i class="icon ion-social-google qwe" data-pack="social"
+                                           data-tags="follow, post, share"></i>
                                         &nbsp; ion-social-google
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-google-outline qwe" data-pack="social" data-tags="follow, post, share"></i>
+                                        <i class="icon ion-social-google-outline qwe" data-pack="social"
+                                           data-tags="follow, post, share"></i>
                                         &nbsp; ion-social-google-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-dribbble qwe" data-pack="social" data-tags="design"></i>
+                                        <i class="icon ion-social-dribbble qwe" data-pack="social"
+                                           data-tags="design"></i>
                                         &nbsp; ion-social-dribbble
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-dribbble-outline qwe" data-pack="social" data-tags="design"></i>
+                                        <i class="icon ion-social-dribbble-outline qwe" data-pack="social"
+                                           data-tags="design"></i>
                                         &nbsp; ion-social-dribbble-outline
                                     </span>
                                         </div>
@@ -6298,43 +6754,50 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-github-outline qwe" data-pack="social" data-tags="code"></i>
+                                        <i class="icon ion-social-github-outline qwe" data-pack="social"
+                                           data-tags="code"></i>
                                         &nbsp; ion-social-github-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-instagram qwe" data-pack="social" data-tags="photo, camera"></i>
+                                        <i class="icon ion-social-instagram qwe" data-pack="social"
+                                           data-tags="photo, camera"></i>
                                         &nbsp; ion-social-instagram
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-instagram-outline qwe" data-pack="social" data-tags="photo, camera"></i>
+                                        <i class="icon ion-social-instagram-outline qwe" data-pack="social"
+                                           data-tags="photo, camera"></i>
                                         &nbsp; ion-social-instagram-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-foursquare qwe" data-pack="social" data-tags="checkin"></i>
+                                        <i class="icon ion-social-foursquare qwe" data-pack="social"
+                                           data-tags="checkin"></i>
                                         &nbsp; ion-social-foursquare
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-foursquare-outline qwe" data-pack="social" data-tags="checkin"></i>
+                                        <i class="icon ion-social-foursquare-outline qwe" data-pack="social"
+                                           data-tags="checkin"></i>
                                         &nbsp; ion-social-foursquare-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-pinterest qwe" data-pack="social" data-tags="social"></i>
+                                        <i class="icon ion-social-pinterest qwe" data-pack="social"
+                                           data-tags="social"></i>
                                         &nbsp; ion-social-pinterest
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-pinterest-outline qwe" data-pack="social" data-tags="social"></i>
+                                        <i class="icon ion-social-pinterest-outline qwe" data-pack="social"
+                                           data-tags="social"></i>
                                         &nbsp; ion-social-pinterest-outline
                                     </span>
                                         </div>
@@ -6346,67 +6809,78 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-rss-outline qwe" data-pack="social" data-tags="blogging"></i>
+                                        <i class="icon ion-social-rss-outline qwe" data-pack="social"
+                                           data-tags="blogging"></i>
                                         &nbsp; ion-social-rss-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-tumblr qwe" data-pack="social" data-tags="blogging"></i>
+                                        <i class="icon ion-social-tumblr qwe" data-pack="social"
+                                           data-tags="blogging"></i>
                                         &nbsp; ion-social-tumblr
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-tumblr-outline qwe" data-pack="social" data-tags="blogging"></i>
+                                        <i class="icon ion-social-tumblr-outline qwe" data-pack="social"
+                                           data-tags="blogging"></i>
                                         &nbsp; ion-social-tumblr-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-wordpress qwe" data-pack="social" data-tags="blogging"></i>
+                                        <i class="icon ion-social-wordpress qwe" data-pack="social"
+                                           data-tags="blogging"></i>
                                         &nbsp; ion-social-wordpress
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-wordpress-outline qwe" data-pack="social" data-tags="blogging"></i>
+                                        <i class="icon ion-social-wordpress-outline qwe" data-pack="social"
+                                           data-tags="blogging"></i>
                                         &nbsp; ion-social-wordpress-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-reddit qwe" data-pack="social" data-tags="news, upvotes, karma"></i>
+                                        <i class="icon ion-social-reddit qwe" data-pack="social"
+                                           data-tags="news, upvotes, karma"></i>
                                         &nbsp; ion-social-reddit
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-reddit-outline qwe" data-pack="social" data-tags="news, upvotes, karma"></i>
+                                        <i class="icon ion-social-reddit-outline qwe" data-pack="social"
+                                           data-tags="news, upvotes, karma"></i>
                                         &nbsp; ion-social-reddit-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-hackernews qwe" data-pack="social" data-tags="discuss, upvotes, karma"></i>
+                                        <i class="icon ion-social-hackernews qwe" data-pack="social"
+                                           data-tags="discuss, upvotes, karma"></i>
                                         &nbsp; ion-social-hackernews
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-hackernews-outline qwe" data-pack="social" data-tags="discuss, upvotes, karma"></i>
+                                        <i class="icon ion-social-hackernews-outline qwe" data-pack="social"
+                                           data-tags="discuss, upvotes, karma"></i>
                                         &nbsp; ion-social-hackernews-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-designernews qwe" data-pack="social" data-tags="design, post"></i>
+                                        <i class="icon ion-social-designernews qwe" data-pack="social"
+                                           data-tags="design, post"></i>
                                         &nbsp; ion-social-designernews
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-designernews-outline qwe" data-pack="social" data-tags="design, post"></i>
+                                        <i class="icon ion-social-designernews-outline qwe" data-pack="social"
+                                           data-tags="design, post"></i>
                                         &nbsp; ion-social-designernews-outline
                                     </span>
                                         </div>
@@ -6418,7 +6892,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-yahoo-outline qwe" data-pack="social" data-tags=""></i>
+                                        <i class="icon ion-social-yahoo-outline qwe" data-pack="social"
+                                           data-tags=""></i>
                                         &nbsp; ion-social-yahoo-outline
                                     </span>
                                         </div>
@@ -6430,7 +6905,8 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-buffer-outline qwe" data-pack="social" data-tags="share"></i>
+                                        <i class="icon ion-social-buffer-outline qwe" data-pack="social"
+                                           data-tags="share"></i>
                                         &nbsp; ion-social-buffer-outline
                                     </span>
                                         </div>
@@ -6442,103 +6918,120 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-skype-outline qwe" data-pack="social" data-tags="call"></i>
+                                        <i class="icon ion-social-skype-outline qwe" data-pack="social"
+                                           data-tags="call"></i>
                                         &nbsp; ion-social-skype-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-linkedin qwe" data-pack="social" data-tags="connect"></i>
+                                        <i class="icon ion-social-linkedin qwe" data-pack="social"
+                                           data-tags="connect"></i>
                                         &nbsp; ion-social-linkedin
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-linkedin-outline qwe" data-pack="social" data-tags="connect"></i>
+                                        <i class="icon ion-social-linkedin-outline qwe" data-pack="social"
+                                           data-tags="connect"></i>
                                         &nbsp; ion-social-linkedin-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-usd qwe" data-pack="social" data-tags="currency, trade, money, cash"></i>
+                                        <i class="icon ion-social-usd qwe" data-pack="social"
+                                           data-tags="currency, trade, money, cash"></i>
                                         &nbsp; ion-social-usd
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-usd-outline qwe" data-pack="social" data-tags="currency, trade, money, cash"></i>
+                                        <i class="icon ion-social-usd-outline qwe" data-pack="social"
+                                           data-tags="currency, trade, money, cash"></i>
                                         &nbsp; ion-social-usd-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-bitcoin qwe" data-pack="social" data-tags="currency, trade, money"></i>
+                                        <i class="icon ion-social-bitcoin qwe" data-pack="social"
+                                           data-tags="currency, trade, money"></i>
                                         &nbsp; ion-social-bitcoin
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-bitcoin-outline qwe" data-pack="social" data-tags="currency, trade, money"></i>
+                                        <i class="icon ion-social-bitcoin-outline qwe" data-pack="social"
+                                           data-tags="currency, trade, money"></i>
                                         &nbsp; ion-social-bitcoin-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-vimeo qwe" data-pack="social" data-tags="video, watch, share, view"></i>
+                                        <i class="icon ion-social-vimeo qwe" data-pack="social"
+                                           data-tags="video, watch, share, view"></i>
                                         &nbsp; ion-social-vimeo
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-vimeo-outline qwe" data-pack="social" data-tags="video, watch, share, view"></i>
+                                        <i class="icon ion-social-vimeo-outline qwe" data-pack="social"
+                                           data-tags="video, watch, share, view"></i>
                                         &nbsp; ion-social-vimeo-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-youtube qwe" data-pack="social" data-tags="video, watch, share, view"></i>
+                                        <i class="icon ion-social-youtube qwe" data-pack="social"
+                                           data-tags="video, watch, share, view"></i>
                                         &nbsp; ion-social-youtube
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-youtube-outline qwe" data-pack="social" data-tags="video, watch, share, view"></i>
+                                        <i class="icon ion-social-youtube-outline qwe" data-pack="social"
+                                           data-tags="video, watch, share, view"></i>
                                         &nbsp; ion-social-youtube-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-dropbox qwe" data-pack="social" data-tags="upload"></i>
+                                        <i class="icon ion-social-dropbox qwe" data-pack="social"
+                                           data-tags="upload"></i>
                                         &nbsp; ion-social-dropbox
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-dropbox-outline qwe" data-pack="social" data-tags="upload"></i>
+                                        <i class="icon ion-social-dropbox-outline qwe" data-pack="social"
+                                           data-tags="upload"></i>
                                         &nbsp; ion-social-dropbox-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-apple qwe" data-pack="social" data-tags="mac, mobile"></i>
+                                        <i class="icon ion-social-apple qwe" data-pack="social"
+                                           data-tags="mac, mobile"></i>
                                         &nbsp; ion-social-apple
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-apple-outline qwe" data-pack="social" data-tags="mac, mobile"></i>
+                                        <i class="icon ion-social-apple-outline qwe" data-pack="social"
+                                           data-tags="mac, mobile"></i>
                                         &nbsp; ion-social-apple-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-android qwe" data-pack="social" data-tags="mobile"></i>
+                                        <i class="icon ion-social-android qwe" data-pack="social"
+                                           data-tags="mobile"></i>
                                         &nbsp; ion-social-android
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-android-outline qwe" data-pack="social" data-tags="mobile"></i>
+                                        <i class="icon ion-social-android-outline qwe" data-pack="social"
+                                           data-tags="mobile"></i>
                                         &nbsp; ion-social-android-outline
                                     </span>
                                         </div>
@@ -6550,19 +7043,22 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-windows-outline qwe" data-pack="social" data-tags="pc"></i>
+                                        <i class="icon ion-social-windows-outline qwe" data-pack="social"
+                                           data-tags="pc"></i>
                                         &nbsp; ion-social-windows-outline
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-tux qwe" data-pack="social" data-tags="inux, opensource"></i>
+                                        <i class="icon ion-social-tux qwe" data-pack="social"
+                                           data-tags="inux, opensource"></i>
                                         &nbsp; ion-social-tux
                                     </span>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-left">
                                     <span class="nav">
-                                        <i class="icon ion-social-freebsd-devil qwe" data-pack="social" data-tags="unix"></i>
+                                        <i class="icon ion-social-freebsd-devil qwe" data-pack="social"
+                                           data-tags="unix"></i>
                                         &nbsp; ion-social-freebsd-devil
                                     </span>
                                         </div>

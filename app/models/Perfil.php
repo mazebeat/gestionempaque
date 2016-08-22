@@ -13,5 +13,5 @@ class Perfil extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'perfil';
 	protected $primaryKey = "_id";
-	protected $dates      = ['deleted_at'];
+	protected $dates = ['deleted_at'];
 }

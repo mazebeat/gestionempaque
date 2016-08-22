@@ -3,7 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFieldsToUserTable extends Migration {
+class AddFieldsToUserTable extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -12,8 +13,7 @@ class AddFieldsToUserTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('users', function(Blueprint $table)
-		{
+		Schema::table('users', function (Blueprint $table) {
 			// add bio,gender,dob,pic,country,state,city,address,postal
 			$table->text('bio')->nullable();
 			$table->string('gender')->nullable();
@@ -35,8 +35,7 @@ class AddFieldsToUserTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('users', function(Blueprint $table)
-		{
+		Schema::table('users', function (Blueprint $table) {
 			// delete above columns
 			$table->dropColumn(array('bio', 'gender', 'dob', 'pic', 'country', 'state', 'city', 'address', 'postal'));
 		});

@@ -4,11 +4,11 @@
 @section('title')
     X-Editable
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!-- page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!-- page level css -->
     <link href="{{ asset('assets/vendors/x-editable/css/x-select.css') }}" type="text/css" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/x-editable/css/bootstrap-editable.css') }}" type="text/css" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/x-editable/css/x-selectbootstrap.css') }}" type="text/css" rel="stylesheet"/>
@@ -42,7 +42,8 @@
                     <div class="panel-heading buttons">
                         <div class="col-md-12 btns">
                             <h3 class="panel-title">
-                                <i class="livicon" data-name="star-full" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                                <i class="livicon" data-name="star-full" data-size="16" data-loop="true" data-c="#fff"
+                                   data-hc="white"></i>
                                 X-Editable
                             </h3>
                                     <span class="pull-right">
@@ -53,7 +54,8 @@
                                                     <option value="inline">Inline</option>
                                                 </select>
                                             </label>
-                                            <button type="submit" class="btn btn-responsive btn-primary btn-sm">Refresh</button>
+                                            <button type="submit"
+                                                    class="btn btn-responsive btn-primary btn-sm">Refresh</button>
                                         </form>
                                     </span>
                         </div>
@@ -73,64 +75,83 @@
                                 <tr>
                                     <td>Simple text field</td>
                                     <td>
-                                        <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username" class="editable editable-click" data-original-title="" title="">Superuser</a>
+                                        <a href="#" id="username" data-type="text" data-pk="1"
+                                           data-title="Enter username" class="editable editable-click"
+                                           data-original-title="" title="">Superuser</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Empty text field, required</td>
                                     <td>
-                                        <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname" class="editable editable-click editable-empty" data-original-title=""
+                                        <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right"
+                                           data-placeholder="Required" data-title="Enter your firstname"
+                                           class="editable editable-click editable-empty" data-original-title=""
                                            title="">Change It</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Select, local array, custom display</td>
                                     <td>
-                                        <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" data-original-title="" title="">not selected</a>
+                                        <a href="#" id="sex" data-type="select" data-pk="1" data-value=""
+                                           data-title="Select sex" class="editable editable-click"
+                                           data-original-title="" title="">not selected</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Select, remote array, no buttons</td>
                                     <td>
-                                        <a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group" class="editable editable-click" data-original-title="" title="">Admin</a>
+                                        <a href="#" id="group" data-type="select" data-pk="1" data-value="5"
+                                           data-source="/groups" data-title="Select group"
+                                           class="editable editable-click" data-original-title="" title="">Admin</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Select, error while loading</td>
                                     <td>
-                                        <a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status" class="editable editable-click">Active</a>
+                                        <a href="#" id="status" data-type="select" data-pk="1" data-value="0"
+                                           data-source="/status" data-title="Select status"
+                                           class="editable editable-click">Active</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Combodate (date)</td>
                                     <td>
-                                        <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth"
+                                        <a href="#" id="dob" data-type="combodate" data-value="1984-05-15"
+                                           data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY"
+                                           data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth"
                                            class="editable editable-click">15/05/1984</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Combodate (datetime)</td>
                                     <td>
-                                        <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1" data-title="Setup event date and time"
+                                        <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm"
+                                           data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm"
+                                           data-pk="1" data-title="Setup event date and time"
                                            class="editable editable-click editable-empty">Empty</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Textarea</td>
                                     <td>
-                                        <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">Awesome user!</a>
+                                        <a href="#" id="comments" data-type="textarea" data-pk="1"
+                                           data-placeholder="Your comments here..." data-title="Enter comments"
+                                           class="editable editable-pre-wrapped editable-click">Awesome user!</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Twitter typeahead.js</td>
                                     <td>
-                                        <a href="#" id="state2" data-type="typeaheadjs" data-pk="1" data-placement="right" data-title="Start typing State.." class="editable editable-click">California</a>
+                                        <a href="#" id="state2" data-type="typeaheadjs" data-pk="1"
+                                           data-placement="right" data-title="Start typing State.."
+                                           class="editable editable-click">California</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Checklist</td>
                                     <td>
-                                        <a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits" class="editable editable-click">
+                                        <a href="#" id="fruits" data-type="checklist" data-value="2,3"
+                                           data-title="Select fruits" class="editable editable-click">
                                             Peach
                                             <br>Apple</a>
                                     </td>
@@ -138,19 +159,23 @@
                                 <tr>
                                     <td>Select2 (tags mode)</td>
                                     <td>
-                                        <a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags" class="editable editable-click">Html, Javascript</a>
+                                        <a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags"
+                                           class="editable editable-click">Html, Javascript</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Select2 (dropdown mode)</td>
                                     <td>
-                                        <a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country" class="editable editable-click">Bahamas</a>
+                                        <a href="#" id="country" data-type="select2" data-pk="1" data-value="BS"
+                                           data-title="Select country" class="editable editable-click">Bahamas</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Custom input, several fields</td>
                                     <td>
-                                        <a id="address" data-type="address" data-pk="1" data-title="Please, fill address" class="editable editable-click" data-original-title="" title=""> <b>Moscow</b>
+                                        <a id="address" data-type="address" data-pk="1"
+                                           data-title="Please, fill address" class="editable editable-click"
+                                           data-original-title="" title=""> <b>Moscow</b>
                                             , Lenina st., bld. 12
                                         </a>
                                     </td>

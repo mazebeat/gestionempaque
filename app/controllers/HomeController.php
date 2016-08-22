@@ -1,6 +1,7 @@
 <?php
 
-class HomeController extends JoshController {
+class HomeController extends JoshController
+{
 
 	/*
 	|--------------------------------------------------------------------------

@@ -33,7 +33,9 @@
                 @if($userAccess === 'admin')
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white" style="width: 16px; height: 16px;"></i>
+                            <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true"
+                                                       data-c="#fff" data-hc="white"
+                                                       style="width: 16px; height: 16px;"></i>
                                 Admin User
                             </h3>
                         <span class="pull-right clickable">
@@ -43,13 +45,16 @@
                         <div class="panel-body">
                             <h4>You have logged in as admin user</h4>
                             <strong>Want to see what it displays for other users?
-                                <a href="{{ route('logout') }}">Click here to Logout</a> and login with email 'user@user.com' and password 'pass'</strong>
+                                <a href="{{ route('logout') }}">Click here to Logout</a> and login with email 'user@user
+                                .com' and password 'pass'</strong>
                         </div>
                     </div>
                 @else
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true" data-c="#fff" data-hc="white" style="width: 16px; height: 16px;"></i>
+                            <h3 class="panel-title"><i class="livicon" data-name="bell" data-size="16" data-loop="true"
+                                                       data-c="#fff" data-hc="white"
+                                                       style="width: 16px; height: 16px;"></i>
                                 Other User
                             </h3>
                         <span class="pull-right clickable">
@@ -59,7 +64,8 @@
                         <div class="panel-body">
                             <h4>You are not logged in as admin user but as other user</h4>
                             <strong>Want to see what it displays for admin users?
-                                <a href="{{ route('logout') }}">Click here to Logout</a> and login with email 'admin@admin.com' and password 'admin'</strong>
+                                <a href="{{ route('logout') }}">Click here to Logout</a> and login with email
+                                'admin@admin.com' and password 'admin'</strong>
                         </div>
                     </div>
                 @endif

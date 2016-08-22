@@ -17,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/custom.css') }}">
     <!--end of global css-->
     <!--page level css starts-->
-    @yield('style')
-            <!--end of page level css-->
+@yield('style')
+<!--end of page level css-->
 </head>
 
 <body>
@@ -34,10 +34,10 @@
     <!-- //Icon Section End -->
 
     <!-- Nav bar Start -->
-    {{--<section id="mainnavbar">--}}
-    {{--@include('frontend.layouts.modules.navbar')--}}
-    {{--</section>--}}
-    <!-- Nav bar End -->
+{{--<section id="mainnavbar">--}}
+{{--@include('frontend.layouts.modules.navbar')--}}
+{{--</section>--}}
+<!-- Nav bar End -->
 </header>
 <!-- //Header End -->
 
@@ -54,7 +54,8 @@
             <div class="sidebar-nav">
                 <div class="navbar navbar-invert" role="navigation">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".sidebar-navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -121,7 +122,8 @@
     </div>
 </div>
 <!-- Copy right Section End -->
-<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top" data-toggle="tooltip" data-placement="left">
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top"
+   data-toggle="tooltip" data-placement="left">
     <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
 </a>
 <!--global js starts-->
@@ -134,6 +136,6 @@
 <!--global js end-->
 <!-- page level js starts-->
 @yield('script')
-        <!--page level js ends-->
+<!--page level js ends-->
 </body>
 </html>

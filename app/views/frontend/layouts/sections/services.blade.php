@@ -8,12 +8,15 @@
         <div class="col-sm-6 col-md-6">
             <div class="box">
                 <div class="box-icon">
-                    <i class="livicon icon1" data-name="rocket" data-size="55" data-loop="true" data-c="#01bc8c" data-hc="#01bc8c"></i>
+                    <i class="livicon icon1" data-name="rocket" data-size="55" data-loop="true" data-c="#01bc8c"
+                       data-hc="#01bc8c"></i>
                 </div>
                 <div class="info">
                     <h3 class="primary text-center">Emprende</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur
+                        corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem
+                        architecto perferendis quas aperiam
                         debitis dolor soluta!</p>
 
                     <div class="text-right primary"><a href="#">Lee más</a>
@@ -26,12 +29,15 @@
         <div class="col-sm-6 col-md-6 ">
             <div class="box">
                 <div class="box-icon box-icon1">
-                    <i class="livicon icon1" data-name="check" data-size="55" data-loop="true" data-c="#418bca" data-hc="#418bca"></i>
+                    <i class="livicon icon1" data-name="check" data-size="55" data-loop="true" data-c="#418bca"
+                       data-hc="#418bca"></i>
                 </div>
                 <div class="info">
                     <h3 class="primary text-center">Optimismo</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur
+                        corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem
+                        architecto perferendis quas aperiam
                         debitis dolor soluta!</p>
 
                     <div class="text-right primary"><a href="#">Lee más</a>

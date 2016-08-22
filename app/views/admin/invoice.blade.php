@@ -30,7 +30,8 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="livicon" data-name="credit-card" data-size="20" data-loop="true" data-c="#fff" data-hc="#fff"></i>
+                    <h3 class="panel-title"><i class="livicon" data-name="credit-card" data-size="20" data-loop="true"
+                                               data-c="#fff" data-hc="#fff"></i>
                         Invoice for purchase #33221
                     </h3>
                 </div>
@@ -163,7 +164,8 @@
                                         </tr>
                                         <tr>
                                             <td class="emptyrow">
-                                                <i class="livicon" data-name="barcode" data-size="60" data-loop="true"></i>
+                                                <i class="livicon" data-name="barcode" data-size="60"
+                                                   data-loop="true"></i>
                                             </td>
                                             <td class="emptyrow"></td>
                                             <td class="emptyrow text-center">
@@ -181,13 +183,16 @@
                         <button type="button" class="btn btn-responsive button-alignment btn-info" data-toggle="button">
                             <a style="color:#fff;" onclick="javascript:window.print();">
                                 Print
-                                <i class="livicon" data-name="printer" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                                <i class="livicon" data-name="printer" data-size="16" data-loop="true" data-c="#fff"
+                                   data-hc="white"></i>
                             </a>
                         </button>
-                        <button type="button" class="btn btn-responsive button-alignment btn-success" data-toggle="button">
+                        <button type="button" class="btn btn-responsive button-alignment btn-success"
+                                data-toggle="button">
                             <a style="color:#fff;">
                                 Submit Your Invoice
-                                <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
+                                <i class="livicon" data-name="check" data-size="16" data-loop="true" data-c="#fff"
+                                   data-hc="white"></i>
                             </a>
                         </button>
                     </div>

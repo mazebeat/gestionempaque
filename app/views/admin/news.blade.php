@@ -4,11 +4,11 @@
 @section('title')
     News
     @parent
-    @stop
+@stop
 
-    {{-- page level styles --}}
-    @section('header_styles')
-            <!--page level css -->
+{{-- page level styles --}}
+@section('header_styles')
+    <!--page level css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/tags/dist/bootstrap-tagsinput.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/pages/news.css') }}"/>
     <!-- end of page level css -->
@@ -51,7 +51,8 @@
                                     <img data-src="holder.js/2000x278/#489a14:#fff" class="img-responsive" alt=""></div>
                             </div>
                             <!-- Carousel nav -->
-                            <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <i class="m-icon-big-swapleft m-icon-white"></i>
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <i
+                                        class="m-icon-big-swapleft m-icon-white"></i>
                             </a>
                             <a class="carousel-control right" href="#myCarousel" data-slide="next">
                                 <i class="m-icon-big-swapright m-icon-white"></i>
@@ -78,7 +79,8 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#ef6f6c:#fff" alt="">
-                                The front page layout can be mixed and matched to fit your content in the best possible way - by making extensive use of images the content engages readers.
+                                The front page layout can be mixed and matched to fit your content in the best possible
+                                way - by making extensive use of images the content engages readers.
                             </p>
                             <a href="news_item" class="news-block-btn">
                                 Read more
@@ -97,7 +99,8 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#418bca:#fff" alt="">
-                                Su Bin, who was arrested in Canada last month, is accused of working with two other suspects to steal data about military projects and sell it to China.
+                                Su Bin, who was arrested in Canada last month, is accused of working with two other
+                                suspects to steal data about military projects and sell it to China.
                             </p>
                             <a href="news_item" class="news-block-btn">
                                 Read more
@@ -115,7 +118,9 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#a9b6bc:#fff" alt="">
-                                COMMERCE CITY, Colo. — After digging a 3-0 hole, the United States went on an eight-goal run to defeat Canada 10-7 before 11,447 fans at Dick’s Sporting Goods Park in the opening game of the 2014 Federation of
+                                COMMERCE CITY, Colo. — After digging a 3-0 hole, the United States went on an eight-goal
+                                run to defeat Canada 10-7 before 11,447 fans at Dick’s Sporting Goods Park in the
+                                opening game of the 2014 Federation of
                                 International Lacrosse World Championship.
                             </p>
                             <a href="news_item" class="news-block-btn">
@@ -127,7 +132,8 @@
                     <!--end col-md-5-->
                     <div class="col-md-4 ">
                         <div class="featured-news mansory-inner news-blocks news_boxs">
-                            <img data-src="holder.js/700x203/#67c5df:#fff" class="featured-img img-responsive" alt="image">
+                            <img data-src="holder.js/700x203/#67c5df:#fff" class="featured-img img-responsive"
+                                 alt="image">
 
                             <h3>
                                 <a href="#">Germany Basks in 4th World Cup After 24-Year Wait</a>
@@ -136,7 +142,9 @@
                             <em>2 hours ago</em>
 
                             <p>
-                                The Die Welt newspaper celebrated Monday with a three-word headline in the national colors of black, red and gold that read simply: "It is true," while Der Spiegel magazine's website listed Germany's titles: "1954.
+                                The Die Welt newspaper celebrated Monday with a three-word headline in the national
+                                colors of black, red and gold that read simply: "It is true," while Der Spiegel
+                                magazine's website listed Germany's titles: "1954.
                                 1974. 1990. 2014!"
                             </p>
                             <a href="news_item">
@@ -145,7 +153,8 @@
                             </a>
                             <!-- /.featured-text --> </div>
                         <div class="featured-news mansory-inner news-blocks news_boxs">
-                            <img data-src="holder.js/700x203/#418bca:#fff" class="featured-img img-responsive" alt="image">
+                            <img data-src="holder.js/700x203/#418bca:#fff" class="featured-img img-responsive"
+                                 alt="image">
 
                             <h3>
                                 <a href="#">
@@ -159,7 +168,9 @@
                             <em>2 hours ago</em>
 
                             <p class="">
-                                A synagogue near the Bastille was under police guard on Monday after more than 100 youths chanting "Israel murderer" tried to storm the building following a march demanding an end to Israeli air strikes on Gaza.
+                                A synagogue near the Bastille was under police guard on Monday after more than 100
+                                youths chanting "Israel murderer" tried to storm the building following a march
+                                demanding an end to Israeli air strikes on Gaza.
                             </p>
                             <a href="news_item">
                                 Read more..
@@ -179,7 +190,9 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#6cc66c:#fff" alt="">
-                                MINNEAPOLIS (AP) — Texas Rangers prospect Joey Gallo showed off his power with a soaring two-run homer in the sixth inning to give the U.S. team the lead for good in a 3-2 victory over the World squad Sunday at the
+                                MINNEAPOLIS (AP) — Texas Rangers prospect Joey Gallo showed off his power with a soaring
+                                two-run homer in the sixth inning to give the U.S. team the lead for good in a 3-2
+                                victory over the World squad Sunday at the
                                 All-Star Futures Game for baseball's best minor leaguers.
                             </p>
                             <a href="news_item" class="news-block-btn">
@@ -198,9 +211,14 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#67cc5df:#fff" alt="">
-                                Plenty of sides tried free-flowing, pacey Latin football this summer – even England had their moments. A moment. But Argentina stayed functional. They haven’t conceded once in the knockouts, they’ve not been behind in
-                                any game, and they don’t mind a lack of respect. Coach Alejandro “The Sloth” Sabella says his side are “sore, beaten and tired after the war [with Holland]. But with work, humility and seriousness, we’ll get there”;
-                                Pablo Zabaleta says their strengths are spoiling, staying “compact and tight”, “closing down” and feeding on negativity.
+                                Plenty of sides tried free-flowing, pacey Latin football this summer – even England had
+                                their moments. A moment. But Argentina stayed functional. They haven’t conceded once in
+                                the knockouts, they’ve not been behind in
+                                any game, and they don’t mind a lack of respect. Coach Alejandro “The Sloth” Sabella
+                                says his side are “sore, beaten and tired after the war [with Holland]. But with work,
+                                humility and seriousness, we’ll get there”;
+                                Pablo Zabaleta says their strengths are spoiling, staying “compact and tight”, “closing
+                                down” and feeding on negativity.
                             </p>
                             <a href="news_item" class="news-block-btn">
                                 Read more
@@ -225,7 +243,8 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#489a14:#fff" alt="">
-                                Egypt proposes a ceasefire to end days of cross-border fire between the Gaza Strip and Israel that has left at least 185 Palestinians dead....
+                                Egypt proposes a ceasefire to end days of cross-border fire between the Gaza Strip and
+                                Israel that has left at least 185 Palestinians dead....
                             </p>
                             <a href="news_item" class="news-block-btn">
                                 Read more
@@ -242,8 +261,11 @@
                                 <em>6 hours ago</em>
                             </div>
                             <p>
-                                William Hague has stood down as David Cameron mounted a “cull of the middle-aged white men” in his biggest reshuffle since becoming Prime Minister. Mr Cameron fired the starting gun for the general election by sacking
-                                or moving at least six Cabinet members to make way for a series of young women, who will be promoted on...
+                                William Hague has stood down as David Cameron mounted a “cull of the middle-aged white
+                                men” in his biggest reshuffle since becoming Prime Minister. Mr Cameron fired the
+                                starting gun for the general election by sacking
+                                or moving at least six Cabinet members to make way for a series of young women, who will
+                                be promoted on...
                             </p>
                             <a href="news_item" class="news-block-btn">
                                 Read more
@@ -264,7 +286,8 @@
                             </div>
                             <p>
                                 <img class="news-block-img pull-right" data-src="holder.js/70x70/#a9b6bc:#fff" alt="">
-                                The family of a man who was beaten to death and had his body set on fire say they "can't wait any longer" for the results of a police watchdog inquiry...
+                                The family of a man who was beaten to death and had his body set on fire say they "can't
+                                wait any longer" for the results of a police watchdog inquiry...
                             </p>
                             <a href="news_item" class="news-block-btn">
                                 Read more
@@ -281,7 +304,9 @@
                                 <em>3 hours ago</em>
                             </div>
                             <p>
-                                Mr Brooks said his heart was broken and he is crushed over the failure to stage the five events. Ticket refunds will go ahead as planned for the 400,000 fans from 9am on Thursday. Mr Brooks had been scheduled to play
+                                Mr Brooks said his heart was broken and he is crushed over the failure to stage the five
+                                events. Ticket refunds will go ahead as planned for the 400,000 fans from 9am on
+                                Thursday. Mr Brooks had been scheduled to play
                                 five concerts at the venue on consecutive...
                             </p>
                             <a href="news_item" class="news-block-btn">
@@ -304,9 +329,13 @@
                                         <em>3 hours ago</em>
                                     </div>
                                     <p>
-                                        <img class="news-block-img pull-right" data-src="holder.js/70x70/#418bca:#fff" alt="">
-                                        The study into multimorbidity - several illnesses at the same time - found care for patients in Scotland and England "is not joined up". Researchers carried out interviews with 37 people suffering from
-                                        multimorbidity and 17 family members. They described complicated, confusing and sometimes unresponsive services.
+                                        <img class="news-block-img pull-right" data-src="holder.js/70x70/#418bca:#fff"
+                                             alt="">
+                                        The study into multimorbidity - several illnesses at the same time - found care
+                                        for patients in Scotland and England "is not joined up". Researchers carried out
+                                        interviews with 37 people suffering from
+                                        multimorbidity and 17 family members. They described complicated, confusing and
+                                        sometimes unresponsive services.
                                     </p>
                                     <a href="news_item" class="news-block-btn">
                                         Read more
@@ -327,8 +356,11 @@
                                         <em>3 hours ago</em>
                                     </div>
                                     <p>
-                                        At Asia's biggest rail cargo base in Chengdu in south-west China, the cranes are hard at work, swinging containers from trucks onto a freight train. The containers are filled with computers, clothes, even cars.
-                                        Until last year, all of it would have first gone more than 1,000 miles east to Shanghai and then to Europe by sea.
+                                        At Asia's biggest rail cargo base in Chengdu in south-west China, the cranes are
+                                        hard at work, swinging containers from trucks onto a freight train. The
+                                        containers are filled with computers, clothes, even cars.
+                                        Until last year, all of it would have first gone more than 1,000 miles east to
+                                        Shanghai and then to Europe by sea.
                                     </p>
                                     <a href="news_item" class="news-block-btn">
                                         Read more
@@ -347,7 +379,9 @@
                                         <em>3 hours ago</em>
                                     </div>
                                     <p>
-                                        The UK's information commissioner has called for better funding for the country's data regulator amid a record number of cases. Ahead of the release of the Information Commissioner's Office (ICO) annual report,
+                                        The UK's information commissioner has called for better funding for the
+                                        country's data regulator amid a record number of cases. Ahead of the release of
+                                        the Information Commissioner's Office (ICO) annual report,
                                         Christopher Graham said the body needed "stronger powers".
                                     </p>
                                     <a href="news_item" class="news-block-btn">
@@ -364,11 +398,11 @@
         </div>
         <!--main content ends-->
     </section>
-    @stop
+@stop
 
-    {{-- page level scripts --}}
-    @section('footer_scripts')
-            <!-- begining of page level js -->
+{{-- page level scripts --}}
+@section('footer_scripts')
+    <!-- begining of page level js -->
     <!--tags-->
     <script src="{{ asset('assets/vendors/tags/dist/bootstrap-tagsinput.js') }}"></script>
 @stop

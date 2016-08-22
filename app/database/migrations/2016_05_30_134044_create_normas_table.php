@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateNormasTable extends Migration {
+class CreateNormasTable extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -12,7 +13,7 @@ class CreateNormasTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('normas', function(Blueprint $table) {
+		Schema::create('normas', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('id_norma');
 			$table->string('nom_norma');
