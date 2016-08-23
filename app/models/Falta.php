@@ -22,7 +22,7 @@ class Falta extends Moloquent
 		return $this->belongsTo('Usuario', 'id_usuario', 'id_usuario');
 	}
 
-	public function lastID()
+	public function lastID() 
 	{
 		return $this->orderBy('created_at', 'DESC')->first()->id_faltas + 1;
 	}
