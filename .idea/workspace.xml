@@ -2,86 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="432ac667-78fa-4e5c-815c-f28d64d34823" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/PlanillasController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2016_08_22_215953_create_planillas_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/seeds/PlanillasTableSeeder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Planilla.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/planillas/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/planillas/edit.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/planillas/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/planillas/show.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.rut.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/css/formValidation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/css/formValidation.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/formValidation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/formValidation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/foundation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/foundation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/pure.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/pure.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/semantic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/semantic.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/uikit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/framework/uikit.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/ar_MA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/be_FR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/be_NL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/bg_BG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/bg_BG.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/bg_BG.min.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/ca_ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/cs_CZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/da_DK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/de_DE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/en_US.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/es_CL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/es_CL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/es_ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/eu_ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/fa_IR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/fi_FI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/fr_FR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/gr_EL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/he_IL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/hi_IN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/hu_HU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/id_ID.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/it_IT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/ja_JP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/nl_NL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/no_NO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/pl_PL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/pt_PT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/ro_RO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/ru_RU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/sk_SK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/sq_AL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/sr_RS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/sv_SE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/th_TH.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/tr_TR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/ua_UA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/vi_VN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/vendors/formvalidation/js/language/zh_TW.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EmpaqueController.php" afterPath="$PROJECT_DIR$/app/controllers/EmpaqueController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LocalController.php" afterPath="$PROJECT_DIR$/app/controllers/LocalController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Local.php" afterPath="$PROJECT_DIR$/app/models/Local.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/empaques/create.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/empaques/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/empaques/index.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/empaques/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/locales/index.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/locales/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontend/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/frontend/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontend/layouts/default2.blade.php" afterPath="$PROJECT_DIR$/app/views/frontend/layouts/default2.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/frontend/registry.blade.php" afterPath="$PROJECT_DIR$/app/views/frontend/registry.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notifications.blade.php" afterPath="$PROJECT_DIR$/app/views/notifications.blade.php" />
     </list>
     <ignored path="GestionEmpaques.iws" />
     <ignored path="$USER_HOME$/Desktop/encuestaShell/.idea/" />
@@ -570,7 +491,7 @@
       <workItem from="1471795449688" duration="360000" />
       <workItem from="1471795854301" duration="19263000" />
       <workItem from="1471904386780" duration="130000" />
-      <workItem from="1471904547920" duration="9990000" />
+      <workItem from="1471904547920" duration="11590000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1471496547990</created>
@@ -628,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471835505088</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v0.2">
+      <created>1471916894795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1471916894795</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47587000" />
+    <option name="totallyTimeSpent" value="49187000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,7 +581,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37198067" sideWeight="0.5060514" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5764895" sideWeight="0.49394855" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252818" sideWeight="0.49394855" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17700455" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33172303" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -712,7 +640,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Init" />
     <MESSAGE value="v0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.1" />
+    <MESSAGE value="v0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
