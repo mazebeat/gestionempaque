@@ -2,6 +2,9 @@
 
 date_default_timezone_set("Chile/Continental");
 ini_set('mongo.long_as_object', 1);
+ini_set('zlib.output_compression', 'off');
+ini_set('output_buffering', 'off');
+set_time_limit(0);
 
 /*
 |--------------------------------------------------------------------------
@@ -171,5 +174,11 @@ Route::group(array('prefix' => 'admin'), function () {
 });
 
 Route::get('test', function () {
-	dd(Local::first()->planilla);
+	return 'ok';
+
+//	try{
+//		return Local::firstOrFail()->planilla;
+//	} catch (Exception $e) {
+//		return $e->getMessage();
+//	}
 });

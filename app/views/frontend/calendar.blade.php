@@ -27,12 +27,13 @@
                                 <div class="col-xs-12 calendar-day">
                                     <div class="text-center vertical">
                                         <span>{{ $turn }}</span></br>
-                                        <button type="button" class="btn btn-block btn-primary taketurn"
-                                                data-id="{{ $turn }}" data-total="{{ $i }}" data-left="{{ $i }}"
+                                        <button type="button" class="btn btn-xs btn-block btn-primary taketurn"
+                                                data-id="{{ $turn }}"
+                                                data-total="{{ $i }}"
+                                                data-left="{{ $i }}"
                                                 data-take="false">
                                             Tomar
                                             <small class="count">()</small>
-
                                         </button>
                                     </div>
                                     <time datetime=""></time>
@@ -42,11 +43,11 @@
                     @endforeach
                 </div>
             </form>
-            <p>Siga las instrucciones...*</p>
+            <p>Siga las instrucciones... *</p>
         </div>
     </section>
 @endsection
 
 @section('script')
-    <script type="text/javascript" src="{{ asset('frontend/js/takeTurn.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend/js/takeTurn.js') }}"></script>
 @endsection

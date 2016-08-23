@@ -88,7 +88,7 @@
                             <label class="">Sexo</label>
                             <label class="radio-inline"><input type="radio" name="sexo" value="F">Femenino</label>
                             <label class="radio-inline"><input type="radio" name="sexo" value="M">Masculino</label>
-                            <label class="radio-inline"><input type="radio" name="sexo" value="N" checked>NN</label>
+                            <label class="radio-inline"><input type="radio" name="sexo" value="N">NN</label>
                             <div class="error">{{ $errors->first('sexo') }}</div>
                         </div>
                     </div>

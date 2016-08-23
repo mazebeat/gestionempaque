@@ -69,12 +69,12 @@
     <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
 </a>
 <!--global js starts-->
-<script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js') }}"></script>
-{{--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>--}}
+{{--<script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js') }}"></script>--}}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('frontend/js/raphael.js') }}"></script>
+{{--<script type="text/javascript" src="{{ asset('frontend/js/raphael.js') }}"></script>--}}
 <script type="text/javascript" src="{{ asset('frontend/js/livicons-1.4.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('frontend/js/josh_frontend.js') }}"></script>
+{{--<script type="text/javascript" src="{{ asset('frontend/js/josh_frontend.js') }}"></script>--}}
 <!--global js end-->
 <!-- page level js starts-->
 @yield('script')

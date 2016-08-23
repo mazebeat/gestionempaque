@@ -31,7 +31,7 @@ ClassLoader::addDirectories(array(
 |
 */
 
-Log::useFiles(storage_path() . '/logs/laravel.log');
+Log::useFiles(storage_path() . '/logs/gestionempaque.log');
 
 /*
 |--------------------------------------------------------------------------
@@ -46,8 +46,29 @@ Log::useFiles(storage_path() . '/logs/laravel.log');
 |
 */
 
+//App::error(function (Exception $exception, $code) {
+//	Log::error($exception);
+//});
+
 App::error(function (Exception $exception, $code) {
-	Log::error($exception);
+	$pathInfo = Request::getPathInfo();
+	$message = $exception->getMessage() ?: 'Exception';
+	Log::error("$code - $message @ $pathInfo\r\n$exception");
+
+	if (Config::get('app.debug')) {
+		return;
+	}
+
+	switch ($code) {
+		case 403:
+			return Response::view('admin/403', compact('message'), 403);
+
+		case 500:
+			return Response::view('admin/500', compact('message'), 500);
+
+		default:
+			return Response::view('admin/404', compact('message'), $code);
+	}
 });
 
 /*
@@ -79,4 +100,3 @@ App::down(function () {
 require app_path() . '/filters.php';
 require app_path() . '/macros.php';
 require app_path() . '/validators.php';
-
