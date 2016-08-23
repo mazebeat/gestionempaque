@@ -115,6 +115,13 @@
                                         <i class="livicon" data-name="edit" data-size="18" data-loop="true"
                                            data-c="#428BCA" data-hc="#428BCA" title="Editar"></i>
                                     </a>
+                                    <a href="{{ URL::to('admin/empaques/changestate', array($empaque->id)) }}"
+                                       class="btn btn-xs btn-link">
+                                        <i class="livicon"
+                                           data-name="{{ $empaque->state() == 'Activo' ? 'unlock' : 'lock' }}"
+                                           data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA"
+                                           title="Editar"></i>
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach
@@ -128,4 +135,13 @@
 
 {{-- page level scripts --}}
 @section('footer_scripts')
+    {{ HTML::script('assets/js/jquery.rut.min.js') }}
+    <script>
+        $(function () {
+            $("#id_usuario").rut({
+                formatOn: 'change keyup',
+                validateOn: 'change keyup'
+            });
+        });
+    </script>
 @stop

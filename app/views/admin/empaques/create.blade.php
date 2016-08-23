@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-    Comunas
+    Empaques
     @parent
 @stop
 
@@ -52,7 +52,7 @@
                         </div>
                     </div>
 
-                    {{ Form::open(array('route' => 'admin.empaques.store', 'class' => 'form-horizontal')) }}
+                    {{ Form::open(array('route' => 'admin.empaques.store', 'class' => 'form-horizontal','id'  =>'formCreateEmpaque')) }}
 
                     <div class="form-group">
                         {{ Form::label('id_usuario', 'RUN:', array('class'=>'col-md-2 control-label')) }}
@@ -215,4 +215,131 @@
             </div>
         </div>
     </section>
+@stop
+
+{{-- page level scripts --}}
+@section('footer_scripts')
+    {{-- Form Validation --}}
+    {{ HTML::script('assets/vendors/formvalidation/js/formValidation.js') }}
+    {{ HTML::script('assets/vendors/formvalidation/js/framework/bootstrap.min.js') }}
+    {{ HTML::script('assets/vendors/formvalidation/js/language/es_CL.min.js')  }}
+
+
+    {{ HTML::script('assets/js/jquery.rut.min.js') }}
+    <script>
+        $(function () {
+            $("#id_usuario").rut({
+                formatOn: 'change keyup',
+                validateOn: 'change keyup'
+            });
+
+            $('#formCreateEmpaque').formValidation({
+                framework: 'bootstrap',
+                excluded: [':disabled', ':hidden'],
+                live: 'enabled',
+                locale: 'es_CL',
+                fields: {
+                    'id_usuario': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar su RUN'
+                            },
+                            callback: {
+                                callback: function (value, validator) {
+                                    return $.validateRut(value);
+                                },
+                                message: 'El campo RUT es incorrecto'
+                            },
+                            stringLength: {
+                                min: 8,
+                                max: 12
+                            }
+                        }
+                    },
+                    'nombre': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar sus nombres'
+                            }
+                        }
+
+                    },
+                    'ape_paterno': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar su apellido paterno'
+                            }
+                        }
+                    },
+                    'ape_materno': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar su apellido materno'
+                            }
+                        }
+                    },
+                    'email': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar su email'
+                            },
+                            emailAddress: {
+                                message: 'El mail ingresado no es correcto'
+                            }
+                        }
+                    },
+                    'sexo': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe mencionar su sexo'
+                            }
+                        }
+                    },
+                    'fecha_nacimiento': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar su fecha de naciemiento'
+                            },
+                            date: {
+                                message: 'La fecha ingresada no es valida',
+                                format: 'YYYY-MM-DD'
+                            }
+                        }
+                    },
+                    'pass': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe ingresar una password'
+                            },
+                            identical: {
+                                field: 'password_confirmation',
+                                message: 'La password ingresada no coincide'
+                            }
+
+                        }
+                    },
+                    'password_confirmation': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe confirmar la password ingresada'
+                            },
+                            identical: {
+                                field: 'pass',
+                                message: 'La password ingresada no coincide'
+                            }
+
+                        }
+                    },
+                    'accept_terms': {
+                        validators: {
+                            notEmpty: {
+                                message: 'Debe aceptar los terminos y condiciones'
+                            }
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>
 @stop

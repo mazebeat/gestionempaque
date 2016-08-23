@@ -1,4 +1,4 @@
-@extends('admin/layouts/default')
+@extends('admin.layouts.default')
 
 {{-- Page title --}}
 @section('title')
@@ -37,8 +37,21 @@
                     </span>
                 </div>
                 <div class="panel-body">
-                    @if(false)
-                        {{ Form::model($local, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('admin.locals.update', $local->id))) }}
+
+                    {{--<div class="row">--}}
+                    {{--<div class="col-md-8 col-md-offset-2">--}}
+                    {{--@if ($errors->any())--}}
+                    {{--<div class="alert alert-danger">--}}
+                    {{--<ul>--}}
+                    {{--{{ implode('', $errors->all('<li class="error">:message</li>')) }}--}}
+                    {{--</ul>--}}
+                    {{--</div>--}}
+                    {{--@endif--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+
+                    @if(isset($action) && $action == 'edit')
+                        {{ Form::model($local, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('admin.locales.update', $local->id))) }}
 
                         {{--<div class="form-group">--}}
                         {{--                            {{ Form::label('id_local', 'Id_local:', array('class'=>'col-md-2 control-label')) }}--}}
@@ -47,25 +60,25 @@
                         {{ Form::input('hidden', 'id_turno', Input::old('id_turno'), array('class'=>'form-control')) }}
                         {{--</div>--}}
                         {{--</div>--}}
-                    @else
-                        {{ Form::open(array('route' => 'admin.locals.store', 'class' => 'form-horizontal')) }}
+                    @elseif(isset($action) && $action == 'create')
+                        {{ Form::open(array('route' => 'admin.locales.store', 'class' => 'form-horizontal')) }}
                     @endif
                     <fieldset>
                         <div class="row">
                             <div class="col-md-6" style="">
                                 <div class="form-group" style="position: static;">
                                     <label for="nom_local">Nombre Local</label>
-                                    {{ Form::text('nom_local', Input::old('nom_local'), array('class'=>'form-control', 'placeholder'=>'Nom_local')) }}
+                                    {{ Form::text('nom_local', Input::old('nom_local'), array('class'=>'form-control', 'placeholder'=>'Nombre local')) }}
                                 </div>
                                 <div class="form-group" style="position: static;">
-                                    <label for="cb_region">Region</label>
+                                    <label for="id_re">Region</label>
+                                    {{ Form::select('id_re', Region::lists('str_descripcion', 'id_re'), Input::old('id_re'), array('class' => 'form-control')) }}
                                     {{--<select class="form-control" id="cb_region"></select>--}}
-                                    {{ Form::input('number', 'id_region', Input::old('id_region'), array('class'=>'form-control')) }}
                                 </div>
                                 <div class="form-group">
-                                    <label for="cb_comuna">Comuna</label>
-                                    {{--<select class="form-control" id="cb_comuna"></select>--}}
-                                    {{ Form::input('number', 'id_comuna', Input::old('id_comuna'), array('class'=>'form-control')) }}
+                                    <label for="id_co">Comuna</label>
+                                    {{ Form::select('id_co', Comuna::lists('str_descripcion', 'id_co'), Input::old('id_co'), array('class' => 'form-control')) }}
+                                    {{--{{ Form::input('number', 'id_comuna', Input::old('id_comuna'), array('class'=>'form-control')) }}--}}
                                 </div>
                                 <div class="form-group" style="position: static;">
                                     <label for="telefono">Tel&eacute;fono</label>
@@ -99,9 +112,9 @@
                                     {{ Form::text('gerente_local', Input::old('gerente_local'), array('class'=>'form-control', 'placeholder'=>'Gerente_local')) }}
                                 </div>
                                 <div class="form-group" style="position: static;">
-                                    <label for="cb_provincia">Provincia</label>
-                                    {{--<select class="form-control" id="cb_provincia"></select>--}}
-                                    {{ Form::input('number', 'id_provincia', Input::old('id_provincia'), array('class'=>'form-control')) }}
+                                    <label for="id_pr">Provincia</label>
+                                    {{ Form::select('id_pr', Provincia::lists('str_descripcion', 'id_pr'), Input::old('id_pr'), array('class' => 'form-control')) }}
+                                    {{--{{ Form::input('number', 'id_provincia', Input::old('id_provincia'), array('class'=>'form-control')) }}--}}
                                 </div>
                                 <div class="form-group" style="position: static;">
                                     <label for="direccion">Direccion</label>
@@ -130,10 +143,16 @@
                         <div class="form-group">
                             <div class="col-md-12">
                                 <div class="pull-right">
-                                    <button id="btnNew" name="btnNew" class="btn btn-primary">Nuevo</button>
-                                    <button id="btnUpdate" name="btnUpdate" class="btn btn-info">Actualizar</button>
-                                    <button id="btnDelete" name="btnDelete" class="btn btn-danger">Eliminar</button>
-                                    <button id="btnClean" name="btnClean" class="btn btn-link">Limpiar</button>
+                                    @if(!isset($action) || $action == 'create')
+                                        <button id="btnNew" name="btnNew" class="btn btn-primary" type="submit">
+                                            Nuevo
+                                        </button>
+                                    @elseif(isset($action) && $action == 'edit')
+                                        <button id="btnUpdate" name="btnUpdate" class="btn btn-info" type="submit">
+                                            Actualizar
+                                        </button>
+                                    @endif
+                                    {{ link_to_route('admin.locales.index', 'Limpiar', null, array('class' => 'btn btn-link')) }}
                                 </div>
                             </div>
                         </div>
@@ -204,10 +223,10 @@
                                         {{--<td>{{{ $local->nombre_usuario }}}</td>--}}
                                         {{--<td>{{{ $local->fecha_hora }}}</td>--}}
                                         <td>
-                                            {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.locals.destroy', $local->id))) }}
+                                            {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('admin.locales.destroy', $local->id))) }}
                                             {{ Form::submit('Eliminar', array('class' => 'btn btn-xs btn-danger')) }}
                                             {{ Form::close() }}
-                                            {{ link_to_route('admin.locals.edit', 'Editar', array($local->id), array('class' => 'btn btn-xs btn-info')) }}
+                                            {{ link_to_route('admin.locales.edit', 'Editar', array($local->id), array('class' => 'btn btn-xs btn-info')) }}
                                         </td>
                                     </tr>
                                 @endforeach

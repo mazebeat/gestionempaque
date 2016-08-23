@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
 		$this->command->info('Admin User created with username admin@admin.com and password admin');
 		$this->call('FaltasTableSeeder');
 		$this->call('EmpaquesTableSeeder');
+		$this->call('PlanillasTableSeeder');
 	}
 
 }

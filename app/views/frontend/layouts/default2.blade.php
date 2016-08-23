@@ -38,6 +38,7 @@
 @if(Session::has('message') && Session::has('type'))
     <div class="col-xs-8 col-xs-offset-2">
         <div class="alert alert-{{ Session::get('type', 'danger') }}" role="alert" id="messagefront">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             <strong>Mensaje: </strong> {{ Session::get('message') }}
         </div>
     </div>

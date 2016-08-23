@@ -144,4 +144,20 @@ class EmpaqueController extends JoshController
 		return \Str::genUsername($usuario);
 	}
 
+	public function changestate($id)
+	{
+		$empaque = $this->empaque->find($id);
+
+		switch ($empaque->bloqueado) {
+			case 0:
+				$empaque->bloqueado = 1;
+				break;
+			case 1:
+				$empaque->bloqueado = 0;
+				break;
+		}
+		$empaque->save();
+
+		return Redirect::to('admin/empaques');
+	}
 }

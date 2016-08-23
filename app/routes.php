@@ -73,19 +73,7 @@ Route::group(array('prefix' => 'admin'), function () {
 		return View::make('admin/lockscreen');
 	});
 
-	# Locales
-	Route::get('locales', 'LocalController@index');
-	Route::get('locales/{id}', 'LocalController@detalle');
-	Route::get('turnos', 'TurnoController@index2');
-
-	Route::get('perfilesmayores', function () {
-		return View::make('admin.perfilesmayores.index');
-	});
-	Route::get('reportes', function () {
-		return View::make('admin.reportes.index');
-	});
-
-	# All basic routes defined here
+		# All basic routes defined here
 	Route::get('signin', array('as' => 'signin', 'uses' => 'AuthController@getSignin'));
 	Route::post('signin', 'AuthController@postSignin');
 	Route::post('signup', array('as' => 'signup', 'uses' => 'AuthController@postSignup'));
@@ -127,9 +115,24 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::resource('regions', 'RegionsController');
 	Route::resource('repechajes', 'RepechajesController');
 	Route::resource('empaques', 'EmpaqueController');
+	Route::get('empaques/changestate/{id}', 'EmpaqueController@changestate');
 	Route::post('empaques/search', 'EmpaqueController@search');
 	Route::post('empaques/clear', 'EmpaqueController@index');
 	Route::resource('faltas', 'FaltasController');
+	Route::resource('planillas', 'PlanillasController');
+	# Locales
+	Route::resource('locales', 'LocalController');
+	Route::get('locales/{id}', 'LocalController@detalle');
+	Route::get('locales/clear', 'LocalController@index');
+	Route::get('turnos', 'TurnoController@index2');
+
+	Route::get('perfilesmayores', function () {
+		return View::make('admin.perfilesmayores.index');
+	});
+	Route::get('reportes', function () {
+		return View::make('admin.reportes.index');
+	});
+
 
 	# User Management
 	Route::group(array('prefix' => 'users', 'before' => 'Sentry'), function () {
@@ -168,13 +171,5 @@ Route::group(array('prefix' => 'admin'), function () {
 });
 
 Route::get('test', function () {
-	$f = new Falta();
-	$f->id_faltas = Falta::lastID();
-	$f->id_usuario = '33.333.333-3';
-	$f->falta_leve = 0;
-	$f->falta_media = 0;
-	$f->falta_grave = 0;
-	$f->nombre_usuario = 'SNT';
-	$f->fecha_hora = Carbon::now();
-	$f->save();
+	dd(Local::first()->planilla);
 });

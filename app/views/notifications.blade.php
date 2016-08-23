@@ -1,7 +1,7 @@
 @if ($errors->any())
     <div class="alert alert-danger alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Error:</strong> Por favor revise los erroes del formulario
+        <strong>Error:</strong> Por favor revise los errroes del formulario
     </div>
 @endif
 
