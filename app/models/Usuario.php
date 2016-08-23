@@ -72,7 +72,7 @@ class Usuario extends Moloquent
 				$usuario->fecha_hora = Carbon::now();
 			}
 			$f = new Falta();
-			$f->id_faltas = $f->lastID(); 
+			$f->id_faltas = $f->lastID();
 			$f->id_usuario = $usuario->id_usuario;
 			$f->falta_leve = 0;
 			$f->falta_media = 0;
@@ -80,7 +80,7 @@ class Usuario extends Moloquent
 			// TODO: cambiar cuando esté listo el login
 			// $f->nombre_usuario = Auth::user()->nombre;
 			$f->nombre_usuario = $usuario->nombre_usuario;
-			$f->fecha_hora = Carbon::now();
+			$f->fecha_hora = Carbon::now(); 
 			$f->save();
 //            $usuario()->faltas()->save($f);
 		});
