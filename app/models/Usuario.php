@@ -72,7 +72,7 @@ class Usuario extends Moloquent
 				$usuario->fecha_hora = Carbon::now();
 			}
 			$f = new Falta();
-			$f->id_faltas = Falta::lastID();
+			$f->id_faltas = $f->lastID();
 			$f->id_usuario = $usuario->id_usuario;
 			$f->falta_leve = 0;
 			$f->falta_media = 0;
