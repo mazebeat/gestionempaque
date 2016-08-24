@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| View Storage Paths
@@ -12,9 +12,9 @@ return array(
 	| the usual Laravel view path has already been registered for you.
 	|
 	*/
-
+	
 	'paths' => array(__DIR__ . '/../views'),
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Pagination View
@@ -25,7 +25,7 @@ return array(
 	| compatible with Twitter's Bootstrap is given to you by default.
 	|
 	*/
-
+	
 	'pagination' => 'pagination::slider-3',
 
 );

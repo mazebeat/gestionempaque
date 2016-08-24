@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Session Driver
@@ -14,9 +14,9 @@ return array(
 	| Supported: "file", "cookie", "database", "apc", "memcached", "redis", "array", "mongodb"
 	|
 	*/
-
+	
 	'driver' => 'mongodb',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Lifetime
@@ -27,11 +27,11 @@ return array(
 	| to immediately expire on the browser closing, set that option.
 	|
 	*/
-
+	
 	'lifetime' => 60, // 120
-
+	
 	'expire_on_close' => true, // false
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session File Location
@@ -42,9 +42,9 @@ return array(
 	| location may be specified. This is only needed for file sessions.
 	|
 	*/
-
+	
 	'files' => storage_path() . '/sessions',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Database Connection
@@ -55,9 +55,9 @@ return array(
 	| correspond to a connection in your database configuration options.
 	|
 	*/
-
+	
 	'connection' => null,
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Database Table
@@ -68,9 +68,9 @@ return array(
 	| provided for you; however, you are free to change this as needed.
 	|
 	*/
-
+	
 	'table' => 'sessions',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Sweeping Lottery
@@ -81,9 +81,9 @@ return array(
 	| happen on a given request. By default, the odds are 2 out of 100.
 	|
 	*/
-
+	
 	'lottery' => array(2, 100),
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Cookie Name
@@ -94,9 +94,9 @@ return array(
 	| new session cookie is created by the framework for every driver.
 	|
 	*/
-
+	
 	'cookie' => 'laravel_session',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Cookie Path
@@ -107,9 +107,9 @@ return array(
 	| your application but you are free to change this when necessary.
 	|
 	*/
-
+	
 	'path' => '/',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Session Cookie Domain
@@ -120,9 +120,9 @@ return array(
 	| available to in your application. A sensible default has been set.
 	|
 	*/
-
+	
 	'domain' => null,
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| HTTPS Only Cookies
@@ -133,7 +133,7 @@ return array(
 	| the cookie from being sent to you if it can not be done securely.
 	|
 	*/
-
+	
 	'secure' => false,
 
 );

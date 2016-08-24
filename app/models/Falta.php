@@ -2,12 +2,12 @@
 
 class Falta extends Moloquent
 {
-
+	
 	protected $connection = 'mongodb';
 	protected $collection = 'faltas';
 	protected $primaryKey = '_id';
 	protected $dates = ['fecha_hora', 'created_at', 'updated_at', 'deleted_at'];
-
+	
 	public static $rules = array(
 		'id_falta'       => 'required',
 		'id_usuario'     => 'required',
@@ -16,13 +16,13 @@ class Falta extends Moloquent
 		'falta_grave'    => 'required',
 		'nombre_usuario' => 'required',
 	);
-
+	
 	public function usuario()
 	{
 		return $this->belongsTo('Usuario', 'id_usuario', 'id_usuario');
 	}
-
-	public function lastID() 
+	
+	public function lastID()
 	{
 		return $this->orderBy('created_at', 'DESC')->first()->id_faltas + 1;
 	}

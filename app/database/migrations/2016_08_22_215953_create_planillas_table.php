@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePlanillasTable extends Migration {
-
+class CreatePlanillasTable extends Migration
+{
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -12,7 +13,7 @@ class CreatePlanillasTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('planillas', function(Blueprint $table) {
+		Schema::create('planillas', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('id_planilla');
 			$table->integer('id_local');
@@ -21,8 +22,8 @@ class CreatePlanillasTable extends Migration {
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -32,5 +33,5 @@ class CreatePlanillasTable extends Migration {
 	{
 		Schema::drop('planillas');
 	}
-
+	
 }

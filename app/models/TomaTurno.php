@@ -8,8 +8,8 @@ class TomaTurno extends Moloquent
 	protected $connection = 'mongodb';
 	protected $collection = 'toma_turno';
 	protected $primaryKey = '_id';
-	protected $dates = ['deleted_at'];
-
+	protected $dates = ['fecha', 'fecha_hora', 'created_at', 'updated_at', 'deleted_at'];
+	
 	public function usuario()
 	{
 		return $this->belongsTo('Usuario');

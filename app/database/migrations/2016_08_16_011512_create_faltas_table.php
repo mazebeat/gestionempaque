@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateFaltasTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -24,8 +24,8 @@ class CreateFaltasTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -35,5 +35,5 @@ class CreateFaltasTable extends Migration
 	{
 		Schema::drop('faltas');
 	}
-
+	
 }

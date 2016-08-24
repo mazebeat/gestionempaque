@@ -8,7 +8,7 @@ class Acceso extends Moloquent
 		'id_acceso'      => '',
 		'nom_acceso'     => '',
 		'nombre_usuario' => '',
-		'fecha_hora'     => 'date'
+		'fecha_hora'     => 'date',
 	];
 	protected $connection = 'mongodb';
 	protected $collection = 'acceso';

@@ -2,7 +2,7 @@
 
 class ExampleTest extends TestCase
 {
-
+	
 	/**
 	 * A basic functional test example.
 	 *
@@ -11,8 +11,8 @@ class ExampleTest extends TestCase
 	public function testBasicExample()
 	{
 		$crawler = $this->client->request('GET', '/');
-
+		
 		$this->assertTrue($this->client->getResponse()->isOk());
 	}
-
+	
 }

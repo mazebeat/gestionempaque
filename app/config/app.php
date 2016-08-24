@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -12,9 +12,9 @@ return array(
 	| application. If disabled, a simple generic error page is shown.
 	|
 	*/
-
+	
 	'debug' => false,
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -25,7 +25,7 @@ return array(
 	| your application so that it is used when running Artisan tasks.
 	|
 	*/
-
+	
 	'url' => 'http://104.197.130.112',
 	/*
 	|--------------------------------------------------------------------------
@@ -37,9 +37,9 @@ return array(
 	| ahead and set this to a sensible default for you out of the box.
 	|
 	*/
-
+	
 	'timezone' => 'Chile/Continental',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Application Locale Configuration
@@ -50,9 +50,9 @@ return array(
 	| to any of the locales which will be supported by the application.
 	|
 	*/
-
+	
 	'locale' => 'es',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Application Fallback Locale
@@ -63,9 +63,9 @@ return array(
 	| the language folders that are provided through your application.
 	|
 	*/
-
+	
 	'fallback_locale' => 'en',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Encryption Key
@@ -76,11 +76,11 @@ return array(
 	| will not be safe. Please do this before deploying an application!
 	|
 	*/
-
+	
 	'key' => 'tgHfB5o8q8KbKcg36CAEbzazCYu0ojYg',
-
+	
 	'cipher' => MCRYPT_RIJNDAEL_128,
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
@@ -91,9 +91,9 @@ return array(
 	| this array to grant expanded functionality to your applications.
 	|
 	*/
-
+	
 	'providers' => array(
-
+		
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
@@ -120,21 +120,21 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
+		
 		'Cartalyst\Sentry\SentryServiceProvider',
-
+		
 		'Jenssegers\Mongodb\MongodbServiceProvider',
 		'Jenssegers\Mongodb\Session\SessionServiceProvider',
 		'Jenssegers\Mongodb\Auth\ReminderServiceProvider',
 //		'Jenssegers\Mongodb\Auth\PasswordResetServiceProvider',
-
+		
 		'Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider',
-
+		
 		'BankDev\Generators\GeneratorsServiceProvider',
-
-		'Freshwork\ChileanBundle\Laravel\ChileanBundleServiceProvider'
+		
+		'Freshwork\ChileanBundle\Laravel\ChileanBundleServiceProvider',
 	),
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Service Provider Manifest
@@ -145,9 +145,9 @@ return array(
 	| list of all of the services. Here, you may set its storage spot.
 	|
 	*/
-
+	
 	'manifest' => storage_path() . '/meta',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Class Aliases
@@ -158,9 +158,9 @@ return array(
 	| the aliases are "lazy" loaded so they don't hinder performance.
 	|
 	*/
-
+	
 	'aliases' => array(
-
+		
 		'App'               => 'Illuminate\Support\Facades\App',
 		'Artisan'           => 'Illuminate\Support\Facades\Artisan',
 		'Auth'              => 'Illuminate\Support\Facades\Auth',
@@ -202,8 +202,8 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 		'Moloquent'         => 'Jenssegers\Mongodb\Model',
 		'Sentry'            => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-
-		'Rut' => 'Freshwork\ChileanBundle\Laravel\Facades\Rut'
+		
+		'Rut' => 'Freshwork\ChileanBundle\Laravel\Facades\Rut',
 	),
 
 );

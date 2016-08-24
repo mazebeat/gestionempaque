@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateEmpaquesTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -37,8 +37,8 @@ class CreateEmpaquesTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -48,5 +48,5 @@ class CreateEmpaquesTable extends Migration
 	{
 		Schema::drop('empaques');
 	}
-
+	
 }

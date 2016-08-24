@@ -2,7 +2,7 @@
 
 class DatabaseSeeder extends Seeder
 {
-
+	
 	/**
 	 * Run the database seeds.
 	 *
@@ -11,12 +11,12 @@ class DatabaseSeeder extends Seeder
 	public function run()
 	{
 		Eloquent::unguard();
-
+		
 		$this->call('AdminSeeder');
 		$this->command->info('Admin User created with username admin@admin.com and password admin');
 		$this->call('FaltasTableSeeder');
 		$this->call('EmpaquesTableSeeder');
 		$this->call('PlanillasTableSeeder');
 	}
-
+	
 }

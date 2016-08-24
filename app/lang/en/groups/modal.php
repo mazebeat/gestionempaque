@@ -5,7 +5,7 @@
  *
  */
 return array(
-
+	
 	'title'   => 'Delete Group',
 	'body'    => 'Are you sure to delete this group? This operation is irreversible.',
 	'cancel'  => 'Cancel',

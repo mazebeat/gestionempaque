@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateRepechajesTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -23,8 +23,8 @@ class CreateRepechajesTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -34,5 +34,5 @@ class CreateRepechajesTable extends Migration
 	{
 		Schema::drop('repechajes');
 	}
-
+	
 }

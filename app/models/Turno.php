@@ -9,4 +9,6 @@ class Turno extends Moloquent
 	protected $collection = 'turno';
 	protected $primaryKey = '_id';
 	protected $dates = ['deleted_at'];
+	
+	
 }

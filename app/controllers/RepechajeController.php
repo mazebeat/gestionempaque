@@ -10,29 +10,29 @@ class RepechajeController extends JoshController
 //		if (!Sentry::check()) {
 //			return View::make('admin.login2');
 //		}
-
+		
 		return Redirect::route('turnos');
 //		return View::make('admin.login2');
 	}
-
+	
 	public function index2()
 	{
 		// Is the user logged in?
 //		if (!Sentry::check()) {
 //			return View::make('admin.login');
 //		}
-
+		
 		return View::make('admin.turnos.index');
 	}
-
-
+	
+	
 	public function showTurnos()
 	{
 		// Is the user logged in?
 //		if (!Sentry::check()) {
 //			return Redirect::to('/');
 //		}
-
+		
 		$days = array(
 			'lu' => 'Lunes',
 			'ma' => 'Martes',
@@ -42,7 +42,7 @@ class RepechajeController extends JoshController
 			'sa' => 'Sabado',
 			'do' => 'Domingo',
 		);
-
+		
 		$turns = array(
 			'08:00 - 09:45',
 			'09:50 - 10:35',
@@ -51,15 +51,15 @@ class RepechajeController extends JoshController
 			'12:20 - 13:05',
 			'13:10 - 13:55',
 		);
-
+		
 		return View::make('frontend.calendar')->withDays($days)->withTurns($turns);
 	}
-
-
+	
+	
 	public function getTurnos()
 	{
 		$data = array();
-
+		
 		if (Request::ajax()) {
 //			if (!Input::get('take', false)) {
 //				$save = true;

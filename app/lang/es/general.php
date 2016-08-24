@@ -4,7 +4,7 @@
  *
  */
 return array(
-
+	
 	'no'        => 'No',
 	'noresults' => 'Sin Resultados',
 	'yes'       => 'Sí',

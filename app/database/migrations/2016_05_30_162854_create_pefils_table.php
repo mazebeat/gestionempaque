@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreatePefilsTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -22,8 +22,8 @@ class CreatePefilsTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -33,5 +33,5 @@ class CreatePefilsTable extends Migration
 	{
 		Schema::drop('pefils');
 	}
-
+	
 }

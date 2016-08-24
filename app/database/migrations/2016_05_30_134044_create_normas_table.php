@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateNormasTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -23,8 +23,8 @@ class CreateNormasTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -34,5 +34,5 @@ class CreateNormasTable extends Migration
 	{
 		Schema::drop('normas');
 	}
-
+	
 }

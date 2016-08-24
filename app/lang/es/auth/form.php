@@ -5,7 +5,7 @@
  */
 
 return array(
-
+	
 	'password'        => 'Contraseña',
 	'email'           => 'Email',
 	'newemail'        => 'Nuevo Email',

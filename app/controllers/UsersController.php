@@ -239,9 +239,9 @@ class UsersController extends JoshController
 		"EH" => "Western Sahara",
 		"YE" => "Yemen",
 		"ZM" => "Zambia",
-		"ZW" => "Zimbabwe"
+		"ZW" => "Zimbabwe",
 	);
-
+	
 	/**
 	 * Declare the rules for the form validation
 	 *
@@ -254,7 +254,7 @@ class UsersController extends JoshController
 		'password'         => 'required|between:3,32',
 		'password_confirm' => 'required|same:password',
 	);
-
+	
 	/**
 	 * Show a list of all the users.
 	 *
@@ -265,13 +265,13 @@ class UsersController extends JoshController
 		// Grab all the users
 //        $users = User::All();
 		$users = [
-			new User([1])
+			new User([1]),
 		];
-
+		
 		// Show the page
 		return View::make('admin.users.index', compact('users'));
 	}
-
+	
 	/**
 	 * Create new user
 	 *
@@ -281,11 +281,11 @@ class UsersController extends JoshController
 	{
 		// Get all the available groups
 		$groups = Sentry::getGroupProvider()->findAll();
-
+		
 		// Show the page
 		return View::make('admin/users/create', compact('groups'));
 	}
-
+	
 	/**
 	 * User create form processing.
 	 *
@@ -300,28 +300,28 @@ class UsersController extends JoshController
 			'email'            => 'required|email|unique:users',
 			'password'         => 'required|between:3,32',
 			'password_confirm' => 'required|same:password',
-			'group'            => 'required|numeric'
+			'group'            => 'required|numeric',
 		);
-
+		
 		// Create a new validator instance from our validation rules
 		$validator = Validator::make(Input::all(), $rules);
-
+		
 		// If validation fails, we'll exit the operation now.
 		if ($validator->fails()) {
 			// Ooops.. something went wrong
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
-
+		
 		//upload image
 		if ($file = Input::file('pic')) {
-			$fileName = $file->getClientOriginalName();
-			$extension = $file->getClientOriginalExtension() ?: 'png';
-			$folderName = '/uploads/users/';
+			$fileName        = $file->getClientOriginalName();
+			$extension       = $file->getClientOriginalExtension() ?: 'png';
+			$folderName      = '/uploads/users/';
 			$destinationPath = public_path() . $folderName;
-			$safeName = str_random(10) . '.' . $extension;
+			$safeName        = str_random(10) . '.' . $extension;
 			$file->move($destinationPath, $safeName);
 		}
-
+		
 		try {
 			// Register the user
 			$user = Sentry::register(array(
@@ -338,13 +338,13 @@ class UsersController extends JoshController
 				'city'       => Input::get('city'),
 				'address'    => Input::get('address'),
 				'postal'     => Input::get('postal'),
-				'activated'  => Input::get('activate') ? 1 : 0
+				'activated'  => Input::get('activate') ? 1 : 0,
 			));
-
+			
 			//add user to 'User' group
 			$group = Sentry::getGroupProvider()->findById(Input::get('group'));
 			$user->addGroup($group);
-
+			
 			//check for activation and send activation mail if not activated by default
 			if (!Input::get('activate')) {
 				// Data to be used on the email view
@@ -352,17 +352,17 @@ class UsersController extends JoshController
 					'user'          => $user,
 					'activationUrl' => URL::route('activate', $user->getActivationCode()),
 				);
-
+				
 				// Send the activation code through email
 				Mail::send('emails.register-activate', $data, function ($m) use ($user) {
 					$m->to($user->email, $user->first_name . ' ' . $user->last_name);
 					$m->subject('Welcome ' . $user->first_name);
 				});
 			}
-
+			
 			// Redirect to the home page with success menu
 			return Redirect::route("users")->with('success', Lang::get('users/message.success.create'));
-
+			
 		} catch (LoginRequiredException $e) {
 			$error = Lang::get('admin/users/message.user_login_required');
 		} catch (PasswordRequiredException $e) {
@@ -370,11 +370,11 @@ class UsersController extends JoshController
 		} catch (UserExistsException $e) {
 			$error = Lang::get('admin/users/message.user_exists');
 		}
-
+		
 		// Redirect to the user creation page
 		return Redirect::back()->withInput()->with('error', $error);
 	}
-
+	
 	/**
 	 * User update.
 	 *
@@ -386,27 +386,27 @@ class UsersController extends JoshController
 		try {
 			// Get the user information
 			$user = Sentry::getUserProvider()->findById($id);
-
+			
 			// Get this user groups
 			$userGroups = $user->groups()->lists('name', 'group_id');
-
+			
 			// Get a list of all the available groups
 			$groups = Sentry::getGroupProvider()->findAll();
-
+			
 		} catch (UserNotFoundException $e) {
 			// Prepare the error message
 			$error = Lang::get('users/message.user_not_found', compact('id'));
-
+			
 			// Redirect to the user management page
 			return Redirect::route('users')->with('error', $error);
 		}
-
+		
 		$countries = $this->countries;
-
+		
 		// Show the page
 		return View::make('admin/users/edit', compact('user', 'groups', 'userGroups', 'countries'));
 	}
-
+	
 	/**
 	 * User update form processing page.
 	 *
@@ -421,112 +421,112 @@ class UsersController extends JoshController
 		} catch (UserNotFoundException $e) {
 			// Prepare the error message
 			$error = Lang::get('users/message.user_not_found', compact('id'));
-
+			
 			// Redirect to the user management page
 			return Redirect::route('users')->with('error', $error);
 		}
-
+		
 		//
 		$this->validationRules['email'] = "required|email|unique:users,email,{$user->email},email";
-
+		
 		// Do we want to update the user password?
 		if (!$password = Input::get('password')) {
 			unset($this->validationRules['password']);
 			unset($this->validationRules['password_confirm']);
 		}
-
+		
 		// Create a new validator instance from our validation rules
 		$validator = Validator::make(Input::all(), $this->validationRules);
-
+		
 		// If validation fails, we'll exit the operation now.
 		if ($validator->fails()) {
 			// Ooops.. something went wrong
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
-
+		
 		try {
 			// Update the user
 			$user->first_name = Input::get('first_name');
-			$user->last_name = Input::get('last_name');
-			$user->email = Input::get('email');
-			$user->dob = Input::get('dob');
-			$user->bio = Input::get('bio');
-			$user->gender = Input::get('gender');
-			$user->country = Input::get('country');
-			$user->state = Input::get('state');
-			$user->city = Input::get('city');
-			$user->address = Input::get('address');
-			$user->postal = Input::get('postal');
-			$user->activated = Input::get('activate') ? 1 : 0;
-
+			$user->last_name  = Input::get('last_name');
+			$user->email      = Input::get('email');
+			$user->dob        = Input::get('dob');
+			$user->bio        = Input::get('bio');
+			$user->gender     = Input::get('gender');
+			$user->country    = Input::get('country');
+			$user->state      = Input::get('state');
+			$user->city       = Input::get('city');
+			$user->address    = Input::get('address');
+			$user->postal     = Input::get('postal');
+			$user->activated  = Input::get('activate') ? 1 : 0;
+			
 			// Do we want to update the user password?
 			if ($password) {
 				$user->password = $password;
 			}
-
+			
 			// is new image uploaded?
 			if ($file = Input::file('pic')) {
-				$fileName = $file->getClientOriginalName();
-				$extension = $file->getClientOriginalExtension() ?: 'png';
-				$folderName = '/uploads/users/';
+				$fileName        = $file->getClientOriginalName();
+				$extension       = $file->getClientOriginalExtension() ?: 'png';
+				$folderName      = '/uploads/users/';
 				$destinationPath = public_path() . $folderName;
-				$safeName = str_random(10) . '.' . $extension;
+				$safeName        = str_random(10) . '.' . $extension;
 				$file->move($destinationPath, $safeName);
-
+				
 				//delete old pic if exists
 				if (File::exists(public_path() . $folderName . $user->pic)) {
 					File::delete(public_path() . $folderName . $user->pic);
 				}
-
+				
 				//save new file path into db
 				$user->pic = $safeName;
-
+				
 			}
-
+			
 			// Get the current user groups
 			$userGroups = $user->groups()->lists('group_id', 'group_id');
-
+			
 			// Get the selected groups
 			$selectedGroups = Input::get('groups', array());
-
+			
 			// Groups comparison between the groups the user currently
 			// have and the groups the user wish to have.
-			$groupsToAdd = array_diff($selectedGroups, $userGroups);
+			$groupsToAdd    = array_diff($selectedGroups, $userGroups);
 			$groupsToRemove = array_diff($userGroups, $selectedGroups);
-
+			
 			// Assign the user to groups
 			foreach ($groupsToAdd as $groupId) {
 				$group = Sentry::getGroupProvider()->findById($groupId);
-
+				
 				$user->addGroup($group);
 			}
-
+			
 			// Remove the user from groups
 			foreach ($groupsToRemove as $groupId) {
 				$group = Sentry::getGroupProvider()->findById($groupId);
-
+				
 				$user->removeGroup($group);
 			}
-
+			
 			// Was the user updated?
 			if ($user->save()) {
 				// Prepare the success message
 				$success = Lang::get('users/message.success.update');
-
+				
 				// Redirect to the user page
 				return Redirect::route('users.update', $id)->with('success', $success);
 			}
-
+			
 			// Prepare the error message
 			$error = Lang::get('users/message.error.update');
 		} catch (LoginRequiredException $e) {
 			$error = Lang::get('users/message.user_login_required');
 		}
-
+		
 		// Redirect to the user page
 		return Redirect::route('users.update', $id)->withInput()->with('error', $error);
 	}
-
+	
 	/**
 	 * Show a list of all the deleted users.
 	 *
@@ -536,12 +536,12 @@ class UsersController extends JoshController
 	{
 		// Grab deleted users
 		$users = User::onlyTrashed()->get();
-
+		
 		// Show the page
 		return View::make('admin/deleted_users', compact('users'));
 	}
-
-
+	
+	
 	/**
 	 * Delete Confirm
 	 *
@@ -550,37 +550,37 @@ class UsersController extends JoshController
 	 */
 	public function getModalDelete($id = null)
 	{
-		$model = 'users';
+		$model         = 'users';
 		$confirm_route = $error = null;
 		try {
 			// Get user information
 			$user = Sentry::getUserProvider()->findById($id);
-
+			
 			// Check if we are not trying to delete ourselves
 			if ($user->id === Sentry::getUser()->id) {
 				// Prepare the error message
 				$error = Lang::get('admin/users/message.error.delete');
-
+				
 				return View::make('backend/layouts/modal_confirmation', compact('error', 'model', 'confirm_route'));
 			}
-
+			
 			// Do we have permission to delete this user?
 			if ($user->isSuperUser() and !Sentry::getUser()->isSuperUser()) {
 				$error = Lang::get('admin/users/message.insufficient_permissions', compact('id'));
-
+				
 				return View::make('backend/layouts/modal_confirmation', compact('error', 'model', 'confirm_route'));
 			}
 		} catch (UserNotFoundException $e) {
 			// Prepare the error message
 			$error = Lang::get('admin/users/message.user_not_found', compact('id'));
-
+			
 			return View::make('backend/layouts/modal_confirmation', compact('error', 'model', 'confirm_route'));
 		}
 		$confirm_route = URL::action('delete/user', array('id' => $user->id));
-
+		
 		return View::make('admin/layouts/modal_confirmation', compact('error', 'model', 'confirm_route'));
 	}
-
+	
 	/**
 	 * Delete the given user.
 	 *
@@ -592,41 +592,41 @@ class UsersController extends JoshController
 		try {
 			// Get user information
 			$user = Sentry::getUserProvider()->findById($id);
-
+			
 			// Check if we are not trying to delete ourselves
 			if ($user->id === Sentry::getUser()->id) {
 				// Prepare the error message
 				$error = Lang::get('admin/users/message.error.delete');
-
+				
 				// Redirect to the user management page
 				return Redirect::route('users')->with('error', $error);
 			}
-
+			
 			// Do we have permission to delete this user?
 			if ($user->isSuperUser() and !Sentry::getUser()->isSuperUser()) {
 				// Redirect to the user management page
 				return Redirect::route('users')->with('error', 'Insufficient permissions!');
 			}
-
+			
 			// Delete the user
 			//to allow soft deleted, we are performing query on users model instead of sentry model
 			//$user->delete();
 			User::destroy($id);
-
+			
 			// Prepare the success message
 			$success = Lang::get('users/message.success.delete');
-
+			
 			// Redirect to the user management page
 			return Redirect::route('users')->with('success', $success);
 		} catch (UserNotFoundException $e) {
 			// Prepare the error message
 			$error = Lang::get('admin/users/message.user_not_found', compact('id'));
-
+			
 			// Redirect to the user management page
 			return Redirect::route('users')->with('error', $error);
 		}
 	}
-
+	
 	/**
 	 * Restore a deleted user.
 	 *
@@ -638,24 +638,24 @@ class UsersController extends JoshController
 		try {
 			// Get user information
 			$user = User::withTrashed()->find($id);
-
+			
 			// Restore the user
 			$user->restore();
-
+			
 			// Prepare the success message
 			$success = Lang::get('users/message.success.restored');
-
+			
 			// Redirect to the user management page
 			return Redirect::route('deleted_users')->with('success', $success);
 		} catch (UserNotFoundException $e) {
 			// Prepare the error message
 			$error = Lang::get('users/message.user_not_found', compact('id'));
-
+			
 			// Redirect to the user management page
 			return Redirect::route('deleted_users')->with('error', $error);
 		}
 	}
-
+	
 	/**
 	 * Display specified user profile.
 	 *
@@ -667,25 +667,25 @@ class UsersController extends JoshController
 		try {
 			// Get the user information
 			$user = Sentry::findUserById($id);
-
+			
 			//get country name
 			if ($user->country) {
 				$user->country = $this->countries[$user->country];
 			}
-
+			
 		} catch (UserNotFoundException $e) {
 			// Prepare the error message
 			$error = Lang::get('users/message.user_not_found', compact('id'));
-
+			
 			// Redirect to the user management page
 			return Redirect::route('users')->with('error', $error);
 		}
-
+		
 		// Show the page
 		return View::make('admin.users.show', compact('user'));
-
+		
 	}
-
+	
 	/**
 	 * Get user access state
 	 *
@@ -694,16 +694,16 @@ class UsersController extends JoshController
 	public function getUserAccess()
 	{
 		if (Sentry::getUser()->hasAccess('admin')) {
-
+			
 			$userAccess = "admin";
 		} else {
 			$userAccess = "others";
 		}
-
+		
 		// Show the page
 		return View::make('admin/groups/any_user', compact('userAccess'));
 	}
-
+	
 	/**
 	 * Show View or redirect to 404
 	 *
@@ -712,14 +712,14 @@ class UsersController extends JoshController
 	public function getAdminOnlyAccess()
 	{
 		if (Sentry::getUser()->hasAccess('admin')) {
-
+			
 			return View::make('admin/groups/admin_only');
 		} else {
 			return View::make('admin/404');
 		}
-
+		
 		// fallback
 		return View::make('admin/404');
 	}
-
+	
 }

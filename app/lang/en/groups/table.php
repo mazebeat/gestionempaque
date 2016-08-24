@@ -5,7 +5,7 @@
  */
 
 return array(
-
+	
 	'id'         => 'Id',
 	'name'       => 'Name',
 	'users'      => 'No. of Users',

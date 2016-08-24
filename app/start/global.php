@@ -12,7 +12,7 @@
 */
 
 ClassLoader::addDirectories(array(
-
+	
 	app_path() . '/commands',
 	app_path() . '/controllers',
 	app_path() . '/models',
@@ -52,20 +52,20 @@ Log::useFiles(storage_path() . '/logs/gestionempaque.log');
 
 App::error(function (Exception $exception, $code) {
 	$pathInfo = Request::getPathInfo();
-	$message = $exception->getMessage() ?: 'Exception';
+	$message  = $exception->getMessage() ?: 'Exception';
 	Log::error("$code - $message @ $pathInfo\r\n$exception");
-
+	
 	if (Config::get('app.debug')) {
 		return;
 	}
-
+	
 	switch ($code) {
 		case 403:
 			return Response::view('admin/403', compact('message'), 403);
-
+		
 		case 500:
 			return Response::view('admin/500', compact('message'), 500);
-
+		
 		default:
 			return Response::view('admin/404', compact('message'), $code);
 	}

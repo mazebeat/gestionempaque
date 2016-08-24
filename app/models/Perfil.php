@@ -8,7 +8,7 @@ class Perfil extends Moloquent
 		'id_perfil'     => 'required',
 		'nom_perfil'    => 'required',
 		'nombre_perfil' => 'required',
-		'fecha_hora'    => 'required'
+		'fecha_hora'    => 'required',
 	);
 	protected $connection = 'mongodb';
 	protected $collection = 'perfil';

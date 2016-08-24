@@ -4,7 +4,7 @@
  *
  */
 return array(
-
+	
 	'name'        => 'Nombre Grupo',
 	'general'     => 'General',
 	'permissions' => 'Permisos',

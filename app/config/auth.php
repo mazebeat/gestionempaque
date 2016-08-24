@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Authentication Driver
@@ -14,9 +14,9 @@ return array(
 	| Supported: "database", "eloquent"
 	|
 	*/
-
+	
 	'driver' => 'eloquent',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Authentication Model
@@ -27,9 +27,9 @@ return array(
 	| is often just the "User" model but you may use whatever you like.
 	|
 	*/
-
+	
 	'model' => 'User',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Authentication Table
@@ -40,9 +40,9 @@ return array(
 	| default value but you may easily change it to any table you like.
 	|
 	*/
-
+	
 	'table' => 'users',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Password Reminder Settings
@@ -57,15 +57,15 @@ return array(
 	| they have less time to be guessed. You may change this as needed.
 	|
 	*/
-
+	
 	'reminder' => array(
-
+		
 		'email' => 'emails.auth.reminder',
-
+		
 		'table' => 'password_reminders',
-
+		
 		'expire' => 60,
-
+	
 	),
 
 );

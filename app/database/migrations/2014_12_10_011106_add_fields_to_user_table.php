@@ -5,7 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class AddFieldsToUserTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -24,10 +24,10 @@ class AddFieldsToUserTable extends Migration
 			$table->string('city')->nullable();
 			$table->string('address')->nullable();
 			$table->string('postal')->nullable();
-
+			
 		});
 	}
-
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -40,5 +40,5 @@ class AddFieldsToUserTable extends Migration
 			$table->dropColumn(array('bio', 'gender', 'dob', 'pic', 'country', 'state', 'city', 'address', 'postal'));
 		});
 	}
-
+	
 }

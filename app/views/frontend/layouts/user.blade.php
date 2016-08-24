@@ -66,7 +66,9 @@
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
                         <ul class="nav navbar-nav sidemenu">
                             <li class=""><a href="{{ url('user') }}">Inicio</a></li>
-                            <li class=""><a href="{{ url('taketurn') }}">Toma Turnos</a></li>
+                            <li class=""><a
+                                        href="{{ url('taketurn', Auth::user() != null ? Auth::user()->id : null) }}">Toma
+                                    Turnos</a></li>
                             <li class=""><a href="{{ url('repechaje') }}">Repechaje</a></li>
                             <li class=""><a href="#">Mis Turnos</a></li>
                             <li class=""><a href="#">Reemplazos</a></li>

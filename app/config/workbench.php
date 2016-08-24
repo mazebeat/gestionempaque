@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Workbench Author Name
@@ -12,9 +12,9 @@ return array(
 	| You may specify it now so it is used for all of your workbenches.
 	|
 	*/
-
+	
 	'name' => '',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Workbench Author E-Mail Address
@@ -25,7 +25,7 @@ return array(
 	| automatically after the package is created by the workbench tool.
 	|
 	*/
-
+	
 	'email' => '',
 
 );

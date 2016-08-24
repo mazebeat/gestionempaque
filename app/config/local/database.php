@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Database Connections
@@ -17,9 +17,9 @@ return array(
 	| choice installed on your machine before you begin development.
 	|
 	*/
-
+	
 	'connections' => array(
-
+		
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
@@ -30,7 +30,7 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
+		
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
@@ -41,7 +41,7 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
-
+		
 		'mongodb' => array(
 			'driver'   => 'mongodb',
 			'host'     => 'localhost',
@@ -50,10 +50,10 @@ return array(
 			'username' => 'admin_db',
 			'password' => 'Acces0.DB.GestionEmpaque',
 			'options'  => array(
-				'db' => 'snt'
+				'db' => 'snt',
 			),
 		),
-
+	
 	),
 
 );

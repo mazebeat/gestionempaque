@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Session Driver
@@ -15,7 +15,7 @@ return array(
 	|            "memcached", "redis", "array"
 	|
 	*/
-
+	
 	'driver' => 'array',
 
 );

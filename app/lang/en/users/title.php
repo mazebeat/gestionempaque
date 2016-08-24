@@ -5,7 +5,7 @@
  */
 
 return array(
-
+	
 	'user_profile' => 'User Profile',
 	'first_name'   => 'First Name',
 	'last_name'    => 'Last Name',
@@ -20,6 +20,6 @@ return array(
 	'dob'          => 'Birth Date',
 	'country'      => 'Country',
 	'state'        => 'State',
-	'postal'       => 'Postal / Zip code'
+	'postal'       => 'Postal / Zip code',
 
 );

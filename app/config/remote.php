@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Remote Connection Name
@@ -12,9 +12,9 @@ return array(
 	| in the server list. Each connection will be manually accessible.
 	|
 	*/
-
+	
 	'default' => 'production',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Remote Server Connections
@@ -25,9 +25,9 @@ return array(
 	| tasks on your servers, such as deploying out these applications.
 	|
 	*/
-
+	
 	'connections' => array(
-
+		
 		'production' => array(
 			'host'      => '',
 			'username'  => '',
@@ -36,9 +36,9 @@ return array(
 			'keyphrase' => '',
 			'root'      => '/var/www',
 		),
-
+	
 	),
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Remote Server Groups
@@ -49,11 +49,11 @@ return array(
 	| that is extremely easy to remember, such as "web" or "database".
 	|
 	*/
-
+	
 	'groups' => array(
-
-		'web' => array('production')
-
+		
+		'web' => array('production'),
+	
 	),
 
 );

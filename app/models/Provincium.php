@@ -8,7 +8,7 @@ class Provincium extends Moloquent
 		'id_pr'           => 'required',
 		'id_re'           => 'required',
 		'str_descripcion' => 'required',
-		'num_comunas'     => 'required'
+		'num_comunas'     => 'required',
 	);
 	protected $guarded = array();
 	use SoftDeletes;

@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| PDO Fetch Style
@@ -12,9 +12,9 @@ return array(
 	| array format for simplicity. Here you can tweak the fetch style.
 	|
 	*/
-
+	
 	'fetch' => PDO::FETCH_CLASS,
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Database Connection Name
@@ -25,9 +25,9 @@ return array(
 	| you may use many connections at once using the Database library.
 	|
 	*/
-
+	
 	'default' => 'mongodb',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Database Connections
@@ -43,15 +43,15 @@ return array(
 	| choice installed on your machine before you begin development.
 	|
 	*/
-
+	
 	'connections' => array(
-
+		
 		'sqlite' => array(
 			'driver'   => 'sqlite',
 			'database' => __DIR__ . '/../database/production.sqlite',
 			'prefix'   => '',
 		),
-
+		
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
@@ -62,7 +62,7 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
+		
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
@@ -73,7 +73,7 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
-
+		
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
 			'host'     => 'localhost',
@@ -82,7 +82,7 @@ return array(
 			'password' => '',
 			'prefix'   => '',
 		),
-
+		
 		'mongodb' => array(
 			'driver'   => 'mongodb',
 			'host'     => 'localhost',
@@ -91,11 +91,11 @@ return array(
 			'username' => 'admin_db',
 			'password' => 'Acces0.DB.GestionEmpaque',
 			'options'  => array(
-				'db' => 'snt'
+				'db' => 'snt',
 			),
 		),
 	),
-
+	
 	/*
 	/*
 	|--------------------------------------------------------------------------
@@ -107,9 +107,9 @@ return array(
 	| the migrations on disk haven't actually been run in the database.
 	|
 	*/
-
+	
 	'migrations' => 'migrations',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Redis Databases
@@ -120,17 +120,17 @@ return array(
 	| such as APC or Memcached. Laravel makes it easy to dig right in.
 	|
 	*/
-
+	
 	'redis' => array(
-
+		
 		'cluster' => false,
-
+		
 		'default' => array(
 			'host'     => '127.0.0.1',
 			'port'     => 6379,
 			'database' => 0,
 		),
-
+	
 	),
 
 );

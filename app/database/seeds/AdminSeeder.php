@@ -4,7 +4,7 @@ use App\Models\User;
 
 class AdminSeeder extends Seeder
 {
-
+	
 	public function run()
 	{
 //		DB::table('users')->truncate(); // Using truncate function so all info will be cleared when re-seeding.
@@ -18,21 +18,21 @@ class AdminSeeder extends Seeder
 //			'last_name'   => 'Doe',
 //			'activated'   => 1,
 //		));
-
+		
 		Sentry::getGroupProvider()->create(array(
 			'name'        => 'Admin',
 			'permissions' => array('admin' => 1),
 		));
-
+		
 		Sentry::getGroupProvider()->create(array(
 			'name'        => 'User',
 			'permissions' => array('admin' => 0),
 		));
-
+		
 		// Assign user permissions
-		$adminUser = Sentry::getUserProvider()->findByLogin('admin@admin.com');
+		$adminUser  = Sentry::getUserProvider()->findByLogin('admin@admin.com');
 		$adminGroup = Sentry::getGroupProvider()->findByName('Admin');
 		$adminUser->addGroup($adminGroup);
 	}
-
+	
 }

@@ -2,7 +2,7 @@
 
 class HomeController extends JoshController
 {
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Home Controller
@@ -15,10 +15,10 @@ class HomeController extends JoshController
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
-
+	
 	public function showWelcome()
 	{
 		return View::make('hello');
 	}
-
+	
 }

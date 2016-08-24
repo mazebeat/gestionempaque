@@ -3,11 +3,11 @@ use Jenssegers\Mongodb\Eloquent\SoftDeletingTrait as SoftDeletes;
 
 class Local extends Moloquent
 {
-	use SoftDeletes;
 	protected $connection = 'mongodb';
 	protected $collection = 'local';
 	protected $primaryKey = "_id";
-	protected $dates = ['deleted_at'];
+	protected $dates = ['fecha_hora', 'created_at', 'updated_at', 'deleted_at'];
+	
 	protected $fillable = array(
 		'id_local',
 		'nom_local',
@@ -52,30 +52,40 @@ class Local extends Moloquent
 		'nombre_usuario'         => '',
 		'fecha_hora'             => '',
 	);
-
+	
 	public static function boot()
 	{
 		parent::boot();
-
+		
 		static::creating(function ($local) {
-			$p = new Planilla();
+			$p              = new Planilla();
 			$p->id_planilla = $p->lastID();
-			$p->id_local = $local->id_local;
+			$p->id_local    = $local->id_local;
 			Local::first()->planilla()->save($p);
 			dd('pass');
 		});
-
+		
 		static::updating(function ($local) {
-			$local ->updated_at = Carbon::now();
+			$local->updated_at = Carbon::now();
 		});
-
+		
 		static::deleting(function ($local) {
-
+			
 		});
 	}
-
+	
+	public function usuarios()
+	{
+		return $this->hasMany('Usuario', 'id_local', 'id_local');
+	}
+	
 	public function planilla()
 	{
 		return $this->hasOne('Planilla', 'id_local', 'id_local');
 	}
+//
+//	public function horaTurnos()
+//	{
+//		return $this->hasMany('HoraTurno', 'id_planilla', 'id_planilla');
+//	}
 }

@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreatePermisosTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -26,8 +26,8 @@ class CreatePermisosTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -37,5 +37,5 @@ class CreatePermisosTable extends Migration
 	{
 		Schema::drop('permisos');
 	}
-
+	
 }

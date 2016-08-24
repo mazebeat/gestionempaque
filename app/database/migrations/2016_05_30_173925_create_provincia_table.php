@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateProvinciaTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -22,8 +22,8 @@ class CreateProvinciaTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -33,5 +33,5 @@ class CreateProvinciaTable extends Migration
 	{
 		Schema::drop('provincia');
 	}
-
+	
 }

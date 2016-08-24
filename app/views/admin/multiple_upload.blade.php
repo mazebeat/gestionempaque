@@ -209,6 +209,7 @@
             < /button>{% } %}</td >
             < /tr>{% } %}
 
+
     </script>
     <!-- The template to display files available for download -->
     <script id="template-download" type="text/x-tmpl">
@@ -253,6 +254,7 @@
                         <span>Cancel</span >
                     < /button>{% } %}</td >
                     < /tr>{% } %}
+
 
 
     </script>

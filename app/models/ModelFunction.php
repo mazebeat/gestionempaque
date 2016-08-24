@@ -22,18 +22,18 @@ class ModelFunction extends \Illuminate\Database\Eloquent\Model
 			if (isset($value->sec)) {
 				return date('Y-m-d', $value->sec);
 			}
-
+			
 			return $value;
 		}
-
+		
 		// Let Eloquent convert the value to a DateTime instance.
 		if (!$value instanceof DateTime) {
 			$value = parent::asDateTime($value);
 		}
-
+		
 		return new MongoDate($value->getTimestamp());
 	}
-
+	
 	/**
 	 * Return a timestamp as Date object.
 	 *
@@ -46,10 +46,10 @@ class ModelFunction extends \Illuminate\Database\Eloquent\Model
 		if ($value instanceof MongoDate) {
 			return Carbon::createFromTimestamp($value->sec);
 		}
-
+		
 		return date('Y-m-d', $value);
 	}
-
+	
 	/**
 	 * Return a timestamp as DateTime object.
 	 *
@@ -62,10 +62,10 @@ class ModelFunction extends \Illuminate\Database\Eloquent\Model
 		if ($value instanceof MongoDate) {
 			return Carbon::createFromTimestamp($value->sec);
 		}
-
+		
 		return parent::asDateTime($value);
 	}
-
+	
 	/**
 	 * Get the format for database stored dates.
 	 *
@@ -75,7 +75,7 @@ class ModelFunction extends \Illuminate\Database\Eloquent\Model
 	{
 		return 'Y-m-d H:i:s';
 	}
-
+	
 	/**
 	 * Get a fresh timestamp for the model.
 	 *

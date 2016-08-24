@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateComunasTable extends Migration
 {
-
+	
 	/**
 	 * Run the migrations.
 	 *
@@ -21,8 +21,8 @@ class CreateComunasTable extends Migration
 			$table->timestamps();
 		});
 	}
-
-
+	
+	
 	/**
 	 * Reverse the migrations.
 	 *
@@ -32,5 +32,5 @@ class CreateComunasTable extends Migration
 	{
 		Schema::drop('comunas');
 	}
-
+	
 }

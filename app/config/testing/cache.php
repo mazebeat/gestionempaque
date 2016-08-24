@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Default Cache Driver
@@ -14,7 +14,7 @@ return array(
 	| Supported: "file", "database", "apc", "memcached", "redis", "array"
 	|
 	*/
-
+	
 	'driver' => 'array',
 
 );
