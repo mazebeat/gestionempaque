@@ -21,7 +21,8 @@ class EmpaqueController extends JoshController
 
 	public function create()
 	{
-		return View::make('admin.empaques.create');
+		$regiones = Region::lists('str_descripcion', 'id_re');
+		return View::make('admin.empaques.create', compact('regiones'));
 	}
 
 	public function store()

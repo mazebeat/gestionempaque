@@ -85,21 +85,21 @@
                     <div class="form-group">
                         {{ Form::label('id_region', 'Región:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_region', Input::old('id_region'), array('class'=>'form-control')) }}
+                            {{ Form::chosen('id_region', $regiones, Input::old('id_region'), array('id'=> 'id_region', 'class' => 'form-control', 'required')) }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         {{ Form::label('id_provincia', 'Provincia:', array('class'=>'col-md-2 control-label')) }}
-                        <div class="col-sm-10">
-                            {{ Form::input('number', 'id_provincia', Input::old('id_provincia'), array('class'=>'form-control')) }}
+                        <div class="col-sm-10" id="id_pr">
+                            {{ Form::chosen('id_provincia', [], Input::old('id_provincia'), array('class' => 'form-control', 'required')) }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         {{ Form::label('id_comuna', 'Comuna:', array('class'=>'col-md-2 control-label')) }}
-                        <div class="col-sm-10">
-                            {{ Form::input('number', 'id_comuna', Input::old('id_comuna'), array('class'=>'form-control')) }}
+                        <div class="col-sm-10" id="id_co">
+                            {{ Form::chosen('id_comuna', [], Input::old('id_comuna'), array('class' => 'form-control', 'required')) }}
                         </div>
                     </div>
 
@@ -179,29 +179,8 @@
                         </div>
                     </div>
 
-                    {{--<div class="form-group">--}}
-                    {{--                        {{ Form::label('bloqueado', 'Bloqueado:', array('class'=>'col-md-2 control-label')) }}--}}
-                    {{--<div class="col-sm-10">--}}
-                    {{--{{ Form::checkbox('bloqueado') }}--}}
-                    {{  Form::input('hidden', 'bloqueado', Input::old('bloqueado', false)) }}
-                    {{--</div>--}}
-                    {{--</div>--}}
-
-                    {{--<div class="form-group">--}}
-                    {{--                        {{ Form::label('nombre_usuario', 'Nombre_usuario:', array('class'=>'col-md-2 control-label')) }}--}}
-                    {{--<div class="col-sm-10">--}}
-                    {{--{{ Form::intpu('hidden', 'nombre_usuario', Input::old('nombre_usuario', Auth::user()->nombre)) }}--}}
-                    <?php /* TODO: Descomentar cuando este listo el login */ ?>
-                    {{ Form::input('hidden', 'nombre_usuario', Input::old('nombre_usuario', 'SNT')) }}
-                    {{--</div>--}}
-                    {{--</div>--}}
-
-                    {{--<div class="form-group">--}}
-                    {{--                        {{ Form::label('fecha_hora', 'Fecha_hora:', array('class'=>'col-md-2 control-label')) }}--}}
-                    {{--<div class="col-sm-10">--}}
+                    {{ Form::input('hidden', 'bloqueado', Input::old('bloqueado', false)) }}
                     {{ Form::input('hidden', 'fecha_hora', Input::old('fecha_hora', Carbon::now())) }}
-                    {{--</div>--}}
-                    {{--</div>--}}
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">&nbsp;</label>
@@ -231,6 +210,28 @@
             $("#id_usuario").rut({
                 formatOn: 'change keyup',
                 validateOn: 'change keyup'
+            });
+
+            $(document.body).on('change', '#id_region', function () {
+                $("#id_pro").empty();
+                $("#id_co").empty();
+                if ($(this).val() != '') {
+                    $.get('/admin/location/find/provincia/' + $(this).val(), function (jsonData) {
+                        $("#id_pr").html(jsonData);
+                        $('#formCreateEmpaque').formValidation('addField', $('#id_provincia'));
+                    });
+                }
+            });
+
+            $(document.body).on('change', '#id_provincia', function () {
+                $("#id_co").empty();
+                if ($(this).val() != '') {
+                    $.get('/admin/location/find/comuna/' + $(this).val(), function (jsonData) {
+                        $("#id_co").html(jsonData);
+                        $('#formCreateEmpaque').formValidation('addField', $('#id_comuna'));
+                    });
+                }
+
             });
 
             $('#formCreateEmpaque').formValidation({
@@ -305,41 +306,11 @@
                                 format: 'YYYY-MM-DD'
                             }
                         }
-                    },
-                    'pass': {
-                        validators: {
-                            notEmpty: {
-                                message: 'Debe ingresar una password'
-                            },
-                            identical: {
-                                field: 'password_confirmation',
-                                message: 'La password ingresada no coincide'
-                            }
-
-                        }
-                    },
-                    'password_confirmation': {
-                        validators: {
-                            notEmpty: {
-                                message: 'Debe confirmar la password ingresada'
-                            },
-                            identical: {
-                                field: 'pass',
-                                message: 'La password ingresada no coincide'
-                            }
-
-                        }
-                    },
-                    'accept_terms': {
-                        validators: {
-                            notEmpty: {
-                                message: 'Debe aceptar los terminos y condiciones'
-                            }
-                        }
                     }
                 }
             });
 
-        });
+        })
+        ;
     </script>
 @stop

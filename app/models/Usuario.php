@@ -21,17 +21,17 @@ class Usuario extends Moloquent
 		'id_perfil'             => '',
 		'id_local'              => '',
 		'bloqueado'             => 'boolean',
-		'nombre_usuario'        => 'unique:usuario,nombre_usuario',
+		'nombre_usuario'        => '',
 		'fecha_hora'            => '',
 		'pass'                  => 'min:3',
 		'password_confirmation' => 'min:3|same:pass',
-		'accept_terms'          => 'accepted'
+		'accept_terms'          => ''
 	);
 
 	public static $messages = array(
 		'id_usuario.required'   => 'El campo RUN es obligatorio',
 		'id_usuario.unique'     => 'RUN ya ha sido registrado.',
-		'accept_terms.accepted' => 'Debe aceptar los terminos y condiciones'
+		'accept_terms.accepted' => 'Debe aceptar los terminos y condicioness'
 	);
 
 	protected $fillable = array(
@@ -77,12 +77,11 @@ class Usuario extends Moloquent
 			$f->falta_leve = 0;
 			$f->falta_media = 0;
 			$f->falta_grave = 0;
-			// TODO: cambiar cuando esté listo el login
-			// $f->nombre_usuario = Auth::user()->nombre;
 			$f->nombre_usuario = $usuario->nombre_usuario;
-			$f->fecha_hora = Carbon::now(); 
+			$f->fecha_hora = Carbon::now();
 			$f->save();
-//            $usuario()->faltas()->save($f);
+//			$usuario()->faltas()->save($f);
+//			dd($usuario);
 		});
 
 		static::updating(function ($usuario) {

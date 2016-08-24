@@ -120,7 +120,7 @@
                                         <i class="livicon"
                                            data-name="{{ $empaque->state() == 'Activo' ? 'unlock' : 'lock' }}"
                                            data-size="18" data-loop="true" data-c="#428BCA" data-hc="#428BCA"
-                                           title="Editar"></i>
+                                           title="Cambiar Estado"></i>
                                     </a>
                                 </td>
                             </tr>

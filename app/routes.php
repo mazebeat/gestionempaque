@@ -76,7 +76,7 @@ Route::group(array('prefix' => 'admin'), function () {
 		return View::make('admin/lockscreen');
 	});
 
-		# All basic routes defined here
+	# All basic routes defined here
 	Route::get('signin', array('as' => 'signin', 'uses' => 'AuthController@getSignin'));
 	Route::post('signin', 'AuthController@postSignin');
 	Route::post('signup', array('as' => 'signup', 'uses' => 'AuthController@postSignup'));
@@ -171,6 +171,9 @@ Route::group(array('prefix' => 'admin'), function () {
 	# Remaining pages will be called from below controller method
 	# in real world scenario, you may be required to define all routes manually
 	Route::get('{name?}', 'JoshController@showView');
+
+	Route::get('location/find/provincia/{id_re}', 'LocationController@findProvinciasByRegion');
+	Route::get('location/find/comuna/{id_pr}', 'LocationController@findComunasByProvincia');
 });
 
 Route::get('test', function () {

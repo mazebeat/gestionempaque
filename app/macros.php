@@ -33,6 +33,10 @@
 	return $ret;
 });
 
+\Form::macro("selectLocation", function ($name, $defaults = array(), $selected = null, $options = array()) {
+	return Form::select($name, $defaults);
+});
+
 \Str::macro('genUsername', function (Usuario $user = null, $username = '') {
 	if (is_null($user)) {
 		return;

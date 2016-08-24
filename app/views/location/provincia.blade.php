@@ -1,0 +1,1 @@
+{{ Form::chosen('id_provincia', $provincias, Input::old('id_provincia'), array('id'=> 'id_provincia', 'class' => 'form-control', 'required')) }}
