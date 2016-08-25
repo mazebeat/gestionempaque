@@ -11,39 +11,61 @@ $(function () {
 
         if ($data.left == 0) {
             $this.prop('disabled', true);
-            return false;
+            return;
         }
 
-        $.getJSON($data.url, function(jsonData){
-            console.log(jsonData);
+        // init($this, $data, {});
+        $.getJSON($data.url + '/' + $data.taken + '/' + $data.left, function (jsonData) {
+            init($this, jsonData.data, {});
         });
-
         return false;
     });
 
     function init($this, $data, json) {
         var text = '';
+        $data.total = $this.data().total;
+        $data.url = $this.data().url;
+
+        $this.attr('data-left', $data.left);
+
         if ($data.taken) {
-            $data.left++;
-            $data.taken = false;
+            $this.attr('data-taken', false);
             $this.removeClass('btn-warning').addClass('btn-primary')
             text = 'Tomar';
         } else {
-            $data.left--;
             if ($data.left == 0) {
                 $this.removeClass('btn-primary').removeClass('btn-warning').addClass('btn-danger').prop('disabled', true)
             } else {
                 $this.removeClass('btn-primary').addClass('btn-warning')
             }
-            $data.taken = true;
+            $this.attr('data-taken', true);
             text = 'Soltar';
         }
 
-        var $count = $data.left + "/" + $data.total;
-
-        var $small = $('small');
-        $small.text($count)
-        $this.html($small).data($data);
+        var $count = "(" + $data.left + "/" + $data.total + ")"
+        console.log($count);
+        $this.text(text + " ").find('.count').html($count);
     }
 
+
+    // -------------------------------
+    //
+    // function getTurn(turnid) {
+    //     var dynamicData = {};
+    //     dynamicData["id"] = turnid;
+    //     // Returns the jQuery ajax method
+    //     return $.ajax({
+    //         url: "/admin/frontend/",
+    //         type: "get",
+    //         data: dynamicData
+    //     });
+    // }
+    //
+    // var person1 = getName("2342342"),
+    //     person2 = getName("3712968"),
+    //     people = [person1, person2];
+    //
+    // $.when.apply(this, people).then(function () {
+    //     // Both the ajax requests have completed
+    // });
 });

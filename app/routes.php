@@ -1,9 +1,10 @@
 <?php
 
 date_default_timezone_set("Chile/Continental");
-ini_set('mongo.long_as_object', 1);
-ini_set('zlib.output_compression', 'off');
-ini_set('output_buffering', 'off');
+//ini_set('mongo.long_as_object', 1);
+//ini_set('mongo.native_long', 1);
+//ini_set('zlib.output_compression', 'off');
+//ini_set('output_buffering', 'off');
 set_time_limit(0);
 
 /*
@@ -39,64 +40,78 @@ Route::post('user', 'FrontendController@postSignin');
 Route::get('taketurn/{id?}', array('as' => 'turnos', 'uses' => 'TurnoController@showTurnos'));
 Route::get('saveTurns', 'TurnoController@getTurnos');
 
-Route::get('frontend/takeTurn/{id}/{taken?}', function ($id, $taken = false, $left = 0) {
+
+Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left) {
 	try {
-		$pass        = false;
-		$left        = 0;
-		$message     = '';
-		$horaTurno   = HoraTurno::find($id);
+		$left = (int)$left;
+		$taken = $taken == 'true' ? true : false;
+		$pass = false;
+		$message = '';
+		$horaTurno = HoraTurno::find($id);
+
+//		dd($horaTurno);
 		$maxEmpaques = (int)$horaTurno->max_empaques;
-		
+
 		if (is_null($horaTurno)) {
 			return;
 		}
-		
-		$count = TomaTurno::where('id_turno', (int)$horaTurno->id_turno)->count();
-		
+
+
 		if ($taken) {
-		} else {
+		}
+
+		if (!$taken && $left > 0) {
+			$count = TomaTurno::where('id_turno', (int)$horaTurno->id_turno)->count();
 			if ($count < $maxEmpaques) {
-				$tomaTurno                    = new TomaTurno();
-				$tomaTurno->id_toma_turno     = $tomaTurno->lastID();
-				$tomaTurno->fecha             = Carbon::now();
-				$tomaTurno->id_local          = Auth::user()->local()->id_local;
-				$tomaTurno->id_usuario        = Auth::user()->id_local;
-				$tomaTurno->dia_semana        = $horaTurno->dia_semana;
-				$tomaTurno->id_turno          = $horaTurno->id;
-				$tomaTurno->id_hora_turno     = $horaTurno->id_hora_turno;
+				// TODO: cambiar a usuario Auth cuando este listo el login
+				$tomaTurno = new TomaTurno();
+				$tomaTurno->id_toma_turno = $tomaTurno->lastID();
+				$tomaTurno->fecha = Carbon::now();
+				$tomaTurno->id_local = 1;
+//				$tomaTurno->id_local          = Auth::user()->local()->id_local;
+				$tomaTurno->id_usuario = 1;
+//				$tomaTurno->id_usuario        = Auth::user()->id_local;
+				$tomaTurno->dia_semana = $horaTurno->dia_semana;
+				$tomaTurno->id_turno = $horaTurno->id;
+				$tomaTurno->id_hora_turno = $horaTurno->id_hora_turno;
 				$tomaTurno->hora_turno_inicio = $horaTurno->hora_turno_inicio;
-				$tomaTurno->hora_turno_fin    = $horaTurno->hora_turno_fin;
-				$tomaTurno->asistencia        = false;
-				$tomaTurno->nombre_usuario    = 'SNT';
-				$tomaTurno->fecha_hora        = Carbon::now();
-				$tomaTurno->save();
-				
+				$tomaTurno->hora_turno_fin = $horaTurno->hora_turno_fin;
+				$tomaTurno->asistencia = false;
+				$tomaTurno->nombre_usuario = 'SNT';
+				$tomaTurno->fecha_hora = Carbon::now();
+//				$tomaTurno->save();
+
+				$message = 'Turno tomado con exito!';
 				$pass = true;
-				$left = $maxEmpaques--;
-			} else {
-				if ($count == $maxEmpaques) {
-					$pass = true;
-					$left = 0;
-				} else {
-					if ($count > $maxEmpaques) {
-						$pass    = false;
-						$left    = $count;
-						$message = 'Error: Cantidad incorrecta de cupos por turno.';
-					}
-				}
+				$left = $left - 1;
+//			} else {
+//				if ($left != 0 && $count == $maxEmpaques) {
+//					$pass = true;
+//					$left = 0;
+//				} else {
+//					if ($count > $maxEmpaques) {
+//						$pass    = false;
+//						$left    = $count;
+//						$message = 'Error: Cantidad incorrecta de cupos por turno.';
+//					}
+//				}
 			}
 		}
 	} catch (Exception $e) {
-		$pass    = false;
+		$pass = false;
 		$message = $e->getMessage();
 	}
-	
+
 	$response = array(
-		'pass'    => $pass,
-		'left'    => $left,
+		'pass' => $pass,
+		'data' => array(
+			'left'  => $left,
+			'taken' => $taken,
+			'total' => $maxEmpaques,
+		),
 		'message' => $message,
 	);
-	
+
 	return Response::json($response);
 });
 
@@ -231,6 +246,10 @@ Route::get('test', function () {
 //	foreach (Usuario::first()->local->planilla->horaTurnos as $key => $value) {
 //		var_dump($key, $value->hora_turno_inicio, $value->hora_turno_fin);
 //	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> v0.7
 	return 'ok';
 });

@@ -30,18 +30,17 @@ class TurnoController extends JoshController
 	{
 		$id     = '57b936a569cebe75ca0d6277';
 		$active = Session::has('activeTakeTurns') ? Session::get('activeTakeTurns') : false;
-		$turns  = Usuario::find($id);
-		
-		if (is_null($turns)) {
-			return Redirect::to('taketurn')
-				->withActive($active);
-		}
-		
-		$turns = $turns->local->planilla->horaTurnos;
+//		dd($id);
+//		if (is_null($turns)) {
+//			return Redirect::to('taketurn')
+//				->withActive($active);
+//		}
+
+//		$turns = $turns->local->planilla->horaTurnos;
 		
 		return View::make('frontend.calendar')
-			->withDays(self::$days)
-			->withTurns($turns)
+			->withDays(self::$days2)
+//			->withTurns($turns)
 			->withActive($active = true);
 	}
 	

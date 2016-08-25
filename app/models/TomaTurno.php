@@ -14,4 +14,8 @@ class TomaTurno extends Moloquent
 	{
 		return $this->belongsTo('Usuario');
 	}
+
+	public function lastID() {
+		return $this->orderBy('hora_fecha', 'DESC')->first()->id_toma_turno + 1;
+	}
 }

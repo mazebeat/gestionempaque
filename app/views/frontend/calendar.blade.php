@@ -13,14 +13,20 @@
         <div class="col-xs-12" style="margin-bottom: 20px;">
             @if(isset($active) && $active)
                 <div class="calendar" data-toggle="calendar">
-                    <div class="row">
-                        @foreach($days as $day)
-                            <div class="col-xs-12 day text-center">
-                                <h3>{{ $day }}</h3>
-                            </div>
-                        @endforeach
-                    </div>
-                    {{ HTML::calendar($turns) }}
+                    <table class="table table-hover table-condensed">
+                        <thead>
+                        <tr>
+                            @foreach($days as $day)
+                                <th class="day text-center">
+                                    <h3>{{ $day }}</h3>
+                                </th>
+                            @endforeach
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{ HTML::calendar() }}
+                        </tbody>
+                    </table>
                 </div>
                 </br>
                 <p>Siga las instrucciones... *</p>

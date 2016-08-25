@@ -109,5 +109,5 @@
 @endsection
 
 @section('script')
-    <script type="text/javascript" src="{{ asset('frontend/js/takeTurn.min.js') }}"></script>
+    {{--<script type="text/javascript" src="{{ asset('frontend/js/takeTurn.min.js') }}"></script>--}}
 @endsection

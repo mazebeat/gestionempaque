@@ -82,7 +82,7 @@ class ComunasController extends JoshController
 	{
 //		dd($id);
 		$comuna = $this->comuna->find($id);
-		dd($comuna);
+//		dd($comuna);
 		if (is_null($comuna)) {
 			return Redirect::route('admin.comunas.index');
 		}
