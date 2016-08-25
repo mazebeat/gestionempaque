@@ -42,9 +42,8 @@ $(function () {
             text = 'Soltar';
         }
 
-        var $count = "(" + $data.left + "/" + $data.total + ")"
-        console.log($count);
-        $this.text(text + " ").find('.count').html($count);
+        console.log($this.find('.count'))
+        $this.html(text + ' <small class="count">' + '(' + $data.left + '/' + $data.total + ') </small>');
     }
 
 
