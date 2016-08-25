@@ -7,66 +7,36 @@ $(function () {
 
     $('.taketurn').on('click', function () {
         var $this = $(this);
-        var $data = $this.data();
 
-        if ($data.left == 0) {
+        if ($this.data().left == 0) {
             $this.prop('disabled', true);
-            return;
+            return false;
         }
 
-        // init($this, $data, {});
-        $.getJSON($data.url + '/' + $data.taken + '/' + $data.left, function (jsonData) {
-            init($this, jsonData.data, {});
+        $.getJSON($data.url + '/' + $this.data().taken + '/' + $this.data().left, function (jsonData) {
+            updateButton($this, jsonData.data);
         });
         return false;
     });
 
-    function init($this, $data, json) {
-        var text = '';
-        $data.total = $this.data().total;
-        $data.url = $this.data().url;
-
-        $this.attr('data-left', $data.left);
+    function updateButton($this, $data) {
+        var $text;
 
         if ($data.taken) {
-            $this.attr('data-taken', false);
-            $this.removeClass('btn-warning').addClass('btn-primary')
-            text = 'Tomar';
+            $this.attr('data-taken', false).removeClass('btn-warning').addClass('btn-primary');
+            $text = 'TOMAR';
         } else {
             if ($data.left == 0) {
-                $this.removeClass('btn-primary').removeClass('btn-warning').addClass('btn-danger').prop('disabled', true)
+                $this.attr('data-taken', true).removeClass('btn-primary').removeClass('btn-warning').addClass('btn-danger').prop('disabled', true);
             } else {
-                $this.removeClass('btn-primary').addClass('btn-warning')
+                $this.attr('data-taken', true).removeClass('btn-primary').addClass('btn-warning');
             }
-            $this.attr('data-taken', true);
-            text = 'Soltar';
+
+            $text = 'SOLTAR';
         }
 
-        console.log($this.find('.count'))
-        // $this.html(te);
-        // var $small = $('small').addClass('count').text('(' + $data.left + '/' + $data.total + ')');
-        $this.html(text + ' <small class="count">' + '(' + $data.left + '/' + $data.total + ')</small>');
+        $this.attr('data-left', $data.left);
+        var $small = '<small class="count">' + '(' + $data.left + '/' + $this.data().total + ')</small>';
+        $this.html($text + ' ' + $small);
     }
-
-
-    // -------------------------------
-    //
-    // function getTurn(turnid) {
-    //     var dynamicData = {};
-    //     dynamicData["id"] = turnid;
-    //     // Returns the jQuery ajax method
-    //     return $.ajax({
-    //         url: "/admin/frontend/",
-    //         type: "get",
-    //         data: dynamicData
-    //     });
-    // }
-    //
-    // var person1 = getName("2342342"),
-    //     person2 = getName("3712968"),
-    //     people = [person1, person2];
-    //
-    // $.when.apply(this, people).then(function () {
-    //     // Both the ajax requests have completed
-    // });
 });
