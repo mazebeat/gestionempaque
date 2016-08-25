@@ -43,7 +43,9 @@ $(function () {
         }
 
         console.log($this.find('.count'))
-        $this.html(text + ' <small class="count">' + '(' + $data.left + '/' + $data.total + ') </small>');
+        // $this.html(te);
+        // var $small = $('small').addClass('count').text('(' + $data.left + '/' + $data.total + ')');
+        $this.html(text + ' <small class="count">' + '(' + $data.left + '/' + $data.total + ')</small>');
     }
 
 
