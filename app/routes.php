@@ -246,10 +246,5 @@ Route::get('test', function () {
 //	foreach (Usuario::first()->local->planilla->horaTurnos as $key => $value) {
 //		var_dump($key, $value->hora_turno_inicio, $value->hora_turno_fin);
 //	}
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> v0.7
 	return 'ok';
 });
