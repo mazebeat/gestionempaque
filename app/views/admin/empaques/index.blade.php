@@ -91,9 +91,7 @@
                                 <td>{{ $empaque->ape_paterno }}</td>
                                 <td>{{ $empaque->ape_materno }}</td>
                                 <td>{{ $empaque->lastTurn() }} días</td>
-                                <td>[{{ $empaque->faltas->falta_leve }}][{{ $empaque->faltas->falta_media }}
-                                    ][{{ $empaque->faltas->falta_grave }}]
-                                </td>
+                                <td>{{ $empaque->faltasHtml() }}</td>
                                 <td>Empaque</td>
                                 <td>{{ $empaque->state() }}</td>
                                 <td>

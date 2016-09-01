@@ -41,7 +41,19 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
-		
+
+		'mongodb1' => array(
+			'driver'   => 'mongodb',
+			'host'     => '104.197.168.83',
+			'port'     => '27017',
+			'database' => 'snt',
+			'username' => 'admin_db',
+			'password' => 'Acces0.DB.GestionEmpaque',
+			'options'  => array(
+				'db' => 'admin',
+			),
+		),
+
 		'mongodb' => array(
 			'driver'   => 'mongodb',
 			'host'     => 'localhost',

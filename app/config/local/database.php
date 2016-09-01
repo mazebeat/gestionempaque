@@ -23,9 +23,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'gestionempaques',
-			'username'  => 'root',
-			'password'  => 'mz.120712',
+			'database'  => '',
+			'username'  => '',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -43,6 +43,18 @@ return array(
 		),
 		
 		'mongodb' => array(
+			'driver'   => 'mongodb',
+			'host'     => '104.197.168.83',
+			'port'     => '27017',
+			'database' => 'snt',
+			'username' => 'admin_db',
+			'password' => 'Acces0.DB.GestionEmpaque',
+			'options'  => array(
+				'db' => 'admin',
+			),
+		),
+
+		'mongodb2' => array(
 			'driver'   => 'mongodb',
 			'host'     => 'localhost',
 			'port'     => '27017',
