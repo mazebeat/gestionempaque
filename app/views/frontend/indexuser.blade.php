@@ -27,12 +27,12 @@
     </style>
 @endsection
 
-@section('content')
+@section('content')    
     <section class="row">
         <strong class="pull-right">Hora: <span class="time"></span> <i class="fa fa-clock-o"></i></strong>
 
         <div class="col-xs-12">
-            <h1 class="title text-center">Bienvenido 'Demo'</h1>
+            <h1 class="title text-center">Bienvenido '{{ Auth::user()->nombre }}'</h1>
             <h2 class="title text-center">{{  date_format(Carbon::now(), 'F Y ') }}</h2>
         </div>
         <div class="col-xs-12" style="margin-bottom: 20px;">

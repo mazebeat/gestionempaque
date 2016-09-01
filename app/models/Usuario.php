@@ -1,9 +1,13 @@
 <?php
 use Jenssegers\Mongodb\Eloquent\SoftDeletingTrait as SoftDeletes;
+use Illuminate\Auth\Reminders\RemindableInterface;
+use Illuminate\Auth\Reminders\RemindableTrait;
+use Illuminate\Auth\UserInterface;
+use Illuminate\Auth\UserTrait;
 
-class Usuario extends Moloquent
+class Usuario extends Moloquent implements UserInterface, RemindableInterface
 {
-	use SoftDeletes;
+	use SoftDeletes, UserTrait, RemindableTrait;
 	public static $rules = array(
 		'id_usuario'            => 'required|unique:usuario,id_usuario',
 		'nombre'                => 'required|alpha_spaces',
@@ -14,7 +18,7 @@ class Usuario extends Moloquent
 		'id_comuna'             => '',
 		'direccion'             => '',
 		'telefono'              => '',
-		'email'                 => 'required|email',
+		'email'                 => 'required|email|unique:usuario,email',
 		'sexo'                  => 'in:N,M,F',
 		'fecha_nacimiento'      => 'required|date|date_format:Y-m-d',
 		'id_casa_estudio'       => '',
@@ -26,14 +30,12 @@ class Usuario extends Moloquent
 		'pass'                  => 'min:3',
 		'password_confirmation' => 'min:3|same:pass',
 		'accept_terms'          => '',
-	);
-	
+	);	
 	public static $messages = array(
 		'id_usuario.required'   => 'El campo RUN es obligatorio',
 		'id_usuario.unique'     => 'RUN ya ha sido registrado.',
 		'accept_terms.accepted' => 'Debe aceptar los terminos y condicioness',
-	);
-	
+	);	
 	protected $fillable = array(
 		'id_usuario',
 		'nombre',
@@ -80,8 +82,6 @@ class Usuario extends Moloquent
 			$f->nombre_usuario = $usuario->nombre_usuario;
 			$f->fecha_hora     = Carbon::now();
 			$f->save();
-//			$usuario()->faltas()->save($f);
-//			dd($usuario);
 		});
 		
 		static::updating(function ($usuario) {
@@ -91,6 +91,41 @@ class Usuario extends Moloquent
 		static::deleting(function ($usuario) {
 			$usuario->faltas->delete();
 		});
+	}
+
+	public function getAuthIdentifier()
+	{
+	    return $this->getKey();
+	}
+	
+	public function getAuthPassword()
+	{
+		$password = Pass::where('id_usuario', $this->id_usuario)->first();
+		
+		if($password) {
+			return $password->pass;
+		}	    
+	    // return $this->password;
+	}
+	
+	public function getReminderEmail()
+	{
+	    return $this->email;
+	}
+	
+	public function getRememberToken()
+	{
+	    return $this->remember_token;
+	}
+
+	public function setRememberToken($value)
+	{
+	    $this->remember_token = $value;
+	}
+
+	public function getRememberTokenName()
+	{
+	    return 'remember_token';
 	}
 	
 	public function getFechaNacimientoAttribute($value)

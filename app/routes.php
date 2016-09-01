@@ -5,6 +5,7 @@ date_default_timezone_set("Chile/Continental");
 //ini_set('mongo.native_long', 1);
 //ini_set('zlib.output_compression', 'off');
 //ini_set('output_buffering', 'off');
+ini_set("memory_limit", "1024M");
 set_time_limit(0);
 
 /*
@@ -21,6 +22,15 @@ set_time_limit(0);
 Route::get('/', function () {
 	return View::make('frontend/index');
 });
+Route::get('404', function () {
+	return View::make('admin/404');
+});
+Route::get('500', function () {
+	return View::make('admin/500');
+});
+
+
+
 Route::get('our', function () {
 	return View::make('frontend/our');
 });
@@ -36,6 +46,11 @@ Route::get('registry', function () {
 
 Route::get('user', 'FrontendController@index');
 Route::post('user', 'FrontendController@postSignin');
+Route::get('indexuser', 'FrontendController@indexUser');
+Route::get('logout', 'FrontendController@getLogout');
+
+Route::get('repechaje', array('as' => 'returnos', 'uses' => 'RepechajeController@showTurnos'));
+Route::get('normas', array('as' => 'returnos', 'uses' => 'FrontendController@showNormas'));
 
 Route::get('taketurn/{id?}', array('as' => 'turnos', 'uses' => 'TurnoController@showTurnos'));
 Route::get('saveTurns', 'TurnoController@getTurnos');
@@ -49,7 +64,6 @@ Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left
 		$message = '';
 		$horaTurno = HoraTurno::find($id);
 
-//		dd($horaTurno);
 		$maxEmpaques = (int)$horaTurno->max_empaques;
 
 		if (is_null($horaTurno)) {
@@ -68,9 +82,9 @@ Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left
 				$tomaTurno->id_toma_turno = $tomaTurno->lastID();
 				$tomaTurno->fecha = Carbon::now();
 				$tomaTurno->id_local = 1;
-//				$tomaTurno->id_local          = Auth::user()->local()->id_local;
+				//				$tomaTurno->id_local          = Auth::user()->local()->id_local;
 				$tomaTurno->id_usuario = 1;
-//				$tomaTurno->id_usuario        = Auth::user()->id_local;
+				$tomaTurno->id_usuario        = Auth::user()->id_local;
 				$tomaTurno->dia_semana = $horaTurno->dia_semana;
 				$tomaTurno->id_turno = $horaTurno->id;
 				$tomaTurno->id_hora_turno = $horaTurno->id_hora_turno;
@@ -79,22 +93,22 @@ Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left
 				$tomaTurno->asistencia = false;
 				$tomaTurno->nombre_usuario = 'SNT';
 				$tomaTurno->fecha_hora = Carbon::now();
-//				$tomaTurno->save();
+				$tomaTurno->save();
 
 				$message = 'Turno tomado con exito!';
 				$pass = true;
 				$left = $left - 1;
-//			} else {
-//				if ($left != 0 && $count == $maxEmpaques) {
-//					$pass = true;
-//					$left = 0;
-//				} else {
-//					if ($count > $maxEmpaques) {
-//						$pass    = false;
-//						$left    = $count;
-//						$message = 'Error: Cantidad incorrecta de cupos por turno.';
-//					}
-//				}
+		} else {
+			if ($left != 0 && $count == $maxEmpaques) {
+					$pass = true;
+					$left = 0;
+				} else {
+					if ($count > $maxEmpaques) {
+						$pass    = false;
+						$left    = $count;
+						$message = 'Error: Cantidad incorrecta de cupos por turno.';
+					}
+				}
 			}
 		}
 	} catch (Exception $e) {
@@ -113,19 +127,6 @@ Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left
 	);
 
 	return Response::json($response);
-});
-
-Route::get('repechaje', array('as' => 'returnos', 'uses' => 'RepechajeController@showTurnos'));
-
-Route::get('normas', array('as' => 'returnos', 'uses' => 'FrontendController@showNormas'));
-
-Route::get('logout', 'FrontendController@getLogout');
-
-Route::get('404', function () {
-	return View::make('admin/404');
-});
-Route::get('500', function () {
-	return View::make('admin/500');
 });
 
 Route::group(array('prefix' => 'admin'), function () {
@@ -201,8 +202,7 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('reportes', function () {
 		return View::make('admin.reportes.index');
 	});
-	
-	
+		
 	# User Management
 	Route::group(array('prefix' => 'users', 'before' => 'Sentry'), function () {
 		Route::get('/', array('as' => 'users', 'uses' => 'UsersController@getIndex'));
@@ -243,8 +243,33 @@ Route::group(array('prefix' => 'admin'), function () {
 });
 
 Route::get('test', function () {
-//	foreach (Usuario::first()->local->planilla->horaTurnos as $key => $value) {
-//		var_dump($key, $value->hora_turno_inicio, $value->hora_turno_fin);
-//	}
-	return 'ok';
+	$pass = Pass::where('id_usuario', '11.111.111-1')->first();
+	$pass->pass = Hash::make('123456');
+	$pass->save();
+
+	dd($pass);
+
+	//info to add
+	$db_name = 'snt';
+	$db_user = 'admin_db';
+	$db_pass = 'Acces0.DB.GestionEmpaque';
+
+	//autenticate with a user who can create other users
+	$mongo = new MongoClient("mongodb://root:root@localhost/admin");
+	$db = $mongo->selectDB( $db_name );
+
+	//command to create a new user
+	$command = array
+	(
+		"createUser" => $db_user,
+		"pwd"        => $db_pass,
+		"roles"      => array
+		(
+			array("role" => "readWrite", "db" => $db_name)
+		)
+	);
+
+	//call MongoDB::command to create user in 'db_name' database
+	$db->command( $command );
+	dd($db);
 });

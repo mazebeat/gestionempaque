@@ -20,7 +20,7 @@
                     <h3 class="panel-title text-center">Inicio de Sesión</h3>
                 </div>
                 <div class="panel-body">
-                {{ Form::open(array('url' => 'frontend',  'method' => 'POST', 'autocomplete' => 'on', 'role' => 'form')) }}
+                {{ Form::open(array('url' => 'user',  'method' => 'POST', 'autocomplete' => 'on', 'role' => 'form')) }}
                 {{--<form action="{{ route('calendarsignin') }}" autocomplete="on" method="post" role="form">--}}
                 <!-- CSRF Token -->
                     <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
@@ -45,8 +45,8 @@
                         <a href="#" class=" pull-right">Recuperar Contraseña</a>
 
                         <div class="checkbox">
-                            <label><input name="remember-me" type="checkbox"
-                                          value="Remember Me">{{ Lang::get('button.rememberme') }}</label>
+                            <label><input name="remember" type="checkbox"
+                                          value="true">{{ Lang::get('button.rememberme') }}</label>
                         </div>
                     </div>
                     <input type="submit" value="{{ Lang::get('button.submit') }}"

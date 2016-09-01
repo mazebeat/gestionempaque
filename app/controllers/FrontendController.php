@@ -4,14 +4,29 @@ class FrontendController extends JoshController
 {
 	public function index()
 	{
-		return View::make('frontend.indexuser');
-//		return View::make('admin.login2');
+		// return View::make('frontend.indexuser');
+		if(Auth::check() && Auth::user()->id_perfil == 1) {
+			return Redirect::to('indexuser');
+		}
+
+		return View::make('admin.login2');
 	}
 	
-	public function postSign()
+	public function postSignin()
 	{
-		return View::make('frontend.indexuser');
-//		return Redirect::to("frontend")->with('success', Lang::get('auth/message.signin.success'));
+		$inputs = Input::all();
+		$remember = Input::has('remember') && Input::get('remember') == 'true' ? true : false;		
+		
+		if (Auth::attempt($inputs))
+		{
+		    return Redirect::to('indexuser');
+		}
+
+		return Redirect::back()->with('success', Lang::get('auth/message.signin.fail'));
+	}
+
+	public function indexUser() {
+ 		return View::make('frontend.indexuser');
 	}
 	
 	public function postSignin2()
