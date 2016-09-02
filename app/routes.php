@@ -29,8 +29,6 @@ Route::get('500', function () {
 	return View::make('admin/500');
 });
 
-
-
 Route::get('our', function () {
 	return View::make('frontend/our');
 });
@@ -46,87 +44,90 @@ Route::get('registry', function () {
 
 Route::get('user', 'FrontendController@index');
 Route::post('user', 'FrontendController@postSignin');
-Route::get('indexuser', 'FrontendController@indexUser');
-Route::get('logout', 'FrontendController@getLogout');
 
-Route::get('repechaje', array('as' => 'returnos', 'uses' => 'RepechajeController@showTurnos'));
-Route::get('normas', array('as' => 'returnos', 'uses' => 'FrontendController@showNormas'));
+Route::group(array("before" => "auth"), function () {
+	Route::get('indexuser', 'FrontendController@indexUser');
+	Route::get('logout', 'FrontendController@getLogout');
 
-Route::get('taketurn/{id?}', array('as' => 'turnos', 'uses' => 'TurnoController@showTurnos'));
-Route::get('saveTurns', 'TurnoController@getTurnos');
+	Route::get('repechaje', array('as' => 'returnos', 'uses' => 'RepechajeController@showTurnos'));
+	Route::get('normas', array('as' => 'returnos', 'uses' => 'FrontendController@showNormas'));
+
+	Route::get('taketurn/{id?}', array('as' => 'turnos', 'uses' => 'TurnoController@showTurnos'));
+	Route::get('saveTurns', 'TurnoController@getTurnos');
+
+	Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left) {
+		try {
+			$left = (int)$left;
+			$taken = $taken == 'true' ? true : false;
+			$pass = false;
+			$message = '';
+			$horaTurno = HoraTurno::find($id);
+
+			$maxEmpaques = (int)$horaTurno->max_empaques;
+
+			if (is_null($horaTurno)) {
+				return;
+			}
 
 
-Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left) {
-	try {
-		$left = (int)$left;
-		$taken = $taken == 'true' ? true : false;
-		$pass = false;
-		$message = '';
-		$horaTurno = HoraTurno::find($id);
+			if ($taken) {
+			}
 
-		$maxEmpaques = (int)$horaTurno->max_empaques;
+			if (!$taken && $left > 0) {
+				$count = TomaTurno::where('id_turno', (int)$horaTurno->id_turno)->count();
+				if ($count < $maxEmpaques) {
+					// TODO: cambiar a usuario Auth cuando este listo el login
+					$tomaTurno = new TomaTurno();
+					$tomaTurno->id_toma_turno = $tomaTurno->lastID();
+					$tomaTurno->fecha = Carbon::now();
+					$tomaTurno->id_local = 1;
+					//				$tomaTurno->id_local          = Auth::user()->local()->id_local;
+					$tomaTurno->id_usuario = 1;
+					$tomaTurno->id_usuario = Auth::user()->id_local;
+					$tomaTurno->dia_semana = $horaTurno->dia_semana;
+					$tomaTurno->id_turno = $horaTurno->id;
+					$tomaTurno->id_hora_turno = $horaTurno->id_hora_turno;
+					$tomaTurno->hora_turno_inicio = $horaTurno->hora_turno_inicio;
+					$tomaTurno->hora_turno_fin = $horaTurno->hora_turno_fin;
+					$tomaTurno->asistencia = false;
+					$tomaTurno->nombre_usuario = 'SNT';
+					$tomaTurno->fecha_hora = Carbon::now();
+					$tomaTurno->save();
 
-		if (is_null($horaTurno)) {
-			return;
-		}
-
-
-		if ($taken) {
-		}
-
-		if (!$taken && $left > 0) {
-			$count = TomaTurno::where('id_turno', (int)$horaTurno->id_turno)->count();
-			if ($count < $maxEmpaques) {
-				// TODO: cambiar a usuario Auth cuando este listo el login
-				$tomaTurno = new TomaTurno();
-				$tomaTurno->id_toma_turno = $tomaTurno->lastID();
-				$tomaTurno->fecha = Carbon::now();
-				$tomaTurno->id_local = 1;
-				//				$tomaTurno->id_local          = Auth::user()->local()->id_local;
-				$tomaTurno->id_usuario = 1;
-				$tomaTurno->id_usuario        = Auth::user()->id_local;
-				$tomaTurno->dia_semana = $horaTurno->dia_semana;
-				$tomaTurno->id_turno = $horaTurno->id;
-				$tomaTurno->id_hora_turno = $horaTurno->id_hora_turno;
-				$tomaTurno->hora_turno_inicio = $horaTurno->hora_turno_inicio;
-				$tomaTurno->hora_turno_fin = $horaTurno->hora_turno_fin;
-				$tomaTurno->asistencia = false;
-				$tomaTurno->nombre_usuario = 'SNT';
-				$tomaTurno->fecha_hora = Carbon::now();
-				$tomaTurno->save();
-
-				$message = 'Turno tomado con exito!';
-				$pass = true;
-				$left = $left - 1;
-		} else {
-			if ($left != 0 && $count == $maxEmpaques) {
+					$message = 'Turno tomado con exito!';
 					$pass = true;
-					$left = 0;
+					$left = $left - 1;
 				} else {
-					if ($count > $maxEmpaques) {
-						$pass    = false;
-						$left    = $count;
-						$message = 'Error: Cantidad incorrecta de cupos por turno.';
+					if ($left != 0 && $count == $maxEmpaques) {
+						$pass = true;
+						$left = 0;
+					} else {
+						if ($count > $maxEmpaques) {
+							$pass = false;
+							$left = $count;
+							$message = 'Error: Cantidad incorrecta de cupos por turno.';
+						}
 					}
 				}
 			}
+		} catch (Exception $e) {
+			$pass = false;
+			$message = $e->getMessage();
 		}
-	} catch (Exception $e) {
-		$pass = false;
-		$message = $e->getMessage();
-	}
 
-	$response = array(
-		'pass' => $pass,
-		'data' => array(
-			'left'  => $left,
-			'taken' => $taken,
-			'total' => $maxEmpaques,
-		),
-		'message' => $message,
-	);
+		$response = array(
+			'pass'    => $pass,
+			'data'    => array(
+				'left'  => $left,
+				'taken' => $taken,
+				'total' => $maxEmpaques,
+			),
+			'message' => $message,
+		);
 
-	return Response::json($response);
+		return Response::json($response);
+	});
+
 });
 
 Route::group(array('prefix' => 'admin'), function () {
@@ -137,12 +138,15 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('500', function () {
 		return View::make('admin/500');
 	});
-	
+
 	# Lock screen aswell
 	Route::get('lockscreen', function () {
 		return View::make('admin/lockscreen');
 	});
-	
+
+	# Dashboard / Index
+	Route::get('/', array('as' => 'dashboard', 'uses' => 'JoshController@showHome'));
+
 	# All basic routes defined here
 	Route::get('signin', array('as' => 'signin', 'uses' => 'AuthController@getSignin'));
 	Route::post('signin', 'AuthController@postSignin');
@@ -151,27 +155,25 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('login2', function () {
 		return View::make('admin/login2');
 	});
-	
+
 	# Register2
 	Route::get('register2', function () {
 		return View::make('admin/register2');
 	});
 	Route::post('register2', array('as' => 'register2', 'uses' => 'AuthController@postRegister2'));
-	
+
 	# Forgot Password Confirmation
 	Route::get('forgot-password/{passwordResetCode}',
 		array('as' => 'forgot-password-confirm', 'uses' => 'AuthController@getForgotPasswordConfirm'));
 	Route::post('forgot-password/{passwordResetCode}', 'AuthController@postForgotPasswordConfirm');
-	
+
 	# Logout
 	Route::get('logout', array('as' => 'logout', 'uses' => 'AuthController@getLogout'));
-	
+
 	# Account Activation
 	Route::get('activate/{activationCode}', array('as' => 'activate', 'uses' => 'AuthController@getActivate'));
-	
-	# Dashboard / Index
-	Route::get('/', array('as' => 'dashboard', 'uses' => 'JoshController@showHome'));
-	
+
+
 	# Resources
 	Route::resource('accesos', 'AccesosController');
 	Route::resource('casaestudios', 'CasaEstudiosController');
@@ -195,14 +197,14 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::get('locales/{id}', 'LocalController@detalle');
 	Route::get('locales/clear', 'LocalController@index');
 	Route::get('turnos', 'TurnoController@index2');
-	
+
 	Route::get('perfilesmayores', function () {
 		return View::make('admin.perfilesmayores.index');
 	});
 	Route::get('reportes', function () {
 		return View::make('admin.reportes.index');
 	});
-		
+
 	# User Management
 	Route::group(array('prefix' => 'users', 'before' => 'Sentry'), function () {
 		Route::get('/', array('as' => 'users', 'uses' => 'UsersController@getIndex'));
@@ -217,7 +219,7 @@ Route::group(array('prefix' => 'admin'), function () {
 		Route::get('{userId}', array('as' => 'users.show', 'uses' => 'UsersController@show'));
 	});
 	Route::get('deleted_users', array('as' => 'deleted_users', 'uses' => 'UsersController@getDeletedUsers'));
-	
+
 	# Group Management
 	Route::group(array('prefix' => 'groups', 'before' => 'Sentry'), function () {
 		Route::get('/', array('as' => 'groups', 'uses' => 'GroupsController@getIndex'));
@@ -232,12 +234,12 @@ Route::group(array('prefix' => 'admin'), function () {
 		Route::get('any_user', 'UsersController@getUserAccess');
 		Route::get('admin_only', 'UsersController@getAdminOnlyAccess');
 	});
-	
+
 	Route::post('crop_demo', 'JoshController@crop_demo');
 	# Remaining pages will be called from below controller method
 	# in real world scenario, you may be required to define all routes manually
 	Route::get('{name?}', 'JoshController@showView');
-	
+
 	Route::get('location/find/provincia/{id_re}', 'LocationController@findProvinciasByRegion');
 	Route::get('location/find/comuna/{id_pr}', 'LocationController@findComunasByProvincia');
 });
@@ -256,7 +258,7 @@ Route::get('test', function () {
 
 	//autenticate with a user who can create other users
 	$mongo = new MongoClient("mongodb://root:root@localhost/admin");
-	$db = $mongo->selectDB( $db_name );
+	$db = $mongo->selectDB($db_name);
 
 	//command to create a new user
 	$command = array
@@ -270,6 +272,6 @@ Route::get('test', function () {
 	);
 
 	//call MongoDB::command to create user in 'db_name' database
-	$db->command( $command );
+	$db->command($command);
 	dd($db);
 });

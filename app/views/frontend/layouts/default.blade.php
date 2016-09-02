@@ -72,7 +72,7 @@
 {{--<script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js') }}"></script>--}}
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script type="text/javascript" src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
-{{--<script type="text/javascript" src="{{ asset('frontend/js/raphael.js') }}"></script>--}}
+<script type="text/javascript" src="{{ asset('frontend/js/raphael.js') }}"></script>
 <script type="text/javascript" src="{{ asset('frontend/js/livicons-1.4.min.js') }}"></script>
 {{--<script type="text/javascript" src="{{ asset('frontend/js/josh_frontend.js') }}"></script>--}}
 <!--global js end-->

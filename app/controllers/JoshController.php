@@ -38,7 +38,7 @@ class JoshController extends BaseController
 	public function crop_demo()
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$targ_w       = $targ_h = 150;
+			$targ_w = $targ_h = 150;
 			$jpeg_quality = 99;
 
 			$src = base_path() . '/public/assets/img/cropping-image.jpg';
@@ -80,10 +80,11 @@ class JoshController extends BaseController
 
 	public function showHome()
 	{
-//    	if(Sentry::check())
-		return View::make('admin/index');
-//		else
-//			return Redirect::to('admin/signin')->with('error', 'You must be logged in!');
+		if (Sentry::check()) {
+			return View::make('admin.index');
+		}
+
+		return Redirect::to('admin/signin')->with('error', 'You must be logged in!');
 	}
 
 	public function showView($name = null)

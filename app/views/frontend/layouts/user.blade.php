@@ -96,14 +96,9 @@
             </div>
         </div>
         <div class="col-xs-10">
-            @if(Sentry::check())
+            @if(Auth::check())
                 <a href="{{ url('logout') }}" class="btn-link pull-right">
-                    {{ Sentry::getUser()->first_name }} {{ Sentry::getUser()->last_name }}
-                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i> LogOut!
-                </a>
-            @else
-                <a href="{{ url('#') }}" class="btn-link pull-right">
-                    Demo
+                    {{ Auth::user()->nombre }}
                     <i class="fa fa-hand-spock-o" aria-hidden="true"></i> LogOut!
                 </a>
             @endif

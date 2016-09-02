@@ -35,7 +35,7 @@
                     <div class="col-sm-12">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Nombres" name="nombre"
-                                   value="{{ Input::old('nombre') }}">
+                                   value="{{ Input::old('nombre') }}" required>
                             <div class="error">{{ $errors->first('nombre') }}</div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             {{--<input type="text" class="form-control" placeholder="Apellido Paterno">--}}
-                            {{ Form::input('text','ape_paterno', Input::old('ape_paterno'), array('class' => 'form-control', 'placeholder' =>'Apellido Paterno')) }}
+                            {{ Form::input('text','ape_paterno', Input::old('ape_paterno'), array('class' => 'form-control', 'placeholder' =>'Apellido Paterno', 'required')) }}
                             <div class="error">{{ $errors->first('ape_paterno') }}</div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             {{--<input type="text" class="form-control" placeholder="Apellido Paterno">--}}
-                            {{ Form::input('text','ape_materno', Input::old('ape_materno'), array('class' => 'form-control', 'placeholder' =>'Apellido Materno')) }}
+                            {{ Form::input('text','ape_materno', Input::old('ape_materno'), array('class' => 'form-control', 'placeholder' =>'Apellido Materno', 'required')) }}
                             <div class="error">{{ $errors->first('ape_materno') }}</div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             {{--<input type="text" class="form-control" placeholder="RUT">--}}
-                            {{ Form::input('text','id_usuario', Input::old('id_usuario'), array('id'=> 'id_usuario', 'class' => 'form-control', 'placeholder' =>'RUN')) }}
+                            {{ Form::input('text','id_usuario', Input::old('id_usuario'), array('id'=> 'id_usuario', 'class' => 'form-control', 'placeholder' =>'RUN', 'required')) }}
                             <div class="error">{{ $errors->first('id_usuario') }}</div>
                         </div>
                     </div>
@@ -97,14 +97,14 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            {{ Form::password('pass', array('class' => 'form-control', 'placeholder' => 'Contraseña')) }}
+                            {{ Form::password('pass', array('class' => 'form-control', 'placeholder' => 'Contraseña', 'required')) }}
                             {{--<input type="password" name="pass" class="form-control" placeholder="Contraseña">--}}
                             <div class="error">{{ $errors->first('pass') }}</div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            {{ Form::password('password_confirmation', array('class' => 'form-control', 'placeholder' => 'Repetir Contraseña')) }}
+                            {{ Form::password('password_confirmation', array('class' => 'form-control', 'placeholder' => 'Repetir Contraseña', 'required')) }}
                             <div class="error">{{ $errors->first('password_confirmation') }}</div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                     <div class="col-sm-12">
                         <div class="form-group text-center">
                             <div class="checkbox">
-                                <label><input type="checkbox" name="accept_terms" value="yes">Acepto los terminos y
+                                <label><input type="checkbox" name="accept_terms" value="yes" required>Acepto los terminos y
                                     condiciones.</label>
                                 <div class="error">{{ $errors->first('accept_terms') }}</div>
                             </div>
