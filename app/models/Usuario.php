@@ -30,12 +30,12 @@ class Usuario extends Moloquent implements UserInterface, RemindableInterface
 		'pass'                  => 'min:3',
 		'password_confirmation' => 'min:3|same:pass',
 		'accept_terms'          => '',
-	);	
+	);
 	public static $messages = array(
 		'id_usuario.required'   => 'El campo RUN es obligatorio',
 		'id_usuario.unique'     => 'RUN ya ha sido registrado.',
 		'accept_terms.accepted' => 'Debe aceptar los terminos y condicioness',
-	);	
+	);
 	protected $fillable = array(
 		'id_usuario',
 		'nombre',
@@ -60,34 +60,35 @@ class Usuario extends Moloquent implements UserInterface, RemindableInterface
 	protected $collection = 'usuario';
 	protected $primaryKey = "_id";
 	protected $dates = ['fecha_hora', 'created_at', 'updated_at', 'deleted_at'];
-	
+
 	public static function boot()
 	{
 		parent::boot();
-		
+
 		static::creating(function ($usuario) {
-			
+
 			if (!isset($usuario->nombre_usuario)) {
 				$usuario->nombre_usuario = EmpaqueController::generateUsername($usuario);
 			}
 			if (!isset($usuario->fecha_hora)) {
 				$usuario->fecha_hora = Carbon::now();
 			}
-			$f                 = new Falta();
-			$f->id_faltas      = $f->lastID();
-			$f->id_usuario     = $usuario->id_usuario;
-			$f->falta_leve     = 0;
-			$f->falta_media    = 0;
-			$f->falta_grave    = 0;
-			$f->nombre_usuario = $usuario->nombre_usuario;
-			$f->fecha_hora     = Carbon::now();
-			$f->save();
+			$f = new Falta();
+			$f->create(array(
+				'id_faltas'      => $f->lastID(),
+				'id_usuario'     => $usuario->id_usuario,
+				'falta_leve'     => 0,
+				'falta_media'    => 0,
+				'falta_grave'    => 0,
+				'nombre_usuario' => Auth::user()->nombre,
+				'fecha_hora'     => Carbon::now(),
+			));
 		});
-		
+
 		static::updating(function ($usuario) {
 			$usuario->updated_at = Carbon::now();
 		});
-		
+
 		static::deleting(function ($usuario) {
 			$usuario->faltas->delete();
 		});
@@ -95,39 +96,39 @@ class Usuario extends Moloquent implements UserInterface, RemindableInterface
 
 	public function getAuthIdentifier()
 	{
-	    return $this->getKey();
+		return $this->getKey();
 	}
-	
+
 	public function getAuthPassword()
 	{
 		$password = Pass::where('id_usuario', $this->id_usuario)->first();
-		
-		if($password) {
+
+		if ($password) {
 			return $password->pass;
-		}	    
-	    // return $this->password;
+		}
+		// return $this->password;
 	}
-	
+
 	public function getReminderEmail()
 	{
-	    return $this->email;
+		return $this->email;
 	}
-	
+
 	public function getRememberToken()
 	{
-	    return $this->remember_token;
+		return $this->remember_token;
 	}
 
 	public function setRememberToken($value)
 	{
-	    $this->remember_token = $value;
+		$this->remember_token = $value;
 	}
 
 	public function getRememberTokenName()
 	{
-	    return 'remember_token';
+		return 'remember_token';
 	}
-	
+
 	public function getFechaNacimientoAttribute($value)
 	{
 		// TODO: limpiar código
@@ -140,41 +141,53 @@ class Usuario extends Moloquent implements UserInterface, RemindableInterface
 //        return date($m->fromDateTime($value));
 		return date($value);
 	}
-	
+
 	public function falta()
 	{
 		return $this->hasOne('Falta', 'id_usuario', 'id_usuario');
 	}
-	
+
 	public function local()
 	{
 		return $this->belongsTo('Local', 'id_local', 'id_local');
 	}
-	
+
 	public function horaTurnos()
 	{
 		return $this->hasMany('TomaTurno', 'id_usuario', 'id_usuario');
 	}
-	
+
 	public function lastTurn()
 	{
 		$last = $this->turnos()->orderBy('fecha', 'DESC')->first();
-		
+
 		if (isset($last)) {
 			$cDate = Carbon::parse(date('Y-M-d h:i:s', $last->fecha->sec));
-			
+
 			return $cDate->diffInDays();
 		}
-		
+
 		return '?';
 	}
-	
+
+	public function faltasHtml()
+	{
+		if (is_null($this->faltas)) {
+			$f = new Falta();
+			$f->getDefault($this->id_usuario);
+
+			return '[<a href="#" data-toggle="tooltip" data-placement="top" title="Falta Leve">0</a>][<a href="#" data-toggle="tooltip" data-placement="top" title="Falta Media">0</a>][<a href="#" data-toggle="tooltip" data-placement="top" title="Falta Grave">0</a>]';
+		}
+
+		return $this->faltas->toHtml();
+	}
+
 	public function state()
 	{
 		if ($this->bloqueado) {
 			return "Bloqueado";
 		}
-		
+
 		return "Activo";
 	}
 }

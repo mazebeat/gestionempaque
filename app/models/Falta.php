@@ -47,4 +47,9 @@ class Falta extends Moloquent
 
 		return null;
 	}
+
+	public function toHTML()
+	{
+		return '[<a href="#" data-toggle="tooltip" data-placement="top" title="Falta Leve">' . $this->falta_leve . '</a>][<a href="#" data-toggle="tooltip" data-placement="top" title="Falta Media">' . $this->falta_media . '</a>][<a href="#" data-toggle="tooltip" data-placement="top" title="Falta Grave">' . $this->falta_grave . '</a>]';
+	}
 }

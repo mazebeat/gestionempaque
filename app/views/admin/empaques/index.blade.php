@@ -1,4 +1,4 @@
-@extends('admin/layouts/default')
+@extends('admin.layouts.default')
 
 {{-- Page title --}}
 @section('title')
@@ -140,6 +140,8 @@
                 formatOn: 'change keyup',
                 validateOn: 'change keyup'
             });
+
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 @stop
