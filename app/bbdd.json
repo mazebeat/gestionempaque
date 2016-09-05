@@ -1,4 +1,4 @@
-//////////////////////////////            REGION                        ///////////////////////////////////////////////////////				
+ //////////////////////////////            REGION                        ///////////////////////////////////////////////////////
 
 db.region_cl.insert({"id_re":NumberInt(1), "str_descripcion":"ARICA Y PARINACOTA", "str_romano":"XV", "num_provincias":NumberInt(2), "num_comunas":NumberInt(4)})
 db.region_cl.insert({"id_re":NumberInt(2), "str_descripcion":"TARAPACÁ", "str_romano":"I", "num_provincias":NumberInt(2), "num_comunas":NumberInt(7)})
@@ -587,13 +587,17 @@ db.casa_estudio.insert({"id_ce":NumberInt(153), "str_descripcion":"Centro de For
 
 
 
-db.usuario.insert({"id_usuario":"11.111.111-1", "nombre":"AAAAAAA BBBBBBBBB", "ape_paterno":"CCCCCCCCCCC", "ape_materno":"DDDDDDDDDDD", "id_region":NumberInt(1), "id_provincia":NumberInt(1), "id_comuna":NumberInt(1), "direccion":"AVENIDA SIEMPRE VIVA #123", "telefono":NumberLong(99999999999), "email":"EEEEEEEE@FFFFFF.COM", "sexo":"N", "fecha_nacimiento":new Date("22/09/1990"), "id_casa_estudio":NumberInt(1), "id_perfil":NumberInt(1), "id_local":NumberInt(1), "id_faltas":NumberInt(1), "bloqueado":false, "remember_token":"qwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxc", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.usuario.insert({"id_usuario":"11.111.111-1", "nombre":"Administrador", "ape_paterno":"Admin", "ape_materno":"Admin", "id_region":NumberInt(1), "id_provincia":NumberInt(1), "id_comuna":NumberInt(1), "direccion":"", "telefono":NumberLong(9999999), "email":"admin@gestionempaques.cl", "sexo":"N", "fecha_nacimiento":new Date("22/09/1990"), "id_casa_estudio":NumberInt(1), "id_perfil":NumberInt(1), "id_local":NumberInt(1), "id_faltas":NumberInt(1), "bloqueado":false, "remember_token":"qwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxc", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.pass.insert({"id_usuario":"11.111.111-1", "pass":"$2y$10$go6S/nlHT8mcaDHlDdzqSOAawnV7.SoABj9uP3swKWMAkWO.16652", "fecha":new Date("11/05/2016"), "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.usuario.insert({"id_usuario":"22.222.222-2", "nombre":"Demostración", "ape_paterno":"Demo", "ape_materno":"Demo", "id_region":NumberInt(1), "id_provincia":NumberInt(1), "id_comuna":NumberInt(1), "direccion":"", "telefono":NumberLong(9999999), "email":"empaque@gestionempaques.cl", "sexo":"N", "fecha_nacimiento":new Date("22/09/1990"), "id_casa_estudio":NumberInt(1), "id_perfil":NumberInt(4), "id_local":NumberInt(1), "id_faltas":NumberInt(1), "bloqueado":false, "remember_token":"qwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxcqwertyuiopasdfghjklñzxcvbnmqwertyuiopasdfghjklñzxc", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.pass.insert({"id_usuario":"22.222.222-2", "pass":"$2y$10$Q.HMxWPhTVJOzj4jOYNa4.G4sD.R4bpGw9Ca.nw/zmB4atBO6XhM6", "fecha":new Date("11/05/2016"), "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
 
 db.acceso.insert({"id_acceso":NumberInt(1), "nom_acceso":"ASDF", "ruta_acceso":"/alguna/ruta/", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
 
-db.perfil.insert({"id_perfil":NumberInt(1), "nom_perfil":"ASDF", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
-
-db.pass.insert({"id_usuario":"11.111.111-1", "pass":"8c1e1d397ef1aab4e2256cebbe07878b", "fecha":new Date("11/05/2016"), "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.perfil.insert({"id_perfil":NumberInt(1), "nom_perfil":"Admnistrador", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.perfil.insert({"id_perfil":NumberInt(2), "nom_perfil":"Jefe Local", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.perfil.insert({"id_perfil":NumberInt(3), "nom_perfil":"Encargado", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
+db.perfil.insert({"id_perfil":NumberInt(4), "nom_perfil":"Empaque", "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
 
 db.permisos.insert({"id_perfil":NumberInt(1), "id_acceso":NumberInt(1), "insertar":true, "modificar":true, "eliminar":true, "consultar":true, "nombre_usuario":"SNT", "fecha_hora":new Date("11/05/2016 18:25:00")})
 

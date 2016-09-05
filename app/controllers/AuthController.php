@@ -9,7 +9,7 @@ class AuthController extends JoshController
 	 */
 	public function getSignin()
 	{
-		if (Auth::check() && Auth::user()->id_perfil == 3) {
+		if (Auth::check() && in_array(Auth::user()->id_perfil, array(1, 2))) {
 			return Redirect::route('dashboard');
 		}
 
