@@ -5,7 +5,7 @@ class FrontendController extends JoshController
 	public function index()
 	{
 		// return View::make('frontend.indexuser');
-		if (Auth::check() && Auth::user()->id_perfil == 1) {
+		if (Auth::check() && in_array(Auth::user()->id_perfil, array(3, 4))) {
 			return Redirect::to('indexuser');
 		}
 
