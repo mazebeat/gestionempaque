@@ -15,24 +15,11 @@
         <div class="col-md-7 col-sm-12">
             <h2><label>Bienvenido a <strong>Gestión Empaques</strong></label></h2>
 
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type
-                specimen book.
-            </p>
+            <p>Gestión empaques es una agrupación de estudiantes de educación superior que se desempeñan como empaquetadores de supermercado y se ha dispuesto a  entregar soluciones integrales a través de esta plataforma para así  mejorar y facilitar esta  labor llena de sacrificio y entrega que permite a miles de estudiantes de educación superior generar ingreso económico para así costear sus carreras y mantener a sus familias.</p>
 
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.
-            </p>
+            <p>Nos hemos propuesto como agrupación a entregar un servicio de excelencia y de calidad, diseñado en base a las necesidades actuales de los empaquetadores de supermercado y así generar una plusvalía  en esta labor.</p>
 
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Corrupti atque, tenetur
-                quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem
-            </p>
+            <p>Nuestra visión es a futuro lograr comunicar nuestros servicios y dar a conocer nuestra propuesta en todo  chile y así  ser un real aporte a nivel nacional logrando eliminar de una vez por todas los abusos y cobros excesivos realizados por las mal llamadas “empresas de empaques”.</p>
         </div>
         <!-- //Left Heaing Section End -->
         <!-- Slider Start -->

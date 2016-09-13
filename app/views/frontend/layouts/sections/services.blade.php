@@ -12,12 +12,9 @@
                        data-hc="#01bc8c"></i>
                 </div>
                 <div class="info">
-                    <h3 class="primary text-center">Emprende</h3>
+                    <h3 class="primary text-center">Arriendo plataforma web para empaquetadores</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur
-                        corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem
-                        architecto perferendis quas aperiam
-                        debitis dolor soluta!</p>
+                    <p>Gestión empaques a desarrollado esta plataforma web con el fin de que las agrupaciones de empaques independientes puedan mejorar sus procesos y dispongan de nuevas tecnologías a la hora de reservar sus horarios de trabajo, para ello es que presentamos este servicio de muy bajo costo y fácil acceso, solo basta con enviarnos un mail o llamarnos y rápidamente nos pondremos en contacto con ustedes.</p>
 
                     <div class="text-right primary"><a href="#">Lee más</a>
                     </div>
@@ -33,12 +30,9 @@
                        data-hc="#418bca"></i>
                 </div>
                 <div class="info">
-                    <h3 class="primary text-center">Optimismo</h3>
+                    <h3 class="primary text-center">Asistencia jurídica</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur
-                        corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem
-                        architecto perferendis quas aperiam
-                        debitis dolor soluta!</p>
+                    <p>Gestión empaques adicionalmente facilita a todas sus agrupaciones asociadas asistencia jurídica de forma gratuita en cualquiera sea el caso que se vean vulnerados los derechos de cualquier empaquetador si es necesario, esto con el fin de que no exista mas esta facilidad y fragilidad de abuso desarrollada por este sistema que nos perjudica a todos los empaquetadores universitarios de este país.</p>
 
                     <div class="text-right primary"><a href="#">Lee más</a>
                     </div>

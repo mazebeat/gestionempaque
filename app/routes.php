@@ -1,5 +1,4 @@
 <?php
-
 date_default_timezone_set("Chile/Continental");
 //ini_set('mongo.long_as_object', 1);
 //ini_set('mongo.native_long', 1);

@@ -55,9 +55,9 @@ App::error(function (Exception $exception, $code) {
 	$message  = $exception->getMessage() ?: 'Exception';
 	Log::error("$code - $message @ $pathInfo\r\n$exception");
 	
-	if (Config::get('app.debug')) {
-		return;
-	}
+//	if (Config::get('app.debug')) {
+//		return;
+//	}
 	
 	switch ($code) {
 		case 403:

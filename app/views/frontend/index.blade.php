@@ -14,7 +14,7 @@
         <div class="container bg-border">
             <div class="row">
                 <div class="col-md-7 col-sm-7 col-xs-12">
-                    <h1 class="purchae-head">Frase</h1></div>
+                    <h1 class="purchae-head">Si puedes soñarlo puedes hacerlo; nosotros ya lo soñamos y ahora trabajamos en hacerlo.</h1></div>
                 {{--<div class="col-md-5 col-sm-5 col-xs-12"><a href="#" class="btn btn-primary purchase-style pull-right">Purchase now</a></div>--}}
             </div>
         </div>
@@ -22,7 +22,7 @@
     <!-- Service Section Start-->
     @include('frontend.layouts.sections.services')
     <!-- //Services Section End -->
-    </div>
+    {{--</div>--}}
     <!-- Layout Section Start -->
     {{--<section class="feature-main">--}}
     {{--<div class="container">--}}
@@ -54,8 +54,7 @@
             <!-- Accordions Start -->
             <div class="text-center">
                 <h3 class="border-success"><span class="heading_border bg-success">Gestión Empaques</span></h3>
-                <label class=" text-center"> Comodidad, tecnología y autonomía para los empaquetadores de
-                    supermercados.</label>
+                <label class=" text-center">Comodidad, tecnología y autonomía para los empaquetadores de supermercados.</label>
             </div>
             <!-- Accordions End -->
             <div class="col-md-6 col-sm-12">
@@ -90,75 +89,54 @@
                                     <div class="media-left tab col-sm-12">
                                         <a href="#">
                                             <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/authors/img1.jpg') }}" alt="image">
+                                                 src="{{ asset('frontend/images/alan/imagen 1.png') }}" alt="image">
                                         </a>
                                     </div>
                                 </div>
-                                <p>
-                                    Metrics business-to-business beta bootstrapping virality graphical user interface
-                                    infrastructure conversion launch party long tail. Strategy virality validation
-                                    bandwidth creative low hanging fruit long tail
-                                    startup
-                                    gen-z business plan technology. Strategy termsheet venture stealth non-disclosure
-                                    agreement accelerator research & development scrum project product management
-                                    freemium infographic business plan.
-                                </p>
+                                <p>Gestión empaques ofrece a todas las agrupaciones de empaques independientes la posibilidad de realizar sus reservas de horarios de trabajo mediante nuestra moderna plataforma web la que les entrega comodidad y legitimidad en esta etapa en la que muchas veces suele ser engorrosa, pero, que gracias a nuestra plataforma simplifica de inmejorable manera.</p>
                             </div>
                             <div class="tab-pane" id="tab_default_2">
                                 <div class="media">
                                     <div class="media-left media-middle tab col-sm-12">
                                         <a href="#">
                                             <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/authors/img2.jpg') }}" alt="image">
+                                                 src="{{ asset('frontend/images/alan/imagen 2.png') }}" alt="image">
                                         </a>
                                     </div>
                                 </div>
-                                <p>
-                                    Branding iteration conversion market sales advisor holy grail entrepreneur backing.
-                                    Gen-z non-disclosure agreement holy grail business-to-consumer disruptive deployment
-                                    marketing channels seed money seed round
-                                    ramen
-                                    pivot social proof. Venture creative metrics focus A/B testing crowdfunding. IPhone
-                                    scrum project user experience freemium interaction design long tail stealth
-                                    ownership hackathon crowdfunding investor.
-                                </p>
+                                <p>Lo esencial es que si te interesa nuestra plataforma o solo les causa curiosidad nos contacten, todos sin compromiso, la idea es que luego de contactarnos fijemos una reunión en la cual podremos explicarles cómo funciona todo el sistema, los procesos, las facilidades, lo que ganan con nuestro sistema, sus ventajas  y en lo que les puede beneficiar el asociarse a gestión empaques.</p>
                             </div>
                             <div class="tab-pane" id="tab_default_3">
                                 <div class="media">
                                     <div class="media-left media-middle tab col-sm-12">
                                         <a href="#">
                                             <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/authors/img3.jpg') }}" alt="image">
+                                                 src="{{ asset('frontend/images/alan/imagen 3.png') }}" alt="image">
                                         </a>
                                     </div>
                                 </div>
-                                <p>
-                                    Beta analytics startup direct mailing leverage learning curve
-                                    www.discoverartisans.com business-to-consumer. IPad metrics channels pivot
-                                    deployment business plan android burn rate hackathon vesting period research
-                                    &
-                                    development launch party user experience. Seed round freemium value proposition
-                                    learning curve series A financing funding research & development crowdsource.
+                                <p>Gestión empaques les entrega un sinfín de benéficos a las agrupaciones asociadas, tales como </br>
+                                    - plataforma web para la reserva de horarios de trabajo, asistencia jurídica, independencia, autonomía, flexibilidad, asistencia 24/7, compromiso, profesionalismo, sinceridad ante todo, legitimización ante sus asociados, etc.
                                 </p>
                             </div>
-                            <div class="tab-pane" id="tab_default_4">
-                                <div class="media">
-                                    <div class="media-left media-middle tab col-sm-12">
-                                        <a href="#">
-                                            <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/authors/img4.jpg') }}" alt="image">
-                                        </a>
-                                    </div>
-                                </div>
-                                <p>
-                                    Paradigm shift twitter pitch research & development venture. Startup partnership
-                                    www.discoverartisans.com supply chain crowdsource hackathon metrics paradigm shift
-                                    interaction design influencer holy grail first
-                                    mover
-                                    advantage ramen validation. User experience founders burn rate learning curve
-                                    infographic leverage gen-z supply chain first mover advantage.
-                                </p>
-                            </div>
+                            {{--<div class="tab-pane" id="tab_default_4">--}}
+                                {{--<div class="media">--}}
+                                    {{--<div class="media-left media-middle tab col-sm-12">--}}
+                                        {{--<a href="#">--}}
+                                            {{--<img class="media-object img-responsive"--}}
+                                                 {{--src="{{ asset('frontend/images/authors/img4.jpg') }}" alt="image">--}}
+                                        {{--</a>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<p>--}}
+                                    {{--Paradigm shift twitter pitch research & development venture. Startup partnership--}}
+                                    {{--www.discoverartisans.com supply chain crowdsource hackathon metrics paradigm shift--}}
+                                    {{--interaction design influencer holy grail first--}}
+                                    {{--mover--}}
+                                    {{--advantage ramen validation. User experience founders burn rate learning curve--}}
+                                    {{--infographic leverage gen-z supply chain first mover advantage.--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
                         </div>
                         <!-- Tab-content End -->
                     </div>
@@ -183,19 +161,7 @@
                         <!-- Collapseone Start -->
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <p>In 1972 a crack commando unit was sent to prison by a military court for a crime they
-                                    didn't commit. These men promptly escaped from a maximum security stockade to the
-                                    Los Angeles underground. Believe it or not I'm
-                                    walking on air. I never thought I could feel so free. Flying away on a wing and a
-                                    prayer. Who could it be? Believe it or not its just me. Come and knock on our door.
-                                    We've been waiting for you. Where the kisses are
-                                    hers and hers and his. Three's company too. Flying away on a wing and a prayer. Who
-                                    could it be? Believe it or not its just me. Here's the story of a man named Brady
-                                    who was busy with three boys of his own. One two
-                                    three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated? Till
-                                    the one day when the lady met this fellow and they knew it was much more than a
-                                    hunch. Baby if you've ever wondered.
-                                </p>
+                                <p>Nuestra pasión se basa en que nos desarrollamos en el mismo rubro, por lo que conocemos sus falencias, las hemos experimentado, por lo que sabemos lo que viven los empaques y a través de este humilde trabajo tratamos de simplificar y mejorar el día a día de los empaquetadores de supermercado.</p>
                             </div>
                         </div>
                         <!-- Collapseone End -->
@@ -212,20 +178,7 @@
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>
-                                    In 1972 a crack commando unit was sent to prison by a military court for a crime
-                                    they didn't commit. These men promptly escaped from a maximum security stockade to
-                                    the Los Angeles underground. Believe it or not I'm
-                                    walking on air. I never thought I could feel so free. Flying away on a wing and a
-                                    prayer. Who could it be? Believe it or not its just me. Come and knock on our door.
-                                    We've been waiting for you. Where the kisses are
-                                    hers and hers and his. Three's company too. Flying away on a wing and a prayer. Who
-                                    could it be? Believe it or not its just me. Here's the story of a man named Brady
-                                    who was busy with three boys of his own. One two
-                                    three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated? Till
-                                    the one day when the lady met this fellow and they knew it was much more than a
-                                    hunch. Baby if you've ever wondered.
-                                </p>
+                                <p>Nuestro compromiso es entregarles una plataforma 100% efectiva y eficiente. Nos comprometemos en que la plataforma siempre será efectiva a la hora de ser utilizada debido a que trabajamos 24/7  para mejorar y perfeccionar nuestros sistemas en base al buen cumplimiento de nuestras políticas ya especificadas en nuestra plataforma.</p>
                             </div>
                         </div>
                     </div>
@@ -239,20 +192,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>
-                                    In 1972 a crack commando unit was sent to prison by a military court for a crime
-                                    they didn't commit. These men promptly escaped from a maximum security stockade to
-                                    the Los Angeles underground. Believe it or not I'm
-                                    walking on air. I never thought I could feel so free. Flying away on a wing and a
-                                    prayer. Who could it be? Believe it or not its just me. Come and knock on our door.
-                                    We've been waiting for you. Where the kisses are
-                                    hers and hers and his. Three's company too. Flying away on a wing and a prayer. Who
-                                    could it be? Believe it or not its just me. Here's the story of a man named Brady
-                                    who was busy with three boys of his own. One two
-                                    three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated? Till
-                                    the one day when the lady met this fellow and they knew it was much more than a
-                                    hunch. Baby if you've ever wondered.
-                                </p>
+                                <p>Porque pase lo que pase estaremos dispuestos a acompañarlos hasta las últimas instancias sea cual sea el problema que se presente con los retail en cual se desempeñen nuestros asociados, no importa el que sea, nosotros a través de nuestro servicio de asistencia jurídica estaremos ahí para apañarlos.</p>
                             </div>
                         </div>
                     </div>
@@ -295,18 +235,9 @@
                         </h4>
                     </div>
                 </div>
-                <img src="{{ asset('frontend/images/image_11.jpg') }}" class="img-responsive">
+                <img class="media-object img-responsive" src="{{ asset('frontend/images/alan/imagen 1.png') }}" alt="image">
 
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type
-                    specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-                    of Lorem Ipsum.
-                </p>
+                <p>Somos un grupo de jóvenes que habiendo vivido la experiencia de lo que significa ser empaquetador de supermercado hemos tomado la decisión de desarrollar Gestión empaques. Gestión empaques es una plataforma web la cual facilita la reserva de horarios de trabajo para empaquetadores de supermercados o algún retail.  Entregamos asesoría jurídica para cualquier agrupación asociada que necesite de estos servicios ya que nosotros somos una agrupación que presta servicios hacia y Para los empaques en donde nosotros no nos hacemos dueños de supermercados ni de empaques, esa temática no tiene relación ninguna ni sigue nuestros lineamientos de agrupación, al contrario les entregamos ayuda para poder ordenar y mejorar la calidad del servicio el cual entregan.</p>
 
                 <p>
 
