@@ -57,4 +57,82 @@ class TurnoController extends JoshController
 		
 		return Response::json($data);
 	}
+
+	public  function takeTurns ($id, $taken, $left) {
+
+		$left = (int) $left;
+		$taken = $taken == 'true' ? true : false;
+		$pass = false;
+		$message = '';
+
+		try {
+			
+			$horaTurno = HoraTurno::find($id);
+
+			if (is_null($horaTurno)) {
+				return;
+			}
+
+			if ($taken) {
+				// El usuario Suelta el turno 
+				$horaTurno->delete();
+
+				$message = 'Turno eliminado con exito!';
+				$pass = true;
+				$left = $left + 1;
+			} else if (!$taken && $left > 0) {
+				$count = TomaTurno::where('id_turno', (int)$horaTurno->id_turno)->count();
+
+				if ($count < $maxEmpaques) {
+					// TODO: cambiar a usuario Auth cuando este listo el login
+					$tomaTurno = TomaTurno::create(array(
+						'id_toma_turno' => $tomaTurno->lastID(),
+						'fecha' => Carbon::now(),
+						'id_local' => 1,
+						'id_local' => Auth::user()->local()->id_local,
+						'id_usuario' => 1,
+						'id_usuario' => Auth::user()->id_local,
+						'dia_semana' => $horaTurno->dia_semana,
+						'id_turno' => $horaTurno->id,
+						'id_hora_turno' => $horaTurno->id_hora_turno,
+						'hora_turno_inicio' => $horaTurno->hora_turno_inicio,
+						'hora_turno_fin' => $horaTurno->hora_turno_fin,
+						'asistencia' => false,
+						'nombre_usuario' => Auth::user()->nombre,
+						'fecha_hora' => Carbon::now()
+					));
+
+					$message = 'Turno tomado con exito!';
+					$pass = true;
+					$left = $left - 1;
+				} else {
+					if ($left != 0 && $count == $maxEmpaques) {
+						$pass = true;
+						$left = 0;
+					} else {
+						if ($count > $maxEmpaques) {
+							$pass = false;
+							$left = $count;
+							$message = 'Error: Cantidad incorrecta de cupos por turno.';
+						}
+					}
+				}
+			}
+		} catch (Exception $e) {
+			$pass = false;
+			$message = $e->getMessage();
+		}
+
+		$response = array(
+			'pass'    => $pass,
+			'data'    => array(
+				'left'  => $left,
+				'taken' => $taken,
+				'total' => $maxEmpaques,
+			),
+			'message' => $message,
+		);
+
+		return Response::json($response);
+	}
 }

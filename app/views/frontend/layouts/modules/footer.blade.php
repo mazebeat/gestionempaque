@@ -118,21 +118,6 @@
                 </p>
             </div>
         </div>
-        <div class="media">
-            <div class="media-left media-top">
-                <a href="#">
-                    <img class="media-object" src="{{ asset('frontend/images/c1.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="media-body">
-                <p class="media-heading">Lorem Ipsum is simply dummy text of the printing and type setting industry
-                    dummy.
-                    <br/>
-
-                <div class="pull-right"><i>John Doe</i></div>
-                </p>
-            </div>
-        </div>
     </div>
     <!-- //Recent Post Section End -->
 </div>

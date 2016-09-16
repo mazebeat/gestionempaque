@@ -1,9 +1,9 @@
 <?php
-date_default_timezone_set("Chile/Continental");
-//ini_set('mongo.long_as_object', 1);
-//ini_set('mongo.native_long', 1);
-//ini_set('zlib.output_compression', 'off');
-//ini_set('output_buffering', 'off');
+
+// ini_set('mongo.long_as_object', 1);
+// ini_set('mongo.native_long', 1);
+// ini_set('zlib.output_compression', 'off');
+// ini_set('output_buffering', 'off');
 ini_set("memory_limit", "1024M");
 set_time_limit(0);
 
@@ -18,14 +18,17 @@ set_time_limit(0);
 |
 */
 
-Route::get('/', function () {
-	return View::make('frontend/index');
-});
+# Error pages should be shown without requiring login
 Route::get('404', function () {
 	return View::make('admin/404');
 });
 Route::get('500', function () {
 	return View::make('admin/500');
+});
+
+# Index page
+Route::get('/', function () {
+	return View::make('frontend/index');
 });
 
 Route::get('our', function () {
@@ -53,80 +56,7 @@ Route::group(array("before" => "auth"), function () {
 
 	Route::get('taketurn/{id?}', array('as' => 'turnos', 'uses' => 'TurnoController@showTurnos'));
 	Route::get('saveTurns', 'TurnoController@getTurnos');
-
-	Route::get('frontend/takeTurn/{id}/{taken}/{left}', function ($id, $taken, $left) {
-		try {
-			$left = (int)$left;
-			$taken = $taken == 'true' ? true : false;
-			$pass = false;
-			$message = '';
-			$horaTurno = HoraTurno::find($id);
-
-			$maxEmpaques = (int)$horaTurno->max_empaques;
-
-			if (is_null($horaTurno)) {
-				return;
-			}
-
-
-			if ($taken) {
-			}
-
-			if (!$taken && $left > 0) {
-				$count = TomaTurno::where('id_turno', (int)$horaTurno->id_turno)->count();
-				if ($count < $maxEmpaques) {
-					// TODO: cambiar a usuario Auth cuando este listo el login
-					$tomaTurno = new TomaTurno();
-					$tomaTurno->id_toma_turno = $tomaTurno->lastID();
-					$tomaTurno->fecha = Carbon::now();
-					$tomaTurno->id_local = 1;
-					//				$tomaTurno->id_local          = Auth::user()->local()->id_local;
-					$tomaTurno->id_usuario = 1;
-					$tomaTurno->id_usuario = Auth::user()->id_local;
-					$tomaTurno->dia_semana = $horaTurno->dia_semana;
-					$tomaTurno->id_turno = $horaTurno->id;
-					$tomaTurno->id_hora_turno = $horaTurno->id_hora_turno;
-					$tomaTurno->hora_turno_inicio = $horaTurno->hora_turno_inicio;
-					$tomaTurno->hora_turno_fin = $horaTurno->hora_turno_fin;
-					$tomaTurno->asistencia = false;
-					$tomaTurno->nombre_usuario = 'SNT';
-					$tomaTurno->fecha_hora = Carbon::now();
-					$tomaTurno->save();
-
-					$message = 'Turno tomado con exito!';
-					$pass = true;
-					$left = $left - 1;
-				} else {
-					if ($left != 0 && $count == $maxEmpaques) {
-						$pass = true;
-						$left = 0;
-					} else {
-						if ($count > $maxEmpaques) {
-							$pass = false;
-							$left = $count;
-							$message = 'Error: Cantidad incorrecta de cupos por turno.';
-						}
-					}
-				}
-			}
-		} catch (Exception $e) {
-			$pass = false;
-			$message = $e->getMessage();
-		}
-
-		$response = array(
-			'pass'    => $pass,
-			'data'    => array(
-				'left'  => $left,
-				'taken' => $taken,
-				'total' => $maxEmpaques,
-			),
-			'message' => $message,
-		);
-
-		return Response::json($response);
-	});
-
+	Route::get('frontend/takeTurn/{id}/{taken}/{left}', 'TurnoController@takeTurns');
 });
 
 Route::group(array('prefix' => 'admin'), function () {
@@ -161,9 +91,8 @@ Route::group(array('prefix' => 'admin'), function () {
 	});
 	Route::post('register2', array('as' => 'register2', 'uses' => 'AuthController@postRegister2'));
 
-	# Forgot Password Confirmation
-	Route::get('forgot-password/{passwordResetCode}',
-		array('as' => 'forgot-password-confirm', 'uses' => 'AuthController@getForgotPasswordConfirm'));
+	# Forgot Password Confirmation 
+	Route::get('forgot-password/{passwordResetCode}', array('as' => 'forgot-password-confirm', 'uses' => 'AuthController@getForgotPasswordConfirm'));
 	Route::post('forgot-password/{passwordResetCode}', 'AuthController@postForgotPasswordConfirm');
 
 	# Logout
@@ -171,7 +100,6 @@ Route::group(array('prefix' => 'admin'), function () {
 
 	# Account Activation
 	Route::get('activate/{activationCode}', array('as' => 'activate', 'uses' => 'AuthController@getActivate'));
-
 
 	# Resources
 	Route::resource('accesos', 'AccesosController');
@@ -191,6 +119,7 @@ Route::group(array('prefix' => 'admin'), function () {
 	Route::post('empaques/clear', 'EmpaqueController@index');
 	Route::resource('faltas', 'FaltasController');
 	Route::resource('planillas', 'PlanillasController');
+	
 	# Locales
 	Route::resource('locales', 'LocalController');
 	Route::get('locales/{id}', 'LocalController@detalle');
@@ -205,30 +134,28 @@ Route::group(array('prefix' => 'admin'), function () {
 	});
 
 	# User Management
-	Route::group(array('prefix' => 'users', 'before' => 'Sentry'), function () {
+	Route::group(array('prefix' => 'users', 'before' => 'Auth'), function () {
 		Route::get('/', array('as' => 'users', 'uses' => 'UsersController@getIndex'));
 		Route::get('create', array('as' => 'create/user', 'uses' => 'UsersController@getCreate'));
 		Route::post('create', 'UsersController@postCreate');
 		Route::get('{userId}/edit', array('as' => 'users.update', 'uses' => 'UsersController@getEdit'));
 		Route::post('{userId}/edit', 'UsersController@postEdit');
 		Route::get('{userId}/delete', array('as' => 'delete/user', 'uses' => 'UsersController@getDelete'));
-		Route::get('{userId}/confirm-delete',
-			array('as' => 'confirm-delete/user', 'uses' => 'UsersController@getModalDelete'));
+		Route::get('{userId}/confirm-delete', array('as' => 'confirm-delete/user', 'uses' => 'UsersController@getModalDelete'));
 		Route::get('{userId}/restore', array('as' => 'restore/user', 'uses' => 'UsersController@getRestore'));
 		Route::get('{userId}', array('as' => 'users.show', 'uses' => 'UsersController@show'));
 	});
 	Route::get('deleted_users', array('as' => 'deleted_users', 'uses' => 'UsersController@getDeletedUsers'));
 
 	# Group Management
-	Route::group(array('prefix' => 'groups', 'before' => 'Sentry'), function () {
+	Route::group(array('prefix' => 'groups', 'before' => 'Auth'), function () {
 		Route::get('/', array('as' => 'groups', 'uses' => 'GroupsController@getIndex'));
 		Route::get('create', array('as' => 'create/group', 'uses' => 'GroupsController@getCreate'));
 		Route::post('create', 'GroupsController@postCreate');
 		Route::get('{groupId}/edit', array('as' => 'update/group', 'uses' => 'GroupsController@getEdit'));
 		Route::post('{groupId}/edit', 'GroupsController@postEdit');
 		Route::get('{groupId}/delete', array('as' => 'delete/group', 'uses' => 'GroupsController@getDelete'));
-		Route::get('{groupId}/confirm-delete',
-			array('as' => 'confirm-delete/group', 'uses' => 'GroupsController@getModalDelete'));
+		Route::get('{groupId}/confirm-delete', array('as' => 'confirm-delete/group', 'uses' => 'GroupsController@getModalDelete'));
 		Route::get('{groupId}/restore', array('as' => 'restore/group', 'uses' => 'GroupsController@getRestore'));
 		Route::get('any_user', 'UsersController@getUserAccess');
 		Route::get('admin_only', 'UsersController@getAdminOnlyAccess');
@@ -241,36 +168,4 @@ Route::group(array('prefix' => 'admin'), function () {
 
 	Route::get('location/find/provincia/{id_re}', 'LocationController@findProvinciasByRegion');
 	Route::get('location/find/comuna/{id_pr}', 'LocationController@findComunasByProvincia');
-});
-
-Route::get('test', function () {
-	$pass = Pass::where('id_usuario', '11.111.111-1')->first();
-	$pass->pass = Hash::make('123456');
-	$pass->save();
-
-	dd($pass);
-
-	//info to add
-	$db_name = 'snt';
-	$db_user = 'admin_db';
-	$db_pass = 'Acces0.DB.GestionEmpaque';
-
-	//autenticate with a user who can create other users
-	$mongo = new MongoClient("mongodb://root:root@localhost/admin");
-	$db = $mongo->selectDB($db_name);
-
-	//command to create a new user
-	$command = array
-	(
-		"createUser" => $db_user,
-		"pwd"        => $db_pass,
-		"roles"      => array
-		(
-			array("role" => "readWrite", "db" => $db_name)
-		)
-	);
-
-	//call MongoDB::command to create user in 'db_name' database
-	$db->command($command);
-	dd($db);
 });
