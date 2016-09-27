@@ -102,7 +102,7 @@ class Usuario extends Moloquent implements UserInterface, RemindableInterface
 	public function getAuthPassword()
 	{
 		$password = Pass::where('id_usuario', $this->id_usuario)->first();
-
+//		dd($password);
 		if ($password) {
 			return $password->pass;
 		}
@@ -159,10 +159,10 @@ class Usuario extends Moloquent implements UserInterface, RemindableInterface
 
 	public function lastTurn()
 	{
-		$last = $this->turnos()->orderBy('fecha', 'DESC')->first();
+		$last = $this->horaTurnos()->orderBy('fecha', 'DESC')->first();
 
 		if (isset($last)) {
-			$cDate = Carbon::parse(date('Y-M-d h:i:s', $last->fecha->sec));
+			$cDate = Carbon::parse($last->fecha);
 
 			return $cDate->diffInDays();
 		}

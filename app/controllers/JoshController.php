@@ -80,7 +80,7 @@ class JoshController extends BaseController
 
 	public function showHome()
 	{
-		if (Sentry::check()) {
+		if (Auth::check() && in_array(Auth::user()->id_perfil, array(1, 2))) {
 			return View::make('admin.index');
 		}
 
@@ -91,11 +91,11 @@ class JoshController extends BaseController
 	{
 //		dd($name);
 		if (View::exists('admin/' . $name)) {
-			// if (Sentry::check()) {
-			return View::make('admin/' . $name);
-//			} else {
-//				return Redirect::to('admin/signin')->with('error', 'You must be logged in!');
-//			}
+			 if (Auth::check()) {
+				return View::make('admin/' . $name);
+			} else {
+				return Redirect::to('admin/signin')->with('error', 'You must be logged in!');
+			}
 		} else {
 			return View::make('admin/404');
 		}

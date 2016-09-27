@@ -57,7 +57,7 @@
                     <div class="form-group">
                         {{ Form::label('id_usuario', 'RUN:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::text('id_usuario', Input::old('id_usuario'), array('class'=>'form-control', 'placeholder'=>'Id_usuario')) }}
+                            {{ Form::text('id_usuario', Input::old('id_usuario'), array('class'=>'form-control', 'placeholder'=>'RUN')) }}
                         </div>
                     </div>
 

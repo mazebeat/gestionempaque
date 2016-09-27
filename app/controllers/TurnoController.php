@@ -66,12 +66,13 @@ class TurnoController extends JoshController
 		$message = '';
 
 		try {
-			
 			$horaTurno = HoraTurno::find($id);
 
 			if (is_null($horaTurno)) {
 				return;
 			}
+
+			$maxEmpaques = (int)$horaTurno->max_empaques;
 
 			if ($taken) {
 				// El usuario Suelta el turno 
@@ -121,6 +122,7 @@ class TurnoController extends JoshController
 		} catch (Exception $e) {
 			$pass = false;
 			$message = $e->getMessage();
+			Log::error($message);
 		}
 
 		$response = array(

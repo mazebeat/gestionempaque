@@ -84,21 +84,21 @@
                     <div class="form-group">
                         {{ Form::label('id_region', 'Región:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_region', Input::old('id_region'), array('class'=>'form-control')) }}
+                            {{ Form::select('id_region', Region::lists('str_descripcion', 'id_re'), Input::old('id_region'), array('class'=>'form-control')) }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         {{ Form::label('id_provincia', 'Provincia:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_provincia', Input::old('id_provincia'), array('class'=>'form-control')) }}
+                            {{ Form::select('id_provincia', Provincia::lists('str_descripcion', 'id_pr'), Input::old('id_provincia'), array('class'=>'form-control')) }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         {{ Form::label('id_comuna', 'Comuna:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_comuna', Input::old('id_comuna'), array('class'=>'form-control')) }}
+                            {{ Form::select('id_comuna', Comuna::lists('str_descripcion', 'id_co'), Input::old('id_comuna'), array('class'=>'form-control')) }}
                         </div>
                     </div>
 
@@ -140,21 +140,21 @@
                     <div class="form-group">
                         {{ Form::label('id_casa_estudio', 'Casa estudio:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_casa_estudio', Input::old('id_casa_estudio'), array('class'=>'form-control')) }}
+                            {{ Form::select('id_casa_estudio', Perfil::lists('str_descripcion', 'id_casa_estudio'), Input::old('id_casa_estudio'), array('class'=>'form-control')) }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         {{ Form::label('id_perfil', 'Perfil:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_perfil', Input::old('id_perfil'), array('class'=>'form-control')) }}
+                            {{ Form::select('id_perfil', Perfil::lists('nom_perfil', 'id_perfil'), Input::old('id_perfil'), array('class'=>'form-control')) }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         {{ Form::label('id_local', 'Local:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
-                            {{ Form::input('number', 'id_local', Input::old('id_local'), array('class'=>'form-control')) }}
+                            {{ Form::select('id_local', Local::lists('nom_local', 'id_local'), Input::old('id_local'), array('class'=>'form-control')) }}
                         </div>
                     </div>
 
@@ -165,12 +165,12 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        {{ Form::label('nombre_usuario', 'Username:', array('class'=>'col-md-2 control-label')) }}
-                        <div class="col-sm-10">
-                            {{ Form::text('nombre_usuario', Input::old('nombre_usuario'), array('class'=>'form-control', 'placeholder'=>'Nombre_usuario')) }}
-                        </div>
-                    </div>
+                    {{--<div class="form-group">--}}
+                        {{--{{ Form::label('nombre_usuario', 'Username:', array('class'=>'col-md-2 control-label')) }}--}}
+                        {{--<div class="col-sm-10">--}}
+                            {{--{{ Form::text('nombre_usuario', Input::old('nombre_usuario'), array('class'=>'form-control', 'placeholder'=>'Nombre_usuario')) }}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
 
                     {{--<div class="form-group">--}}
                     {{--{{ Form::label('fecha_hora', 'Fecha_hora:', array('class'=>'col-md-2 control-label')) }}--}}

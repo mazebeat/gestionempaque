@@ -69,6 +69,14 @@
                     {{--</div>--}}
 
                     <div class="form-group">
+                        {{ Form::label('id_local', 'Local:', array('class'=>'col-md-2 control-label')) }}
+                        <div class="col-sm-10">
+                            {{ Form::select('id_local', Local::lists('nom_local', 'id_local'), Input::old('id_local'), array('class'=>'form-control')) }}
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
                         {{ Form::label('nom_norma', 'Nombre:', array('class'=>'col-md-2 control-label')) }}
                         <div class="col-sm-10">
                             {{ Form::text('nom_norma', Input::old('nom_norma'), array('class'=>'form-control', 'placeholder'=>'Nombrre norma')) }}
