@@ -62,7 +62,6 @@ class Local extends Moloquent
 			$p->id_planilla = $p->lastID();
 			$p->id_local    = $local->id_local;
 			Local::first()->planilla()->save($p);
-			dd('pass');
 		});
 		
 		static::updating(function ($local) {

@@ -72,7 +72,6 @@
                                     @endif
                                 </td>
                                 {{--<td>{{{ $user->created_at->diffForHumans() }}}</td>--}}
-                                {{ dd($user) }}
                                 <td>
                                     <a href="{{ route('users.show', $user->id) }}"><i class="livicon" data-name="info"
                                                                                       data-size="18" data-loop="true"
