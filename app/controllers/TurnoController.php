@@ -66,6 +66,7 @@ class TurnoController extends JoshController
 		$message = '';
 
 		try {
+			
 			$horaTurno = HoraTurno::find($id);
 
 			if (is_null($horaTurno)) {
