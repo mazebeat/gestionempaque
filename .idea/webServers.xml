@@ -2,10 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e3a93b2f-c826-40bc-a858-fa12f9d03073" name="GestionEmpaques" url="http://130.211.142.94/">
-        <fileTransfer host="104.197.168.83" port="22" privateKey="C:\Users\Administrador.000\.ssh\private_gcloud.pk" rootFolder="/var/www/GestionEmpaques" accessType="SFTP" passphrase="dfc7dfd0df84df9bdf98df9adf9ddf9bdf98" username="root" keyPair="true">
+      <webServer id="e3a93b2f-c826-40bc-a858-fa12f9d03073" name="GestionEmpaques" url="http://104.197.168.83/">
+        <fileTransfer host="104.197.168.83" port="22" privateKey="C:\Users\Dev-DFeliu\.ssh\private_googlecloud.ppk" rootFolder="/var/www/GestionEmpaques" accessType="SFTP" passphrase="df9bdf98df99df9edf9fdf9c" username="dfeliu" keyPair="true">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" maxConnections="1" />
+            <advancedOptions dataProtectionLevel="Private" maxConnections="1" muteSftpMessages="true" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
