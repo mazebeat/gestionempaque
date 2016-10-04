@@ -13,7 +13,7 @@ $(function () {
             return false;
         }
 
-        $.getJSON($data.url + '/' + $this.data().taken + '/' + $this.data().left, function (jsonData) {
+        $.getJSON($this.data().url + '/' + $this.data().taken + '/' + $this.data().left, function (jsonData) {
             updateButton($this, jsonData.data);
         });
         return false;

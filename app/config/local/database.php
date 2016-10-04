@@ -19,8 +19,8 @@ return array(
 	*/
 	
 	'connections' => array(
-		
-		'mysql' => array(
+
+        'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => '',
@@ -30,8 +30,8 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-		
-		'pgsql' => array(
+
+        'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
 			'database' => 'homestead',
@@ -41,8 +41,8 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
-		
-		'mongodb' => array(
+
+        'mongodb2' => array(
 			'driver'   => 'mongodb',
 			'host'     => '104.197.168.83',
 			'port'     => '27017',
@@ -54,7 +54,7 @@ return array(
 			),
 		),
 
-		'mongodb2' => array(
+        'mongodb' => array(
 			'driver'   => 'mongodb',
 			'host'     => 'localhost',
 			'port'     => '27017',

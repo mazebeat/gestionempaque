@@ -263,10 +263,7 @@ class UsersController extends JoshController
 	public function getIndex()
 	{
 		// Grab all the users
-//        $users = User::All();
-		$users = [
-			new User([1]),
-		];
+        $users = User::all();
 		
 		// Show the page
 		return View::make('admin.users.index', compact('users'));

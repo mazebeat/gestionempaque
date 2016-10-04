@@ -55,6 +55,7 @@
             <div class="text-center">
                 <h3 class="border-success"><span class="heading_border bg-success">Gestión Empaques</span></h3>
                 <label class=" text-center">Comodidad, tecnología y autonomía para los empaquetadores de supermercados.</label>
+                <span class="col-xs-8 col-xs-offset-2"><img class="media-object img-responsive" src="{{ asset('frontend/images/alan/imagen1.png') }}" alt="image"></span>
             </div>
             <!-- Accordions End -->
             <div class="col-md-6 col-sm-12">
@@ -85,36 +86,36 @@
                         <!-- Tab-content Start -->
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab_default_1">
-                                <div class="media">
-                                    <div class="media-left tab col-sm-12">
-                                        <a href="#">
-                                            <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/alan/imagen 1.png') }}" alt="image">
-                                        </a>
-                                    </div>
-                                </div>
+                                {{--<div class="media">--}}
+                                {{--<div class="media-left tab col-sm-12">--}}
+                                {{--<a href="#">--}}
+                                {{--<img class="media-object img-responsive"--}}
+                                {{--src="{{ asset('frontend/images/alan/imagen 1.png') }}" altimagen1.png}
+                       {{--</a>--}}
+                                {{--</div>--}}
+                                {{--</div>--}}
                                 <p>Gestión empaques ofrece a todas las agrupaciones de empaques independientes la posibilidad de realizar sus reservas de horarios de trabajo mediante nuestra moderna plataforma web la que les entrega comodidad y legitimidad en esta etapa en la que muchas veces suele ser engorrosa, pero, que gracias a nuestra plataforma simplifica de inmejorable manera.</p>
                             </div>
                             <div class="tab-pane" id="tab_default_2">
-                                <div class="media">
-                                    <div class="media-left media-middle tab col-sm-12">
-                                        <a href="#">
-                                            <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/alan/imagen 2.png') }}" alt="image">
-                                        </a>
-                                    </div>
-                                </div>
+                                {{--<div class="media">--}}
+                                {{--<div class="media-left media-middle tab col-sm-12">--}}
+                                {{--<a href="#">--}}
+                                {{--<img class="media-object img-responsive"--}}
+                                {{--src="{{ asset('frontend/images/alan/imagen2.png') }}" alt="image">--}}
+                                {{--</a>--}}
+                                {{--</div>--}}
+                                {{--</div>--}}
                                 <p>Lo esencial es que si te interesa nuestra plataforma o solo les causa curiosidad nos contacten, todos sin compromiso, la idea es que luego de contactarnos fijemos una reunión en la cual podremos explicarles cómo funciona todo el sistema, los procesos, las facilidades, lo que ganan con nuestro sistema, sus ventajas  y en lo que les puede beneficiar el asociarse a gestión empaques.</p>
                             </div>
                             <div class="tab-pane" id="tab_default_3">
-                                <div class="media">
-                                    <div class="media-left media-middle tab col-sm-12">
-                                        <a href="#">
-                                            <img class="media-object img-responsive"
-                                                 src="{{ asset('frontend/images/alan/imagen 3.png') }}" alt="image">
-                                        </a>
-                                    </div>
-                                </div>
+                                {{--<div class="media">--}}
+                                {{--<div class="media-left media-middle tab col-sm-12">--}}
+                                {{--<a href="#">--}}
+                                {{--<img class="media-object img-responsive"--}}
+                                {{--src="{{ asset('frontend/images/alan/imagen 3.png') }}" alt="image">--}}
+                                {{--</a>--}}
+                                {{--</div>--}}
+                                {{--</div>--}}
                                 <p>Gestión empaques les entrega un sinfín de benéficos a las agrupaciones asociadas, tales como </br>
                                     - plataforma web para la reserva de horarios de trabajo, asistencia jurídica, independencia, autonomía, flexibilidad, asistencia 24/7, compromiso, profesionalismo, sinceridad ante todo, legitimización ante sus asociados, etc.
                                 </p>
@@ -235,13 +236,13 @@
                         </h4>
                     </div>
                 </div>
-                <img class="media-object img-responsive" src="{{ asset('frontend/images/alan/imagen 1.png') }}" alt="image">
+                <span class="col-xs-5"><img class="media-object img-responsive" src="{{ asset('frontend/images/alan/imagen2.png') }}" alt="image"></span>
 
                 <p>Somos un grupo de jóvenes que habiendo vivido la experiencia de lo que significa ser empaquetador de supermercado hemos tomado la decisión de desarrollar Gestión empaques. Gestión empaques es una plataforma web la cual facilita la reserva de horarios de trabajo para empaquetadores de supermercados o algún retail.  Entregamos asesoría jurídica para cualquier agrupación asociada que necesite de estos servicios ya que nosotros somos una agrupación que presta servicios hacia y Para los empaques en donde nosotros no nos hacemos dueños de supermercados ni de empaques, esa temática no tiene relación ninguna ni sigue nuestros lineamientos de agrupación, al contrario les entregamos ayuda para poder ordenar y mejorar la calidad del servicio el cual entregan.</p>
 
                 <p>
 
-                <div class="text-right primary"><a href="#">Leer más</a></div>
+                <div class="text-right primary"><a href="{{ url('our') }}">Leer más</a></div>
                 </p>
             </div>
             <!-- //About Us End -->

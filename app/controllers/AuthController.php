@@ -9,8 +9,8 @@ class AuthController extends JoshController
 	 */
 	public function getSignin()
 	{
-		if (Auth::check() && in_array(Auth::user()->id_perfil, array(1, 2))) {
-			return Redirect::route('dashboard');
+        if (\Auth::check()) {
+            return \Redirect::route('dashboard');
 		}
 
 		return View::make('admin.login');
@@ -24,27 +24,30 @@ class AuthController extends JoshController
 	public function postSignin()
 	{
 		$rules = array(
-			'email'    => 'required|email',
-			'password' => 'required|between:3,32',
+            'email'    => 'required|email|exists:usuario,email',
+            'password' => 'required|between:3,32',
 		);
 
-		$validator = Validator::make(Input::all(), $rules);
+        try {
+            $validator = \Validator::make(\Input::all(), $rules);
 
-		if ($validator->fails()) {
-			return Redirect::back()->withInput()->withErrors($validator);
-		}
+            if ($validator->fails()) {
+                return Redirect::back()->withInput()->withErrors($validator);
+            }
 
-		try {
-			if (Auth::auth(Input::only('email', 'password'), Input::get('remember-me', false))) {
-				return Redirect::to("/admin")->with('success', Lang::get('auth/message.signin.success'));
+
+            if (\Auth::attempt(\Input::only('email', 'password'), \Input::get('remember-me', false))) {
+                return \Redirect::route('dashboard');
+                // return \Redirect::to("/admin")->with('success', \Lang::get('auth/message.signin.success'));
 			}
 
-			return Redirect::to("/admin")->with('success', Lang::get('auth/message.signin.error'));
-		} catch (Exception $e) {
+            return \Redirect::to("/admin")->with('success', \Lang::get('auth/message.signin.error'));
+        } catch (\Exception $e) {
 			$this->messageBag->add('error', $e->getMessage());
+            \Log::error($e->getMessage());
 		}
 
-		return Redirect::back()->withInput()->withErrors($this->messageBag);
+        return \Redirect::back()->withInput()->withErrors($this->messageBag);
 	}
 
 	/**
@@ -279,10 +282,10 @@ class AuthController extends JoshController
 	public function getLogout()
 	{
 		// Log the user out
-		Sentry::logout();
+        \Auth::logout();
 
 		// Redirect to the users page
-		return Redirect::to('admin/signin')->with('success', 'You have successfully logged out!');
+        return \Redirect::to('admin/signin')->with('success', 'You have successfully logged out!');
 	}
 
 	/**

@@ -1,4 +1,5 @@
-<nav class="navbar navbar-default container" style="margin-top: 5px; ">
+{{--<nav class="navbar navbar-default container" style="margin-top: 5px; ">--}}
+<nav class="navbar navbar-default container">
     {{--<div class="navbar-header">--}}
     {{--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">--}}
     {{--<span><a href="#"><i class="livicon" data-name="responsive-menu" data-size="25" data-loop="true" data-c="#757b87" data-hc="#ccc"></i></a></span>--}}
@@ -10,10 +11,8 @@
             <li>
                 <ul class="list-inline icon-position" style="margin-top: 15px;">
                     <li>
-                        <a href="mailto:"><i class="livicon" data-name="mail" data-size="18" data-loop="true"
-                                             data-c="#fff" data-hc="#fff"></i></a>
-                        <label class="hidden-xs"><a href="mailto:" class="text-white">contacto@gestionempaques
-                                .cl</a></label>
+                        <a href="mailto:"><i class="livicon" data-name="mail" data-size="18" data-loop="true" data-c="#fff" data-hc="#fff"></i></a>
+                        <label class="hidden-xs"><a href="mailto:" class="text-white">contacto@gestionempaques.cl</a></label>
                     </li>
                     <li>
                         <a href="tel:"><i class="livicon" data-name="phone" data-size="18" data-loop="true"
@@ -24,13 +23,11 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a class="navbar-brand" href="#"><img src="{{ asset('frontend/images/logo-white.png') }}"
-                                                      class="logo_position" style="width: 115px; margin-top: 5px;"/>
-                </a></li>
-            <li class="active"><a href="{{ url('/') }}"> Inicio</a></li>
-            <li class=""><a href="{{ url('our') }}"> Nosotros</a></li>
-            <li class=""><a href="{{ url('user') }}"> Usuario</a></li>
-            <li class=""><a href="{{ url('registry') }}"> Registro</a></li>
+            <li><a class="navbar-brand" href="#"><img src="{{ asset('frontend/images/logo-white.png') }}" class="logo_position"/></a></li>
+            <li {{ Request::is( '/') ? 'class="active"' : '' }}><a href="{{ url('/') }}"> Inicio</a></li>
+            <li {{ Request::is( 'our') ? 'class="active"' : '' }}><a href="{{ url('our') }}"> Nosotros</a></li>
+            <li {{ Request::is( 'user') ? 'class="active"' : '' }}><a href="{{ url('user') }}"> Usuario</a></li>
+            <li {{ Request::is( 'registry') ? 'class="active"' : '' }}><a href="{{ url('registry') }}"> Registro</a></li>
             {{--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Features</a>--}}
             {{--<ul class="dropdown-menu" role="menu">--}}
             {{--<li><a href="typography.html">Typography</a>--}}

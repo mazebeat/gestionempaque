@@ -66,12 +66,13 @@ class TurnoController extends JoshController
 		$message = '';
 
 		try {
-			
 			$horaTurno = HoraTurno::find($id);
 
 			if (is_null($horaTurno)) {
 				return;
 			}
+
+            $maxEmpaques = (int)$horaTurno->max_empaques;
 
 			if ($taken) {
 				// El usuario Suelta el turno 
@@ -86,20 +87,20 @@ class TurnoController extends JoshController
 				if ($count < $maxEmpaques) {
 					// TODO: cambiar a usuario Auth cuando este listo el login
 					$tomaTurno = TomaTurno::create(array(
-						'id_toma_turno' => $tomaTurno->lastID(),
-						'fecha' => Carbon::now(),
-						'id_local' => 1,
-						'id_local' => Auth::user()->local()->id_local,
-						'id_usuario' => 1,
-						'id_usuario' => Auth::user()->id_local,
-						'dia_semana' => $horaTurno->dia_semana,
-						'id_turno' => $horaTurno->id,
-						'id_hora_turno' => $horaTurno->id_hora_turno,
-						'hora_turno_inicio' => $horaTurno->hora_turno_inicio,
-						'hora_turno_fin' => $horaTurno->hora_turno_fin,
-						'asistencia' => false,
-						'nombre_usuario' => Auth::user()->nombre,
-						'fecha_hora' => Carbon::now()
+                        'id_toma_turno'     => TomaTurno::lastID(),
+                        'fecha'             => Carbon::now(),
+                        'id_local'          => 1,
+                        'id_local'          => Auth::user()->local()->id_local,
+                        'id_usuario'        => 1,
+                        'id_usuario'        => Auth::user()->id_local,
+                        'dia_semana'        => $horaTurno->dia_semana,
+                        'id_turno'          => $horaTurno->id,
+                        'id_hora_turno'     => $horaTurno->id_hora_turno,
+                        'hora_turno_inicio' => $horaTurno->hora_turno_inicio,
+                        'hora_turno_fin'    => $horaTurno->hora_turno_fin,
+                        'asistencia'        => false,
+                        'nombre_usuario'    => Auth::user()->nombre,
+                        'fecha_hora'        => Carbon::now()
 					));
 
 					$message = 'Turno tomado con exito!';
@@ -121,6 +122,7 @@ class TurnoController extends JoshController
 		} catch (Exception $e) {
 			$pass = false;
 			$message = $e->getMessage();
+            Log::error($message);
 		}
 
 		$response = array(

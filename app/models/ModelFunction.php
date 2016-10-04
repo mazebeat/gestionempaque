@@ -18,7 +18,6 @@ class ModelFunction extends \Illuminate\Database\Eloquent\Model
 	{
 		// If the value is already a MongoDate instance, we don't need to parse it.
 		if ($value instanceof MongoDate) {
-			dd('');
 			if (isset($value->sec)) {
 				return date('Y-m-d', $value->sec);
 			}

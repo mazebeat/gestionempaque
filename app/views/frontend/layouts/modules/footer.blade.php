@@ -1,15 +1,12 @@
-<!-- Footer Container Start -->
+<!-- Footer Container    Start -->
 <div class="container footer-text">
     <!-- About Us Section Start -->
     <div class="col-sm-4">
         <h4>Nosotros</h4>
 
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type
-            specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            Gestión empaques es una agrupación de estudiantes de educación superior que se desempeñan como empaquetadores de supermercado y se ha dispuesto a entregar soluciones integrales a través de esta plataforma para así mejorar y facilitar esta labor llena de sacrificio y entrega que permite a miles de estudiantes de educación superior generar ingreso económico para así costear sus carreras y mantener a sus
+            familias.
         </p>
         <h4>Siguenos</h4>
         <ul class="list-inline">

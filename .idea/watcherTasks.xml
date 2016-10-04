@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTasksOptions">
-    <TaskOptions isEnabled="false">
+    <TaskOptions isEnabled="true">
       <option name="arguments" value="$FileName$ -o $FileNameWithoutExtension$.min.js" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compresses .js files" />
@@ -14,13 +14,13 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="D:/Projects/Php/PanelEXScore/node_modules/yui-compressor/lib/vendor/yuicompressor.jar" />
+      <option name="program" value="E:/plugins/yuicompressor-2.4.7/build/yuicompressor-2.4.7.jar" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="false">
+    <TaskOptions isEnabled="true">
       <option name="arguments" value="$FileName$ -o $FileNameWithoutExtension$.min.css" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compresses .css files" />
@@ -33,7 +33,7 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="D:/Projects/Php/PanelEXScore/node_modules/yui-compressor/lib/vendor/yuicompressor.jar" />
+      <option name="program" value="E:/plugins/yuicompressor-2.4.7/build/yuicompressor-2.4.7.jar" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />

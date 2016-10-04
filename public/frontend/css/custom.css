@@ -12,7 +12,8 @@ body {
 .icon-section {
     background-color: #135fa5;
     /*line-height: 7px;*/
-    padding-top: 10px;
+    line-height: 5px;
+    /*padding-top: 10px;*/
     /*margin-bottom: 10px;*/
 }
 
@@ -184,6 +185,8 @@ p label {
 .logo_position {
     position: relative;
     bottom: 20px;
+    width: 115px;
+    margin-top: 4px;
 }
 
 .navbar-nav > li > a {
@@ -659,8 +662,9 @@ footer .btn-primary.text-white {
 
 #owl-demo .item img {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
 }
 
 #owl-demo {

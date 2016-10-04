@@ -4,16 +4,13 @@
     <option name="serverConfigurations">
       <list>
         <ServerConfiguration>
-          <option name="authenticationDatabase" value="snt" />
-          <option name="label" value="SNT" />
-          <option name="password" value="test" />
+          <option name="label" value="Local" />
           <option name="serverUrls">
             <list>
               <option value="localhost:27017" />
             </list>
           </option>
           <option name="userDatabase" value="snt" />
-          <option name="username" value="test" />
         </ServerConfiguration>
       </list>
     </option>
