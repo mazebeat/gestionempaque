@@ -28,7 +28,8 @@ return array(
     |
     */
 
-    'host' => 'smtp.mailgun.org',
+//    'host' => 'smtp.mailgun.org',
+    'host'   => 'smtp.gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +42,8 @@ return array(
     |
     */
 
-    'port' => 587,
+//    'port' => 587,
+    'port'   => 587,
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +56,8 @@ return array(
     |
     */
 
-    'from' => array('address' => null, 'name' => null),
+//    'from' => array('address' => null, 'name' => null),
+    'from'   => array('address' => 'gestionempaqueschile@gmail.com', 'name' => 'Gestión Empaques'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +83,8 @@ return array(
     |
     */
 
-    'username' => null,
+//    'username' => null,
+    'username'   => 'gestionempaqueschile@gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +97,8 @@ return array(
     |
     */
 
-    'password' => null,
+//    'password' => null,
+    'password'   => 'gestionempaquesalan',
 
     /*
     |--------------------------------------------------------------------------
@@ -120,5 +125,4 @@ return array(
     */
 
     'pretend' => false,
-
 );

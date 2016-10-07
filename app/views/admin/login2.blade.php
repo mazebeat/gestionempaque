@@ -14,12 +14,15 @@
 <body>
 <div class="container">
     <div class="row vertical-offset-100">
-        <div class=" col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3  col-md-5 col-md-offset-4 col-lg-4 col-lg-offset-4">
+        <div class=" col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-4 col-lg-4 col-lg-offset-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title text-center">Inicio de Sesión</h3>
                 </div>
                 <div class="panel-body">
+
+                @include('notifications')
+
                 {{ Form::open(array('url' => 'user',  'method' => 'POST', 'autocomplete' => 'on', 'role' => 'form')) }}
                 {{--<form action="{{ route('calendarsignin') }}" autocomplete="on" method="post" role="form">--}}
                 <!-- CSRF Token -->

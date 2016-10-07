@@ -4,7 +4,6 @@ class FrontendController extends JoshController
 {
     public function index()
     {
-        // return View::make('frontend.indexuser');
         if (Auth::check() && in_array(Auth::user()->id_perfil, array(3, 4))) {
             return Redirect::to('indexuser');
         }
@@ -30,10 +29,12 @@ class FrontendController extends JoshController
                 return Redirect::to('indexuser');
             }
         } catch (Exception $e) {
+            $this->messageBag->add('error', $e->getMessage());
             Log::error($e->getMessage());
         }
 
-        return Redirect::back()->with('success', Lang::get('auth/message.signin.fail'));
+//        return Redirect::back()->with('success', Lang::get('auth/message.signin.fail'));
+        return \Redirect::back()->withInput()->withErrors($this->messageBag);
     }
 
     public function indexUser()

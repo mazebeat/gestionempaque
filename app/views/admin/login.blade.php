@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Login | Josh Admin Template</title>
+    <title>Administrador | Gestión Empaques</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- global level css -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet"/>

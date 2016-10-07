@@ -1,7 +1,7 @@
 <?php
 
 ini_set('mongo.long_as_object', 1);
-//ini_set('mongo.native_long', 1);
+ini_set('mongo.native_long', 0);
 ini_set('zlib.output_compression', 'off');
 ini_set('output_buffering', 'off');
 ini_set("memory_limit", "1024M");

@@ -2,7 +2,7 @@
 body {
     background: url(../../img/parallax/back.png);
     background-color: #444;
-    background: url(../../img/parallax/pinlayer2.png), url(../../img/parallax/pinlayer1.png), url(../../img/parallax/back.png);
+    /*background: url(../../img/parallax/pinlayer2.png), url(../../img/parallax/pinlayer1.png), url(../../img/parallax/back.png) !important;*/
     font-family: 'lato';
 }
 .vertical-offset-100 {
