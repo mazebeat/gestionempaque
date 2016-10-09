@@ -4,9 +4,8 @@
  *
  */
 return array(
-	
-	'no'        => 'No',
-	'noresults' => 'Sin Resultados',
-	'yes'       => 'Sí',
-
+    'no'        => 'No',
+    'noresults' => 'Sin Resultados',
+    'yes'       => 'Sí',
+    'welcome'   => 'Bienvenido'
 );

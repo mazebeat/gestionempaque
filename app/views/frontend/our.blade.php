@@ -88,7 +88,7 @@
         <span class="col-xs-2 col-xs-offset-5 text-center"><img class="media-object img-responsive" src="{{ asset('frontend/images/alan/PRECIO.png') }}" alt="image">                </span>
         <div class="col-md-12 col-sm-12">
             <p>Este valor puede ser modificado si los requerimientos de los asociados los estiman pertinente y se llega a acuerdo entre las dos partes a beneficiar (la modificación de este valor asignado siempre se realizara en disminución y nunca en aumento a lo ya señalado, este valor asignado de $1000 pesos es el valor base y valor máximo por el servicio).</p>
-            <p>Contáctenos al mail <a href="mailto:gestionempaqueschile@gmail.com">GESTIONEMPAQUESCHILE@GMAIL.COM</a> o al teléfono 942893664 y le responderemos a la brevedad cualquier duda o consulta que presente.</p>
+            <p>Contáctenos al mail <a href="mailto:{{ Config::get('contact.email') }}">{{ Str::upper(Config::get('contact.email')) }}</a> o al teléfono 942893664 y le responderemos a la brevedad cualquier duda o consulta que presente.</p>
         </div>
         <!-- Left Section End -->
     </div>

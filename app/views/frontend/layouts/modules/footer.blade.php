@@ -47,7 +47,7 @@
             </li>
             <li><i class="livicon icon3" data-name="mail-alt" data-size="20" data-loop="true" data-c="#ccc"
                    data-hc="#ccc"></i> Email:<span class="success">
-                        <a href="mailto:">contacto@gestionempaques.cl</a></span>
+                        <a href="mailto:{{ Config::get('contact.email') }}">{{ Config::get('contact.email') }}</a></span>
             </li>
             <li><i class="livicon icon4 icon3" data-name="skype" data-size="18" data-loop="true" data-c="#ccc"
                    data-hc="#ccc"></i> Skype:

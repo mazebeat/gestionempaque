@@ -1,7 +1,7 @@
 <?php
-
+setlocale(LC_TIME, 'es_CL.UTF-8');
 ini_set('mongo.long_as_object', 1);
-ini_set('mongo.native_long', 0);
+//ini_set('mongo.native_long', 0);
 ini_set('zlib.output_compression', 'off');
 ini_set('output_buffering', 'off');
 ini_set("memory_limit", "1024M");
@@ -54,9 +54,16 @@ Route::group(array("before" => "auth"), function () {
     Route::get('repechaje', array('as' => 'returnos', 'uses' => 'RepechajeController@showTurnos'));
     Route::get('normas', array('as' => 'returnos', 'uses' => 'FrontendController@showNormas'));
 
+    Route::get('myturns', 'TurnoController@myTurns');
+    Route::get('reeplace', 'TurnoController@reeplaceMy');
+
     Route::get('taketurn/{id?}', array('as' => 'turnos', 'uses' => 'TurnoController@showTurnos'));
     Route::get('saveTurns', 'TurnoController@getTurnos');
     Route::get('frontend/takeTurn/{id}/{taken}/{left}', 'TurnoController@takeTurns');
+
+    Route::get('directmessage', 'EmpaqueController@directMessage');
+    Route::post('directmessage', 'EmpaqueController@sendDirectMessage');
+    Route::get('printcredential', 'EmpaqueController@printCredential');
 });
 
 Route::group(array('prefix' => 'admin'), function () {

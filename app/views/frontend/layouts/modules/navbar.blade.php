@@ -12,12 +12,12 @@
                 <ul class="list-inline icon-position" style="margin-top: 15px;">
                     <li>
                         <a href="mailto:"><i class="livicon" data-name="mail" data-size="18" data-loop="true" data-c="#fff" data-hc="#fff"></i></a>
-                        <label class="hidden-xs"><a href="mailto:" class="text-white">contacto@gestionempaques.cl</a></label>
+                        <label class="hidden-xs"><a href="mailto:{{ Config::get('contact.email') }}" class="text-white">{{ Config::get('contact.email') }}</a></label>
                     </li>
                     <li>
                         <a href="tel:"><i class="livicon" data-name="phone" data-size="18" data-loop="true"
                                           data-c="#fff" data-hc="#fff"></i></a>
-                        <label class="hidden-xs"><a href="tel:" class="text-white">+56 (2) 2 555 555</a></label>
+                        <label class="hidden-xs"><a href="tel:{{ Config::get('contact.phone') }}" class="text-white">{{ Config::get('contact.phone') }}</a></label>
                     </li>
                 </ul>
             </li>

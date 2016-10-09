@@ -22,7 +22,9 @@ class FrontendController extends JoshController
 
         try {
             if ($validator->fails()) {
-                return Redirect::back()->withInput()->withErrors($validator);
+                return Redirect::back()
+                    ->withInput()
+                    ->withErrors($validator);
             }
 
             if (Auth::attempt(Input::only('email', 'password'), Input::get('remember', false))) {
@@ -34,7 +36,9 @@ class FrontendController extends JoshController
         }
 
 //        return Redirect::back()->with('success', Lang::get('auth/message.signin.fail'));
-        return \Redirect::back()->withInput()->withErrors($this->messageBag);
+        return \Redirect::back()
+            ->withInput()
+            ->withErrors($this->messageBag);
     }
 
     public function indexUser()

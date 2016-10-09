@@ -66,12 +66,10 @@
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
                         <ul class="nav navbar-nav sidemenu">
                             <li class=""><a href="{{ url('user') }}">Inicio</a></li>
-                            <li class=""><a
-                                        href="{{ url('taketurn', Auth::user() != null ? Auth::user()->id : null) }}">Toma
-                                    Turnos</a></li>
+                            <li class=""><a href="{{ url('taketurn', Auth::user() != null ? Auth::user()->id : null) }}">Toma Turnos</a></li>
                             <li class=""><a href="{{ url('repechaje') }}">Repechaje</a></li>
-                            <li class=""><a href="#">Mis Turnos</a></li>
-                            <li class=""><a href="#">Reemplazos</a></li>
+                            <li class=""><a href="{{ url('myturns') }}">Mis Turnos</a></li>
+                            <li class=""><a href="{{ url('reeplace') }}">Reemplazos</a></li>
                             {{--<li><a href="#">Menu Item 2</a></li>--}}
                             {{--<li class="dropdown">--}}
                             {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>--}}
@@ -85,8 +83,8 @@
                             {{--<li><a href="#">One more separated link</a></li>--}}
                             {{--</ul>--}}
                             {{--</li>--}}
-                            <li><a href="#">Mensaje Directo</a></li>
-                            <li><a href="#">Imprimir Credencial</a></li>
+                            <li><a href="{{ url('directmessage') }}">Mensaje Directo</a></li>
+                            <li><a href="{{ url('printcredential') }}">Imprimir Credencial</a></li>
                             <li><a href="{{ url('normas') }}">Normas Supermercados</a></li>
                             <li><a href="#">Planilla</a></li>
                             {{--<li><a href="#">Reviews <span class="badge">1,118</span></a></li>--}}
